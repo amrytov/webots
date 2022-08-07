@@ -1,3 +1,25 @@
+This fork of Webots is being developed as the platform for K12-level STEM school competitions, specifically space-related ones, even more specifically - https://junior.ntcontest.ru/ . Here is what's going to be added/changed (listed more or less in the order of priorities):
+
+- Full translation to Russian  (done, needs checking / minor adjustments)
+
+- Adding thrusters, as PROTOs (based on the Propeller) or a new device type
+
+- Some form of integration with Stepik.org learning platform
+
+- Adding a fuel system (something KSP-style)
+
+- Adding gravitating bodies (Solids as gravity sources)
+
+- Adding PROTOs for various space-related parts and pieces
+
+- Adding robot windows for monitoring state of a satellite, 
+
+- Possibly integration with WokWi or similar Arduino simulator
+
+- Adding a library of PROTOs for common AliExpress hardware (motors, sensor modules and such)
+
+-----------------------
+
 # Webots: open-source robot simulator
 
 [![Webots](https://img.shields.io/github/v/release/cyberbotics/webots)](https://github.com/cyberbotics/webots/releases/latest)
