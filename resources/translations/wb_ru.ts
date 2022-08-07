@@ -2,6 +2,93 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="ru_RU">
 <context>
+    <name>ConsoleEdit</name>
+    <message>
+        <source>Display controller(s) stderr.</source>
+        <translation>Показать stderr контроллера.</translation>
+    </message>
+    <message>
+        <source>Display controller(s) stdout.</source>
+        <translation>Показать stdout контроллера.</translation>
+    </message>
+    <message>
+        <source>&amp;Level</source>
+        <translation>&amp;Уровень</translation>
+    </message>
+    <message>
+        <source>Display all the messages from the controller(s).</source>
+        <translation>Показать все сообщения от контроллера.</translation>
+    </message>
+    <message>
+        <source>Clear Console</source>
+        <translation>Очистить консоль</translation>
+    </message>
+    <message>
+        <source>Display all the Webots logs.</source>
+        <translation>Показать все логи от WeBots.</translation>
+    </message>
+    <message>
+        <source>Rename Console</source>
+        <translation>Переименовать консоль</translation>
+    </message>
+    <message>
+        <source>Output from the compilation.</source>
+        <translation>Вывод компиляции.</translation>
+    </message>
+    <message>
+        <source>Displays Webots warnings.</source>
+        <translation>Показать предупреждения от WeBots.</translation>
+    </message>
+    <message>
+        <source>Display all the logs.</source>
+        <translation>Показать все логи.</translation>
+    </message>
+    <message>
+        <source>Display error messages from ODE.</source>
+        <translation>Показывать ошибки от ODE.</translation>
+    </message>
+    <message>
+        <source>Display output from the controller of the &apos;%1&apos; controller.</source>
+        <translation>Показать сообщения от контроллера &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Displays Webots errors and controller(s) stderr.</source>
+        <translation>Показать ошибки WeBots и stderr контроллера.</translation>
+    </message>
+    <message>
+        <source>Displays Webots info.</source>
+        <translation>Показать информацию WeBots.</translation>
+    </message>
+    <message>
+        <source>&amp;Filter</source>
+        <translation>&amp;Фильтр</translation>
+    </message>
+    <message>
+        <source>Display controller(s) stdout and stderr.</source>
+        <translation>Показать stdout и stderr контроллера.</translation>
+    </message>
+    <message>
+        <source>Display parsing error when editing or loading a world.</source>
+        <translation>Показывать ошибки парсера при загрузке мира.</translation>
+    </message>
+    <message>
+        <source>Display all the messages from Webots.</source>
+        <translation>Показать все сообщения от WeBots.</translation>
+    </message>
+    <message>
+        <source>Display Javascript log from the robot-windows.</source>
+        <translation>Показать лог JS из &quot;окна робота&quot;.</translation>
+    </message>
+    <message>
+        <source>Display all the other logs.</source>
+        <translation>Показать остальные логи.</translation>
+    </message>
+    <message>
+        <source>Display messages from the physics plugins.</source>
+        <translation>Показывать сообщения &quot;физических&quot; плагинов.</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <source>%1.</source>
@@ -14,14 +101,6 @@
     <message>
         <source>edit</source>
         <translation>редактировать</translation>
-    </message>
-    <message>
-        <source>First item of &apos;%1&apos; field expected to be a file but is a directory.</source>
-        <translation>Первый элемент поля &apos;%1&apos; должен быть файлом, а не папкой.</translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos; expected to be a file but is a directory.</source>
-        <translation>&apos;%1&apos; должен быть файлом, но это папка.</translation>
     </message>
     <message>
         <source>Cannot insert %1 node in &apos;%2&apos; field of %3 node:: %4 node doesn&apos;t support Muscle functionality.</source>
@@ -82,22 +161,6 @@
 </translation>
     </message>
     <message>
-        <source>Webots requires Python version 3.x9, 3.8, 3.7 or 2.7 (64 bit) from python.org in your current PATH.
-To fix the problem, you should:
-1. Check the Python command set in the Webots preferences.
-2. Check the COMMAND set in the [python] section of the runtime.ini file of your controller program if any.
-3. Fix your PATH environment variable to use the required Python 64 bit version (if available).
-4. Install the required Python 64 bit version and ensure your PATH environment variable points to it.
-</source>
-        <translation>Webots требует версии Python 3.9, 3.8, 3.7 or 2.7 (64 bit) с сайта python.org, с путем, прописанным в PATH.
-Чтобы все заработало, попробуйте сделать следующее:
-1. Проверьте, что команда &quot;python&quot; установлена в настройках Webots.
-2. Check the COMMAND set in the [python] section of the runtime.ini file of your controller program if any.
-3. Fix your PATH environment variable to use the required Python 64 bit version (if available).
-4. Install the required Python 64 bit version and ensure your PATH environment variable points to it.
-</translation>
-    </message>
-    <message>
         <source>In plugin &apos;%1&apos;, webots_physics_draw(int, const char*) is deprecated.</source>
         <translation>Плагин &apos;%1&apos; использует устаревший  webots_physics_draw(int, const char*).</translation>
     </message>
@@ -134,10 +197,6 @@ To fix the problem, you should:
         <translation>Ожидалось &apos;%1&apos;, получено &apos;%2&apos;</translation>
     </message>
     <message>
-        <source>All &apos;scale&apos; coordinates must be positive: z is set to abs(z).</source>
-        <translation>Все координаты в &apos;scale&apos; должны быть положительными:  Z установлен в abs(Z).</translation>
-    </message>
-    <message>
         <source>Invalid normal definition: the sizes of &apos;coordIndex&apos; and &apos;normalIndex&apos; mismatch. The normals will be computed using the creaseAngle.</source>
         <translation>Неверное определение нормали: размеры &apos;coordIndex&apos; и &apos;normalIndex&apos; не совпадают. Нормали будут вычислены используя creaseAnge.</translation>
     </message>
@@ -168,10 +227,6 @@ To fix the problem, you should:
     <message>
         <source>The language &apos;%1&apos; stored in preferences is not supported. Resetting to the language default (English).</source>
         <translation>Язык &apos;%1&apos;, записанный в настройках, не поддерживается. Возвращаемся к языку по умолчанию (English).</translation>
-    </message>
-    <message>
-        <source>Cannot create the Webots temporary directory &quot;%1&quot;</source>
-        <translation>Не удалось создатьвременную папку Webots &quot;%1&quot;</translation>
     </message>
     <message>
         <source>integer value</source>
@@ -206,10 +261,6 @@ To fix the problem, you should:
         <translation>Нельзя вставить узел &apos;%1&apos; в поле &apos;%2&apos; узла &apos;%3&apos;:тройка &quot;слотов&quot; не разрешается.</translation>
     </message>
     <message>
-        <source>All &apos;scale&apos; coordinates must be positive: x is set to abs(x).</source>
-        <translation>Все координаты в &apos;scale&apos; должны быть положительными:  X установлен в abs(X).</translation>
-    </message>
-    <message>
         <source>Only a single %1 node can be inserted in the &apos;%2&apos; field of a %3 node.</source>
         <translation>Только один узел &apos;%1&apos; может быть вставлен в поле &apos;%2&apos; узла &apos;%3&apos;.</translation>
     </message>
@@ -226,16 +277,8 @@ To fix the problem, you should:
         <translation>Не найден такой DEF-узел; узел USE преобразован в DEF. Проверьте, что поля идут в том же порядке, что и в определении базового узла.</translation>
     </message>
     <message>
-        <source>&apos;%1&apos; not found.</source>
-        <translation>&apos;%1&apos; не найден.</translation>
-    </message>
-    <message>
         <source>The Classic theme is the theme you are already familiar with, Webots&apos; look for the last few years.</source>
         <translation>Тема Classic это уже знакомая вам тема, так Webots выглядел последние несколько лет.</translation>
-    </message>
-    <message>
-        <source>Texture export fails, because too much textures are sharing the same name: %1.</source>
-        <translation>Экспорт некстуры не удался, потому что слишком много текстур используют одно и то же имя: %1.</translation>
     </message>
     <message>
         <source>&apos;scale&apos; was made uniform because of physics constraints inside a &apos;boundingObject&apos;.</source>
@@ -248,10 +291,6 @@ To fix the problem, you should:
     <message>
         <source>Optional Rendering</source>
         <translation>Опциональная отрисовка</translation>
-    </message>
-    <message>
-        <source>All &apos;scale&apos; coordinates must be positive: y is set to abs(y).</source>
-        <translation>Все координаты в &apos;scale&apos; должны быть положительными:  Y установлен в abs(Y).</translation>
     </message>
     <message>
         <source>end of file</source>
@@ -306,22 +345,6 @@ To fix the problem, you should:
         <translation>Для темы Ночь характерны чистые линии, плоский дизайн и приглушенная цветовая палитра с кучей прочих бла-бла-бла... .</translation>
     </message>
     <message>
-        <source>All &apos;scale&apos; coordinates must be positive: x is set to 1.0.</source>
-        <translation>Все координаты в &apos;scale&apos; должны быть положительными:  X установлен в 1.0.</translation>
-    </message>
-    <message>
-        <source>All &apos;scale&apos; coordinates must be positive: y is set to 1.0.</source>
-        <translation>Все координаты в &apos;scale&apos; должны быть положительными:  Y установлен в 1.0.</translation>
-    </message>
-    <message>
-        <source>All &apos;scale&apos; coordinates must be positive: z is set to 1.0.</source>
-        <translation>Все координаты в &apos;scale&apos; должны быть положительными:  Z установлен в 1.0.</translation>
-    </message>
-    <message>
-        <source>The creation of the IndexedFaceSet physical boundaries failed because its geometry is not suitable for representing a bounded closed volume</source>
-        <translation>Не удалось создать физические границы по узлу IndexedFaceSet, посколько он не представляет ограниченного замкнутого объема</translation>
-    </message>
-    <message>
         <source>Billboard nodes cannot be USEd.</source>
         <translation>На узел Billboard нельзя ссылаться по USE.</translation>
     </message>
@@ -346,10 +369,6 @@ To fix the problem, you should:
         <translation></translation>
     </message>
     <message>
-        <source>Mass properties computation failed for this IndexedFaceSet</source>
-        <translation>Вычисление массы не удалось для этого IndexedFaceSet</translation>
-    </message>
-    <message>
         <source>Invalid &apos;boundingObject&apos; (Group with no child set): the inertia matrix cannot be calculated.</source>
         <translation>Неправильный &apos;boundingObject&apos; (в Group.children нет узлов, определяющих геометрию): невозможно рассчитать матрицу инерции.</translation>
     </message>
@@ -360,10 +379,6 @@ To fix the problem, you should:
     <message>
         <source>Cannot initialize OpenAL default device &apos;%1&apos;</source>
         <translation>Не удалось инициализировать устройство OpenAL по умолчанию &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>To run Matlab controllers, you need to install Matlab 64-bit and ensure it is available from the DOS CMD.EXE console.</source>
-        <translation>Чтобы запускать контроллеры на Matlab, установите Matlab 64-bit и убедитесь, что он запускается из консоли (CMD.EXE).</translation>
     </message>
     <message>
         <source>Cannot insert %1 node in &apos;%2&apos; field of %3 node: </source>
@@ -392,10 +407,6 @@ To fix the problem, you should:
     <message>
         <source>rescale</source>
         <translation>масштабировать</translation>
-    </message>
-    <message>
-        <source>Cannot create a directory in the Webots temporary directory &quot;%1&quot;</source>
-        <translation>Не удалось создать подпапку во временной папке Webots &quot;%1&quot;</translation>
     </message>
     <message>
         <source>Critical</source>
@@ -696,10 +707,6 @@ This can be caused by duplicate vertices in your mesh. Try to open your model in
         <translation>Проверьте, что в геометрии нет &quot;сингулярностей&quot; и она представляет ограниченный замкнутый объем. В частности, каждый треугольник должен появляться однократно с ориентацией &quot;наружу&quot;.</translation>
     </message>
     <message>
-        <source>A resource file can be defined relatively to the worlds directory of the current project, relatively to the worlds directory of the default project, relatively to its protos directory (if defined in a PROTO), or absolutely.</source>
-        <translation>Путь к ресурсному файлу может быть задан относительно: папки &apos;worlds&apos; текущего проекта, такой же папки дефолтного проекта, папки &apos;protos&apos; 9если задается в PROTO), или же абсолютным путем.</translation>
-    </message>
-    <message>
         <source>Cannot initialize the sound engine: %1</source>
         <translation>Не удалось инициализировать звуковой движок: &apos;%1&apos;</translation>
     </message>
@@ -711,1146 +718,124 @@ This can be caused by duplicate vertices in your mesh. Try to open your model in
         <source>Expected VRML97 type but found &apos;%2&apos;</source>
         <translation>Ожидался тип VRML97, а обнаружен &apos;%2&apos;</translation>
     </message>
-</context>
-<context>
-    <name>WbAddInertiaMatrixDialog</name>
     <message>
-        <source>Add</source>
-        <translation>Добавить</translation>
-    </message>
-    <message>
-        <source>If no center of mass is currently specified, a zero 3D vector will be inserted.</source>
-        <translation>Если центр масс еще не определен, будет вставлен нулевой 3D-вектор.</translation>
-    </message>
-    <message>
-        <source>The center of mass will be set as the bounding object center of mass.</source>
-        <translation>Центр масс будет установлен по ЦМ boundingObject.</translation>
-    </message>
-    <message>
-        <source>If the density is currently specified, it will be set as -1 and the mass will be set as the bounding object mass.</source>
-        <translation>Если установлена плотность, она будет сброшена в -1, а за массу будет принята масса boundingObject.</translation>
-    </message>
-    <message>
-        <source>The density will be set as -1 and if the mass is negative or zero, it will be set as 1.</source>
-        <translation>Плотность будет установлена в -1, а если масса неположительна, то она будет установлена в 1.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Отменить</translation>
-    </message>
-    <message>
-        <source>No info available.</source>
-        <translation>Нет информации.</translation>
-    </message>
-    <message>
-        <source>Insert the identity matrix
- [ 1 1 1, 0 0 0]</source>
-        <translation>Вставить идентичную матрицу
- [ 1 1 1, 0 0 0]</translation>
-    </message>
-    <message>
-        <source>Add inertia matrix</source>
-        <translation>Добавить инерциальную матрицу</translation>
-    </message>
-    <message>
-        <source>Identity matrix</source>
-        <translation>Единичная матрица</translation>
-    </message>
-    <message>
-        <source>The inertia matrix is computed using the solid bounding object and the frame obtained by translating solid&apos;s frame to bounding object&apos;s center of mass.</source>
-        <translation>Матрица инерции рассчитана по твердотельному boundingObject... .</translation>
-    </message>
-    <message>
-        <source>Bounding object based</source>
-        <translation>на базе boundingObject</translation>
-    </message>
-</context>
-<context>
-    <name>WbAddNodeDialog</name>
-    <message>
-        <source>Add</source>
-        <translation>Добавить</translation>
-    </message>
-    <message>
-        <source>Filter node names. Only the node names containing the given string are displayed in the tree below. Regular expressions can be used.</source>
-        <translation>Фильтр для имен узлов. Только узлы с именами, содержащими данную строку, отобразятся в дереве ниже. Можно использовать регулярные выражения.</translation>
-    </message>
-    <message>
-        <source>Find:</source>
-        <translation>Найти:</translation>
-    </message>
-    <message>
-        <source>Node not available because another project PROTO model with the same name already exists in your local project.</source>
-        <translation>Узел недоступен, потому что другой проектный PROTO с тем же именем уже существует в вашем локальном проекте.</translation>
-    </message>
-    <message>
-        <source>This folder lists all Webots base nodes that are suitable to insert at (or below) the currently selected Scene Tree line.</source>
-        <translation>В этой папке перечислены все базовые узлы, в позицию (или ниже) выбранной строки дерева сцены.</translation>
-    </message>
-    <message>
-        <source>&lt;font color=&quot;red&quot;&gt;WARNING: this node contains a Geometry with non-positive dimensions and hence cannot be inserted in a bounding object.&lt;/font&gt;&lt;br/&gt;</source>
-        <translation>&lt;font color=&quot;red&quot;&gt;ВНИМАНИЕ: в этом узле сть Geometry с не-положительными размерами,поэтому он не может быть вставлен в boundingObject.&lt;/font&gt;&lt;br/&gt;</translation>
-    </message>
-    <message>
-        <source>This folder lists all suitable node that were defined (using DEF) above the current line of the Scene Tree.</source>
-        <translation>В этой папке перечислены все подходящие узлы, определенные с DEF выше текущей строки дерева сцены.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Отменить</translation>
-    </message>
-    <message>
-        <source>Files (*.wbo *.WBO)</source>
-        <translation>Файлы (*.wbo *.WBO)</translation>
-    </message>
-    <message>
-        <source>PROTO nodes (Current Project)</source>
-        <translation>Узлы PROTO (Текущий  проект)</translation>
-    </message>
-    <message>
-        <source>This folder lists all suitable PROTO nodes from the local &apos;protos&apos; directory: &apos;%1&apos;.</source>
-        <translation>В этой папке перечислены все подходящие PROTO узлы из локальной папки protos: &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Add a node</source>
-        <translation>Добавить узел</translation>
-    </message>
-    <message>
-        <source>No info available.</source>
-        <translation>Нет информации.</translation>
-    </message>
-    <message>
-        <source>This folder lists all suitable PROTO nodes provided by Webots.</source>
-        <translation>В этой папке перечислены все подходящие PROTO узлы из библиотеки Webots.</translation>
-    </message>
-    <message>
-        <source>Import...</source>
-        <translation>Импорт...</translation>
-    </message>
-    <message>
-        <source>Base nodes</source>
-        <translation>Базовые узлы</translation>
-    </message>
-    <message>
-        <source>Documentation: &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
-        <translation>Документация: &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;%1&apos;&gt;%1&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Node not available because another project PROTO model with the same name already exists in your extra projects.</source>
-        <translation>Узел недоступен, потому что другой проектный PROTO с тем же именем уже существует в ваших дополнительных проектах.</translation>
-    </message>
-    <message>
-        <source>License: </source>
-        <translation>Лицензия: </translation>
-    </message>
-    <message>
-        <source>This folder lists all suitable PROTO nodes from the extra projects located in: &apos;%1&apos;.</source>
-        <translation>В этой папке перечислены все подходящие PROTO узлы из дополнительных проектов отсюда: &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>The &quot;%1&quot; icon should have a dimension of 128x128 pixels.</source>
-        <translation>Иконка &quot;%1&quot; должна иметь размеры 128x128 пикселей.</translation>
-    </message>
-    <message>
-        <source>The icon file &apos;%1&apos; does not exactly match the PROTO name. Expected &apos;%2.png&apos;</source>
-        <translation>Файл иконки &apos;%1&apos; не совпадает с именем PROTO. Должно быть &apos;%2.png&apos;</translation>
-    </message>
-    <message>
-        <source>PROTO nodes (Extra Projects)</source>
-        <translation>Узлы PROTO (Дополнительные проекты)</translation>
-    </message>
-    <message>
-        <source>Import Webots Object</source>
-        <translation>Импортировать объект Webots</translation>
-    </message>
-    <message>
-        <source> &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;%1&apos;&gt;More information.&lt;/a&gt;</source>
-        <translation> &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;%1&apos;&gt;Узнать больше.&lt;/a&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>WbMainWindow</name>
-    <message>
-        <source>N/A</source>
-        <translation>не применимо</translation>
-    </message>
-    <message>
-        <source>Would you like to create one?</source>
-        <translation>Хотели бы вы создать его?</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>Выйти</translation>
-    </message>
-    <message>
-        <source>Quit</source>
-        <translation>Завершить</translation>
-    </message>
-    <message>
-        <source>&amp;Edit</source>
-        <translation>&amp;Редактировать</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation>&amp;Файл</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Справка</translation>
-    </message>
-    <message>
-        <source>&amp;View</source>
-        <translation>&amp;Вид</translation>
-    </message>
-    <message>
-        <source>Press ESC to stop recording the movie and quit fullscreen mode.</source>
-        <translation>Нажмите ESC, чтобы остановить запись фильма и выйти из полноэкранного режима.</translation>
-    </message>
-    <message>
-        <source>&amp;Check for updates...</source>
-        <translation>&amp;Проверить обновления...</translation>
-    </message>
-    <message>
-        <source>Open the Preferences window.</source>
-        <translation>Открыть окно настроек.</translation>
-    </message>
-    <message>
-        <source>Edit &amp;Physics Plugin</source>
-        <translation>Редактировать &amp;Физический плагин</translation>
-    </message>
-    <message>
-        <source>Report a bug to the GitHub repository.</source>
-        <translation>Сообщить об ошибке в репозиторий GitHub.</translation>
-    </message>
-    <message>
-        <source>System: </source>
-        <translation>Система: </translation>
-    </message>
-    <message>
-        <source>Show the simulation view in fullscreen mode.</source>
-        <translation>Показать вид моделирования в полноэкранном режиме.</translation>
-    </message>
-    <message>
-        <source>&amp;Display Devices</source>
-        <translation>Показать &amp;Устройства</translation>
-    </message>
-    <message>
-        <source>&amp;Bug Report...</source>
-        <translation>Сообщить об о&amp;шибке...</translation>
-    </message>
-    <message>
-        <source>Available GPU memory: </source>
-        <translation>Доступная память GPU: </translation>
-    </message>
-    <message>
-        <source>%1: Terminating.</source>
-        <translation>%1: Останавливаем.</translation>
-    </message>
-    <message>
-        <source>&amp;Virtual Reality Headset</source>
-        <translation>&amp;VR-гарнитура</translation>
-    </message>
-    <message>
-        <source>&amp;Open Recent World</source>
-        <translation>Открыть &amp;Недавнюю сцену</translation>
-    </message>
-    <message>
-        <source>OpenGL renderer: </source>
-        <translation>Рендерер OpenGL: </translation>
-    </message>
-    <message>
-        <source>Restore &amp;Layout</source>
-        <translation>&amp;Восстановить окна</translation>
-    </message>
-    <message>
-        <source>How do I apply a force or a torque to an object?</source>
-        <translation>Как применить cилу или вращательный момент к объекту?</translation>
-    </message>
-    <message>
-        <source>Watch the latest Webots movies on YouTube.</source>
-        <translation>Смотрите последние фильмы про Webots на YouTube.</translation>
-    </message>
-    <message>
-        <source>How do I &amp;navigate in 3D?</source>
-        <translation>Как перемещаться в &amp;3D-окне?</translation>
-    </message>
-    <message>
-        <source>&amp;RangeFinder Devices</source>
-        <translation>Устройства &amp;RangeFinder</translation>
-    </message>
-    <message>
-        <source>&amp;OpenGL Information...</source>
-        <translation>Информация &amp;OpenGL...</translation>
-    </message>
-    <message>
-        <source>How do I &amp;move an object?</source>
-        <translation>Как &amp;переместить объект?</translation>
-    </message>
-    <message>
-        <source>In order to move an object: first &lt;strong&gt;select the object&lt;/strong&gt; with a left mouse button click.&lt;br/&gt;&lt;br/&gt;Then &lt;strong&gt;click and drag the arrow-shaped handles&lt;/strong&gt; to translate or rotate the object along the corresponding axis.&lt;br/&gt;&lt;br/&gt;Alternatively, you can hold the shift key and use the mouse:&lt;br/&gt;&lt;em&gt;Horizontal translation:&lt;/em&gt;&lt;br/&gt;Use the left mouse button while the shift key is down to drag an object parallel to the ground.&lt;br/&gt;&lt;em&gt;Vertical rotation:&lt;/em&gt;&lt;br/&gt;Use the right mouse button while the shift key is down to rotate an object around the world&apos;s vertical axis.&lt;br/&gt;&lt;em&gt;Lift:&lt;/em&gt;&lt;br/&gt;Press both left and right mouse buttons, press the middle mouse button, or roll the mouse wheel while the shift key is down to raise or lower the selected object.</source>
-        <translation>Чтобы переместить объект: сначала &lt;strong&gt;выберите объект&lt;/strong&gt;, щелкнув левой кнопкой мыши.&lt;br/&gt;&lt;br/&gt;Затем &lt;strong&gt;нажмите и перетащите стреловидные маркеры&lt;/strong&gt;. чтобы переместить или повернуть объект вдоль соответствующей оси.&lt;br/&gt;&lt;br/&gt;Кроме того, вы можете удерживать клавишу Shift и использовать мышь:&lt;br/&gt;&lt;em&gt;Горизонтальное перемещение:&lt;/em&gt;&lt;br/&gt; Используйте левую кнопку мыши, когда нажата клавиша Shift, чтобы перетащить объект параллельно земле.&lt;br/&gt;&lt;em&gt;Вертикальное вращение:&lt;/em&gt;&lt;br/&gt;Используйте правую кнопку мыши, когда клавиша Shift нажата, чтобы повернуть объект вокруг вертикальной оси мира.&lt;br/&gt;&lt;em&gt;Подъем:&lt;/em&gt;&lt;br/&gt;нажмите левую и правую кнопки мыши, нажмите среднюю кнопку мыши или прокрутите колесико мыши, пока нажата клавиша Shift. вниз, чтобы поднять или опустить выбранный объект.</translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Ctrl+4&lt;/i&gt; to toggle the 3D scene rendering.</source>
-        <translation>Нажмите &lt;i&gt;Ctrl+4&lt;/i&gt;, чтобы переключить отображение 3D-сцены.</translation>
-    </message>
-    <message>
-        <source>Open the Webots git repository on GitHub.</source>
-        <translation>Открыть git-репозиторий с исходнками Webots.</translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Cmd+2&lt;/i&gt; to run the simulation in real time.</source>
-        <translation>Нажмите &lt;i&gt;Cmd+2&lt;/i&gt;, чтобы запустить симуляцию в реальном времени.</translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Cmd+Shift+P&lt;/i&gt; to take a screenshot of the 3D screen.</source>
-        <translation>Нажмите &lt;i&gt;Cmd+Shift+P&lt;/i&gt;, чтобы сделать снимок 3D-экрана.</translation>
-    </message>
-    <message>
-        <source>Show information about applying a force or a torque to an object in the 3D window.</source>
-        <translation>Показать информацию о приложении силы или крутящего момента к объекту в 3D-окне.</translation>
-    </message>
-    <message>
-        <source>&lt;strong&gt;Force:&lt;/strong&gt;&lt;br/&gt; Place the mouse pointer where the force will apply and hold down the Alt key and the left mouse button together while dragging the mouse.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Torque:&lt;/strong&gt;&lt;br/&gt;Place the mouse pointer on the object and hold down the Alt key and the right mouse button together while dragging the mouse.&lt;br/&gt;&lt;br/&gt;If you have a one-button mouse, hold down also the Control key (Ctrl) to emulate the right mouse button.</source>
-        <translation>&lt;strong&gt;Сила:&lt;/strong&gt;&lt;br/&gt; Установите курсор на точку приложения силы и, удерживая ALT и левую кнопку мыши, тяните объект мышью в нужную сторону.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Вращательный момент:&lt;/strong&gt;&lt;br/&gt;Укажите курсором на объект и, удерживая ALT и правую кнопку мыши, тяните, чтобы закрутить в нужную сторону. &lt;br/&gt;&lt;br/&gt;Если у вас мышь с одной кнопкой, удерживайте также клавишу CTRL, чтобы имитировать нажатие правой кнопки.</translation>
-    </message>
-    <message>
-        <source>&amp;Build</source>
-        <translation>&amp;Построить</translation>
-    </message>
-    <message>
-        <source>&amp;Webots for automobiles</source>
-        <translation>А&amp;втомобильный Webots</translation>
-    </message>
-    <message>
-        <source>&lt;strong&gt;Force:&lt;/strong&gt;&lt;br/&gt; Place the mouse pointer where the force will apply and hold down the Alt key and the left mouse button together while dragging the mouse.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Torque:&lt;/strong&gt;&lt;br/&gt;Place the mouse pointer on the object and hold down the Alt key and the right mouse button together while dragging the mouse.</source>
-        <translation>&lt;strong&gt;Сила:&lt;/strong&gt;&lt;br/&gt; Установите курсор на точку приложения силы и, удерживая ALT и левую кнопку мыши, тяните объект мышью в нужную сторону.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Вращательный момент:&lt;/strong&gt;&lt;br/&gt;Укажите курсором на объект и, удерживая ALT и правую кнопку мыши, тяните, чтобы закрутить в нужную сторону.</translation>
-    </message>
-    <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;Инструменты</translation>
-    </message>
-    <message>
-        <source>Open the Webots user guide online.</source>
-        <translation>Открыть руководство пользователя Webots.</translation>
-    </message>
-    <message>
-        <source>New Project &amp;Directory...</source>
-        <translation>Новая папка &amp;Проекта...</translation>
-    </message>
-    <message>
-        <source>Follow Cyberbotics on LinkedIn.</source>
-        <translation>Follow Cyberbotics on LinkedIn.</translation>
-    </message>
-    <message>
-        <source>&amp;GitHub repository...</source>
-        <translation>Репозиторий &amp;GitHub...</translation>
-    </message>
-    <message>
-        <source>Screenshots will be saved in &lt;i&gt;%1&lt;/i&gt;.</source>
-        <translation>Скриншоты будут сохранены в &lt;i&gt;%1&lt;/i&gt;.</translation>
-    </message>
-    <message>
-        <source>%1 bytes</source>
-        <translation>%1 байтов</translation>
-    </message>
-    <message>
-        <source>Please install SteamVR to use a virtual reality headset.</source>
-        <translation>Установите SteamVR, чтобы использовать VR-гарнитуру.</translation>
-    </message>
-    <message>
-        <source>Opening world file</source>
-        <translation>Открывается файл сцены</translation>
-    </message>
-    <message>
-        <source>VRML97 Files (*.wrl *.WRL)</source>
-        <translation>VRML97 Files (*.wrl *.WRL)</translation>
-    </message>
-    <message>
-        <source>&amp;Fullscreen</source>
-        <translation>Полный &amp;Экран</translation>
-    </message>
-    <message>
-        <source>Show &apos;%1&apos; overlay</source>
-        <translation>Показать окошко &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>HTML Files (*.html *.HTML)</source>
-        <translation>Файлы HTML (*.html *.HTML)</translation>
-    </message>
-    <message>
-        <source>Open the Webots reference manual online.</source>
-        <translation>Открыть онлайн-справочник Webots.</translation>
-    </message>
-    <message>
-        <source>OpenGL information</source>
-        <translation>Информация OpenGL</translation>
-    </message>
-    <message>
-        <source>&amp;User Guide</source>
-        <translation>&amp;Руководство пользователя</translation>
-    </message>
-    <message>
-        <source>Add a 3D object to the Scene Tree.</source>
-        <translation>Добавить 3D-объект к дереву сцены.</translation>
-    </message>
-    <message>
-        <source>Show overlay of range-finder device &apos;%1&apos;.</source>
-        <translation>Показать окошко дальномера &quot;%1&quot;.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Отменить</translation>
-    </message>
-    <message>
-        <source>Display information about Webots.</source>
-        <translation>Показать информацию о программе Webots.</translation>
-    </message>
-    <message>
-        <source>Export the whole Scene Tree as a VRML97 file.</source>
-        <translation>Экспортировать целиком дерево сцены как файл в формате VRML97.</translation>
-    </message>
-    <message>
-        <source>Open the Webots update dialog.</source>
-        <translation>Открыть окно обновлений Webots.</translation>
-    </message>
-    <message>
-        <source>Show information about moving an object in the 3D window.</source>
-        <translation>Показать информацию о перемещении объекта в 3D-окне.</translation>
-    </message>
-    <message>
-        <source>&lt;strong&gt;Rotate:&lt;/strong&gt;&lt;br/&gt;To rotate the camera around the x and y axis, you have to set the mouse pointer in the 3D scene, press the left mouse button and drag the mouse:&lt;br/&gt;- if you clicked on an object, the rotation will be centered around the picked point on this object.&lt;br/&gt;- if you clicked outside of any object, the rotation will be centered around the position of the camera.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Translate:&lt;/strong&gt;&lt;br/&gt;To translate the camera in the x and y directions, you have to set the mouse pointer in the 3D scene, press the right mouse button and drag the mouse.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Zoom / Tilt:&lt;/strong&gt;&lt;br/&gt;Set the mouse pointer in the 3D scene, then:
-- if you press both left and right mouse buttons (or the middle button) and drag the mouse vertically, the camera will zoom in or out.&lt;br/&gt;- if you press both left and right mouse buttons (or the middle button) and drag the mouse horizontally, the camera will rotate around its z axis (tilt movement).&lt;br/&gt;- if you use the wheel of the mouse, the camera will zoom in or out.</source>
-        <translation>&lt;strong&gt;Поворот:&lt;/strong&gt;&lt;br/&gt;Чтобы повернуть камеру вокруг осей X и Y, вам нужно установить указатель мыши в 3D-сцене, нажать левую кнопку мыши и перетащить мышь:&lt;br/&gt; - если вы щелкнули по объекту, вращение будет сосредоточено вокруг указанной точки на этом объекте.&lt;br/&gt;- если вы щелкнули за пределами любого объекта, вращение будет сосредоточено вокруг положения камеры.&lt;br/&gt; &lt;br/&gt;&lt;strong&gt;Перемещение:&lt;/strong&gt;&lt;br/&gt;Чтобы переместить камеру в направлениях x и y, вы должны установить указатель мыши в 3D-сцене, нажать правую кнопку мыши и перетащить мышь. &lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Масштаб/Наклон.&lt;/strong&gt;&lt;br/&gt;Установите указатель мыши на 3D-сцену, затем:
-- если вы нажмете левую и правую кнопки мыши (или среднюю кнопку) и перетащите мышь вертикально, камера будет увеличивать или уменьшать масштаб.&lt;br/&gt;- если вы нажмете левую и правую кнопки мыши (или среднюю кнопку) и перетащите мышь горизонтально, камера будет вращаться вокруг своей оси z (движение наклона).&lt;br/&gt;- если вы используете колесо мыши, камера будет увеличивать или уменьшать масштаб.</translation>
-    </message>
-    <message>
-        <source>&lt;strong&gt;Force:&lt;/strong&gt;&lt;br/&gt; Place the mouse pointer where the force will apply and hold down the Alt key, the Control key (Ctrl) and the left mouse button together while dragging the mouse.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Torque:&lt;/strong&gt;&lt;br/&gt;Place the mouse pointer on the object and hold down the Alt key, the Control key (Ctrl) and the right mouse button together while dragging the mouse.</source>
-        <translation>&lt;strong&gt;Сила:&lt;/strong&gt;&lt;br/&gt; Установите курсор на точку приложения силы и, удерживая одновременно ALT, CTRL и левую кнопку мыши, тяните объект мышью в нужную сторону.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Вращательный момент:&lt;/strong&gt;&lt;br/&gt;Укажите курсором на объект и, удерживая одновременно ALT, CTRL и правую кнопку мыши, тяните, чтобы закрутить в нужную сторону.</translation>
-    </message>
-    <message>
-        <source>&amp;Keep informed</source>
-        <translation>&amp;Держать в курсе</translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Cmd+0&lt;/i&gt; to pause the simulation.</source>
-        <translation>Нажмите &lt;i&gt;Cmd+0&lt;/i&gt;, чтобы приостановить симуляцию.</translation>
-    </message>
-    <message>
-        <source>Export HTML5 Scene</source>
-        <translation>Экспортировать сцену в HTML5</translation>
-    </message>
-    <message>
-        <source>Stop HTML5 animation recording.</source>
-        <translation>Остановить запись HTML5-анимации.</translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Ctrl+0&lt;/i&gt; to pause the simulation.</source>
-        <translation>Нажмите &lt;i&gt;Ctrl+0&lt;/i&gt;, чтобы приостановить симуляцию.</translation>
-    </message>
-    <message>
-        <source>Start HTML5 animation recording.</source>
-        <translation>Начать запись HTML5-анимации.</translation>
-    </message>
-    <message>
-        <source>Cyberbotics &amp;Website...</source>
-        <translation>Cyberbotics &amp;Website...</translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Ctrl+3&lt;/i&gt; to run the simulation as fast as possible.</source>
-        <translation>Нажмите &lt;i&gt;Ctrl+3&lt;/i&gt;, чтобы запустить симуляцию как можно быстрее.</translation>
-    </message>
-    <message>
-        <source>Show overlay of camera device &apos;%1&apos;.</source>
-        <translation>Показать окошко камеры &quot;%1&quot;.</translation>
-    </message>
-    <message>
-        <source>Show information about navigation in the 3D window.</source>
-        <translation>Показать информацию о навигации в 3D-окне.</translation>
-    </message>
-    <message>
-        <source>Restore windows factory layout.</source>
-        <translation>Восстановить исходной размещение окон.</translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Cmd+3&lt;/i&gt; to run the simulation as fast as possible.</source>
-        <translation>Нажмите &lt;i&gt;Cmd+3&lt;/i&gt;, чтобы запустить симуляцию как можно быстрее.</translation>
-    </message>
-    <message>
-        <source>New &amp;Physics Plugin...</source>
-        <translation>Новый &amp;Физический плагин...</translation>
-    </message>
-    <message>
-        <source>Host name: </source>
-        <translation>Имя хоста: </translation>
-    </message>
-    <message>
-        <source>&amp;Export VRML97...</source>
-        <translation>Экспорт &amp;VRML97...</translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Ctrl+1&lt;/i&gt; to execute one basic time step.</source>
-        <translation>Нажмите &lt;i&gt;Ctrl+1&lt;/i&gt;, чтобы выполнить один шаг симуляции.</translation>
-    </message>
-    <message>
-        <source>Follow Webots on &amp;Twitter...</source>
-        <translation>Follow Webots on &amp;Twitter...</translation>
-    </message>
-    <message>
-        <source>Join the &amp;Discord channel...</source>
-        <translation>Перейти &amp;Discord-канал Webots...</translation>
-    </message>
-    <message>
-        <source>Ca&amp;mera Devices</source>
-        <translation>&amp;Камеры</translation>
-    </message>
-    <message>
-        <source>Webots &amp;Guided Tour...</source>
-        <translation>&amp;Экскурсия по Webots...</translation>
-    </message>
-    <message>
-        <source>Make HTML5 &amp;Animation...</source>
-        <translation>Создать &amp;Анимацию в HTML5...</translation>
-    </message>
-    <message>
-        <source>OpenGL vendor: </source>
-        <translation>Производитель OpenGL: </translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Cmd+4&lt;/i&gt; to toggle the 3D scene rendering.</source>
-        <translation>Нажмите &lt;i&gt;Cmd+4&lt;/i&gt;, чтобы переключить отображение 3D-сцены.</translation>
-    </message>
-    <message>
-        <source>&amp;Import 3D Model...</source>
-        <translation>&amp;Импортировать 3D-модель...</translation>
-    </message>
-    <message>
-        <source>Stop HTML5 &amp;Animation...</source>
-        <translation>Остановить HTML5-&amp;анимацию...</translation>
-    </message>
-    <message>
-        <source>&amp;Scene Interactions</source>
-        <translation>&amp;Взаимодействие со сценой</translation>
-    </message>
-    <message>
-        <source>Could not find the source file of the &apos;%1&apos; physics plugin.</source>
-        <translation>Не найден исходный файл физического плагина &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Open the Cyberbotics website.</source>
-        <translation>Открыть сайт Cyberbotics.</translation>
-    </message>
-    <message>
-        <source>Fullscreen mode</source>
-        <translation>Полноэкранный режим</translation>
-    </message>
-    <message>
-        <source>Show overlay of display device &apos;%1&apos;.</source>
-        <translation>Показать окошко дисплея &quot;%1&quot;.</translation>
-    </message>
-    <message>
-        <source>&amp;About...</source>
-        <translation>&amp;О программе...</translation>
-    </message>
-    <message>
-        <source>New Robot &amp;Controller...</source>
-        <translation>Новый &amp;Контроллер робота...</translation>
-    </message>
-    <message>
-        <source>&amp;Export HTML5 Scene...</source>
-        <translation>&amp;Экспорт HTML5...</translation>
-    </message>
-    <message>
-        <source>Show information about the current OpenGL hardware and driver.</source>
-        <translation>Показать информацию о текущем оборудовании и драйвере OpenGL.</translation>
-    </message>
-    <message>
-        <source>Export World as VRML97</source>
-        <translation>Экспортировать сцену как VRML97</translation>
-    </message>
-    <message>
-        <source>Create a new project directory.</source>
-        <translation>Создать новую папку проекта.</translation>
-    </message>
-    <message>
-        <source>Loading world</source>
-        <translation>Загружается сцена</translation>
-    </message>
-    <message>
-        <source>&amp;Follow Object</source>
-        <translation>&amp;Следовать за объектом</translation>
-    </message>
-    <message>
-        <source>Saving the .wbt file will store the current world state: the objects position and rotation and other fields may differ from the original file!</source>
-        <translation>При сохранении файла .wbt будет сохранено текущее состояние мира: положение и поворот объектов, а также другие поля могут отличаться от исходного файла!</translation>
-    </message>
-    <message>
-        <source>You are entering fullscreen mode.</source>
-        <translation>Вы входите в полноэкранный режим.</translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Cmd+1&lt;/i&gt; to execute one basic time step.</source>
-        <translation>Нажмите &lt;i&gt;Cmd+1&lt;/i&gt;, чтобы выполнить один шаг симуляции.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Note:&lt;/b&gt; When taking a screenshot in fullscreen mode, the resulting screenshot&apos;s save path will be chosen automatically.</source>
-        <translation>&lt;b&gt;Примечание:&lt;/b&gt;Если скриншот снимаем в полноэкранном режиме, путь сохранения файла выбирается автоматически.</translation>
-    </message>
-    <message>
-        <source>World Files (*.wbt *.WBT)</source>
-        <translation>Файлы сцен Webots (*.wbt *.WBT)</translation>
-    </message>
-    <message>
-        <source>The simulation has run!</source>
-        <translation>Симуляция уже выполнялась!</translation>
-    </message>
-    <message>
-        <source>Welcome to Webots!</source>
-        <translation>Добро пожаловать в Webots!</translation>
-    </message>
-    <message>
-        <source>OpenGL version: </source>
-        <translation>Версия OpenGL: </translation>
-    </message>
-    <message>
-        <source>Open the Webots for automobiles book online.</source>
-        <translation>Открыть онлайн-книгу про автомобили в Webots.</translation>
-    </message>
-    <message>
-        <source>Keep informed about the latest Webots news with the Webots newsletter.</source>
-        <translation>Получать новости Webots через почтовую рассылку.</translation>
-    </message>
-    <message>
-        <source>This simulation does not currently use a physics plugin.</source>
-        <translation>Эта симуляция не использует плагин физики.</translation>
-    </message>
-    <message>
-        <source>&amp;Reference manual</source>
-        <translation>&amp;Справочник</translation>
-    </message>
-    <message>
-        <source>&amp;Optional Rendering</source>
-        <translation>&amp;Дополнительные отрисовки</translation>
-    </message>
-    <message>
-        <source>Create a new controller program.</source>
-        <translation>Создать новую программу контроллера.</translation>
-    </message>
-    <message>
-        <source>Internal error</source>
-        <translation>Внутренняя ошибка</translation>
-    </message>
-    <message>
-        <source>Question</source>
-        <translation>Вопрос</translation>
-    </message>
-    <message>
-        <source>Create a new physics plugin.</source>
-        <translation>Создать новый физический плагин.</translation>
-    </message>
-    <message>
-        <source>No virtual reality headset connected.</source>
-        <translation>VR-очки или  шлем не найдены.</translation>
-    </message>
-    <message>
-        <source>&amp;Simulation</source>
-        <translation>&amp;Симуляция</translation>
-    </message>
-    <message>
-        <source>&amp;Preferences...</source>
-        <translation>&amp;Настройки...</translation>
-    </message>
-    <message>
-        <source>How do I move an object?</source>
-        <translation>Как переместить объект?</translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Ctrl+Shift+P&lt;/i&gt; to take a screenshot of the 3D screen.</source>
-        <translation>Нажмите &lt;i&gt;Ctrl+Shift+P&lt;/i&gt;, чтобы сделать снимок 3D-экрана.</translation>
-    </message>
-    <message>
-        <source>Press &lt;i&gt;Ctrl+2&lt;/i&gt; to run the simulation in real time.</source>
-        <translation>Нажмите &lt;i&gt;Ctrl+2&lt;/i&gt;, чтобы запустить симуляцию в реальном времени.</translation>
-    </message>
-    <message>
-        <source>Terminate the Webots application.</source>
-        <translation>Завершить работу приложения Webots.</translation>
-    </message>
-    <message>
-        <source>Could not find the source file of the &apos;%1&apos; controller.</source>
-        <translation>Не найден исходный файл контроллера &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>&amp;Overlays</source>
-        <translation>Накладные &amp;окошки</translation>
-    </message>
-    <message>
-        <source>Start a guided tour demonstrating Webots capabilities.</source>
-        <translation>Начать экскурсию, демонстрирующую возможности Webots.</translation>
-    </message>
-    <message>
-        <source>Cannot open the document: &apos;%1&apos;.</source>
-        <translation>Не удается открыть документ: &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Change View</source>
-        <translation>Изменить Вид</translation>
-    </message>
-    <message>
-        <source>Follow Cyberbotics on &amp;LinkedIn...</source>
-        <translation>Follow Cyberbotics on &amp;LinkedIn...</translation>
-    </message>
-    <message>
-        <source>Press ESC to quit fullscreen mode.</source>
-        <translation>Нажмите ESC, чтобы выйти из полноэкранного режима.</translation>
-    </message>
-    <message>
-        <source>Subscribe to the &amp;Newsletter...</source>
-        <translation>Подписаться на &amp;Рассылку...</translation>
-    </message>
-    <message>
-        <source>Open this simulation&apos;s physics plugin in the text editor.</source>
-        <translation>Открыть исходны код физического плагина в текстовом редакторе.</translation>
-    </message>
-    <message>
-        <source>&amp;Wizards</source>
-        <translation>&amp;Мастера</translation>
-    </message>
-    <message>
-        <source>Save World File</source>
-        <translation>Сохранить мир (файл сцены)</translation>
-    </message>
-    <message>
-        <source>The HTML5 scene has been created:&lt;br&gt;%1&lt;br&gt;&lt;br&gt;Do you want to view it locally now?&lt;br&gt;&lt;br&gt;Note: please refer to the &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/web-scene#remarks-on-the-used-technologies-and-their-limitations&apos;&gt;User Guide&lt;/a&gt; if your browser prevents local files CORS requests.</source>
-        <translation>Сцена HTML5 создана:&lt;br&gt;%1&lt;br&gt;&lt;br&gt;Хотите просмотреть ее сейчас локально?&lt;br&gt;&lt;br&gt;Примечание: см. &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/web-scene#remarks-on-the-used-technologies-and-their-limitations&apos;&gt;Руководство пользователя&lt;/a&gt;, если ваш браузер запрещает CORS-запросы локальных файлов .</translation>
-    </message>
-    <message>
-        <source>Open World File</source>
-        <translation>Открыть Сцену</translation>
-    </message>
-    <message>
-        <source>Join our live community on Discord.</source>
-        <translation>Присоединиться к сообществу в Discord.</translation>
-    </message>
-    <message>
-        <source>Could not find the controller name of the &apos;%1&apos; robot.</source>
-        <translation>Не найти имя контроллера для робота &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Do you want to save this modified world?</source>
-        <translation>Сохранить  измененную сцену?</translation>
-    </message>
-    <message>
-        <source>Show &apos;%2&apos; overlay of robot &apos;%1&apos;</source>
-        <translation>Показать окошко &apos;%2&apos; робота &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>Keep informed about the latest Webots news on Twitter.</source>
-        <translation>Получать новости Webots в Twitter.</translation>
-    </message>
-    <message>
-        <source>Export the whole Scene Tree as an HTML5 file.</source>
-        <translation>Экспортировать целиком дерево сцены как файл в формате HTML5.</translation>
-    </message>
-    <message>
-        <source>How do I navigate in 3D?</source>
-        <translation>Как перемещаться в 3D-окне?</translation>
-    </message>
-    <message>
-        <source>How do I &amp;apply a force or a torque to an object?</source>
-        <translation>Как применить &amp;Cилу или вращательный момент к объекту?</translation>
-    </message>
-    <message>
-        <source>Subscribe to the Webots &amp;YouTube channel...</source>
-        <translation>Подписывайтесь на канал Webots в &amp;YouTube...</translation>
-    </message>
-</context>
-<context>
-    <name>WbPreferencesDialog</name>
-    <message>
-        <source>Low</source>
-        <translation>Низкое</translation>
-    </message>
-    <message>
-        <source>High</source>
-        <translation>Высокое</translation>
-    </message>
-    <message>
-        <source>Cache</source>
-        <translation>Кэш</translation>
-    </message>
-    <message>
-        <source>Port:</source>
-        <translation>Порт:</translation>
-    </message>
-    <message>
-        <source>Proxy</source>
-        <translation>Прокси</translation>
-    </message>
-    <message>
-        <source>Type:</source>
-        <translation>Тbп:</translation>
-    </message>
-    <message>
-        <source>Ultra</source>
-        <translation>Ульта-восыкое</translation>
-    </message>
-    <message>
-        <source>Disabled</source>
-        <translation>Отключено</translation>
-    </message>
-    <message>
-        <source>Disable shadows</source>
-        <translation>Отключить тени</translation>
-    </message>
-    <message>
-        <source>Texture Quality:</source>
-        <translation>Качество текстур:</translation>
-    </message>
-    <message>
-        <source>Python command:</source>
-        <translation>Команда Python:</translation>
-    </message>
-    <message>
-        <source>Editor font:</source>
-        <translation>Шрифт редактора:</translation>
-    </message>
-    <message>
-        <source>Check for Webots updates on startup</source>
-        <translation>Проверять обновления Webots при запуске</translation>
-    </message>
-    <message>
-        <source>Update policy:</source>
-        <translation>Политика обновлений:</translation>
-    </message>
-    <message>
-        <source>Ambient Occlusion:</source>
-        <translation>Ambient Occlusion:</translation>
-    </message>
-    <message>
-        <source>Display save warning only for scene tree edit</source>
-        <translation>Спрашивать &quot;Сохранить?&quot; только для изменений в сцене</translation>
-    </message>
-    <message>
-        <source>SOCKS v5</source>
-        <translation>SOCKS v5</translation>
-    </message>
-    <message>
-        <source>Rendering</source>
-        <translation>Отрисовка</translation>
-    </message>
-    <message>
-        <source>Network</source>
-        <translation>Сеть</translation>
-    </message>
-    <message>
-        <source>built-in python (snap), see &lt;a href=&quot;https://cyberbotics.com/doc/guide/running-extern-robot-controllers&quot;&gt;extern controllers&lt;/a&gt; for alternatives.</source>
-        <translation>встроенный python (snap), подробность здесь: &lt;a href=&quot;https://cyberbotics.com/doc/guide/running-extern-robot-controllers&quot;&gt;внешние контроллеры&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <source>Language:</source>
-        <translation>Язык:</translation>
-    </message>
-    <message>
-        <source>Medium</source>
-        <translation>Среднее</translation>
-    </message>
-    <message>
-        <source>OpenGL</source>
-        <translation>OpenGL</translation>
-    </message>
-    <message>
-        <source>Theme:</source>
-        <translation>Тема:</translation>
-    </message>
-    <message>
-        <source>We need your help to continue to improve Webots: more information at:
-https://cyberbotics.com/doc/guide/telemetry</source>
-        <translation>Нам нужна ваша помощь, чтобы продолжать совершенствовать Webots: Детали по адресу:
-https://cyberbotics.com/doc/guide/telemetry</translation>
-    </message>
-    <message>
-        <source>Max Texture Filtering:</source>
-        <translation>Максимальная фильтрация текстур:</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>Опции:</translation>
-    </message>
-    <message>
-        <source>If this option is enabled, Webots will not display any warning when you quit, reload
-or load a new world after the current world was modified by either changing the viewpoint,
-dragging, rotating, applying a force or applying a torque to an object. It will however
-still display a warning if the world was modified from the scene tree.</source>
-        <translation>Если эта опция включена, Webots не будет отображать никаких предупреждений, когда вы выходите, перезагружаете
-или загружаете новый мир после того, как текущий мир был изменен путем изменения точки обзора,
-перетаскиванием, вращением, приложением силы или приложением крутящего момента к объекту. 
-Webots по-прежнему будет отображать предупреждение, если мир был изменен из дерева сцены.</translation>
-    </message>
-    <message>
-        <source>Set the size of the cache (in MB):</source>
-        <translation>Установите размер кеша (в МБ):</translation>
-    </message>
-    <message>
-        <source>Startup mode:</source>
-        <translation>Режим запуска:</translation>
-    </message>
-    <message>
-        <source>Warnings:</source>
-        <translation>Предупреждения:</translation>
-    </message>
-    <message>
-        <source>If this option is enabled, Webots will check if a new version is available for download
-at every startup. If available, it will inform you about it.</source>
-        <translation>Если эта опция включена, Webots при каждом запуске будет проверять, 
-доступна ли новая версия для загрузки. При наличии, он сообщит вам об этом.</translation>
-    </message>
-    <message>
-        <source>The cache has been cleared.</source>
-        <translation>Кэш очищен.</translation>
-    </message>
-    <message>
-        <source>Send technical data to Webots developers</source>
-        <translation>Отправлять технические данные разработчикам Webots</translation>
-    </message>
-    <message>
-        <source>Password:</source>
-        <translation>Пароль:</translation>
-    </message>
-    <message>
-        <source>Hostname:</source>
-        <translation>Имя хоста:</translation>
-    </message>
-    <message>
-        <source>(recommended)</source>
-        <translation>(рекомендуется)</translation>
-    </message>
-    <message>
-        <source>Username:</source>
-        <translation>Пользователь:</translation>
-    </message>
-    <message>
-        <source>You have changed some settings which require Webots to be restarted. Restart Webots Now?</source>
-        <translation>Вы изменили некоторые настройки, которые требуют перезапуска Webots. Перезапустить Webots сейчас?</translation>
-    </message>
-    <message>
-        <source>Preferences</source>
-        <translation>Настройки</translation>
-    </message>
-    <message>
-        <source>Restart Now?</source>
-        <translation>Перезапустить Webots сейчас?</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation>Общее</translation>
-    </message>
-    <message>
-        <source>Activate SOCK5 proxying.</source>
-        <translation>Включить проксирование SOCK5 через proxy.</translation>
-    </message>
-    <message>
-        <source>Telemetry (&lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/telemetry&apos;&gt;info&lt;/a&gt;):</source>
-        <translation>Телеметрия (&lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/telemetry&apos;&gt;инфа&lt;/a&gt;):</translation>
-    </message>
-    <message>
-        <source>Disable anti-aliasing</source>
-        <translation>Отключить сглаживание</translation>
-    </message>
-    <message>
-        <source>Extra project path:</source>
-        <translation>Путь к дополнительным проектам:</translation>
-    </message>
-    <message>
-        <source>(restart needed)</source>
-        <translation>(нужен перезапуск)</translation>
-    </message>
-    <message>
-        <source>Physics multi-threading is enabled. This can have a noticeable impact on the simulation speed (negative or positive depending on the simulated world). In case of multi-threading, simulation replicability is not guaranteed. </source>
-        <translation>Включена многопоточность физики. Это может оказать заметное влияние на скорость симуляции (отрицательное или положительное в зависимости от симулируемого мира). В случае многопоточности воспроизводимость симуляции не гарантируется. </translation>
-    </message>
-    <message>
-        <source>The new texture quality will be applied next time the world is loaded.</source>
-        <translation>Новое качество текстур будет применено при следующей загрузке сцены.</translation>
-    </message>
-    <message>
-        <source>Number of threads:</source>
-        <translation>Число потоков:</translation>
-    </message>
-    <message>
-        <source>Extra projects may include PROTOs, controllers, plugins, etc. that you can use in your current project.</source>
-        <translation>Дополнительные проекты могут содержать PROTO, контроллеры, плагины и т. д., которые вы можете использовать в своем текущем проекте.</translation>
-    </message>
-</context>
-<context>
-    <name>WbSingleTaskApplication</name>
-    <message>
-        <source>    given as an option:</source>
-        <translation>    дано как опция:</translation>
-    </message>
-    <message>
-        <source>    Redirect the stderr of the controllers to the terminal.</source>
-        <translation>    Перенаправить вывод ошибок (stderr) контроллеров на терминал.</translation>
-    </message>
-    <message>
-        <source>OpenGL renderer: %1 (0x%2)</source>
-        <translation>OpenGL renderer: %1 (0x%2)</translation>
-    </message>
-    <message>
-        <source>The %1 PROTO is written to the file.</source>
-        <translation>PROTO %1 записано в файл.</translation>
-    </message>
-    <message>
-        <source>    Minimize the Webots window on startup.</source>
-        <translation>    Свернуть окно Webots при запуске.</translation>
-    </message>
-    <message>
-        <source>Webots version: %1</source>
-        <translation>Версия Webots: %1</translation>
-    </message>
-    <message>
-        <source>    Prevent Webots from creating blocking pop-up windows.</source>
-        <translation>    Не разрешать Webots открывать блокирующие pop-up окошки.</translation>
-    </message>
-    <message>
-        <source>Parsing the %1 PROTO...</source>
-        <translation>Читаем PROTO %1...</translation>
-    </message>
-    <message>
-        <source>    Start the Webots streaming server. Parameters may be</source>
-        <translation>    Запустить стриминговый сервер Webots. Параметры могут быть</translation>
-    </message>
-    <message>
-        <source>    Display this help message and exit.</source>
-        <translation>    Вывести это сообщение и выйти.</translation>
-    </message>
-    <message>
-        <source>    &lt;file&gt; argument. The optional &lt;steps&gt; argument is an integer value that</source>
-        <translation>    параметром &lt;file&gt;. Необязательный параметр &lt;steps&gt; - это целое число, которое</translation>
-    </message>
-    <message>
-        <source>OpenGL vendor: %1</source>
-        <translation>Производитель OpenGL: %1</translation>
-    </message>
-    <message>
-        <source>    Choose the startup mode, overriding application preferences. The &lt;mode&gt;</source>
-        <translation>    Выбрать стартовый режим, перекрывая заданное в настройках. Параметр &lt;mode&gt;</translation>
-    </message>
-    <message>
-        <source>      mode=&lt;x3d|mjpeg&gt;   - Specify the streaming mode: x3d (default) or mjpeg.</source>
-        <translation>      mode=&lt;x3d|mjpeg&gt;   - Указывает режим стриминга: x3d (по умолчанию) или mjpeg.</translation>
-    </message>
-    <message>
-        <source>      port=1234          - Start the streaming server on port 1234.</source>
-        <translation>      port=1234          - Запустить стриминговый сервер на порту 1234.</translation>
-    </message>
-    <message>
-        <source>      disableTextStreams - Disable the streaming of stdout and stderr.</source>
-        <translation>      disableTextStreams - Отключить вывод в в стрим stdout and stderr.</translation>
-    </message>
-    <message>
-        <source>  field %1 [%2] = %3</source>
-        <translation>  поле %1 [%2] = %3</translation>
-    </message>
-    <message>
-        <source>    Measure the performance of Webots and log it in the file specified in the</source>
-        <translation>    Измерить производительость Webots и записывать ее в файл заданный</translation>
-    </message>
-    <message>
-        <source>Usage: webots [options] [worldfile]</source>
-        <translation>Вызов: webots [опции] [файл-сцены]</translation>
-    </message>
-    <message>
-        <source>Please report any bug to https://cyberbotics.com/bug</source>
-        <translation>Пожалуйста, сообщайте о ошибках в Webots сюда: https://cyberbotics.com/bug</translation>
-    </message>
-    <message>
-        <source>    Display version information and exit.</source>
-        <translation>    Вывести информацию о версии и выйти.</translation>
-    </message>
-    <message>
-        <source>OpenGL version: %1</source>
-        <translation>Версия OpenGL: %1</translation>
-    </message>
-    <message>
-        <source>    system information is prepended into the log file.</source>
-        <translation>    то в начало log-файла записывается системная информация.</translation>
-    </message>
-    <message>
-        <source>Invalid file: a PROTO file with suffix &apos;.proto&apos; is expected.</source>
-        <translation>Неверный файл: ожидался PROTO-файл с расширением &apos;.proto&apos;.</translation>
-    </message>
-    <message>
-        <source>    Display information about the system and exit.</source>
-        <translation>    Вывести информацию о системе и выйти.</translation>
-    </message>
-    <message>
-        <source>    argument must be either pause, realtime or fast.</source>
-        <translation>    может быть одним из: pause, realtime or fast.</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>Опции:</translation>
-    </message>
-    <message>
-        <source>    specifies how many steps are logged. If the --sysinfo option is used, the</source>
-        <translation>    задает, сколько шагов записывается. Если использована опция --sysinfo,</translation>
-    </message>
-    <message>
-        <source>    Disable rendering in the main 3D view.</source>
-        <translation>    Запретить отрисовку сцены в главном 3D-окне.</translation>
-    </message>
-    <message>
-        <source>OpenGL renderer: %1</source>
-        <translation>OpenGL renderer: %1</translation>
-    </message>
-    <message>
-        <source>      monitorActivity    - Print a dot &apos;.&apos; on stdout every 5 seconds.</source>
-        <translation>      monitorActivity    - Выводить точку &apos;.&apos; на консоль каждые 5 секунд.</translation>
-    </message>
-    <message>
-        <source>A parameter is not properly formated!
+        <source>Webots requires Python version 3.10, 3.9, 3.8 or 3.7 from python.org in your current PATH.
+To fix the problem, you should:
+1. Check the Python command set in the Webots preferences.
+2. Check the COMMAND set in the [python] section of the runtime.ini file of your controller program if any.
+3. Fix your PATH environment variable to use the required Python 64 bit version (if available).
+4. Install the required Python 64 bit version and ensure your PATH environment variable points to it.
 </source>
-        <translation>Параметр неправильно отформатирован!
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Cannot open the file!
+        <source>Python was not found.
 </source>
-        <translation>Не удалось открыть файл!
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>    Start Webots in fullscreen.</source>
-        <translation>    Запустить Webots на полном экране.</translation>
+        <source>Cannot read &apos;%1&apos;, sending &quot;404 Not Found&quot;.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>System: %1</source>
-        <translation>Система: %1</translation>
+        <source>Cannot load translator for wb_%1.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Folder &apos;%1&apos; doesn&apos;t contain any valid PROTO file.</source>
-        <translation>Папка &apos;%1&apos; не содержит годных PROTO-файлов.</translation>
+        <source>Cannot load translator for qt_%1.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>    Convert a PROTO file to a URDF, WBO, or WRL file.</source>
-        <translation>    Конвертировать файл PROTO в файл URDF, WBO, или WRL.</translation>
+        <source>Trying to resolve the backwards compability by adjusting the rotation (strategy %1).</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Number of cores: %1</source>
-        <translation>Число ядер: %1</translation>
+        <source>TrackWheel nodes cannot be USEd.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>    Redirect the stdout of the controllers to the terminal.</source>
-        <translation>    Перенаправить вывод (stdout) контроллеров на терминал.</translation>
+        <source>The creation of the %1 physical boundaries failed because its geometry is not suitable for representing a bounded closed volume</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Processor: %1</source>
-        <translation>Процессор: %1</translation>
+        <source>Mass properties computation failed for this %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>OpenGL vendor: %1 (0x%2)</source>
-        <translation>OpenGL производитель: %1 (0x%2)</translation>
+        <source>Failure exporting texture, too many textures share the same name: %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failure exporting mesh, too many meshes share the same name: %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>URL &apos;%1&apos; changed by fallback mechanism. Ensure you are opening the correct world.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Impossible to infer URL from &apos;%1&apos; and &apos;%2&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>All &apos;scale&apos; coordinates must be non-zero: x is set to 1.0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>All &apos;scale&apos; coordinates must be non-zero: y is set to 1.0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>All &apos;scale&apos; coordinates must be non-zero: z is set to 1.0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy and edit the PROTO file in Text Editor.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit the PROTO file in Text Editor.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Expected URL to end with &apos;.proto&apos; or &apos;.PROTO&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos;: This file was created with Webots %2 while you are using Webots %3. You may need to adjust urls for textures and meshes, see details in the change log of Webots R2021b.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>T</name>
+    <message>
+        <source>%1: Forced termination (because process didn&apos;t terminate itself after 1 second).</source>
+        <translation>%1: принудительно завершен (потому что процесс не завершился, когда его просили, в течение 1 секунды).</translation>
+    </message>
+</context>
+<context>
+    <name>WbAboutBox</name>
+    <message>
+        <source>About Webots</source>
+        <translation>О программе Webots</translation>
+    </message>
+</context>
+<context>
+    <name>WbAbstractCamera</name>
+    <message>
+        <source>Invalid &apos;fieldOfView&apos; changed to 0.7854. The field of view is limited to pi if the &apos;spherical&apos; field is FALSE.</source>
+        <translation>Некорректное значение &apos;fieldOfView&apos; заменено на 0.7854. Поле зрения ограничено &apos;pi&apos;, если поле &apos;spherical&apos; = FALSE.</translation>
+    </message>
+    <message>
+        <source>Cannot allocate memory mapped file for camera image.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbAccelerometer</name>
+    <message>
+        <source>Parent of Accelerometer node has no physics: measurements may be wrong.</source>
+        <translation>В родительский узле &quot;акселерометра&quot; не включена физика: измерения могут быть неправильными.</translation>
     </message>
 </context>
 <context>
@@ -1915,10 +900,6 @@ Restore initial state of the simulation. (%1+Shift+T)</source>
     <message>
         <source>Disable activating the rendering.</source>
         <translation>Запретить активацию отрисовки сцены.</translation>
-    </message>
-    <message>
-        <source>Open the PROTO file in Text Editor.</source>
-        <translation>Открыть исходный файл PROTO в текстовом редакторе.</translation>
     </message>
     <message>
         <source>&amp;Reset to Default Value</source>
@@ -2107,10 +1088,6 @@ Restore initial state of the simulation. (%1+Shift+T)</source>
     <message>
         <source>&amp;Open Sample World...</source>
         <translation>&amp;Открыть мир из примеров...</translation>
-    </message>
-    <message>
-        <source>&amp;Transpose Current Line</source>
-        <translation>&amp;Переставить строки</translation>
     </message>
     <message>
         <source>Hide All &amp;Display Overlays</source>
@@ -2309,10 +1286,6 @@ Restore initial state of the simulation. (%1+Shift+T)</source>
         <translation>Открыть &quot;мир&quot; из библиотеки примеров.</translation>
     </message>
     <message>
-        <source>Duplicate current line or selected text.</source>
-        <translation>Дублировать текущую строку или выделенный текст.</translation>
-    </message>
-    <message>
         <source>Reset Simulation</source>
         <translation>Сброс Симуляции</translation>
     </message>
@@ -2355,10 +1328,6 @@ Restore initial state of the simulation. (%1+Shift+T)</source>
     <message>
         <source>Hide Rendering. (%1+4)</source>
         <translation>Скрыть отрисовку сцены. (%1+4)</translation>
-    </message>
-    <message>
-        <source>Invert the current line and its previous line.</source>
-        <translation>Поменять местами текущую и предыдущую строки.</translation>
     </message>
     <message>
         <source>Reload World.
@@ -2702,284 +1671,342 @@ Reload the current world file and restart the simulation. (%1+Shift+R)</source>
         <source>Translate the camera to follow the object.</source>
         <translation>Перемещать камеру, следуя за объектом.</translation>
     </message>
-</context>
-<context>
-    <name>WbGuidedTour</name>
     <message>
-        <source>Auto</source>
-        <translation>Авто</translation>
+        <source>Edit PROTO &amp;Source</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Next</source>
-        <translation>Дальше</translation>
+        <source>Edit the PROTO file in Text Editor.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Close</source>
-        <translation>Закрыть</translation>
-    </message>
-    <message>
-        <source>The Guided Tour is not available.</source>
-        <translation>Обзорный тур недоступен.</translation>
-    </message>
-    <message>
-        <source>Check [Auto] or press [Next] to start...</source>
-        <translation>Включите [Авто] или нажмите [Дальше], чтобы начать...</translation>
-    </message>
-    <message>
-        <source>Welcome to the Webots Guided Tour.</source>
-        <translation>Добро пожаловать на обзорную экскурсию по Webots.</translation>
-    </message>
-    <message>
-        <source>Guided Tour - Webots</source>
-        <translation>Экскурсия по Webots</translation>
-    </message>
-    <message>
-        <source>Previous</source>
-        <translation>Назад</translation>
-    </message>
-    <message>
-        <source>Thanks for viewing the Webots Guided Tour.</source>
-        <translation>Спасибо, что посетили нашу экскурсию.</translation>
-    </message>
-    <message>
-        <source>The tour will take you through many examples and will give you an overview of Webots features.</source>
-        <translation>Этот тур проведен вас перед множество примеров  продемонстрируем возможности системы Webots.</translation>
-    </message>
-    <message>
-        <source>That&apos;s all Folks!</source>
-        <translation>На этом все!</translation>
-    </message>
-    <message>
-        <source>Internal error</source>
-        <translation>Внутренняя ошибка</translation>
-    </message>
-    <message>
-        <source>Webots Guided Tour</source>
-        <translation>Экскурсия по Webots</translation>
-    </message>
-    <message>
-        <source>Webots Guided Tour!</source>
-        <translation>Экскурсия по Webots!</translation>
-    </message>
-    <message>
-        <source>Press [Close] to terminate...</source>
-        <translation>Нажмите [Закрыть] для завершения...</translation>
+        <source>Open the PROTO file in Text Editor in read-only mode.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>WbProjectRelocationDialog</name>
+    <name>WbAddInertiaMatrixDialog</name>
     <message>
-        <source>Copy</source>
-        <translation>Копировать</translation>
+        <source>Add</source>
+        <translation>Добавить</translation>
     </message>
     <message>
-        <source>Push the [Copy] button to copy the necessary project files.</source>
-        <translation>Нажмите кнопку [Копировать], чтобы скопировать необходимые файлы проекта.</translation>
+        <source>If no center of mass is currently specified, a zero 3D vector will be inserted.</source>
+        <translation>Если центр масс еще не определен, будет вставлен нулевой 3D-вектор.</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Copy necessary files from source to target directory?&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Скопировать необходимые файлы из исходной папки в целевую?&lt;/b&gt;</translation>
+        <source>The center of mass will be set as the bounding object center of mass.</source>
+        <translation>Центр масс будет установлен по ЦМ boundingObject.</translation>
     </message>
     <message>
-        <source>Please select a target directory then push the [Copy] button.</source>
-        <translation>Пожалуйста, выберите целевой каталог, затем нажмите кнопку [Копировать].</translation>
+        <source>If the density is currently specified, it will be set as -1 and the mass will be set as the bounding object mass.</source>
+        <translation>Если установлена плотность, она будет сброшена в -1, а за массу будет принята масса boundingObject.</translation>
     </message>
     <message>
-        <source>Please select another target directory.</source>
-        <translation>Выберите другой целевой каталог.</translation>
+        <source>The density will be set as -1 and if the mass is negative or zero, it will be set as 1.</source>
+        <translation>Плотность будет установлена в -1, а если масса неположительна, то она будет установлена в 1.</translation>
     </message>
     <message>
-        <source>Make sure that you have write access at this location.</source>
-        <translation>Убедитесь, что у вас есть права на запись в этой папке.</translation>
+        <source>Cancel</source>
+        <translation>Отменить</translation>
     </message>
     <message>
-        <source>Could not create target directory.</source>
-        <translation>Не удалось создать целевую папку.</translation>
+        <source>No info available.</source>
+        <translation>Нет информации.</translation>
     </message>
     <message>
-        <source>Include all PROTO files</source>
-        <translation>Включить все файлы PROTO</translation>
+        <source>Add inertia matrix</source>
+        <translation>Добавить инерциальную матрицу</translation>
     </message>
     <message>
-        <source>Some files or directories could not be copied.</source>
-        <translation>Не удалось скопировать некоторые файлы или каталоги.</translation>
+        <source>Identity matrix</source>
+        <translation>Единичная матрица</translation>
     </message>
     <message>
-        <source>Select</source>
-        <translation>Выбрать</translation>
+        <source>The inertia matrix is computed using the solid bounding object and the frame obtained by translating solid&apos;s frame to bounding object&apos;s center of mass.</source>
+        <translation>Матрица инерции рассчитана по твердотельному boundingObject... .</translation>
     </message>
     <message>
-        <source>You are trying to modify a file located in Webots installation directory:</source>
-        <translation>Вы пытаетесь изменить файл, расположенный в папке установки Webots:</translation>
+        <source>Bounding object based</source>
+        <translation>на базе boundingObject</translation>
     </message>
     <message>
-        <source>Include all plugins files</source>
-        <translation>Включить все файлы плагинов</translation>
-    </message>
-    <message>
-        <source>This operation is not permitted.</source>
-        <translation>Эта операция не разрешена.</translation>
-    </message>
-    <message>
-        <source>Source directory: </source>
-        <translation>Исходная папка: </translation>
-    </message>
-    <message>
-        <source>You are trying to modify a file located in the Webots installation directory:</source>
-        <translation>Вы пытаетесь изменить файл, расположенный в папке установки Webots:</translation>
-    </message>
-    <message>
-        <source>Target directory: </source>
-        <translation>Целевая папка: </translation>
-    </message>
-    <message>
-        <source>Push the [Copy] button to copy the project.</source>
-        <translation>Нажмите кнопку [Копировать], чтобы скопировать проект.</translation>
-    </message>
-    <message>
-        <source>Please select the copy options then push the [Copy] button.</source>
-        <translation>Выберите параметры копирования, затем нажмите кнопку [Копировать].</translation>
-    </message>
-    <message>
-        <source>Project relocation failed.</source>
-        <translation>Не удалось переместить проект.</translation>
-    </message>
-    <message>
-        <source>Project relocation</source>
-        <translation>Перемещение проекта</translation>
-    </message>
-    <message>
-        <source>Please select another directory.</source>
-        <translation>Выберите другой каталог.</translation>
-    </message>
-    <message>
-        <source>%1 file(s) copied.</source>
-        <translation>%1 файл(ов) скопировано.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Copy necessary files from source to current project directory?&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Скопировать необходимые файлы из исходной папки в папку текущего проекта?&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Project successfully relocated.</source>
-        <translation>Проект успешно перемещен.</translation>
-    </message>
-    <message>
-        <source>Target directory is located in the Webots installation directory.</source>
-        <translation>Целевая папка находится в папке установки Webots.</translation>
-    </message>
-    <message>
-        <source>You are trying to import VRML97 nodes to a world located in the Webots installation directory:</source>
-        <translation>Вы пытаетесь импортировать узлы VRML97 в сцену, расположенную в папке установки Webots:</translation>
-    </message>
-    <message>
-        <source>This operation is not permitted: would you like to copy the necessary files to another location?</source>
-        <translation>Эта операция не разрешена: вы хотите скопировать необходимые файлы в другое место?</translation>
-    </message>
-    <message>
-        <source>Target directory is not empty.</source>
-        <translation>Целевая папка не пуста.</translation>
+        <source>Insert the identity matrix 
+ [ 1 1 1, 0 0 0]</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>WbExtendedStringEditor</name>
+    <name>WbAddNodeDialog</name>
     <message>
-        <source>Edit</source>
-        <translation>Редактировать</translation>
+        <source>Add</source>
+        <translation>Добавить</translation>
     </message>
     <message>
-        <source>Please select a solid from the list
+        <source>Filter node names. Only the node names containing the given string are displayed in the tree below. Regular expressions can be used.</source>
+        <translation>Фильтр для имен узлов. Только узлы с именами, содержащими данную строку, отобразятся в дереве ниже. Можно использовать регулярные выражения.</translation>
+    </message>
+    <message>
+        <source>Find:</source>
+        <translation>Найти:</translation>
+    </message>
+    <message>
+        <source>This folder lists all Webots base nodes that are suitable to insert at (or below) the currently selected Scene Tree line.</source>
+        <translation>В этой папке перечислены все базовые узлы, в позицию (или ниже) выбранной строки дерева сцены.</translation>
+    </message>
+    <message>
+        <source>&lt;font color=&quot;red&quot;&gt;WARNING: this node contains a Geometry with non-positive dimensions and hence cannot be inserted in a bounding object.&lt;/font&gt;&lt;br/&gt;</source>
+        <translation>&lt;font color=&quot;red&quot;&gt;ВНИМАНИЕ: в этом узле сть Geometry с не-положительными размерами,поэтому он не может быть вставлен в boundingObject.&lt;/font&gt;&lt;br/&gt;</translation>
+    </message>
+    <message>
+        <source>This folder lists all suitable node that were defined (using DEF) above the current line of the Scene Tree.</source>
+        <translation>В этой папке перечислены все подходящие узлы, определенные с DEF выше текущей строки дерева сцены.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отменить</translation>
+    </message>
+    <message>
+        <source>Files (*.wbo *.WBO)</source>
+        <translation>Файлы (*.wbo *.WBO)</translation>
+    </message>
+    <message>
+        <source>This folder lists all suitable PROTO nodes from the local &apos;protos&apos; directory: &apos;%1&apos;.</source>
+        <translation>В этой папке перечислены все подходящие PROTO узлы из локальной папки protos: &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Add a node</source>
+        <translation>Добавить узел</translation>
+    </message>
+    <message>
+        <source>No info available.</source>
+        <translation>Нет информации.</translation>
+    </message>
+    <message>
+        <source>This folder lists all suitable PROTO nodes provided by Webots.</source>
+        <translation>В этой папке перечислены все подходящие PROTO узлы из библиотеки Webots.</translation>
+    </message>
+    <message>
+        <source>Import...</source>
+        <translation>Импорт...</translation>
+    </message>
+    <message>
+        <source>Base nodes</source>
+        <translation>Базовые узлы</translation>
+    </message>
+    <message>
+        <source>Documentation: &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;%1&apos;&gt;%1&lt;/a&gt;</source>
+        <translation>Документация: &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;%1&apos;&gt;%1&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <source>License: </source>
+        <translation>Лицензия: </translation>
+    </message>
+    <message>
+        <source>The &quot;%1&quot; icon should have a dimension of 128x128 pixels.</source>
+        <translation>Иконка &quot;%1&quot; должна иметь размеры 128x128 пикселей.</translation>
+    </message>
+    <message>
+        <source>PROTO nodes (Extra Projects)</source>
+        <translation>Узлы PROTO (Дополнительные проекты)</translation>
+    </message>
+    <message>
+        <source>Import Webots Object</source>
+        <translation>Импортировать объект Webots</translation>
+    </message>
+    <message>
+        <source> &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;%1&apos;&gt;More information.&lt;/a&gt;</source>
+        <translation> &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;%1&apos;&gt;Узнать больше.&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The simulation has run!</source>
+        <translation type="unfinished">Симуляция уже выполнялась!</translation>
+    </message>
+    <message>
+        <source>Icon could not be retrieved: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This folder lists all suitable PROTO nodes from the world file: &apos;%1&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; is not a known proto in category &apos;%2&apos;.
 </source>
-        <translation>Выберите из списка твердое тело
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PROTO node not available because another with the same name and different URL already exists.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Retrieval of PROTO &apos;%1&apos; was unsuccessful, the asset should be cached but it is not.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Local PROTO file &apos;%1&apos; already exists.
+
+Do you want to overwrite it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Overwrite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PROTO &apos;%1&apos; exported to the project&apos;s &apos;protos&apos; folder.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbAnimationRecorder</name>
+    <message>
+        <source>Error when stopping the HTML5 animation recording: &apos;%1&apos;</source>
+        <translation>Ошибка при завершении записи HTML5-анимации: &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <source>HTML5 animation successfully exported in &apos;%1&apos;
+</source>
+        <translation>HTML5-анимация успешно экспортирована в &apos;%1&apos;
 </translation>
     </message>
     <message>
-        <source>The file does not exist, or has an extension which is not supported.</source>
-        <translation>Файл не существует, или имеет неподдерживаемое расширение имени файла.</translation>
+        <source>HTML5 animation recorder is enabled.</source>
+        <translation>Запись HTML5-анимации разрешена.</translation>
     </message>
     <message>
-        <source>Fluid choice</source>
-        <translation>Выбрать жидкость</translation>
-    </message>
-    <message>
-        <source>Select...</source>
-        <translation>Выбрать...</translation>
-    </message>
-    <message>
-        <source>Solid choice</source>
-        <translation>Выбор твердого тела</translation>
-    </message>
-    <message>
-        <source>Please select a fluid from the list
+        <source>Start HTML5 animation export
 </source>
-        <translation>Выберите жидкость из списка
+        <translation>Начать экспорт HTML5-анимации
 </translation>
     </message>
     <message>
-        <source>%1 files (%2)</source>
-        <translation>%1 файлов (%2)</translation>
+        <source>Error when starting the HTML5 animation recording: &apos;%1&apos;</source>
+        <translation>Ошибка при запуске записи HTML5-анимации: &apos;%1&apos;</translation>
     </message>
     <message>
-        <source>Remote control plugins choice</source>
-        <translation>Выбор плагина для дистанционного управления</translation>
+        <source>Cannot open HTML5 animation file &apos;%1&apos;</source>
+        <translation>Не открылся файл с  HTML5 анимацией &apos;%1&apos;</translation>
     </message>
     <message>
-        <source>Please select a plugin from the list
-(takes effect only after you save and reload the world)</source>
-        <translation>Выберите контроллер из списка (он запустится только после того, как вы сохраните и перезагрузите сцену)</translation>
+        <source>HTML5 export failed</source>
+        <translation>Не удалось экспортировать HTML5-анимацию</translation>
     </message>
     <message>
-        <source>Please select a controller from the list
-(it will start at the next time step)</source>
-        <translation>Выберите контроллер из списка (он запустится на следующем шаге)</translation>
+        <source>Make HTML5 Animation</source>
+        <translation>Создать анимацию в HTML5</translation>
     </message>
     <message>
-        <source>Open %1</source>
-        <translation>Открыть %1</translation>
+        <source>The animation has been created:&lt;br&gt;%1&lt;br&gt;&lt;br&gt;Do you want to view it locally now?&lt;br&gt;&lt;br&gt;Note: please refer to the &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/web-scene#remarks-on-the-used-technologies-and-their-limitations&apos;&gt;User Guide&lt;/a&gt; if your browser prevents local files CORS requests.</source>
+        <translation>Анимация записана:&lt;br&gt;%1&lt;br&gt;&lt;br&gt;Хотите запустить локальный просмотр?&lt;br&gt;&lt;br&gt;Примечание: читайте &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/web-scene#remarks-on-the-used-technologies-and-their-limitations&apos;&gt;Руководство Пользователя&lt;/a&gt; если ваш браузер отклоняет CORS-запросы локальных файлов.</translation>
     </message>
     <message>
-        <source>Please select a remote control plugin from the list
-(takes effect only after you save and reload the world)</source>
-        <translation>Выберите плагин дистанционного управления из списка (он запустится только после того, как вы сохраните и перезагрузите сцену)</translation>
+        <source>Streaming server already initialized.</source>
+        <translation>Стриминговый сервер уже инициализирован.</translation>
     </message>
     <message>
-        <source>Edit controller main file in Text Editor.</source>
-        <translation>Редактировать главный файл контроллера в Текстовом Редакторе.</translation>
+        <source>Error: No animation content is available because the simulation did not start.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbApplication</name>
+    <message>
+        <source>Reading world file </source>
+        <translation>Читаем файл сцены </translation>
     </message>
     <message>
-        <source>Robot window plugins choice</source>
-        <translation>Выбор плагина для Окна робота</translation>
+        <source>&apos;%1&apos;: Failed to load due to invalid token(s).</source>
+        <translation>&apos;%1&apos;: Файл не загрузился из-за ошибочной лексемы.</translation>
     </message>
     <message>
-        <source>Please select a robot window plugin from the list
-(takes effect only after you save and reload the world)</source>
-        <translation>Выберите плагин окна робота из списка (он запустится только после того, как вы сохраните и перезагрузите сцену)</translation>
+        <source>&apos;%1&apos;: Failed to load due to syntax error(s).</source>
+        <translation>&apos;%1&apos;: Файл не загрузился из-за синтаксических ошибок.</translation>
     </message>
     <message>
-        <source>Please select a reference area from the list
-</source>
-        <translation>Выберите из списка reference area
-</translation>
+        <source>Could not open file: &apos;%1&apos;. The world file extension must be &apos;.wbt&apos;.</source>
+        <translation>Не могу открыть файл: &apos;%1&apos;. Файл сцены должен иметь расширение &apos;.wbt&apos;.</translation>
     </message>
     <message>
-        <source>Physics plugins choice</source>
-        <translation>Выбор физических плагинов</translation>
+        <source>Could not open file: &apos;%1&apos;.</source>
+        <translation>Не могу открыть файл: &apos;%1&apos;.</translation>
     </message>
     <message>
-        <source>Reference area choice</source>
-        <translation>Выбор reference area</translation>
+        <source>Parsing world</source>
+        <translation>Анализируем сцену</translation>
+    </message>
+</context>
+<context>
+    <name>WbBackground</name>
+    <message>
+        <source>Incomplete background cubemap</source>
+        <translation>Не полностью заданы все текстуры куба</translation>
     </message>
     <message>
-        <source>Select controller program.</source>
-        <translation>Выбрать программу контроллера.</translation>
+        <source>Alpha channel mismatch with %1Url.</source>
+        <translation>Alpha-канал не сопадает с %1Url.</translation>
     </message>
     <message>
-        <source>Impossible to edit the file: no file defined.</source>
-        <translation>Невозможно редактировать файл: не задано имя файла.</translation>
+        <source>The %1Url &apos;%2&apos; is not a square image (its width doesn&apos;t equal its height).</source>
+        <translation>Картинка %1Url &apos;%2&apos; не является квадратной (ширина и высота должны совпадать).</translation>
     </message>
     <message>
-        <source>Controller choice</source>
-        <translation>Выбрать контроллер</translation>
+        <source>Texture dimension mismatch between %1Url and %2Url.</source>
+        <translation>Не совпадают пиксельные размеры текстур %1Url и %2Url.</translation>
+    </message>
+    <message>
+        <source>Incomplete irradiance cubemap</source>
+        <translation>Не полностью заданы все карты освещенности куба (Irradiance cubemap)</translation>
+    </message>
+    <message>
+        <source>Cannot open HDR texture file: &apos;%1&apos;</source>
+        <translation>Не удалось открыть HDR-файл с текстурой: &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <source>Texture not found: &apos;%1&apos;</source>
+        <translation>Текстура не найдена: &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <source>Only one Background node is allowed. The current node won&apos;t be taken into account.</source>
+        <translation>В сцене может быть только один узел Background. Данный узел будет проигнорирован.</translation>
+    </message>
+    <message>
+        <source>Cannot load texture &apos;%1&apos;: %2.</source>
+        <translation>Не удалось загрузить текстуру &apos;%1&apos;: %2.</translation>
+    </message>
+    <message>
+        <source>%1IrradianceUrl not found: &apos;%2&apos;</source>
+        <translation>%1IrradianceUrl не найдено: &apos;%2&apos;</translation>
+    </message>
+    <message>
+        <source>Cannot read texture file: &apos;%1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbBallJoint</name>
+    <message>
+        <source>The lower limit of the motor associated to the second axis shouldn&apos;t be smaller than -pi/2.</source>
+        <translation>Нижний ограничитель для мотора на второй оси не должен быть меньше -pi/2.</translation>
+    </message>
+    <message>
+        <source>Axes are aligned: using x and z axes instead.</source>
+        <translation>Оси выравнены: используйте вместо них оси &apos;x&apos; и &apos;z&apos;.</translation>
+    </message>
+    <message>
+        <source>The upper limit of the motor associated to the second axis shouldn&apos;t be greater than pi/2.</source>
+        <translation>Верхний ограничитель для мотора на второй оси не должен быть больше pi/2.</translation>
+    </message>
+</context>
+<context>
+    <name>WbBasicJoint</name>
+    <message>
+        <source>Joint node defined in PROTO field is used multiple times. Webots doesn&apos;t fully support this because the multiple node instances cannot be identical.</source>
+        <translation>Узел Joint, определенный в поле PROTO, использован несколько раз. Webots не вполне это поддерживает, поскольку несколько экземпляров могут не быть идентичными.</translation>
     </message>
 </context>
 <context>
@@ -2994,870 +2021,14 @@ Reload the current world file and restart the simulation. (%1+Shift+R)</source>
     </message>
 </context>
 <context>
-    <name>WbNewControllerWizard</name>
+    <name>WbBox</name>
     <message>
-        <source>Controller name:</source>
-        <translation>Имя контроллера:</translation>
+        <source>&apos;size&apos; must be positive: construction of the Box in &apos;boundingObject&apos; failed.</source>
+        <translation>Значения &apos;size&apos; должно быть положительными: не удалось создать Box в &apos;boundingObject&apos;.</translation>
     </message>
     <message>
-        <source>Language selection</source>
-        <translation>Выберите язык</translation>
-    </message>
-    <message>
-        <source>New controller creation</source>
-        <translation>Создание нового контроллера</translation>
-    </message>
-    <message>
-        <source>Please choose the language for your controller program.</source>
-        <translation>Выберите язык программирования для вашего контроллера.</translation>
-    </message>
-    <message>
-        <source>This wizard will help you creating a new controller.</source>
-        <translation>Контроллер робота - программа, определяющая поведение робота на каждом шаге симуляции. 
-Вам нужно будет выбрать язык программирования и имя для нового контроллера, 
-затем выбрать его из списка контроллеров в поле Robot.controller.</translation>
-    </message>
-    <message>
-        <source>Create a new robot controller.</source>
-        <translation>Создать новый контроллер робота.</translation>
-    </message>
-    <message>
-        <source>Open &apos;%1.%2&apos; in Text Editor.</source>
-        <translation>Открыть &apos;%1.%2&apos; в текстовом редакторе.</translation>
-    </message>
-    <message>
-        <source>Please choose a name for your controller program.</source>
-        <translation>Выберите имя для программы контроллера (оно же имя папки, имя файла, ссылка из поля &apos;controller&apos; робота).</translation>
-    </message>
-    <message>
-        <source>Controller creation failed</source>
-        <translation>Не удалось создать контроллер</translation>
-    </message>
-    <message>
-        <source>Conclusion</source>
-        <translation>Завершение</translation>
-    </message>
-    <message>
-        <source>Name selection</source>
-        <translation>Выберите название</translation>
-    </message>
-    <message>
-        <source>Please choose the Integrated Development Environment (IDE) for your controller program.</source>
-        <translation>Выберите интегрированную среду разработки (IDE), где вы будете писать этот контроллер.</translation>
-    </message>
-    <message>
-        <source>The following directory and files will be created:</source>
-        <translation>Будут созданы следующие папки и файлы:</translation>
-    </message>
-    <message>
-        <source>Open &apos;%1.sln&apos; in Microsoft Visual Studio (the controller need to be set to &lt;&lt;extern&gt;&gt; to be able to launch the controller from Microsoft Visual Studio.</source>
-        <translation>Откройте &apos;%1.sln&apos; in Microsoft Visual Studio (контроллер должен быть установлен как &lt;&lt;extern&gt;&gt;, чтобы запускать его из MS VS).</translation>
-    </message>
-    <message>
-        <source>Microsoft Visual Studio</source>
-        <translation>Microsoft Visual Studio</translation>
-    </message>
-    <message>
-        <source>Some directories or files could not be created.</source>
-        <translation>Не удалось создать некоторые папки или файлы.</translation>
-    </message>
-    <message>
-        <source>IDE selection</source>
-        <translation>Выберите IDE</translation>
-    </message>
-    <message>
-        <source>Webots (gcc / Makefile)</source>
-        <translation>Webots (gcc / Makefile)</translation>
-    </message>
-</context>
-<context>
-    <name>WbMotor</name>
-    <message>
-        <source>When using coupled motors, &apos;minPosition&apos; must be consistent across devices. Adjusting &apos;minPosition&apos; from %1 to %2 for motor &apos;%3&apos;.</source>
-        <translation>При использовании сопряженных двигателей, значение &apos;minPosition&apos; должно быть одинаковым для всех устройств. Параметр &quot;minPosition&quot; изменен с %1 на %2 для двигателя &quot;%3&quot;.</translation>
-    </message>
-    <message>
-        <source>When using coupled motors, &apos;maxPosition&apos; must be consistent across devices. Adjusting &apos;maxPosition&apos; from %1 to %2 for motor &apos;%3&apos;.</source>
-        <translation>При использовании сопряженных двигателей, значение &apos;maxPosition&apos; должно быть одинаковым для всех устройств. Параметр &quot;maxPosition&quot; изменен с %1 на %2 для двигателя &quot;%3&quot;.</translation>
-    </message>
-    <message>
-        <source>Feedback is available for motorized joints only</source>
-        <translation>Обратная связь доступна только для &quot;моторизованных&quot; шарниров</translation>
-    </message>
-    <message>
-        <source>The requested velocity %1 exceeds &apos;maxVelocity&apos; = %2.</source>
-        <translation>Запрошенная скорость %1 превышает  &apos;maxVelocity&apos; = %2.</translation>
-    </message>
-    <message>
-        <source>wb_motor_enable_torque_feedback(): cannot be invoked because the parent Solid has no Physics node.</source>
-        <translation>Функцию wb_motor_enable_torque_feedback() нельзя вызывать для шарнира, которого в родительском узле Solid не задана физика.</translation>
-    </message>
-    <message>
-        <source>wb_motor_enable_torque_feedback(): cannot be invoked for a Joint whose end point has no Physics node.</source>
-        <translation>Функцию wb_motor_enable_torque_feedback() нельзя вызывать для шарнира, которого в endPoint не задана физика.</translation>
-    </message>
-    <message>
-        <source>The requested available motor force %1 exceeds &apos;maxForce&apos; = %2</source>
-        <translation>Запрошенное доступное усилие двигателя %1 превышает &apos;maxForce&apos; = %2</translation>
-    </message>
-    <message>
-        <source>wb_motor_enable_force_feedback(): cannot be invoked for a Joint with no end point.</source>
-        <translation>Функцию wb_motor_enable_force_feedback() нельзя вызывать для шарнира без endPoint.</translation>
-    </message>
-    <message>
-        <source>When using coupled motors, velocity limits must be consistent across devices. Adjusted &apos;maxVelocity&apos; from %1 to %2 for motor &apos;%3&apos;.</source>
-        <translation>При использовании сопряженных двигателей ограничения скорости должны быть одинаковыми для всех устройств. Параметр &quot;maxVelocity&quot; изменен с %1 на %2 для двигателя &quot;%3&quot;.</translation>
-    </message>
-    <message>
-        <source>For coupled motors, if one has unlimited position, its siblings must have unlimited position as well. Adjusting &apos;minPosition&apos; and &apos;maxPosition&apos; to 0 for motor &apos;%1&apos;.</source>
-        <translation>Для связанных двигателей, если один из них имеет неограниченное вращение, остальные также должны иметь неограниченное вращение. &apos;minPosition&apos; и &apos;maxPosition&apos; сброшены в  0 для двигателя &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>wb_motor_enable_torque_feedback(): cannot be invoked for a Joint with no end point.</source>
-        <translation>Функцию wb_motor_enable_torque_feedback() нельзя вызывать для шарнира без endPoint.</translation>
-    </message>
-    <message>
-        <source>wb_motor_enable_force_feedback(): cannot be invoked because the parent Solid has no Physics node.</source>
-        <translation>Функцию wb_motor_enable_force_feedback() нельзя вызывать для шарнира, которого в родительском узле Solid не задана физика.</translation>
-    </message>
-    <message>
-        <source>Motor &apos;%1&apos; uses the coupled motor name structure but does not have any siblings.</source>
-        <translation>Двигатель &quot;%1&quot; использует структуру имени связанного двигателя, но нет связанных с ним двигателей.</translation>
-    </message>
-    <message>
-        <source>The requested available motor torque %1 exceeds &apos;maxTorque&apos; = %2</source>
-        <translation>Запрошенный доступный крутящий момент двигателя %1 превышает &apos;maxTorque&apos; = %2</translation>
-    </message>
-    <message>
-        <source>The requested motor force %1 exceeds &apos;maxForce&apos; = %2</source>
-        <translation>Требуемое усилие двигателя %1 превышает &apos;maxForce&apos; = %2</translation>
-    </message>
-    <message>
-        <source>The requested motor torque %1 exceeds &apos;maxTorque&apos; = %2</source>
-        <translation>Запрошенный крутящий момент двигателя %1 превышает &apos;maxTorque&apos; = %2</translation>
-    </message>
-    <message>
-        <source>&apos;controlI&apos; (currently %1) must be non-negative.</source>
-        <translation>&apos;controlI&apos; (сейчас %1) должен быть неотрицательным.</translation>
-    </message>
-    <message>
-        <source>&apos;controlD&apos; (currently %1) must be non-negative.</source>
-        <translation>&apos;controlD&apos; (сейчас %1) должен быть неотрицательным.</translation>
-    </message>
-    <message>
-        <source>The value of &apos;multiplier&apos; cannot be 0. Value reverted to 1.</source>
-        <translation>Значение &apos;multiplier&apos; не может быть равно 0. Значение возвращено к 1.</translation>
-    </message>
-    <message>
-        <source>wb_motor_enable_force_feedback(): cannot be invoked for a Joint whose end point has no Physics node.</source>
-        <translation>Функцию wb_motor_enable_force_feedback() нельзя вызывать для шарнира, которого в endPoint не задана физика.</translation>
-    </message>
-    <message>
-        <source>&apos;controlP&apos; (currently %1) must be positive.</source>
-        <translation>&apos;controlP&apos; (сейчас %1) должен быть положительным.</translation>
-    </message>
-</context>
-<context>
-    <name>WbController</name>
-    <message>
-        <source>Starts the void controller instead.</source>
-        <translation>Запускается пустой контроллер.</translation>
-    </message>
-    <message>
-        <source>MATLAB controllers should be launched as extern controllers with the snap package of Webots.</source>
-        <translation>Контроллеры MATLAB могут быть запущены как внешние with the snap package of Webots.</translation>
-    </message>
-    <message>
-        <source>Try to compile the Java source code, to get a new .class or .jar file.</source>
-        <translation>Попробуйте перекомпилировать исходники на Java, чтобы получить новый файл .class или .jar.</translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos;
-The path to this Webots project contains non 8-bit characters. Webots won&apos;t be able to execute any Java controller in this path. Please move this Webots project into a folder with only 8-bit characters.</source>
-        <translation>&apos;%1&apos;
-Путь к этому Webots-проекту содержит не 8-битные символы (например, кириллицу). Webots не сможет выполнить никакой Java- контроллер из этого пути. Переместите проект Webots в папку, весь путь к которой не содержит &quot;национальных&quot; символов.</translation>
-    </message>
-    <message>
-        <source>Unknown key: %1 in java section</source>
-        <translation>Неизвестная ошибкаL: %1 в секции java</translation>
-    </message>
-    <message>
-        <source>Webots expects a binary executable file at this location.</source>
-        <translation>Webots ожидает двоичный исполняемый файл в этом месте.</translation>
-    </message>
-    <message>
-        <source>This is not a valid executable file.</source>
-        <translation>Файл не является выполняемым.</translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos; controller exited with status: %2.</source>
-        <translation>Контроллер &apos;%1&apos;  завершился со статусом: %2.</translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos; controller exited successfully.</source>
-        <translation>Контроллер &apos;%1&apos; успешно завершился.</translation>
-    </message>
-    <message>
-        <source>Unknown key: %1 in matlab section</source>
-        <translation>Неизвестная ошибкаL: %1 в секции matlab</translation>
-    </message>
-    <message>
-        <source>Starting controller: %1</source>
-        <translation>Запускается контроллер: %1</translation>
-    </message>
-    <message>
-        <source>A BotStudio controller was detected, but the &apos;window&apos; field of the Robot node is not set to &quot;botstudio&quot;. The controller probably won&apos;t work as expected.</source>
-        <translation>Обнаружен контроллер BotStudio, но поле window узла Robot не было выставлено в &quot;botstudio&quot;. Контроллер, вероятно, не будет работать, как ожидалось.</translation>
-    </message>
-    <message>
-        <source>failed to start: %1</source>
-        <translation>неудача запуска: %1</translation>
-    </message>
-    <message>
-        <source>Maybe it has the wrong binary architecture: try to recompile this controller.</source>
-        <translation>Возможно, контроллер скомпилирован для другого процессора, попробуйте рекомпилировать.</translation>
-    </message>
-    <message>
-        <source>Unknown error.</source>
-        <translation>Неизвестная ошибка.</translation>
-    </message>
-    <message>
-        <source>Python shebang requests python%1, but current path points to Python%2</source>
-        <translation>Шебанг (#!) в Питоновском скрипте требует python%1, но текущий путь ведет к Python%2</translation>
-    </message>
-    <message>
-        <source>This is not a valid file, maybe a directory.</source>
-        <translation>Это не файл, возможно - папка.</translation>
-    </message>
-    <message>
-        <source>Environment variables from runtime.ini could not be loaded: the file contains illegal definitions.</source>
-        <translation>Не удалось загрузить переменные среды из runtime.ini: файл содержит некорректные определения.</translation>
-    </message>
-    <message>
-        <source>Could not find controller file:</source>
-        <translation>Не найден файл контроллера:</translation>
-    </message>
-    <message>
-        <source>This is not an executable file, try to change its permissions.</source>
-        <translation>Файл не является выполняемым, попробуйте поменять права доступа к нему.</translation>
-    </message>
-    <message>
-        <source>Unable to find the &apos;%1&apos; executable in the current PATH. Please check your %1 installation. It should be possible to launch %1 from a terminal by typing &apos;%1&apos;. It may be necessary to add the %1 bin directory to your PATH environment variable. More information about the %1 installation is available in Webots&apos; User guide.</source>
-        <translation>Исполняемый файл &apos;%1&apos; не найден в текущем PATH. Проверьте установку %1. Должно быть возможно запустить %1 из окна терминала, набрав &apos;%1&apos;. Вам может понадобиться добавить &apos;%1&apos; в PATH. Больше про установку %1 вы можете узнать в &quot;Руководстве пользователя&quot; Webots.</translation>
-    </message>
-    <message>
-        <source>The process crashed some time after starting successfully.</source>
-        <translation>Процесс аварийно завершился (через некоторое время после успешного запуска).</translation>
-    </message>
-    <message>
-        <source>%1: Forced termination (because process didn&apos;t terminate itself after 1 second).</source>
-        <translation>%1: принудительно завершен (потому что процесс не завершился, когда его просили, в течение 1 секунды).</translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos; controller crashed.</source>
-        <translation>Контроллер &apos;%1&apos; аварийно завершился.</translation>
-    </message>
-    <message>
-        <source>An error occurred when attempting to read from the process.</source>
-        <translation>Произошла ошибка при попытке чтения из процесса.</translation>
-    </message>
-    <message>
-        <source>Unknown key: %1 in python section</source>
-        <translation>Неизвестная ошибкаL: %1 в секции python</translation>
-    </message>
-    <message>
-        <source>Could not create the runtime.ini file.</source>
-        <translation>Не удалось создать файл  runtime.ini.</translation>
-    </message>
-    <message>
-        <source>Try to compile the C/C++ source code, to get a new executable file.</source>
-        <translation>Попробуйте перекомпилировать исходники на C/C++, чтобы получить новый исполнимый файл.</translation>
-    </message>
-    <message>
-        <source>The process didn&apos;t respond in time.</source>
-        <translation>Процесс не ответил в ожидаемое время.</translation>
-    </message>
-    <message>
-        <source>Expected either: %1, %2, %3, %4, or %5</source>
-        <translation>Ожидается одно из: %1, %2, %3, %4, или %5</translation>
-    </message>
-    <message>
-        <source>An error occured during the copy of controller &apos;%1&apos;. An older version will be executed.
-Please close any running instances of the controller and reload the world.</source>
-        <translation>Ошибка при копировании контроллера &apos;%1&apos;. Будет выполняться более старая версия. Убедитесь, что не осталось запущенных копий контроллера и перезагрузите сцену.</translation>
-    </message>
-    <message>
-        <source>Could not find the controller directory.
-Starts the void controller instead.</source>
-        <translation>Не найдена папка с контроллерами, вместо этого запущен &quot;пустой&quot; контроллер.</translation>
-    </message>
-    <message>
-        <source>An error occurred when attempting to write to the process.</source>
-        <translation>Произошла ошибка при попытке записи в процесс.</translation>
-    </message>
-</context>
-<context>
-    <name>WbSolidReference</name>
-    <message>
-        <source>SolidReference has an invalid &apos;%1&apos; name or refers to its closest upper solid, which is prohibited.</source>
-        <translation>SolidReference имеет недопустимое имя &quot;%1&quot; или ссылается на ближайшее верхнее твердое тело, что запрещено.</translation>
-    </message>
-</context>
-<context>
-    <name>WbRenderingDevice</name>
-    <message>
-        <source>&apos;windowPosition&apos; is deprecated.</source>
-        <translation>&apos;windowPosition&apos; устарел.</translation>
-    </message>
-    <message>
-        <source>&apos;height&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
-        <translation>Поле &apos;height&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки сцены.</translation>
-    </message>
-    <message>
-        <source>The size of the overlay will be automatically stored after resizing it from the 3D view.</source>
-        <translation>Размер наложения будет автоматически сохранен после изменения его размера в 3D-виде.</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;height&apos;: changed to 1.</source>
-        <translation>Недопустимое значение &apos;height&apos;: изменено на 1.</translation>
-    </message>
-    <message>
-        <source>&apos;pixelSize&apos; is deprecated.</source>
-        <translation>&apos;pixelSize&apos; устарел.</translation>
-    </message>
-    <message>
-        <source>&apos;width&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
-        <translation>Поле &apos;width&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки сцены.</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;width&apos;: changed to 1.</source>
-        <translation>Недопустимое значение &apos;width&apos;: изменено на 1.</translation>
-    </message>
-    <message>
-        <source>The position of the overlay will be automatically stored after moving it from the 3D view.</source>
-        <translation>Положение наложения будет автоматически сохранено после его перемещения из 3D-вида.</translation>
-    </message>
-</context>
-<context>
-    <name>WbSceneTree</name>
-    <message>
-        <source>This node is a DEF node, or has a descendant DEF node, on which at least one external USE node depends. Deleting it will make its USE nodes to refer to a previous node having the same DEF keyword if it exists, or will turn its first USE node into a DEF node.
-Do you want to continue?</source>
-        <translation>У этого узла (или внутри него) есть DEF, откоторого зависим хотя бы один внешний узел USE. Его удаление перенаправит эти USE-узлы на предыдущий узел на таким же DEF-именем, если он существует, или конвертирует первый из USE-узлов в DEF-узел. Продолжать?</translation>
-    </message>
-    <message>
-        <source>All files(*.wbo *.WBO *.wrl *.WRL *.urdf *.URDF);;Webots object (*.wbo *.WBO);;VRML (*.wrl *.WRL);;URDF (*.urdf *.URDF)</source>
-        <translation>Все файлы (*.wbo *.WBO *.wrl *.WRL *.urdf *.URDF);;Webots object (*.wbo *.WBO);;VRML (*.wrl *.WRL);;URDF (*.urdf *.URDF)</translation>
-    </message>
-    <message>
-        <source>URDF exportation available only for Robot nodes.</source>
-        <translation>Экспорт в URDF доступен только для узлов типа Robot.</translation>
-    </message>
-    <message>
-        <source>A positive mass is mandatory when using inertiaMatrix. &apos;mass&apos; set to 1.</source>
-        <translation>Положительная масса обязательна при использовании inertiaMatrix. Поле &apos;mass&apos; установлено в 1.</translation>
-    </message>
-    <message>
-        <source>Impossible to write file: &apos;%1&apos;.</source>
-        <translation>Невозможно записать файл: &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Warning: Transforming a %1 into a %2 node will loose some information.</source>
-        <translation>Предупреждение: при трансформации узла %1 в %2 потеряется часть информации.</translation>
-    </message>
-    <message>
-        <source>Export Webots Object</source>
-        <translation>Экспортировать объект Webots</translation>
-    </message>
-    <message>
-        <source>A center of mass is mandatory when using inertiaMatrix. Default center of mass inserted.</source>
-        <translation>Центр масс необходим при использовании inertiaMatrix. Добавлен ЦМ по умолчанию.</translation>
-    </message>
-    <message>
-        <source>Transformation aborted: impossible to create a node of type %1.</source>
-        <translation>Трансформация прервана: невозможно создать узел типа &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Unsupported &apos;%1&apos; extension.</source>
-        <translation>Неподдерживаемое расширение &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>New node creation failed: model name %1.</source>
-        <translation>Создание нового узла не удалось:model name %1.</translation>
-    </message>
-    <message>
-        <source>Do you still want to proceed?</source>
-        <translation>Вы все еще хотите продолжить?</translation>
-    </message>
-    <message>
-        <source>New node creation failed: node with DEF name %1 does not exist.</source>
-        <translation>Создать узел не удалось: не найден узел с DEF-именем &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Node exportation failed.</source>
-        <translation>Экспорт узла не удался.</translation>
-    </message>
-    <message>
-        <source>DEF node deletion</source>
-        <translation>Удаление DEF-узла</translation>
-    </message>
-    <message>
-        <source>This field contains a DEF node on which at least one external USE node depends. Deleting it will turn its first USE node into a DEF node.
-Do you want to continue?</source>
-        <translation>Это поле содержит  DEF-узлы, от которых зависит по крайней мере один внешний USE-узел.  Его удаление преобразует первый из узлов USE в узел DEF.
-Продолжить?</translation>
-    </message>
-</context>
-<context>
-    <name>WbFindReplaceDialog</name>
-    <message>
-        <source>&amp;Next</source>
-        <translation>&amp;Следующий</translation>
-    </message>
-    <message>
-        <source>Use regular &amp;expressions</source>
-        <translation>Использовать регулярные &amp;выражения</translation>
-    </message>
-    <message>
-        <source>Wrap search and find again?</source>
-        <translation>Продолжить с начала файла?</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation>&amp;Закрыть</translation>
-    </message>
-    <message>
-        <source>W&amp;hole words</source>
-        <translation>&amp;Целиком слова</translation>
-    </message>
-    <message>
-        <source>Find in %1</source>
-        <translation>Найти в %1</translation>
-    </message>
-    <message>
-        <source>&amp;Replace</source>
-        <translation>За&amp;Менить</translation>
-    </message>
-    <message>
-        <source>&amp;Previous</source>
-        <translation>&amp;Предыдущий</translation>
-    </message>
-    <message>
-        <source>&amp;Match case</source>
-        <translation>&amp;Различать прописные/строчные</translation>
-    </message>
-    <message>
-        <source>&quot;%1&quot; was not found.</source>
-        <translation>&quot;%1&quot; не найден.</translation>
-    </message>
-    <message>
-        <source>&amp;Search for:</source>
-        <translation>&amp;Искать:</translation>
-    </message>
-    <message>
-        <source>Replace &amp;All</source>
-        <translation>Заменить &amp;Все</translation>
-    </message>
-    <message>
-        <source>Replace &amp;with:</source>
-        <translation>Заменить &amp;чем:</translation>
-    </message>
-    <message>
-        <source>Replace in %1</source>
-        <translation>Заменить в %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbLidar</name>
-    <message>
-        <source>&apos;near&apos; is greater than to &apos;minRange&apos;. Setting &apos;near&apos; to %1.</source>
-        <translation>Значение &apos;near&apos; больше, чем &apos;minRange&apos;. Устанавливаем &apos;near&apos; в %1.</translation>
-    </message>
-    <message>
-        <source>Impossible to have a so small &apos;verticalFieldOfView&apos; using this &apos;fieldOfView&apos;, &apos;numberOfLayers&apos; and &apos;horizontalResolution&apos;. &apos;verticalFieldOfView&apos; should be bigger or equal to numberOfLayers * fieldOfView / horizontalResolution. &apos;verticalFieldOfView&apos; set to %1.</source>
-        <translation>Невозможно иметь такой маленький &apos;verticalFieldOfView&apos;, с данными значениями &apos;fieldOfView&apos;, &apos;numberOfLayers&apos; и &apos;horizontalResolution&apos;. &apos;verticalFieldOfView&apos; должен быть больше или равен numberOfLayers * fieldOfView / horizontalResolution. Полю &apos;verticalFieldOfView&apos; присвоено значение %1.</translation>
-    </message>
-    <message>
-        <source>Impossible to have a so small &apos;verticalFieldOfView&apos; using this &apos;numberOfLayers&apos; and &apos;horizontalResolution&apos;. &apos;verticalFieldOfView&apos; should be bigger or equal to 2.0 * M_PI * numberOfLayers / horizontalResolution. &apos;verticalFieldOfView&apos; set to %1.</source>
-        <translation>Невозможно иметь такой маленький &apos;verticalFieldOfView&apos;, с данными значениями &apos;numberOfLayers&apos; и &apos;horizontalResolution&apos;. &apos;verticalFieldOfView&apos; должен быть больше или равен 2.0 * M_PI * numberOfLayers / horizontalResolution. &apos;verticalFieldOfView&apos; присвоено значение %1.</translation>
-    </message>
-    <message>
-        <source>&apos;minFrequency&apos; should be smaller or equal to &apos;maxFrequency&apos;.</source>
-        <translation>Значение &apos;minFrequency&apos; должно бьть меньше или равно &apos;maxFrequency&apos;.</translation>
-    </message>
-    <message>
-        <source>&apos;horizontalResolution&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
-        <translation>Поле &apos;horizontalResolution&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки мира.</translation>
-    </message>
-    <message>
-        <source>&apos;minRange&apos; is greater or equal to &apos;maxRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
-        <translation>Значение &apos;minRange&apos; больше или равно &apos;maxRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
-    </message>
-    <message>
-        <source>&apos;verticalFieldOfView&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
-        <translation>Поле &apos;verticalFieldOfView&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки мира.</translation>
-    </message>
-    <message>
-        <source>Impossible to have a so big &apos;numberOfLayers&apos; using this &apos;fieldOfView&apos;, &apos;verticalFieldOfView&apos; and &apos;horizontalResolution&apos;. &apos;numberOfLayers&apos; should be smaller or equal to verticalFieldOfView * horizontalResolution / fieldOfView. &apos;numberOfLayers&apos; set to %1.</source>
-        <translation>Невозможно иметь такой большой &apos;numberOfLayers&apos;, с данными значениями &apos;fieldOfView&apos;, &apos;verticalFieldOfView&apos; и &apos;horizontalResolution&apos;. &apos;numberOfLayers&apos; должен быть меньше или равен verticalFieldOfView * horizontalResolution / fieldOfView.  Полю &apos;numberOfLayers&apos; присвоено значение %1.</translation>
-    </message>
-    <message>
-        <source>Impossible to have a so big &apos;numberOfLayers&apos; using this &apos;verticalFieldOfView&apos; and &apos;horizontalResolution&apos;. &apos;numberOfLayers&apos; should be smaller or equal to verticalFieldOfView * actualHorizontalResolution() / (2.0 * M_PI). &apos;numberOfLayers&apos; set to %1.</source>
-        <translation>Невозможно иметь такой большой &apos;numberOfLayers&apos;, с данными значениями &apos;verticalFieldOfView&apos; и &apos;horizontalResolution&apos;. &apos;numberOfLayers&apos; должен быть меньше или равен verticalFieldOfView * actualHorizontalResolution() / (2.0 * M_PI).  Полю &apos;numberOfLayers&apos; присвоено значение %1.</translation>
-    </message>
-    <message>
-        <source>&apos;type&apos; should either be &apos;fixed&apos; or &apos;rotating&apos;, reset to &apos;fixed&apos;</source>
-        <translation>Значение &apos;type&apos; должно быть или &apos;fixed&apos; или &apos;rotating&apos;, сбрасываем в &apos;fixed&apos;</translation>
-    </message>
-    <message>
-        <source>Impossible to have a so small &apos;horizontalResolution&apos; using this &apos;numberOfLayers&apos; and &apos;verticalFieldOfView&apos;. &apos;horizontalResolution&apos; should be bigger or equal to 2.0 * M_PI * numberOfLayers  / verticalFieldOfView. &apos;horizontalResolution&apos; set to %1.</source>
-        <translation>Невозможно иметь такой маленький &apos;horizontalResolution&apos;, с данными значениями &apos;numberOfLayers&apos; и &apos;verticalFieldOfView&apos;. &apos;horizontalResolution&apos; должен быть больше или равен 2.0 * M_PI * numberOfLayers / verticalFieldOfView. Полю &apos;horizontalResolution&apos; присвоено значение %1.</translation>
-    </message>
-    <message>
-        <source>&apos;type&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
-        <translation>Поле &apos;type&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки мира.</translation>
-    </message>
-    <message>
-        <source>Impossible to have a so small &apos;horizontalResolution&apos; using this &apos;fieldOfView&apos;, &apos;numberOfLayers&apos; and &apos;verticalFieldOfView&apos;. &apos;horizontalResolution&apos; should be bigger or equal to numberOfLayers * fieldOfView / verticalFieldOfView. &apos;horizontalResolution&apos; set to %1.</source>
-        <translation>Невозможно иметь такой маленький &apos;horizontalResolution&apos;, с данными значениями &apos;fieldOfView&apos;, &apos;numberOfLayers&apos; и &apos;verticalFieldOfView&apos;. &apos;horizontalResolution&apos; должен быть больше или равен numberOfLayers * fieldOfView / verticalFieldOfView. Полю &apos;horizontalResolution&apos; присвоено значение %1.</translation>
-    </message>
-    <message>
-        <source>&apos;defaultFrequency&apos; should be bigger or equal to &apos;maxFrequency&apos;.</source>
-        <translation>Значение &apos;defaultFrequency&apos; должно бьть меньше или равно &apos;minFrequency&apos;.</translation>
-    </message>
-    <message>
-        <source>&apos;defaultFrequency&apos; should be bigger or equal to &apos;minFrequency&apos;.</source>
-        <translation>Значение &apos;defaultFrequency&apos; должно бьть больше или равно &apos;minFrequency&apos;.</translation>
-    </message>
-    <message>
-        <source>&apos;numberOfLayers&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
-        <translation>Поле &apos;numberOfLayers&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки мира.</translation>
-    </message>
-    <message>
-        <source>&apos;maxRange&apos; is less or equal to &apos;minRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
-        <translation>Значение &apos;maxRange&apos; меньше или равно &apos;minRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
-    </message>
-    <message>
-        <source>&apos;fieldOfView&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
-        <translation>Поле &apos;fieldOfView&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки мира.</translation>
-    </message>
-    <message>
-        <source>&apos;maxFrequency&apos; should be bigger or equal to &apos;minFrequency&apos;.</source>
-        <translation>Значение &apos;maxFrequency&apos; должно бьть больше или равно &apos;minFrequency&apos;.</translation>
-    </message>
-    <message>
-        <source>&apos;minRange&apos; is less than &apos;near&apos;. Setting &apos;minRange&apos; to %1.</source>
-        <translation>Значение &apos;minRange&apos; меньше, чем &apos;near&apos;. Устанавливаем &apos;minRange&apos; в %1.</translation>
-    </message>
-</context>
-<context>
-    <name>WbRangeFinder</name>
-    <message>
-        <source>&apos;near&apos; is greater than to &apos;minRange&apos;. Setting &apos;near&apos; to %1.</source>
-        <translation>Значение &apos;near&apos; больше, чем &apos;minRange&apos;. Устанавливаем &apos;near&apos; в %1.</translation>
-    </message>
-    <message>
-        <source>&apos;minRange&apos; is greater or equal to &apos;maxRange&apos;. Setting &apos;minRange&apos; to %1.</source>
-        <translation>Значение &apos;minRange&apos; больше или равно &apos;maxRange&apos;. Устанавливаем &apos;minRange&apos; в %1.</translation>
-    </message>
-    <message>
-        <source>&apos;minRange&apos; is greater or equal to &apos;maxRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
-        <translation>Значение &apos;minRange&apos; больше или равно &apos;maxRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
-    </message>
-    <message>
-        <source>&apos;maxRange&apos; is less or equal to &apos;minRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
-        <translation>Значение &apos;maxRange&apos; меньше или равно &apos;minRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
-    </message>
-    <message>
-        <source>&apos;minRange&apos; is less than &apos;near&apos;. Setting &apos;minRange&apos; to %1.</source>
-        <translation>Значение &apos;minRange&apos; меньше, чем &apos;near&apos;. Устанавливаем &apos;minRange&apos; в %1.</translation>
-    </message>
-</context>
-<context>
-    <name>WbZoom</name>
-    <message>
-        <source>Invalid &apos;maxFieldOfView&apos; changed to %1. The value should be bigger or equal to &apos;minFieldOfView&apos;.</source>
-        <translation>Недопустимый &apos;maxFieldOfView&apos; изменен на %1. Значение должно быть меньше или равно &apos;minFieldOfView&apos;.</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;minFieldOfView&apos; changed to %1. The value should be smaller or equal to &apos;maxFieldOfView&apos;.</source>
-        <translation>Недопустимый &apos;minFieldOfView&apos; изменен на %1. Значение должно быть меньше или равно &apos;maxFieldOfView&apos;.</translation>
-    </message>
-</context>
-<context>
-    <name>WbProtoModel</name>
-    <message>
-        <source>Failed to load due to syntax error(s)</source>
-        <translation>Не удалось загрузить из-за синтаксических ошибок</translation>
-    </message>
-    <message>
-        <source>Ignoring duplicate &apos;%1&apos; PROTO parameter declaration</source>
-        <translation>Игнорируем повторное объявление параметра в PROTO &quot;%1&quot;</translation>
-    </message>
-    <message>
-        <source>Recursive definition of PROTO node &apos;%1&apos; is not supported</source>
-        <translation>Рекурсивное определение узла PROTO &quot;%1&quot; не поддерживается</translation>
-    </message>
-    <message>
-        <source>Derived and base PROTO can use the same parameter name only if it is linked directly, like &apos;%1 IS %1&apos;</source>
-        <translation>Производный и базовый PROTO могут использовать одно и то же имя параметра, только если оно связано напрямую, например &apos;%1 IS %1&apos;</translation>
-    </message>
-    <message>
-        <source>PROTO parameter &apos;%1&apos; has no matching IS field</source>
-        <translation>Параметр PROTO &quot;%1&quot; не имеет соответствующего поля IS</translation>
-    </message>
-    <message>
-        <source>Type mismatch between &apos;%1&apos; PROTO parameter and field &apos;%2&apos;</source>
-        <translation>Несоответствие типов между параметром PROTO &quot;%1&quot; и полем &quot;%2&quot;</translation>
-    </message>
-    <message>
-        <source>Errors when parsing the PROTO parameters</source>
-        <translation>Ошибки при разборе параметров PROTO</translation>
-    </message>
-    <message>
-        <source>PROTO node &apos;%1&apos; cannot have a base node name</source>
-        <translation>Узел PROTO &quot;%1&quot; не может иметь имя базового узла</translation>
-    </message>
-    <message>
-        <source>Template engine error: %1</source>
-        <translation>Ошибка в движке шаблонов: %1</translation>
-    </message>
-    <message>
-        <source>Cannot create the &apos;%1&apos; PROTO</source>
-        <translation>Невозможно создать PROTO &quot;%1&quot;</translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos; PROTO identifier does not match filename</source>
-        <translation>Идентификатор PROTO &apos;%1&apos; не соответствует имени файла</translation>
-    </message>
-    <message>
-        <source>PROTO has unknown base type</source>
-        <translation>PROTO имеет неизвестный базовый тип</translation>
-    </message>
-    <message>
-        <source>Errors when parsing the base PROTO</source>
-        <translation>Ошибки при разборе базового PROTO</translation>
-    </message>
-    <message>
-        <source>Bracket issue</source>
-        <translation>Проблема со скобками</translation>
-    </message>
-</context>
-<context>
-    <name>WbVideoRecorder</name>
-    <message>
-        <source>The movie has been created:
-%1
-
-Do you want to play it back?
-</source>
-        <translation>Видео записано:
-%1
-
-Хотите просмотреть его?
-</translation>
-    </message>
-    <message>
-        <source>Videos (*%1)</source>
-        <translation>Видеоролики ((%1)</translation>
-    </message>
-    <message>
-        <source>Impossible to delete temporary file: &apos;%1&apos;</source>
-        <translation>Невозможно удалить временный файл: &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>Video encoding stage 1... </source>
-        <translation>Кодируем видео стадия 1... </translation>
-    </message>
-    <message>
-        <source>Video encoding stage 2... </source>
-        <translation>Кодируем видео стадия 2... </translation>
-    </message>
-    <message>
-        <source>Creating video...</source>
-        <translation>Создается видео...</translation>
-    </message>
-    <message>
-        <source>Impossible to write file: &apos;%1&apos;.</source>
-        <translation>Невозможно записать файл: &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Make Movie</source>
-        <translation>Создать видео</translation>
-    </message>
-    <message>
-        <source>Save Video</source>
-        <translation>Сохранить видео</translation>
-    </message>
-    <message>
-        <source>Video generation failed.</source>
-        <translation>Генерация видео не удалась.</translation>
-    </message>
-    <message>
-        <source>please wait</source>
-        <translation>пожалуйста, подождите</translation>
-    </message>
-    <message>
-        <source>Video creation canceled.</source>
-        <translation>Создание видео отменено.</translation>
-    </message>
-    <message>
-        <source>Open containg folder and YouTube upload page.</source>
-        <translation>Откройте папку с видосиком и страницу выгрузки на Youtube.</translation>
-    </message>
-    <message>
-        <source>Video creation finished.</source>
-        <translation>Запись видео завершена.</translation>
-    </message>
-    <message>
-        <source>Recording at %1 FPS, %2 bit/s.</source>
-        <translation>Запись с частотой кадров %1 FPS, %2 бит/с.</translation>
-    </message>
-    <message>
-        <source>Video generation failed due to an encoding problem
-</source>
-        <translation>Создать видео не удалось из-за проблем с кодировщиком
-</translation>
-    </message>
-    <message>
-        <source>Video recording starts when you run a simulation...</source>
-        <translation>Запись видео начнется при запуске симуляции...</translation>
-    </message>
-    <message>
-        <source>Temporary directory &apos;%1&apos; does not exist.</source>
-        <translation>Временная папка &apos;%1&apos; не существует.</translation>
-    </message>
-</context>
-<context>
-    <name>WbNewPhysicsPluginWizard</name>
-    <message>
-        <source>Language selection</source>
-        <translation>Выбор языка программирования</translation>
-    </message>
-    <message>
-        <source>Physics creation failed</source>
-        <translation>Не удалось создать физический плагин</translation>
-    </message>
-    <message>
-        <source>Please choose a name for your physics plugin.</source>
-        <translation>Задайте имя для вашего физического плагина.</translation>
-    </message>
-    <message>
-        <source>Plugin name:</source>
-        <translation>Имя плагина:</translation>
-    </message>
-    <message>
-        <source>New physics plugin creation</source>
-        <translation>Создание нового физического плагина</translation>
-    </message>
-    <message>
-        <source>Create a new physics plugin</source>
-        <translation>Создать новый физический плагин</translation>
-    </message>
-    <message>
-        <source>The following directory and files will be generated.</source>
-        <translation>Будет сгенерированы следующая папка и файлы.</translation>
-    </message>
-    <message>
-        <source>Conclusion</source>
-        <translation>Завершение</translation>
-    </message>
-    <message>
-        <source>Open &apos;%1%2&apos; in Text Editor.</source>
-        <translation>Открыть &apos;%1%2&apos; в текстовом редакторе.</translation>
-    </message>
-    <message>
-        <source>Name selection</source>
-        <translation>Задание имени</translation>
-    </message>
-    <message>
-        <source>This wizard will help you creating a new physics plugin.</source>
-        <translation>Этот мастер поможет вам создать новый физический плагин.</translation>
-    </message>
-    <message>
-        <source>Some directories or files could not be created.</source>
-        <translation>Не удалось создать некоторые папки или файлы.</translation>
-    </message>
-    <message>
-        <source>Please choose the language for your physics plugin.</source>
-        <translation>Пожалуйста, выберите язык для вашего физического плагина.</translation>
-    </message>
-</context>
-<context>
-    <name>WbWebotsUpdateDialog</name>
-    <message>
-        <source>Check for updates...</source>
-        <translation>Проверить обновления...</translation>
-    </message>
-    <message>
-        <source>Your version of Webots (%1) is up-to-date.</source>
-        <translation>Ваша версия Webots (%1) обновлена.</translation>
-    </message>
-    <message>
-        <source>Check for updates</source>
-        <translation>Проверить обновления</translation>
-    </message>
-    <message>
-        <source>Don&apos;t display this dialog again (you can re-enable it from the preferences)</source>
-        <translation>Больше не отображать это диалоговое окно (вы можете снова включить его в настройках)</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;A new version of Webots is available.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Webots %1 is available for download (you are currently using Webots %2).&lt;br/&gt;Download the new version: &lt;a href=&quot;https://cyberbotics.com/download&quot;&gt;https://cyberbotics.com/download&lt;/a&gt;&lt;br/&gt;Check the changelog: &lt;a href=&quot;https://cyberbotics.com/doc/reference/changelog&quot;&gt;https://cyberbotics.com/doc/reference/changelog&lt;/a&gt;</source>
-        <translation>&lt;b&gt;Доступна новая версия Webots.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Webots %1 доступна для скачивания (в настоящее время вы используете Webots %2).&lt;br/&gt;Загрузите новую версию: &lt; a href=&quot;https://cyberbotics.com/download&quot;&gt;https://cyberbotics.com/download&lt;/a&gt;&lt;br/&gt;Проверьте журнал изменений: &lt;a href=&quot;https://cyberbotics.com/doc /reference/changelog&quot;&gt;https://cyberbotics.com/doc/reference/changelog&lt;/a&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>WbTriangleMeshGeometry</name>
-    <message>
-        <source>A %1 is used in a Bounding object using an asymmetric friction. %1 does not support asymmetric friction</source>
-        <translation>Узел %1 использован в boundingObject с асимметричным трением. &quot;%1&quot; такое не поддерживает</translation>
-    </message>
-    <message>
-        <source>Cannot create %1 because: &quot;%2&quot;.</source>
-        <translation>Не удалось создать %1 по причине: &quot;%2&quot;.</translation>
-    </message>
-</context>
-<context>
-    <name>WbConnector</name>
-    <message>
-        <source>Connectors could not be attached because none of their parent nodes have Physics nodes.</source>
-        <translation>Коннекторы не могут быть присоединены, потому что ни в одном из родительских узлов не задан узел Physics.</translation>
-    </message>
-    <message>
-        <source>&apos;axisTolerance&apos; must be between 0 and pi.</source>
-        <translation>&apos;axisTolerance&apos; должно быть между 0 and pi.</translation>
-    </message>
-    <message>
-        <source>&apos;tensileStrength&apos; must be positive or -1 (infinite).</source>
-        <translation>Значение &apos;tensileStrength&apos; должно быть положительным или -1 (бесконечность).</translation>
-    </message>
-    <message>
-        <source>&apos;shearStrength&apos; must be positive or -1 (infinite).</source>
-        <translation>Значение &apos;shearStrength&apos; должно быть положительным или -1 (бесконечность).</translation>
-    </message>
-    <message>
-        <source>&apos;numberOfRotations&apos; must be positive or zero.</source>
-        <translation>Значение &apos;numberOfRotations&apos; должно быть неотрицательным.</translation>
-    </message>
-    <message>
-        <source>Unknown &apos;type&apos; &quot;%1&quot;: locking disabled.</source>
-        <translation>Неизвестный &apos;type&apos; &quot;%1&quot;: блокирование отключено.</translation>
-    </message>
-    <message>
-        <source>&apos;rotationTolerance&apos; must between 0 and pi.</source>
-        <translation>&apos;rotationTolerance&apos; должно быть между 0 and pi.</translation>
-    </message>
-    <message>
-        <source>Passive connectors cannot lock.</source>
-        <translation>Пассивные коннекторы не могут блокироваться.</translation>
-    </message>
-    <message>
-        <source>&apos;distanceTolerance&apos; must be positive or zero.</source>
-        <translation>Значение &apos;distanceTolerance&apos; должно быть неотрицательным.</translation>
-    </message>
-    <message>
-        <source>Passive connectors cannot be locked.</source>
-        <translation>Пассивные коннекторы не могут быть заблокированы.</translation>
+        <source>All &apos;size&apos; components must be positive for a Box used in a &apos;boundingObject&apos;.</source>
+        <translation>Все компоненты поля &apos;size&apos; должно быть положительными при использовании Box в &apos;boundingObject&apos;.</translation>
     </message>
 </context>
 <context>
@@ -3950,71 +2121,525 @@ The path to this Webots project contains non 8-bit characters. Webots won&apos;t
         <source>Remove intermediate build files.</source>
         <translation>Удалить промежуточные файлы построения.</translation>
     </message>
-</context>
-<context>
-    <name>WbAnimationRecorder</name>
     <message>
-        <source>Error when stopping the HTML5 animation recording: &apos;%1&apos;</source>
-        <translation>Ошибка при завершении записи HTML5-анимации: &apos;%1&apos;</translation>
+        <source>&apos;%1&apos;
+
+You don&apos;t have write access to this folder. Webots won&apos;t be able to clean or compile any controller in this path. Please move this Webots project into a folder where you have write access.</source>
+        <translation>&apos;%1&apos;
+
+У вас нет прав на запись в эту папку. Webots не сможет очистить или скомпилировать какой-либо контроллер на этом пути. Пожалуйста, переместите этот проект Webots в папку, к которой у вас есть доступ для записи.</translation>
     </message>
     <message>
-        <source>HTML5 animation successfully exported in &apos;%1&apos;
-</source>
-        <translation>HTML5-анимация успешно экспортирована в &apos;%1&apos;
-</translation>
-    </message>
-    <message>
-        <source>HTML5 animation recorder is enabled.</source>
-        <translation>Запись HTML5-анимации разрешена.</translation>
-    </message>
-    <message>
-        <source>Start HTML5 animation export
-</source>
-        <translation>Начать экспорт HTML5-анимации
-</translation>
-    </message>
-    <message>
-        <source>Error when starting the HTML5 animation recording: &apos;%1&apos;</source>
-        <translation>Ошибка при запуске записи HTML5-анимации: &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>Cannot open HTML5 animation file &apos;%1&apos;</source>
-        <translation>Не открылся файл с  HTML5 анимацией &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>HTML5 export failed</source>
-        <translation>Не удалось экспортировать HTML5-анимацию</translation>
-    </message>
-    <message>
-        <source>Make HTML5 Animation</source>
-        <translation>Создать анимацию в HTML5</translation>
-    </message>
-    <message>
-        <source>The animation has been created:&lt;br&gt;%1&lt;br&gt;&lt;br&gt;Do you want to view it locally now?&lt;br&gt;&lt;br&gt;Note: please refer to the &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/web-scene#remarks-on-the-used-technologies-and-their-limitations&apos;&gt;User Guide&lt;/a&gt; if your browser prevents local files CORS requests.</source>
-        <translation>Анимация записана:&lt;br&gt;%1&lt;br&gt;&lt;br&gt;Хотите запустить локальный просмотр?&lt;br&gt;&lt;br&gt;Примечание: читайте &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/web-scene#remarks-on-the-used-technologies-and-their-limitations&apos;&gt;Руководство Пользователя&lt;/a&gt; если ваш браузер отклоняет CORS-запросы локальных файлов.</translation>
-    </message>
-    <message>
-        <source>Streaming server already initialized.</source>
-        <translation>Стриминговый сервер уже инициализирован.</translation>
+        <source>&apos;%1&apos;
+
+You don&apos;t have write access to the &apos;Program Files&apos; folder. Webots won&apos;t be able to clean or compile any controller in this path. Please move this Webots project into a folder where you have write access.</source>
+        <translation>&apos;%1&apos;
+
+У вас нет прав на запись в папку «Program Files». Webots не сможет очистить или скомпилировать какой-либо контроллер на этом пути. Пожалуйста, переместите этот проект Webots в папку, к которой у вас есть доступ для записи.</translation>
     </message>
 </context>
 <context>
-    <name>WbHingeJoint</name>
+    <name>WbCadShape</name>
     <message>
-        <source>HingeJoint &apos;maxStop&apos; must be less than pi to be effective.</source>
-        <translation>Поле &apos;maxStop&apos; в HingeJoint должно быть меньше -PI, чтобы иметь какой-то эффект.</translation>
+        <source>File &apos;%1&apos; not found.</source>
+        <translation>Файл &quot;%1&quot; не найден.</translation>
     </message>
     <message>
-        <source>HingeJoint &apos;minStop&apos; must be less or equal to RotationalMotor &apos;minPosition&apos;.</source>
-        <translation>Поле &apos;minStop&apos; в HingeJoint не должно превышать &apos;minPosition&apos; узла RotationalMotor .</translation>
+        <source>File &apos;%1&apos; cannot be read.</source>
+        <translation>Файл &quot;%1&quot; не может быть прочитан.</translation>
     </message>
     <message>
-        <source>HingeJoint &apos;maxStop&apos; must be greater or equal to RotationalMotor &apos;maxPosition&apos;.</source>
-        <translation>Поле &apos;maxStop&apos; в HingeJoint не должно быть меньше &apos;minPosition&apos; узла RotationalMotor .</translation>
+        <source>Invalid URL &apos;%1&apos;. CadShape node expects file in Collada (&apos;.dae&apos;) or Wavefront (&apos;.obj&apos;) format.</source>
+        <translation>Недопустимый URL &quot;%1&quot;. Узел CadShape ожидает файл в формате Collada (&apos;.dae&apos;) или Wavefront (&apos;.obj&apos;).</translation>
     </message>
     <message>
-        <source>HingeJoint &apos;minStop&apos; must be greater than -pi to be effective.</source>
-        <translation>Поле &apos;minStop&apos; в HingeJoint должно быть больше -PI, чтобы иметь какой-то эффект.</translation>
+        <source>File could not be read: &apos;%1&apos;</source>
+        <translation>Не удалось прочитать файл: &quot;%1&quot;</translation>
+    </message>
+    <message>
+        <source>Invalid data, please verify mesh file: %1</source>
+        <translation>Недопустимые данные, проверьте файл 3D-модели: %1</translation>
+    </message>
+    <message>
+        <source>Mesh &apos;%1&apos; has more than 100&apos;000 vertices, it is recommended to reduce the number of vertices.</source>
+        <translation>Сетка &quot;%1&quot; имеет более 100 000 вершин, рекомендуется уменьшить количество вершин.</translation>
+    </message>
+</context>
+<context>
+    <name>WbCamera</name>
+    <message>
+        <source>&apos;near&apos; is greater than &apos;far&apos;. Setting &apos;near&apos; to %1.</source>
+        <translation>Значение &apos;near&apos; превышает значение &apos;far&apos;. Устанавливаем &apos;near&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>
+Size on the image: %1 %2</source>
+        <translation>
+Размер на изображении: %1 %2</translation>
+    </message>
+    <message>
+        <source>wb_camera_set_focal_distance(%1) out of focus range [%2, %3].</source>
+        <translation>wb_camera_set_focal_distance(%1) вне фокусного диапазона [%2, %3].</translation>
+    </message>
+    <message>
+        <source>wb_camera_set_focal_distance() cannot be applied to this camera: missing &apos;focus&apos;.</source>
+        <translation>wb_camera_set_focal_distance() не применило к этой камере: не задан &apos;focus&apos;.</translation>
+    </message>
+    <message>
+        <source>&apos;far&apos; is less than &apos;near&apos;. Setting &apos;far&apos; to %1.</source>
+        <translation>Значение &apos;far&apos; меньше, чем &apos;near&apos;. Устанавливаем &apos;far&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>wb_camera_set_fov(%1) out of zoom range [%2, %3].</source>
+        <translation>wb_camera_set_fov(%1) выходит из диапазона зума [%2, %3].</translation>
+    </message>
+    <message>
+        <source>wb_camera_set_fov() cannot be applied to this camera: missing &apos;zoom&apos;.</source>
+        <translation>wb_camera_set_fov() не применило к этой камере: не задан &apos;zoom&apos;.</translation>
+    </message>
+    <message>
+        <source>
+Relative orientation: %1 %2 %3 %4</source>
+        <translation>
+Относительная ориентация: %1 %2 %3 %4</translation>
+    </message>
+    <message>
+        <source>Lens flare cannot be applied to spherical cameras.</source>
+        <translation>Блик объектива не применяется к сферическим камерам.</translation>
+    </message>
+    <message>
+        <source>
+Color %1: %2 %3 %4</source>
+        <translation>
+Цвет %1: %2 %3 %4</translation>
+    </message>
+    <message>
+        <source>
+Relative position: %1 %2 %3</source>
+        <translation>
+Относительная позиция: %1 %2 %3</translation>
+    </message>
+    <message>
+        <source>
+Position on the image: %1 %2</source>
+        <translation>
+Позиция на изображении: %1 %2</translation>
+    </message>
+    <message>
+        <source>
+Size: %1 %2</source>
+        <translation>
+Размер: %1 %2</translation>
+    </message>
+    <message>
+        <source>
+Id: %1</source>
+        <translation>
+Id: %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbCapsule</name>
+    <message>
+        <source>A Capsule is used in a Bounding object using an asymmetric friction. Capsule does not support asymmetric friction</source>
+        <translation>Узел Capsule использован в boundingObject с асимметричным трением. &quot;Капсула&quot; такое не поддерживает</translation>
+    </message>
+    <message>
+        <source>&apos;radius&apos; must be positive when used in a &apos;boundingObject&apos;.</source>
+        <translation>Значение &apos;radius&apos; должно быть положительным при использовании в &apos;boundingObject&apos;.</translation>
+    </message>
+    <message>
+        <source>&apos;subdivision&apos; value has no effect to physical &apos;boundingObject&apos; geometry. A minimum value of %2 is used for the representation.</source>
+        <translation>Значение &apos;subdivision&apos; не влияет на расчет &apos;boundingObject&apos;. Для отображения используется минимальное значение %2.</translation>
+    </message>
+    <message>
+        <source>&apos;height&apos; must be positive when used in a &apos;boundingObject&apos;.</source>
+        <translation>Значение &apos;height&apos; должно быть положительным при использовании в &apos;boundingObject&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>WbCharger</name>
+    <message>
+        <source>No Material and no Light found. The first child of a Charger should be either a Shape, a Light or a Group containing Shape and Light nodes.</source>
+        <translation>Не найден материал или источник света. Первым в Charger.children должен быть Shape, Light или Group, их содержащая.</translation>
+    </message>
+</context>
+<context>
+    <name>WbCone</name>
+    <message>
+        <source>A Cone is used in a Bounding object using an asymmetric friction. Cone does not support asymmetric friction</source>
+        <translation>Конус использован в boundingObject с асимметричным трением. Конус такое не поддерживает</translation>
+    </message>
+</context>
+<context>
+    <name>WbConnector</name>
+    <message>
+        <source>Connectors could not be attached because none of their parent nodes have Physics nodes.</source>
+        <translation>Коннекторы не могут быть присоединены, потому что ни в одном из родительских узлов не задан узел Physics.</translation>
+    </message>
+    <message>
+        <source>&apos;axisTolerance&apos; must be between 0 and pi.</source>
+        <translation>&apos;axisTolerance&apos; должно быть между 0 and pi.</translation>
+    </message>
+    <message>
+        <source>&apos;tensileStrength&apos; must be positive or -1 (infinite).</source>
+        <translation>Значение &apos;tensileStrength&apos; должно быть положительным или -1 (бесконечность).</translation>
+    </message>
+    <message>
+        <source>&apos;shearStrength&apos; must be positive or -1 (infinite).</source>
+        <translation>Значение &apos;shearStrength&apos; должно быть положительным или -1 (бесконечность).</translation>
+    </message>
+    <message>
+        <source>&apos;numberOfRotations&apos; must be positive or zero.</source>
+        <translation>Значение &apos;numberOfRotations&apos; должно быть неотрицательным.</translation>
+    </message>
+    <message>
+        <source>Unknown &apos;type&apos; &quot;%1&quot;: locking disabled.</source>
+        <translation>Неизвестный &apos;type&apos; &quot;%1&quot;: блокирование отключено.</translation>
+    </message>
+    <message>
+        <source>&apos;rotationTolerance&apos; must between 0 and pi.</source>
+        <translation>&apos;rotationTolerance&apos; должно быть между 0 and pi.</translation>
+    </message>
+    <message>
+        <source>Passive connectors cannot lock.</source>
+        <translation>Пассивные коннекторы не могут блокироваться.</translation>
+    </message>
+    <message>
+        <source>&apos;distanceTolerance&apos; must be positive or zero.</source>
+        <translation>Значение &apos;distanceTolerance&apos; должно быть неотрицательным.</translation>
+    </message>
+    <message>
+        <source>Passive connectors cannot be locked.</source>
+        <translation>Пассивные коннекторы не могут быть заблокированы.</translation>
+    </message>
+</context>
+<context>
+    <name>WbConsole</name>
+    <message>
+        <source>Console Name</source>
+        <translation>Имя Консоли</translation>
+    </message>
+    <message>
+        <source>New name:</source>
+        <translation>Новое имя:</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>Консоль</translation>
+    </message>
+</context>
+<context>
+    <name>WbContactProperties</name>
+    <message>
+        <source>&apos;coulombFriction&apos; must have between one and four elements</source>
+        <translation>&apos;coulombFriction&apos; должно иметь от одного до 4-х элементов</translation>
+    </message>
+    <message>
+        <source>If not set to -1 (infinity), &apos;coulombFriction&apos; must be non-negative. Field value reset to 1</source>
+        <translation>Значение &apos;coulombFriction&apos; должно быть или -1 (бесконечность), или же неотрицательным числом. Значение установлено в 1</translation>
+    </message>
+    <message>
+        <source>&apos;forceDependentSlip&apos; must have between one and four elements</source>
+        <translation>&apos;forceDependentSlip&apos; должно иметь от одного до 4-х элементов</translation>
+    </message>
+    <message>
+        <source>&apos;rollingFriction&apos; values must be positive or -1.0. Field value reset to 0 0 0.</source>
+        <translation>Значение &apos;rollingFriction&apos; должно быть положительным или -1. Значение установлено в 0 0 0.</translation>
+    </message>
+</context>
+<context>
+    <name>WbControlledWorld</name>
+    <message>
+        <source>&quot;%1&quot; extern controller: stopped.</source>
+        <translation>Внешний контроллер &quot;%1&quot;: остановлен.</translation>
+    </message>
+    <message>
+        <source>Terminating extern controller for robot &quot;%2&quot;.</source>
+        <translation>Завершается внешний контроллер для робота&quot;%2&quot;.</translation>
+    </message>
+</context>
+<context>
+    <name>WbController</name>
+    <message>
+        <source>MATLAB controllers should be launched as extern controllers with the snap package of Webots.</source>
+        <translation>Контроллеры MATLAB могут быть запущены как внешние with the snap package of Webots.</translation>
+    </message>
+    <message>
+        <source>Try to compile the Java source code, to get a new .class or .jar file.</source>
+        <translation>Попробуйте перекомпилировать исходники на Java, чтобы получить новый файл .class или .jar.</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos;
+The path to this Webots project contains non 8-bit characters. Webots won&apos;t be able to execute any Java controller in this path. Please move this Webots project into a folder with only 8-bit characters.</source>
+        <translation>&apos;%1&apos;
+Путь к этому Webots-проекту содержит не 8-битные символы (например, кириллицу). Webots не сможет выполнить никакой Java- контроллер из этого пути. Переместите проект Webots в папку, весь путь к которой не содержит &quot;национальных&quot; символов.</translation>
+    </message>
+    <message>
+        <source>Unknown key: %1 in java section</source>
+        <translation>Неизвестная ошибкаL: %1 в секции java</translation>
+    </message>
+    <message>
+        <source>Webots expects a binary executable file at this location.</source>
+        <translation>Webots ожидает двоичный исполняемый файл в этом месте.</translation>
+    </message>
+    <message>
+        <source>This is not a valid executable file.</source>
+        <translation>Файл не является выполняемым.</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; controller exited with status: %2.</source>
+        <translation>Контроллер &apos;%1&apos;  завершился со статусом: %2.</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; controller exited successfully.</source>
+        <translation>Контроллер &apos;%1&apos; успешно завершился.</translation>
+    </message>
+    <message>
+        <source>Unknown key: %1 in matlab section</source>
+        <translation>Неизвестная ошибкаL: %1 в секции matlab</translation>
+    </message>
+    <message>
+        <source>Starting controller: %1</source>
+        <translation>Запускается контроллер: %1</translation>
+    </message>
+    <message>
+        <source>A BotStudio controller was detected, but the &apos;window&apos; field of the Robot node is not set to &quot;botstudio&quot;. The controller probably won&apos;t work as expected.</source>
+        <translation>Обнаружен контроллер BotStudio, но поле window узла Robot не было выставлено в &quot;botstudio&quot;. Контроллер, вероятно, не будет работать, как ожидалось.</translation>
+    </message>
+    <message>
+        <source>failed to start: %1</source>
+        <translation>неудача запуска: %1</translation>
+    </message>
+    <message>
+        <source>Maybe it has the wrong binary architecture: try to recompile this controller.</source>
+        <translation>Возможно, контроллер скомпилирован для другого процессора, попробуйте рекомпилировать.</translation>
+    </message>
+    <message>
+        <source>Unknown error.</source>
+        <translation>Неизвестная ошибка.</translation>
+    </message>
+    <message>
+        <source>Python shebang requests python%1, but current path points to Python%2</source>
+        <translation>Шебанг (#!) в Питоновском скрипте требует python%1, но текущий путь ведет к Python%2</translation>
+    </message>
+    <message>
+        <source>This is not a valid file, maybe a directory.</source>
+        <translation>Это не файл, возможно - папка.</translation>
+    </message>
+    <message>
+        <source>Environment variables from runtime.ini could not be loaded: the file contains illegal definitions.</source>
+        <translation>Не удалось загрузить переменные среды из runtime.ini: файл содержит некорректные определения.</translation>
+    </message>
+    <message>
+        <source>Could not find controller file:</source>
+        <translation>Не найден файл контроллера:</translation>
+    </message>
+    <message>
+        <source>This is not an executable file, try to change its permissions.</source>
+        <translation>Файл не является выполняемым, попробуйте поменять права доступа к нему.</translation>
+    </message>
+    <message>
+        <source>Unable to find the &apos;%1&apos; executable in the current PATH. Please check your %1 installation. It should be possible to launch %1 from a terminal by typing &apos;%1&apos;. It may be necessary to add the %1 bin directory to your PATH environment variable. More information about the %1 installation is available in Webots&apos; User guide.</source>
+        <translation>Исполняемый файл &apos;%1&apos; не найден в текущем PATH. Проверьте установку %1. Должно быть возможно запустить %1 из окна терминала, набрав &apos;%1&apos;. Вам может понадобиться добавить &apos;%1&apos; в PATH. Больше про установку %1 вы можете узнать в &quot;Руководстве пользователя&quot; Webots.</translation>
+    </message>
+    <message>
+        <source>The process crashed some time after starting successfully.</source>
+        <translation>Процесс аварийно завершился (через некоторое время после успешного запуска).</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; controller crashed.</source>
+        <translation>Контроллер &apos;%1&apos; аварийно завершился.</translation>
+    </message>
+    <message>
+        <source>An error occurred when attempting to read from the process.</source>
+        <translation>Произошла ошибка при попытке чтения из процесса.</translation>
+    </message>
+    <message>
+        <source>Unknown key: %1 in python section</source>
+        <translation>Неизвестная ошибкаL: %1 в секции python</translation>
+    </message>
+    <message>
+        <source>Try to compile the C/C++ source code, to get a new executable file.</source>
+        <translation>Попробуйте перекомпилировать исходники на C/C++, чтобы получить новый исполнимый файл.</translation>
+    </message>
+    <message>
+        <source>The process didn&apos;t respond in time.</source>
+        <translation>Процесс не ответил в ожидаемое время.</translation>
+    </message>
+    <message>
+        <source>An error occurred when attempting to write to the process.</source>
+        <translation>Произошла ошибка при попытке записи в процесс.</translation>
+    </message>
+    <message>
+        <source>disconnected.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>refusing connection attempt from another extern controller.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>waiting for connection on %1 or on %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Could not find the controller directory.
+Starting the &lt;generic&gt; controller instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot create empty extern file in &apos;%1&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot cleanup the local server (server name = &apos;%1&apos;).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot listen to the local server (server name = &apos;%1&apos;): %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>connected.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; extern controller: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Expected either: %1, %2, %3, %4, %5 or %6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Starts the &lt;generic&gt; controller instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Webots could not find the MATLAB executable at the default MATLAB installation path. Please provide the correct absolute path to the MATLAB executable in the Webots preferences (%1).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The MATLAB executable could not be started. Please provide the correct absolute path to the MATLAB executable in the Webots preferences (%1) or leave it empty to use the default MATLAB installation path: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Docker controllers are supported only on Linux.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unable to run docker, is docker installed?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to build the docker image in &apos;%1&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>An error occurred during the copy of controller &apos;%1&apos;. An older version will be executed.
+Please close any running instances of the controller and reload the world.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>disconnected, waiting for new connection.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbCylinder</name>
+    <message>
+        <source>&apos;radius&apos; must be positive when used in a &apos;boundingObject&apos;.</source>
+        <translation>Значение &apos;radius&apos; должно быть положительным при использовании в &apos;boundingObject&apos;.</translation>
+    </message>
+    <message>
+        <source>&apos;subdivision&apos; value has no effect to physical &apos;boundingObject&apos; geometry. A minimum value of %2 is used for the representation.</source>
+        <translation>Значение &apos;subdivision&apos; не влияет на расчет &apos;boundingObject&apos;. Для отображения используется минимальное значение %2.</translation>
+    </message>
+    <message>
+        <source>&apos;height&apos; must be positive when used in a &apos;boundingObject&apos;.</source>
+        <translation>Значение &apos;height&apos; должно быть положительным при использовании в &apos;boundingObject&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>WbDamping</name>
+    <message>
+        <source>&apos;linear&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;linear&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;angular&apos; must be less than or equal to one.</source>
+        <translation>Значение &apos;angular&apos; должно быть меньше или равно 1.</translation>
+    </message>
+    <message>
+        <source>&apos;angular&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;angular&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;linear&apos; must be less than or equal to one.</source>
+        <translation>Значение &apos;linear&apos; должно быть меньше или равно 1.</translation>
+    </message>
+</context>
+<context>
+    <name>WbDirectionalLight</name>
+    <message>
+        <source>Maximum number of directional lights (%1) has been reached, newly added lights won&apos;t be rendered.</source>
+        <translation>Слишком много направленных источников света (максимально %1), лишние источники игнорируются.</translation>
+    </message>
+</context>
+<context>
+    <name>WbDisplay</name>
+    <message>
+        <source>Invalid &apos;%1&apos; font.</source>
+        <translation>Некорректный шрифт: &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Error while generating character &apos;%1&apos;.</source>
+        <translation>Ошибка при генерации символа &apos;%1&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>WbDistanceSensor</name>
+    <message>
+        <source>&apos;type&apos; &quot;laser&quot; must have one single ray.</source>
+        <translation>Датчик с типом &quot;laser&quot; должен иметь ровно один луч.</translation>
+    </message>
+</context>
+<context>
+    <name>WbDockTitleBar</name>
+    <message>
+        <source>Minimize the panel.</source>
+        <translation>Свернуть панель.</translation>
+    </message>
+    <message>
+        <source>Maximize the panel.</source>
+        <translation>Развернуть панель.</translation>
+    </message>
+    <message>
+        <source>Close the panel.</source>
+        <translation>Закрыть панель.</translation>
+    </message>
+    <message>
+        <source>Undock the panel.</source>
+        <translation>Отцепить (undock) панель.</translation>
+    </message>
+</context>
+<context>
+    <name>WbDownloader</name>
+    <message>
+        <source>Downloading assets</source>
+        <translation>Скачиваем ресурсы</translation>
+    </message>
+    <message>
+        <source>Cannot download &apos;%1&apos;, error code: %2: %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbDragHorizontalEvent</name>
+    <message>
+        <source>To drag this element, first rotate the view so that the horizontal plane is clearly visible.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4045,147 +2670,2302 @@ The path to this Webots project contains non 8-bit characters. Webots won&apos;t
     </message>
 </context>
 <context>
-    <name>WbSkin</name>
+    <name>WbEmitter</name>
     <message>
-        <source>%1 cannot be executed because no valid skeleton is available.</source>
-        <translation>%1 не может быть выполнен, так как нет годного скелета.</translation>
+        <source>Unknown &apos;type&apos;: &quot;%1&quot;.</source>
+        <translation>Неизвестный &apos;type&apos;: &quot;%1&quot;.</translation>
     </message>
     <message>
-        <source>Bone named &apos;%1&apos; could not be found in skeleton file.</source>
-        <translation>Кость с именем &apos;%1&apos; не может быть найдена в файле скелета.</translation>
+        <source>&apos;allowedChannels&apos; does not contain current &apos;channel&apos;. Setting &apos;channel&apos; to %1.</source>
+        <translation>Поле &apos;allowedChannels&apos; не содержит текущий &apos;channel&apos;. Устанавливаем &apos;channel&apos; в %1.</translation>
     </message>
     <message>
-        <source>No material named &apos;%1&apos; could be found in mesh file.</source>
-        <translation>В файле сетки не найден материал с именем &quot;%1&quot;.</translation>
+        <source>&apos;channel&apos; is not included in &apos;allowedChannels&apos;. Setting &apos;channel&apos; to %1</source>
+        <translation>Поле &apos;channel&apos; не включено в &apos;allowedChannels&apos;. Устанавливаем &apos;channel&apos; в %1</translation>
     </message>
     <message>
-        <source>Duplicated Appearance with name &apos;%1&apos; in &apos;appearance&apos; field. Only the first instance will be used.</source>
-        <translation>Дублируется Appearance с именем &apos;%1&apos; в поле &apos;appearance&apos;. Будет использоваться только первый экземпляр.</translation>
-    </message>
-    <message>
-        <source>Mesh file not found: &apos;%1&apos;.</source>
-        <translation>Файл 3D-модели не найден: &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Unable to read mesh file &apos;%1&apos;: %2</source>
-        <translation>Невозможно прочитать 3D-файл &quot;%1&quot;: %2</translation>
-    </message>
-    <message>
-        <source>Undefined Appearance with name &apos;%1&apos;.</source>
-        <translation>Не определен узел Appearance с именем &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Skin animation control using %1 is disabled if a Webots skeleton is used.
-</source>
-        <translation>Управление анимацией скина с использованием %1 отключено, если используется скелет Webots.
-</translation>
-    </message>
-    <message>
-        <source>Invalid item %1 in &apos;bones&apos; field: duplicated reference to Solid with name &apos;%2&apos;.</source>
-        <translation>Недопустимый элемент %1 в поле &apos;bones&apos;: повторяющаяся ссылка на Solid с именем &apos;%2&apos;.</translation>
-    </message>
-    <message>
-        <source>OGRE skeleton file not found.</source>
-        <translation>Файл скелета OGRE не найден.</translation>
-    </message>
-    <message>
-        <source>Model directory not found.</source>
-        <translation>Каталог моделей не найден.</translation>
-    </message>
-    <message>
-        <source>Number of valid bones defined in &apos;bones&apos; field does not match with skeleton file. Expected: %1, was: %2.</source>
-        <translation>Количество костей, указанное в поле &apos;bones&apos;, не совпадает с файлом скелета. Ожидается: %1, было: %2.</translation>
+        <source>&apos;range&apos; must be less than or equal to &apos;maxRange&apos;.</source>
+        <translation>Значение &apos;range&apos; должно быть меньше или равно значения &apos;maxRange&apos;.</translation>
     </message>
 </context>
 <context>
-    <name>WbSupervisorUtilities</name>
+    <name>WbExtendedStringEditor</name>
     <message>
-        <source>wb_supervisor_node_get_orientation() can exclusively be used with Transform (or derived).</source>
-        <translation>Функция wb_supervisor_node_get_orientation() может использоваться исключительно с узлом Transform (или производным).</translation>
+        <source>Edit</source>
+        <translation>Редактировать</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_get_position() can exclusively be used with Transform (or derived).</source>
-        <translation>Функция wb_supervisor_node_get_position() может использоваться исключительно с узлом Transform (или производным).</translation>
+        <source>Please select a solid from the list
+</source>
+        <translation>Выберите из списка твердое тело
+</translation>
     </message>
     <message>
-        <source>wb_supervisor_virtual_reality_headset_get_position() called but no virtual reality headset is currently in use.</source>
-        <translation>Вызвана функция wb_supervisor_virtual_reality_headset_get_position() , но VR-гарнитура сейчас не используется.</translation>
+        <source>The file does not exist, or has an extension which is not supported.</source>
+        <translation>Файл не существует, или имеет неподдерживаемое расширение имени файла.</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_get_number_of_contact_points() and wb_supervisor_node_get_contact_point() can exclusively be used with a Solid</source>
-        <translation>Функции wb_supervisor_node_get_number_of_contact_points() и wb_supervisor_node_get_contact_point() могут использоваться исключительно с узлом Solid</translation>
+        <source>Fluid choice</source>
+        <translation>Выбрать жидкость</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_get_center_of_mass() can exclusively be used with Solid</source>
-        <translation>Функция wb_supervisor_node_get_center_of_mass() может использоваться исключительно с узлом Solid</translation>
+        <source>Select...</source>
+        <translation>Выбрать...</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_add_force() can exclusively be used with a Solid</source>
-        <translation>Функция wb_supervisor_node_add_force() может использоваться исключительно с узлом Solid</translation>
+        <source>Solid choice</source>
+        <translation>Выбор твердого тела</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_add_force() can&apos;t be used with a kinematic Solid</source>
-        <translation>Функция wb_supervisor_node_add_force() не может использоваться с &quot;кинематическим&quot; узлом Solid (без физики)</translation>
+        <source>Please select a fluid from the list
+</source>
+        <translation>Выберите жидкость из списка
+</translation>
     </message>
     <message>
-        <source>wb_supervisor_field_remove_mf() called with the &apos;index&apos; argument referring to a Viewpoint or WorldInfo node.</source>
-        <translation>Функция wb_supervisor_field_remove_mf() вызвана с аргументом &apos;index&apos;, относящимся к узлу Viewpoint или WorldInfo.</translation>
+        <source>%1 files (%2)</source>
+        <translation>%1 файлов (%2)</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_get_static_balance() can exclusively be used with a top Solid</source>
-        <translation>Функция wb_supervisor_node_get_static_balance() может использоваться исключительно с узлом Solid верхнего уровня</translation>
+        <source>Remote control plugins choice</source>
+        <translation>Выбор плагина для дистанционного управления</translation>
     </message>
     <message>
-        <source>%1: node not found.</source>
-        <translation>%1: узел не найден.</translation>
+        <source>Please select a plugin from the list
+(takes effect only after you save and reload the world)</source>
+        <translation>Выберите контроллер из списка (он запустится только после того, как вы сохраните и перезагрузите сцену)</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_set_joint_position() called with a &apos;position&apos; argument %1 outside hard limits of the joint. Applied position is %2.</source>
-        <translation>Функция wb_supervisor_node_set_joint_position() вызвана с аргументом position %1 за пределами жестких ограничений шарнира. Примененная позиция: %2.</translation>
+        <source>Please select a controller from the list
+(it will start at the next time step)</source>
+        <translation>Выберите контроллер из списка (он запустится на следующем шаге)</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_restart_controller() can exclusively be used with a Robot</source>
-        <translation>Функция wb_supervisor_node_restart_controller() может использоваться исключительно с узлом Robot</translation>
+        <source>Open %1</source>
+        <translation>Открыть %1</translation>
     </message>
     <message>
-        <source>wb_supervisor_set_label() called with an invalid &apos;%1&apos; font, &apos;Arial&apos; used instead.</source>
-        <translation>Вызван wb_supervisor_set_label() с недопустимым шрифтом &quot;%1&quot;, вместо него взят &quot;Arial&quot;.</translation>
+        <source>Please select a remote control plugin from the list
+(takes effect only after you save and reload the world)</source>
+        <translation>Выберите плагин дистанционного управления из списка (он запустится только после того, как вы сохраните и перезагрузите сцену)</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_set_velocity() can exclusively be used with a Solid</source>
-        <translation>Функция wb_supervisor_node_set_velocity() может использоваться исключительно с Solid</translation>
+        <source>Edit controller main file in Text Editor.</source>
+        <translation>Редактировать главный файл контроллера в Текстовом Редакторе.</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_get_velocity() can exclusively be used with a Solid</source>
-        <translation>Функция wb_supervisor_node_get_velocity() может использоваться исключительно с узлом Solid</translation>
+        <source>Robot window plugins choice</source>
+        <translation>Выбор плагина для Окна робота</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_add_torque() can&apos;t be used with a kinematic Solid</source>
-        <translation>Функция wb_supervisor_node_add_torque() не может использоваться с &quot;кинематическим&quot; узлом Solid (без физики)</translation>
+        <source>Please select a reference area from the list
+</source>
+        <translation>Выберите из списка reference area
+</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_add_force_with_offset() can&apos;t be used with a kinematic Solid</source>
-        <translation>Функция wb_supervisor_node_add_force_with_offset() не может использоваться с &quot;кинематическим&quot; узлом Solid (без физики)</translation>
+        <source>Physics plugins choice</source>
+        <translation>Выбор физических плагинов</translation>
     </message>
     <message>
-        <source>wb_supervisor_set_label() is out of range. The supported range is [0, %1].</source>
-        <translation>wb_supervisor_set_label() находится вне допустимого диапазона. Поддерживаемый диапазон: [0, %1].</translation>
+        <source>Reference area choice</source>
+        <translation>Выбор reference area</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_get_pose() can exclusively be used with Transform (or derived).</source>
-        <translation>Функция wb_supervisor_node_get_pose() может использоваться исключительно с узлом Transform (или производным).</translation>
+        <source>Select controller program.</source>
+        <translation>Выбрать программу контроллера.</translation>
     </message>
     <message>
-        <source>wb_supervisor_virtual_reality_headset_get_orientation() called but no virtual reality headset is currently in use.</source>
-        <translation>Вызвана функция wb_supervisor_virtual_reality_headset_get_orientation() , но VR-гарнитура сейчас не используется.</translation>
+        <source>Impossible to edit the file: no file defined.</source>
+        <translation>Невозможно редактировать файл: не задано имя файла.</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_add_force_with_offset() can exclusively be used with a Solid</source>
-        <translation>Функция wb_supervisor_node_add_force_with_offset() может использоваться исключительно с узлом Solid</translation>
+        <source>Controller choice</source>
+        <translation>Выбрать контроллер</translation>
     </message>
     <message>
-        <source>wb_supervisor_node_add_torque() can exclusively be used with a Solid</source>
-        <translation>Функция wb_supervisor_node_add_torque() может использоваться исключительно с узлом Solid</translation>
+        <source>Please select a robot window plugin from the list
+(takes effect only after you reset the simulation
+and show the new robot window)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbExternProtoEditor</name>
+    <message>
+        <source>Declare additional IMPORTABLE EXTERNPROTO.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbField</name>
+    <message>
+        <source>Invalid &apos;%1&apos; removed from &apos;%2&apos; field. The values should be in the list: {%3}.</source>
+        <translation>Неверное значение %2 удалено из поля %1. Значение должно быть в списке {%3}.</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;%1&apos; changed to %2. The value should be in the list: {%3}.</source>
+        <translation>Неверное значение %2 поля %1. Значение должно быть в списке {%3}.</translation>
+    </message>
+    <message>
+        <source>Duplicate field value</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbFieldChecker</name>
+    <message>
+        <source>Invalid &apos;%1&apos; changed to %2. The value should be in range [%3, %4].</source>
+        <translation>Неверное значение %2 поля %1. Значение должно быть в диапазоне [%3, %4].</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;%1&apos; changed to %2. The value should be in range ]%3, %4[.</source>
+        <translation>Неверное значение %2 поля %1. Значение должно быть в диапазоне ]%3, %4[.</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;%1&apos; changed to %2. The value should be either %3 or non-negative.</source>
+        <translation>Неверное значение %2 поля %1. Значение должно быть %3 или неотрицательным.</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;%1&apos; changed to %2. The value should be %3 or greater.</source>
+        <translation>Неверное значение %2 поля %1. Значение должно быть %3 или больше.</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;%1&apos; changed to %2. The value should be positive.</source>
+        <translation>Неверное значение %2 поля %1. Значение должно быть  положительным.</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;%1&apos; changed to %2. The value should be either %3 or positive.</source>
+        <translation>Неверное значение %2 поля %1. Значение должно быть %3 или положительным.</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;%1&apos; changed to %2. The value should be %3 or less.</source>
+        <translation>Неверное значение %2 поля %1. Значение должно быть %3 или меньше.</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;%1&apos; changed to %2. The value should be in either %3 or in range [%4, %5].</source>
+        <translation>Неверное значение %2 поля %1. Значение должно быть %3 или в диапазоне [%4, %5].</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;%1&apos; changed to %2. The value should be non-negative.</source>
+        <translation>Неверное значение %2 поля %1. Значение должно быть неотрицательным.</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;%1&apos; changed to %2.</source>
+        <translation>Неверное значение %2 поля %1.</translation>
+    </message>
+    <message>
+        <source>Invalid item %1 of &apos;%2&apos; changed to %3.</source>
+        <translation>Неверный элемент значения %2 поля %1 изменен на %3.</translation>
+    </message>
+</context>
+<context>
+    <name>WbFindReplaceDialog</name>
+    <message>
+        <source>&amp;Next</source>
+        <translation>&amp;Следующий</translation>
+    </message>
+    <message>
+        <source>Use regular &amp;expressions</source>
+        <translation>Использовать регулярные &amp;выражения</translation>
+    </message>
+    <message>
+        <source>Wrap search and find again?</source>
+        <translation>Продолжить с начала файла?</translation>
+    </message>
+    <message>
+        <source>&amp;Close</source>
+        <translation>&amp;Закрыть</translation>
+    </message>
+    <message>
+        <source>W&amp;hole words</source>
+        <translation>&amp;Целиком слова</translation>
+    </message>
+    <message>
+        <source>Find in %1</source>
+        <translation>Найти в %1</translation>
+    </message>
+    <message>
+        <source>&amp;Replace</source>
+        <translation>За&amp;Менить</translation>
+    </message>
+    <message>
+        <source>&amp;Previous</source>
+        <translation>&amp;Предыдущий</translation>
+    </message>
+    <message>
+        <source>&amp;Match case</source>
+        <translation>&amp;Различать прописные/строчные</translation>
+    </message>
+    <message>
+        <source>&quot;%1&quot; was not found.</source>
+        <translation>&quot;%1&quot; не найден.</translation>
+    </message>
+    <message>
+        <source>&amp;Search for:</source>
+        <translation>&amp;Искать:</translation>
+    </message>
+    <message>
+        <source>Replace &amp;All</source>
+        <translation>Заменить &amp;Все</translation>
+    </message>
+    <message>
+        <source>Replace &amp;with:</source>
+        <translation>Заменить &amp;чем:</translation>
+    </message>
+    <message>
+        <source>Replace in %1</source>
+        <translation>Заменить в %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbFluid</name>
+    <message>
+        <source>&apos;viscosity&apos; must be greater than or equal to zero. Reset to default value 0.001 kg/(ms)</source>
+        <translation>Значение &apos;viscosity&apos; должно быть неотрицательным. Сброшено в значение по умолчанию 0.001 kg/(ms)</translation>
+    </message>
+    <message>
+        <source>&apos;density&apos; must be greater than or equal to zero. Reset to default value 1000 kg/m^3</source>
+        <translation>Значение &apos;density&apos; должно быть неотрицательным. Сброшено в значение по умолчанию 1000 кг/м^3</translation>
+    </message>
+</context>
+<context>
+    <name>WbFocus</name>
+    <message>
+        <source>Invalid &apos;minFocalDistance&apos; changed to %1. The value should be smaller or equal to &apos;maxFocalDistance&apos;.</source>
+        <translation>Неверное значение %1 поля &apos;minFocalDistance&apos;. Значение должно быть меньше или равнo &apos;maxFocalDistance&apos;.</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;maxFocalDistance&apos; changed to %1. The value should be bigger or equal to &apos;minFocalDistance&apos;.</source>
+        <translation>Неверное значение %1 поля &apos;maxFocalDistance&apos;. Значение должно быть больше или равнo &apos;minFocalDistance&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>WbFog</name>
+    <message>
+        <source>Only one Fog node is allowed. Only the first Fog node will be taken into account.</source>
+        <translation>Разрешен только один узел &apos;Fog&apos;. Только первый такой узел будет отработан, остальные игнорируются.</translation>
+    </message>
+    <message>
+        <source>Unknown &apos;fogType&apos;: &quot;%1&quot;. Set to &quot;LINEAR&quot;</source>
+        <translation>Неизвестное значение &apos;fogType&apos;: &quot;%1&quot;. Установлено в &quot;LINEAR&quot;</translation>
+    </message>
+</context>
+<context>
+    <name>WbGeometry</name>
+    <message>
+        <source>This type of geometry node cannot be placed in &apos;boundingObject&apos;.</source>
+        <translation>Этот тип геометрического узла не может быть помещен в &apos;boundingObject&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>WbGroup</name>
+    <message>
+        <source>Pre-finalizing nodes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Post-finalizing nodes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Creating ODE objects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Creating WREN objects</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbGuiApplication</name>
+    <message>
+        <source>Starting up...</source>
+        <translation>Запускаемся...</translation>
+    </message>
+    <message>
+        <source>Copyright © 1998 - %1 Cyberbotics Ltd.</source>
+        <translation>Copyright © 1998 - %1 Cyberbotics Ltd.</translation>
+    </message>
+    <message>
+        <source>Loading world...</source>
+        <translation>Загружается сцена...</translation>
+    </message>
+    <message>
+        <source>Try &apos;webots --help&apos; for more information.</source>
+        <translation>Попробуйте &apos;webots --help&apos; для дополнительной информации.</translation>
+    </message>
+    <message>
+        <source>&apos;--mode=stop&apos; is deprecated.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>`--mode=run` is deprecated, falling back to `fast` mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>webots: missing &apos;=&apos; sign right after --port option</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>webots: port value %1 out of range [1;65535], reverting to 1234 default value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>invalid value &quot;%1&quot; to &apos;--stream&apos; option.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>invalid value &quot;%1&quot; to &apos;--heartbeat&apos; option.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>invalid &apos;--log-performance&apos; option: log file path is missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>invalid option: &apos;%1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>too many arguments.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>you should also use --batch (in addition to --stream) for production.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>failed to open TCP server in the port range [%1-%2]
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>failed to create the Webots temporary path &quot;%1&quot;.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>could not open file: &apos;%1&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbGuidedTour</name>
+    <message>
+        <source>Auto</source>
+        <translation>Авто</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>Дальше</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Закрыть</translation>
+    </message>
+    <message>
+        <source>The Guided Tour is not available.</source>
+        <translation>Обзорный тур недоступен.</translation>
+    </message>
+    <message>
+        <source>Check [Auto] or press [Next] to start...</source>
+        <translation>Включите [Авто] или нажмите [Дальше], чтобы начать...</translation>
+    </message>
+    <message>
+        <source>Welcome to the Webots Guided Tour.</source>
+        <translation>Добро пожаловать на обзорную экскурсию по Webots.</translation>
+    </message>
+    <message>
+        <source>Guided Tour - Webots</source>
+        <translation>Экскурсия по Webots</translation>
+    </message>
+    <message>
+        <source>Previous</source>
+        <translation>Назад</translation>
+    </message>
+    <message>
+        <source>Thanks for viewing the Webots Guided Tour.</source>
+        <translation>Спасибо, что посетили нашу экскурсию.</translation>
+    </message>
+    <message>
+        <source>The tour will take you through many examples and will give you an overview of Webots features.</source>
+        <translation>Этот тур проведен вас перед множество примеров  продемонстрируем возможности системы Webots.</translation>
+    </message>
+    <message>
+        <source>That&apos;s all Folks!</source>
+        <translation>На этом все!</translation>
+    </message>
+    <message>
+        <source>Internal error</source>
+        <translation>Внутренняя ошибка</translation>
+    </message>
+    <message>
+        <source>Webots Guided Tour</source>
+        <translation>Экскурсия по Webots</translation>
+    </message>
+    <message>
+        <source>Webots Guided Tour!</source>
+        <translation>Экскурсия по Webots!</translation>
+    </message>
+    <message>
+        <source>Press [Close] to terminate...</source>
+        <translation>Нажмите [Закрыть] для завершения...</translation>
+    </message>
+    <message>
+        <source>Loading...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbGyro</name>
+    <message>
+        <source>this node or its parents requires a &apos;physics&apos; field to be functional.</source>
+        <translation>Этот узел или его родительские узлы требуют для работы настроенного поля &apos;physics&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>WbHinge2Joint</name>
+    <message>
+        <source>HingeJoint &apos;minStop&apos; must be less or equal to RotationalMotor &apos;minPosition&apos;.</source>
+        <translation>Поле &apos;minStop&apos; в HingeJoint не должно быть больше поля &apos;minPosition&apos; узла RotationalMotor.</translation>
+    </message>
+    <message>
+        <source>Hinge axes are aligned: using x and z axes instead.</source>
+        <translation>Оси выравнены: используйте вместо них оси &apos;x&apos; и &apos;z&apos;.</translation>
+    </message>
+    <message>
+        <source>HingeJoint &apos;maxStop&apos; must be greater or equal to RotationalMotor &apos;maxPosition&apos;.</source>
+        <translation>Поле &apos;maxStop&apos; в HingeJoint не должно быть меньше поля &apos;maxPosition&apos; узла RotationalMotor.</translation>
+    </message>
+    <message>
+        <source>Hinge2Joint nodes can only connect Solid nodes that have a Physics node.</source>
+        <translation>Узлы Hinge2Joint могут соединять только узлы Solid, для которых задана Physics.</translation>
+    </message>
+    <message>
+        <source>Exporting &apos;Hinge2Joint&apos; nodes to URDF is currently not supported</source>
+        <translation>Экспорт узлов &apos;Hinge2Joint&apos; в формат URDF пока не поддерживается</translation>
+    </message>
+</context>
+<context>
+    <name>WbHingeJoint</name>
+    <message>
+        <source>HingeJoint &apos;maxStop&apos; must be less than pi to be effective.</source>
+        <translation>Поле &apos;maxStop&apos; в HingeJoint должно быть меньше -PI, чтобы иметь какой-то эффект.</translation>
+    </message>
+    <message>
+        <source>HingeJoint &apos;minStop&apos; must be less or equal to RotationalMotor &apos;minPosition&apos;.</source>
+        <translation>Поле &apos;minStop&apos; в HingeJoint не должно превышать &apos;minPosition&apos; узла RotationalMotor .</translation>
+    </message>
+    <message>
+        <source>HingeJoint &apos;maxStop&apos; must be greater or equal to RotationalMotor &apos;maxPosition&apos;.</source>
+        <translation>Поле &apos;maxStop&apos; в HingeJoint не должно быть меньше &apos;minPosition&apos; узла RotationalMotor .</translation>
+    </message>
+    <message>
+        <source>HingeJoint &apos;minStop&apos; must be greater than -pi to be effective.</source>
+        <translation>Поле &apos;minStop&apos; в HingeJoint должно быть больше -PI, чтобы иметь какой-то эффект.</translation>
+    </message>
+</context>
+<context>
+    <name>WbHingeJointParameters</name>
+    <message>
+        <source>&apos;Hinge2JointParameters&apos; is deprecated, please use &apos;HingeJointParameters&apos; instead.</source>
+        <translation>Узел &apos;Hinge2JointParameters&apos; устарел, используйте вместо него &apos;HingeJointParameters&apos;.</translation>
+    </message>
+    <message>
+        <source>&apos;stopCFM&apos; must be greater than zero or -1. Reverting to -1 (use global CFM).</source>
+        <translation>Поле &apos;stopCFM&apos; должно быть неотрицательным либо -1. Возвращаем к -1 (глобальный CFM).</translation>
+    </message>
+    <message>
+        <source>&apos;stopERP&apos; must be greater or equal to zero or -1. Reverting to -1 (use global ERP).</source>
+        <translation>Поле &apos;stopERP&apos; должно быть неотрицательным либо -1. Возвращаем к -1 (глобальный ERP).</translation>
+    </message>
+    <message>
+        <source>&apos;axis&apos; must be non zero.</source>
+        <translation>Поле &apos;axis&apos; должно быть ненулевым.</translation>
+    </message>
+    <message>
+        <source>&apos;SuspensionAxis&apos; must be non zero.</source>
+        <translation>Поле &apos;SuspensionAxis&apos; должно быть ненулевым.</translation>
+    </message>
+</context>
+<context>
+    <name>WbImageTexture</name>
+    <message>
+        <source>Cannot save texture with reduced quality to temporary file &apos;%1&apos;.</source>
+        <translation>Не удалось сохранить текстуру с уменьшенным качеством во временный файл &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Cannot load texture &apos;%1&apos;: %2.</source>
+        <translation>Не удалось загрузить текстуру &apos;%1&apos;: %2.</translation>
+    </message>
+    <message>
+        <source>Texture image size of &apos;%1&apos; is not a power of two: rescaling it from %2x%3 to %4x%5.</source>
+        <translation>Пиксельный размер текстуры &apos;%1&apos; не степень двойки: масштабируем с %2x%3 до %4x%5.</translation>
+    </message>
+    <message>
+        <source>Texture file could not be read: &apos;%1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Texture &apos;%1&apos; not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbImmersionProperties</name>
+    <message>
+        <source>&apos;tx&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;tx&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;ty&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;ty&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;tz&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;tz&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;cx&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;cx&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;cy&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;cy&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;cz&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;cz&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;viscousResistanceTorqueCoefficient&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;viscousResistanceTorqueCoefficient&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;viscousResistanceForceCoefficient&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;viscousResistanceForceCoefficient&apos; должно быть больше или равно нулю.</translation>
+    </message>
+</context>
+<context>
+    <name>WbImportWizard</name>
+    <message>
+        <source>Please choose how do you want to import the model:</source>
+        <translation>Пожалуйста, выберите, как вы хотите импортировать модель:</translation>
+    </message>
+    <message>
+        <source>3D model importation</source>
+        <translation>Импорт 3D-модели</translation>
+    </message>
+    <message>
+        <source>Please choose a 3D file to import:</source>
+        <translation>Выберите 3D-файл для импорта:</translation>
+    </message>
+    <message>
+        <source>The &apos;%1&apos; file will now be imported at the end of the scene tree.</source>
+        <translation>Теперь файл &apos;%1&apos; будет импортирован в конец дерева сцена.</translation>
+    </message>
+    <message>
+        <source>Importation Settings</source>
+        <translation>Настройки импорта</translation>
+    </message>
+    <message>
+        <source>Use meshes for bounding objects.</source>
+        <translation>Использовать сетки для boundingObjects.</translation>
+    </message>
+    <message>
+        <source>File Selection</source>
+        <translation>Выбор файла</translation>
+    </message>
+    <message>
+        <source>Import appearances (if available).</source>
+        <translation>Импортировать appearances (если есть).</translation>
+    </message>
+    <message>
+        <source>Choose</source>
+        <translation>Выбрать</translation>
+    </message>
+    <message>
+        <source>Import texture coordinates (if available).</source>
+        <translation>Импортировать координаты текстуры (если есть).</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>Резюме</translation>
+    </message>
+    <message>
+        <source>Import nodes as Solids.</source>
+        <translation>Импортировать узлы как Solids.</translation>
+    </message>
+    <message>
+        <source>Import a 3D model in the scene.</source>
+        <translation>Импортировать 3D-модель в сцену.</translation>
+    </message>
+    <message>
+        <source>Import normals (if available).</source>
+        <translation>Импортировать нормали (если есть).</translation>
+    </message>
+    <message>
+        <source>Choose a File</source>
+        <translation>Выберите файл</translation>
+    </message>
+    <message>
+        <source>This wizard will help you importing a 3D model in Webots.
+
+The following file formats are supported:
+	- Collada (*.dae)
+	- STL (*.stl)
+	- Wavefront (*.obj)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>3D Files (*.dae *.DAE *.stl *.STL *.obj *.OBJ);;Collada (*.dae *.DAE);;STL (*.stl *.STL);;Wavefront (*.obj *.OBJ)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbIndexedFaceSet</name>
+    <message>
+        <source>Cannot create IndexedFaceSet because: &quot;%1&quot;.</source>
+        <translation>Невозможно создать IndexedFaceSet, потому что: &quot;%1&quot;.</translation>
+    </message>
+    <message>
+        <source>Normal values can&apos;t be null.</source>
+        <translation>Значения нормалей не могут быть нулевыми.</translation>
+    </message>
+</context>
+<context>
+    <name>WbIndexedLineSet</name>
+    <message>
+        <source>A IndexedLineSet is used in a Bounding object using an asymmetric friction. IndexedLineSet does not support asymmetric friction</source>
+        <translation>Узел IndexedLineSet использован в boundingObject с асимметричным трением. &quot;IndexedLineSet&quot; такое не поддерживает</translation>
+    </message>
+    <message>
+        <source>A &apos;Coordinate&apos; node should be present in the &apos;coord&apos; field with at least two items.</source>
+        <translation>Узел  &apos;Coordinate&apos; должен присутствовать в поле &apos;coord&apos; как минимум с двумя элементами.</translation>
+    </message>
+    <message>
+        <source>The &apos;coordIndex&apos; field should have at least two items.</source>
+        <translation>Поле &apos;coordIndex&apos; должно содержать как минимум два элемента.</translation>
+    </message>
+    <message>
+        <source>The following indices are out of the range of coordinates specified in the &apos;IndexedLineSet.coord&apos; field: %1</source>
+        <translation>Следующие индексы находятся вне диапазона координат, указанных в поле IndexedLineSet.coord: %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbInsertExternProtoDialog</name>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished">Отменить</translation>
+    </message>
+    <message>
+        <source>Insert</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PROTO nodes (Extra Projects)</source>
+        <translation type="unfinished">Узлы PROTO (Дополнительные проекты)</translation>
+    </message>
+    <message>
+        <source>PROTO &apos;%1&apos; does not belong to category &apos;%2&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Retrieval of PROTO &apos;%1&apos; was unsuccessful, the asset should be cached but it is not.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbJointParameters</name>
+    <message>
+        <source>&apos;maxStop&apos; must be greater than or equal to &apos;position&apos;.</source>
+        <translation>Значение &apos;maxStop&apos; должно быть больше или равно значению поля &apos;position&apos;.</translation>
+    </message>
+    <message>
+        <source>&apos;staticFriction&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;staticFriction&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;dampingConstant&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;dampingConstant&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;springConstant&apos; must be greater than or equal to zero.</source>
+        <translation>Значение &apos;springConstant&apos; должно быть больше или равно нулю.</translation>
+    </message>
+    <message>
+        <source>&apos;minStop&apos; must be less than or equal to &apos;position&apos;.</source>
+        <translation>Значение &apos;minStop&apos; должно быть меньше или равно значению поля &apos;position&apos;.</translation>
+    </message>
+    <message>
+        <source>&apos;axis&apos; must be non zero.</source>
+        <translation>Значение &apos;axis&apos; должно быть ненулевым.</translation>
+    </message>
+</context>
+<context>
+    <name>WbJoystickInterface</name>
+    <message>
+        <source>Joystick not accessible.</source>
+        <translation>Джойстик недоступен.</translation>
+    </message>
+    <message>
+        <source>No free joystick found.</source>
+        <translation>Свободный джойстик не найден.</translation>
+    </message>
+</context>
+<context>
+    <name>WbLed</name>
+    <message>
+        <source>No PBRAppearance, Material and no Light found. The first child of a LED should be either a Shape, a Light or a Group containing Shape and Light nodes.</source>
+        <translation>Узлы PBRAppearance, Material и Light не найдены. Первый дочерний элемент узла LED должен быть Shape, Light, либо Group, содержащей Shape и/или Light.</translation>
+    </message>
+    <message>
+        <source>Too many colors defined for a gradual LED.</source>
+        <translation>Слишком много цветов определено для LED с плавной регулировкой.</translation>
+    </message>
+</context>
+<context>
+    <name>WbLens</name>
+    <message>
+        <source>Invalid &apos;center.y&apos; changed to 1. The value should be in the range [0;1].</source>
+        <translation>Неверное значение &apos;center.y&apos; заменено на 1. Значение должно быть в диапазоне [0;1].</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;center.x&apos; changed to 1. The value should be in the range [0;1].</source>
+        <translation>Неверное значение &apos;center.x&apos; заменено на 1. Значение должно быть в диапазоне [0;1].</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;center.y&apos; changed to 0. The value should be in the range [0;1].</source>
+        <translation>Неверное значение &apos;center.y&apos; заменено на 0. Значение должно быть в диапазоне [0;1].</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;center.x&apos; changed to 0. The value should be in the range [0;1].</source>
+        <translation>Неверное значение &apos;center.x&apos; заменено на 0. Значение должно быть в диапазоне [0;1].</translation>
+    </message>
+</context>
+<context>
+    <name>WbLidar</name>
+    <message>
+        <source>&apos;near&apos; is greater than to &apos;minRange&apos;. Setting &apos;near&apos; to %1.</source>
+        <translation>Значение &apos;near&apos; больше, чем &apos;minRange&apos;. Устанавливаем &apos;near&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>Impossible to have a so small &apos;verticalFieldOfView&apos; using this &apos;fieldOfView&apos;, &apos;numberOfLayers&apos; and &apos;horizontalResolution&apos;. &apos;verticalFieldOfView&apos; should be bigger or equal to numberOfLayers * fieldOfView / horizontalResolution. &apos;verticalFieldOfView&apos; set to %1.</source>
+        <translation>Невозможно иметь такой маленький &apos;verticalFieldOfView&apos;, с данными значениями &apos;fieldOfView&apos;, &apos;numberOfLayers&apos; и &apos;horizontalResolution&apos;. &apos;verticalFieldOfView&apos; должен быть больше или равен numberOfLayers * fieldOfView / horizontalResolution. Полю &apos;verticalFieldOfView&apos; присвоено значение %1.</translation>
+    </message>
+    <message>
+        <source>Impossible to have a so small &apos;verticalFieldOfView&apos; using this &apos;numberOfLayers&apos; and &apos;horizontalResolution&apos;. &apos;verticalFieldOfView&apos; should be bigger or equal to 2.0 * M_PI * numberOfLayers / horizontalResolution. &apos;verticalFieldOfView&apos; set to %1.</source>
+        <translation>Невозможно иметь такой маленький &apos;verticalFieldOfView&apos;, с данными значениями &apos;numberOfLayers&apos; и &apos;horizontalResolution&apos;. &apos;verticalFieldOfView&apos; должен быть больше или равен 2.0 * M_PI * numberOfLayers / horizontalResolution. &apos;verticalFieldOfView&apos; присвоено значение %1.</translation>
+    </message>
+    <message>
+        <source>&apos;minFrequency&apos; should be smaller or equal to &apos;maxFrequency&apos;.</source>
+        <translation>Значение &apos;minFrequency&apos; должно бьть меньше или равно &apos;maxFrequency&apos;.</translation>
+    </message>
+    <message>
+        <source>&apos;horizontalResolution&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
+        <translation>Поле &apos;horizontalResolution&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки мира.</translation>
+    </message>
+    <message>
+        <source>&apos;minRange&apos; is greater or equal to &apos;maxRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
+        <translation>Значение &apos;minRange&apos; больше или равно &apos;maxRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>&apos;verticalFieldOfView&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
+        <translation>Поле &apos;verticalFieldOfView&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки мира.</translation>
+    </message>
+    <message>
+        <source>Impossible to have a so big &apos;numberOfLayers&apos; using this &apos;fieldOfView&apos;, &apos;verticalFieldOfView&apos; and &apos;horizontalResolution&apos;. &apos;numberOfLayers&apos; should be smaller or equal to verticalFieldOfView * horizontalResolution / fieldOfView. &apos;numberOfLayers&apos; set to %1.</source>
+        <translation>Невозможно иметь такой большой &apos;numberOfLayers&apos;, с данными значениями &apos;fieldOfView&apos;, &apos;verticalFieldOfView&apos; и &apos;horizontalResolution&apos;. &apos;numberOfLayers&apos; должен быть меньше или равен verticalFieldOfView * horizontalResolution / fieldOfView.  Полю &apos;numberOfLayers&apos; присвоено значение %1.</translation>
+    </message>
+    <message>
+        <source>Impossible to have a so big &apos;numberOfLayers&apos; using this &apos;verticalFieldOfView&apos; and &apos;horizontalResolution&apos;. &apos;numberOfLayers&apos; should be smaller or equal to verticalFieldOfView * actualHorizontalResolution() / (2.0 * M_PI). &apos;numberOfLayers&apos; set to %1.</source>
+        <translation>Невозможно иметь такой большой &apos;numberOfLayers&apos;, с данными значениями &apos;verticalFieldOfView&apos; и &apos;horizontalResolution&apos;. &apos;numberOfLayers&apos; должен быть меньше или равен verticalFieldOfView * actualHorizontalResolution() / (2.0 * M_PI).  Полю &apos;numberOfLayers&apos; присвоено значение %1.</translation>
+    </message>
+    <message>
+        <source>&apos;type&apos; should either be &apos;fixed&apos; or &apos;rotating&apos;, reset to &apos;fixed&apos;</source>
+        <translation>Значение &apos;type&apos; должно быть или &apos;fixed&apos; или &apos;rotating&apos;, сбрасываем в &apos;fixed&apos;</translation>
+    </message>
+    <message>
+        <source>Impossible to have a so small &apos;horizontalResolution&apos; using this &apos;numberOfLayers&apos; and &apos;verticalFieldOfView&apos;. &apos;horizontalResolution&apos; should be bigger or equal to 2.0 * M_PI * numberOfLayers  / verticalFieldOfView. &apos;horizontalResolution&apos; set to %1.</source>
+        <translation>Невозможно иметь такой маленький &apos;horizontalResolution&apos;, с данными значениями &apos;numberOfLayers&apos; и &apos;verticalFieldOfView&apos;. &apos;horizontalResolution&apos; должен быть больше или равен 2.0 * M_PI * numberOfLayers / verticalFieldOfView. Полю &apos;horizontalResolution&apos; присвоено значение %1.</translation>
+    </message>
+    <message>
+        <source>&apos;type&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
+        <translation>Поле &apos;type&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки мира.</translation>
+    </message>
+    <message>
+        <source>Impossible to have a so small &apos;horizontalResolution&apos; using this &apos;fieldOfView&apos;, &apos;numberOfLayers&apos; and &apos;verticalFieldOfView&apos;. &apos;horizontalResolution&apos; should be bigger or equal to numberOfLayers * fieldOfView / verticalFieldOfView. &apos;horizontalResolution&apos; set to %1.</source>
+        <translation>Невозможно иметь такой маленький &apos;horizontalResolution&apos;, с данными значениями &apos;fieldOfView&apos;, &apos;numberOfLayers&apos; и &apos;verticalFieldOfView&apos;. &apos;horizontalResolution&apos; должен быть больше или равен numberOfLayers * fieldOfView / verticalFieldOfView. Полю &apos;horizontalResolution&apos; присвоено значение %1.</translation>
+    </message>
+    <message>
+        <source>&apos;defaultFrequency&apos; should be bigger or equal to &apos;maxFrequency&apos;.</source>
+        <translation>Значение &apos;defaultFrequency&apos; должно бьть меньше или равно &apos;minFrequency&apos;.</translation>
+    </message>
+    <message>
+        <source>&apos;defaultFrequency&apos; should be bigger or equal to &apos;minFrequency&apos;.</source>
+        <translation>Значение &apos;defaultFrequency&apos; должно бьть больше или равно &apos;minFrequency&apos;.</translation>
+    </message>
+    <message>
+        <source>&apos;numberOfLayers&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
+        <translation>Поле &apos;numberOfLayers&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки мира.</translation>
+    </message>
+    <message>
+        <source>&apos;maxRange&apos; is less or equal to &apos;minRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
+        <translation>Значение &apos;maxRange&apos; меньше или равно &apos;minRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>&apos;fieldOfView&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
+        <translation>Поле &apos;fieldOfView&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки мира.</translation>
+    </message>
+    <message>
+        <source>&apos;maxFrequency&apos; should be bigger or equal to &apos;minFrequency&apos;.</source>
+        <translation>Значение &apos;maxFrequency&apos; должно бьть больше или равно &apos;minFrequency&apos;.</translation>
+    </message>
+    <message>
+        <source>&apos;minRange&apos; is less than &apos;near&apos;. Setting &apos;minRange&apos; to %1.</source>
+        <translation>Значение &apos;minRange&apos; меньше, чем &apos;near&apos;. Устанавливаем &apos;minRange&apos; в %1.</translation>
+    </message>
+</context>
+<context>
+    <name>WbLinearMotor</name>
+    <message>
+        <source>Force feedback is not available for a LinearMotor node inside a Track node.</source>
+        <translation>Силовая обратная связь недоступна для узла LinearMotor внутри узла Track.</translation>
+    </message>
+    <message>
+        <source>Force feedback is available for motorized joints only</source>
+        <translation>Обратная связь доступна только для &quot;моторизованных&quot; шарниров</translation>
+    </message>
+</context>
+<context>
+    <name>WbLinkWindow</name>
+    <message>
+        <source>Upload Successful</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open in Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p style=&quot; text-align: center;&quot;&gt;Make sure to click Open in Browser to associate&lt;br&gt;the upload with your webots.cloud account.&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbMFColor</name>
+    <message>
+        <source>Expected positive color values in range [0.0, 1.0], found [%1 %2 %3]. MFColor field item %4 reset to [%5 %6 %7]</source>
+        <translation>Ожидались положительные значения цвета в диапазоне [0.0, 1.0], найдено [%1 %2 %3]. Элемент поля MFColor %4 сброшен на [%5 %6 %7]</translation>
+    </message>
+</context>
+<context>
+    <name>WbMainWindow</name>
+    <message>
+        <source>N/A</source>
+        <translation>не применимо</translation>
+    </message>
+    <message>
+        <source>Would you like to create one?</source>
+        <translation>Хотели бы вы создать его?</translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation>Выйти</translation>
+    </message>
+    <message>
+        <source>Quit</source>
+        <translation>Завершить</translation>
+    </message>
+    <message>
+        <source>&amp;Edit</source>
+        <translation>&amp;Редактировать</translation>
+    </message>
+    <message>
+        <source>&amp;File</source>
+        <translation>&amp;Файл</translation>
+    </message>
+    <message>
+        <source>&amp;Help</source>
+        <translation>&amp;Справка</translation>
+    </message>
+    <message>
+        <source>&amp;View</source>
+        <translation>&amp;Вид</translation>
+    </message>
+    <message>
+        <source>Press ESC to stop recording the movie and quit fullscreen mode.</source>
+        <translation>Нажмите ESC, чтобы остановить запись фильма и выйти из полноэкранного режима.</translation>
+    </message>
+    <message>
+        <source>&amp;Check for updates...</source>
+        <translation>&amp;Проверить обновления...</translation>
+    </message>
+    <message>
+        <source>Open the Preferences window.</source>
+        <translation>Открыть окно настроек.</translation>
+    </message>
+    <message>
+        <source>Edit &amp;Physics Plugin</source>
+        <translation>Редактировать &amp;Физический плагин</translation>
+    </message>
+    <message>
+        <source>Report a bug to the GitHub repository.</source>
+        <translation>Сообщить об ошибке в репозиторий GitHub.</translation>
+    </message>
+    <message>
+        <source>System: </source>
+        <translation>Система: </translation>
+    </message>
+    <message>
+        <source>Show the simulation view in fullscreen mode.</source>
+        <translation>Показать вид моделирования в полноэкранном режиме.</translation>
+    </message>
+    <message>
+        <source>&amp;Display Devices</source>
+        <translation>Показать &amp;Устройства</translation>
+    </message>
+    <message>
+        <source>&amp;Bug Report...</source>
+        <translation>Сообщить об о&amp;шибке...</translation>
+    </message>
+    <message>
+        <source>Available GPU memory: </source>
+        <translation>Доступная память GPU: </translation>
+    </message>
+    <message>
+        <source>%1: Terminating.</source>
+        <translation>%1: Останавливаем.</translation>
+    </message>
+    <message>
+        <source>&amp;Virtual Reality Headset</source>
+        <translation>&amp;VR-гарнитура</translation>
+    </message>
+    <message>
+        <source>&amp;Open Recent World</source>
+        <translation>Открыть &amp;Недавнюю сцену</translation>
+    </message>
+    <message>
+        <source>OpenGL renderer: </source>
+        <translation>Рендерер OpenGL: </translation>
+    </message>
+    <message>
+        <source>Restore &amp;Layout</source>
+        <translation>&amp;Восстановить окна</translation>
+    </message>
+    <message>
+        <source>How do I apply a force or a torque to an object?</source>
+        <translation>Как применить cилу или вращательный момент к объекту?</translation>
+    </message>
+    <message>
+        <source>Watch the latest Webots movies on YouTube.</source>
+        <translation>Смотрите последние фильмы про Webots на YouTube.</translation>
+    </message>
+    <message>
+        <source>How do I &amp;navigate in 3D?</source>
+        <translation>Как перемещаться в &amp;3D-окне?</translation>
+    </message>
+    <message>
+        <source>&amp;RangeFinder Devices</source>
+        <translation>Устройства &amp;RangeFinder</translation>
+    </message>
+    <message>
+        <source>&amp;OpenGL Information...</source>
+        <translation>Информация &amp;OpenGL...</translation>
+    </message>
+    <message>
+        <source>How do I &amp;move an object?</source>
+        <translation>Как &amp;переместить объект?</translation>
+    </message>
+    <message>
+        <source>In order to move an object: first &lt;strong&gt;select the object&lt;/strong&gt; with a left mouse button click.&lt;br/&gt;&lt;br/&gt;Then &lt;strong&gt;click and drag the arrow-shaped handles&lt;/strong&gt; to translate or rotate the object along the corresponding axis.&lt;br/&gt;&lt;br/&gt;Alternatively, you can hold the shift key and use the mouse:&lt;br/&gt;&lt;em&gt;Horizontal translation:&lt;/em&gt;&lt;br/&gt;Use the left mouse button while the shift key is down to drag an object parallel to the ground.&lt;br/&gt;&lt;em&gt;Vertical rotation:&lt;/em&gt;&lt;br/&gt;Use the right mouse button while the shift key is down to rotate an object around the world&apos;s vertical axis.&lt;br/&gt;&lt;em&gt;Lift:&lt;/em&gt;&lt;br/&gt;Press both left and right mouse buttons, press the middle mouse button, or roll the mouse wheel while the shift key is down to raise or lower the selected object.</source>
+        <translation>Чтобы переместить объект: сначала &lt;strong&gt;выберите объект&lt;/strong&gt;, щелкнув левой кнопкой мыши.&lt;br/&gt;&lt;br/&gt;Затем &lt;strong&gt;нажмите и перетащите стреловидные маркеры&lt;/strong&gt;. чтобы переместить или повернуть объект вдоль соответствующей оси.&lt;br/&gt;&lt;br/&gt;Кроме того, вы можете удерживать клавишу Shift и использовать мышь:&lt;br/&gt;&lt;em&gt;Горизонтальное перемещение:&lt;/em&gt;&lt;br/&gt; Используйте левую кнопку мыши, когда нажата клавиша Shift, чтобы перетащить объект параллельно земле.&lt;br/&gt;&lt;em&gt;Вертикальное вращение:&lt;/em&gt;&lt;br/&gt;Используйте правую кнопку мыши, когда клавиша Shift нажата, чтобы повернуть объект вокруг вертикальной оси мира.&lt;br/&gt;&lt;em&gt;Подъем:&lt;/em&gt;&lt;br/&gt;нажмите левую и правую кнопки мыши, нажмите среднюю кнопку мыши или прокрутите колесико мыши, пока нажата клавиша Shift. вниз, чтобы поднять или опустить выбранный объект.</translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Ctrl+4&lt;/i&gt; to toggle the 3D scene rendering.</source>
+        <translation>Нажмите &lt;i&gt;Ctrl+4&lt;/i&gt;, чтобы переключить отображение 3D-сцены.</translation>
+    </message>
+    <message>
+        <source>Open the Webots git repository on GitHub.</source>
+        <translation>Открыть git-репозиторий с исходнками Webots.</translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Cmd+2&lt;/i&gt; to run the simulation in real time.</source>
+        <translation>Нажмите &lt;i&gt;Cmd+2&lt;/i&gt;, чтобы запустить симуляцию в реальном времени.</translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Cmd+Shift+P&lt;/i&gt; to take a screenshot of the 3D screen.</source>
+        <translation>Нажмите &lt;i&gt;Cmd+Shift+P&lt;/i&gt;, чтобы сделать снимок 3D-экрана.</translation>
+    </message>
+    <message>
+        <source>Show information about applying a force or a torque to an object in the 3D window.</source>
+        <translation>Показать информацию о приложении силы или крутящего момента к объекту в 3D-окне.</translation>
+    </message>
+    <message>
+        <source>&lt;strong&gt;Force:&lt;/strong&gt;&lt;br/&gt; Place the mouse pointer where the force will apply and hold down the Alt key and the left mouse button together while dragging the mouse.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Torque:&lt;/strong&gt;&lt;br/&gt;Place the mouse pointer on the object and hold down the Alt key and the right mouse button together while dragging the mouse.&lt;br/&gt;&lt;br/&gt;If you have a one-button mouse, hold down also the Control key (Ctrl) to emulate the right mouse button.</source>
+        <translation>&lt;strong&gt;Сила:&lt;/strong&gt;&lt;br/&gt; Установите курсор на точку приложения силы и, удерживая ALT и левую кнопку мыши, тяните объект мышью в нужную сторону.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Вращательный момент:&lt;/strong&gt;&lt;br/&gt;Укажите курсором на объект и, удерживая ALT и правую кнопку мыши, тяните, чтобы закрутить в нужную сторону. &lt;br/&gt;&lt;br/&gt;Если у вас мышь с одной кнопкой, удерживайте также клавишу CTRL, чтобы имитировать нажатие правой кнопки.</translation>
+    </message>
+    <message>
+        <source>&amp;Build</source>
+        <translation>&amp;Построить</translation>
+    </message>
+    <message>
+        <source>&amp;Webots for automobiles</source>
+        <translation>А&amp;втомобильный Webots</translation>
+    </message>
+    <message>
+        <source>&lt;strong&gt;Force:&lt;/strong&gt;&lt;br/&gt; Place the mouse pointer where the force will apply and hold down the Alt key and the left mouse button together while dragging the mouse.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Torque:&lt;/strong&gt;&lt;br/&gt;Place the mouse pointer on the object and hold down the Alt key and the right mouse button together while dragging the mouse.</source>
+        <translation>&lt;strong&gt;Сила:&lt;/strong&gt;&lt;br/&gt; Установите курсор на точку приложения силы и, удерживая ALT и левую кнопку мыши, тяните объект мышью в нужную сторону.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Вращательный момент:&lt;/strong&gt;&lt;br/&gt;Укажите курсором на объект и, удерживая ALT и правую кнопку мыши, тяните, чтобы закрутить в нужную сторону.</translation>
+    </message>
+    <message>
+        <source>&amp;Tools</source>
+        <translation>&amp;Инструменты</translation>
+    </message>
+    <message>
+        <source>Open the Webots user guide online.</source>
+        <translation>Открыть руководство пользователя Webots.</translation>
+    </message>
+    <message>
+        <source>New Project &amp;Directory...</source>
+        <translation>Новая папка &amp;Проекта...</translation>
+    </message>
+    <message>
+        <source>Follow Cyberbotics on LinkedIn.</source>
+        <translation>Follow Cyberbotics on LinkedIn.</translation>
+    </message>
+    <message>
+        <source>&amp;GitHub repository...</source>
+        <translation>Репозиторий &amp;GitHub...</translation>
+    </message>
+    <message>
+        <source>Screenshots will be saved in &lt;i&gt;%1&lt;/i&gt;.</source>
+        <translation>Скриншоты будут сохранены в &lt;i&gt;%1&lt;/i&gt;.</translation>
+    </message>
+    <message>
+        <source>%1 bytes</source>
+        <translation>%1 байтов</translation>
+    </message>
+    <message>
+        <source>Please install SteamVR to use a virtual reality headset.</source>
+        <translation>Установите SteamVR, чтобы использовать VR-гарнитуру.</translation>
+    </message>
+    <message>
+        <source>Opening world file</source>
+        <translation>Открывается файл сцены</translation>
+    </message>
+    <message>
+        <source>&amp;Fullscreen</source>
+        <translation>Полный &amp;Экран</translation>
+    </message>
+    <message>
+        <source>Show &apos;%1&apos; overlay</source>
+        <translation>Показать окошко &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <source>HTML Files (*.html *.HTML)</source>
+        <translation>Файлы HTML (*.html *.HTML)</translation>
+    </message>
+    <message>
+        <source>Open the Webots reference manual online.</source>
+        <translation>Открыть онлайн-справочник Webots.</translation>
+    </message>
+    <message>
+        <source>OpenGL information</source>
+        <translation>Информация OpenGL</translation>
+    </message>
+    <message>
+        <source>&amp;User Guide</source>
+        <translation>&amp;Руководство пользователя</translation>
+    </message>
+    <message>
+        <source>Show overlay of range-finder device &apos;%1&apos;.</source>
+        <translation>Показать окошко дальномера &quot;%1&quot;.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отменить</translation>
+    </message>
+    <message>
+        <source>Display information about Webots.</source>
+        <translation>Показать информацию о программе Webots.</translation>
+    </message>
+    <message>
+        <source>Open the Webots update dialog.</source>
+        <translation>Открыть окно обновлений Webots.</translation>
+    </message>
+    <message>
+        <source>Show information about moving an object in the 3D window.</source>
+        <translation>Показать информацию о перемещении объекта в 3D-окне.</translation>
+    </message>
+    <message>
+        <source>&lt;strong&gt;Force:&lt;/strong&gt;&lt;br/&gt; Place the mouse pointer where the force will apply and hold down the Alt key, the Control key (Ctrl) and the left mouse button together while dragging the mouse.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Torque:&lt;/strong&gt;&lt;br/&gt;Place the mouse pointer on the object and hold down the Alt key, the Control key (Ctrl) and the right mouse button together while dragging the mouse.</source>
+        <translation>&lt;strong&gt;Сила:&lt;/strong&gt;&lt;br/&gt; Установите курсор на точку приложения силы и, удерживая одновременно ALT, CTRL и левую кнопку мыши, тяните объект мышью в нужную сторону.&lt;br/&gt;&lt;br/&gt; &lt;strong&gt;Вращательный момент:&lt;/strong&gt;&lt;br/&gt;Укажите курсором на объект и, удерживая одновременно ALT, CTRL и правую кнопку мыши, тяните, чтобы закрутить в нужную сторону.</translation>
+    </message>
+    <message>
+        <source>&amp;Keep informed</source>
+        <translation>&amp;Держать в курсе</translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Cmd+0&lt;/i&gt; to pause the simulation.</source>
+        <translation>Нажмите &lt;i&gt;Cmd+0&lt;/i&gt;, чтобы приостановить симуляцию.</translation>
+    </message>
+    <message>
+        <source>Export HTML5 Scene</source>
+        <translation>Экспортировать сцену в HTML5</translation>
+    </message>
+    <message>
+        <source>Stop HTML5 animation recording.</source>
+        <translation>Остановить запись HTML5-анимации.</translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Ctrl+0&lt;/i&gt; to pause the simulation.</source>
+        <translation>Нажмите &lt;i&gt;Ctrl+0&lt;/i&gt;, чтобы приостановить симуляцию.</translation>
+    </message>
+    <message>
+        <source>Cyberbotics &amp;Website...</source>
+        <translation>Cyberbotics &amp;Website...</translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Ctrl+3&lt;/i&gt; to run the simulation as fast as possible.</source>
+        <translation>Нажмите &lt;i&gt;Ctrl+3&lt;/i&gt;, чтобы запустить симуляцию как можно быстрее.</translation>
+    </message>
+    <message>
+        <source>Show overlay of camera device &apos;%1&apos;.</source>
+        <translation>Показать окошко камеры &quot;%1&quot;.</translation>
+    </message>
+    <message>
+        <source>Show information about navigation in the 3D window.</source>
+        <translation>Показать информацию о навигации в 3D-окне.</translation>
+    </message>
+    <message>
+        <source>Restore windows factory layout.</source>
+        <translation>Восстановить исходной размещение окон.</translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Cmd+3&lt;/i&gt; to run the simulation as fast as possible.</source>
+        <translation>Нажмите &lt;i&gt;Cmd+3&lt;/i&gt;, чтобы запустить симуляцию как можно быстрее.</translation>
+    </message>
+    <message>
+        <source>New &amp;Physics Plugin...</source>
+        <translation>Новый &amp;Физический плагин...</translation>
+    </message>
+    <message>
+        <source>Host name: </source>
+        <translation>Имя хоста: </translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Ctrl+1&lt;/i&gt; to execute one basic time step.</source>
+        <translation>Нажмите &lt;i&gt;Ctrl+1&lt;/i&gt;, чтобы выполнить один шаг симуляции.</translation>
+    </message>
+    <message>
+        <source>Follow Webots on &amp;Twitter...</source>
+        <translation>Follow Webots on &amp;Twitter...</translation>
+    </message>
+    <message>
+        <source>Join the &amp;Discord channel...</source>
+        <translation>Перейти &amp;Discord-канал Webots...</translation>
+    </message>
+    <message>
+        <source>Ca&amp;mera Devices</source>
+        <translation>&amp;Камеры</translation>
+    </message>
+    <message>
+        <source>Webots &amp;Guided Tour...</source>
+        <translation>&amp;Экскурсия по Webots...</translation>
+    </message>
+    <message>
+        <source>OpenGL vendor: </source>
+        <translation>Производитель OpenGL: </translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Cmd+4&lt;/i&gt; to toggle the 3D scene rendering.</source>
+        <translation>Нажмите &lt;i&gt;Cmd+4&lt;/i&gt;, чтобы переключить отображение 3D-сцены.</translation>
+    </message>
+    <message>
+        <source>Stop HTML5 &amp;Animation...</source>
+        <translation>Остановить HTML5-&amp;анимацию...</translation>
+    </message>
+    <message>
+        <source>&amp;Scene Interactions</source>
+        <translation>&amp;Взаимодействие со сценой</translation>
+    </message>
+    <message>
+        <source>Could not find the source file of the &apos;%1&apos; physics plugin.</source>
+        <translation>Не найден исходный файл физического плагина &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Open the Cyberbotics website.</source>
+        <translation>Открыть сайт Cyberbotics.</translation>
+    </message>
+    <message>
+        <source>Fullscreen mode</source>
+        <translation>Полноэкранный режим</translation>
+    </message>
+    <message>
+        <source>Show overlay of display device &apos;%1&apos;.</source>
+        <translation>Показать окошко дисплея &quot;%1&quot;.</translation>
+    </message>
+    <message>
+        <source>&amp;About...</source>
+        <translation>&amp;О программе...</translation>
+    </message>
+    <message>
+        <source>New Robot &amp;Controller...</source>
+        <translation>Новый &amp;Контроллер робота...</translation>
+    </message>
+    <message>
+        <source>Show information about the current OpenGL hardware and driver.</source>
+        <translation>Показать информацию о текущем оборудовании и драйвере OpenGL.</translation>
+    </message>
+    <message>
+        <source>Create a new project directory.</source>
+        <translation>Создать новую папку проекта.</translation>
+    </message>
+    <message>
+        <source>Loading world</source>
+        <translation>Загружается сцена</translation>
+    </message>
+    <message>
+        <source>&amp;Follow Object</source>
+        <translation>&amp;Следовать за объектом</translation>
+    </message>
+    <message>
+        <source>Saving the .wbt file will store the current world state: the objects position and rotation and other fields may differ from the original file!</source>
+        <translation>При сохранении файла .wbt будет сохранено текущее состояние мира: положение и поворот объектов, а также другие поля могут отличаться от исходного файла!</translation>
+    </message>
+    <message>
+        <source>You are entering fullscreen mode.</source>
+        <translation>Вы входите в полноэкранный режим.</translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Cmd+1&lt;/i&gt; to execute one basic time step.</source>
+        <translation>Нажмите &lt;i&gt;Cmd+1&lt;/i&gt;, чтобы выполнить один шаг симуляции.</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Note:&lt;/b&gt; When taking a screenshot in fullscreen mode, the resulting screenshot&apos;s save path will be chosen automatically.</source>
+        <translation>&lt;b&gt;Примечание:&lt;/b&gt;Если скриншот снимаем в полноэкранном режиме, путь сохранения файла выбирается автоматически.</translation>
+    </message>
+    <message>
+        <source>World Files (*.wbt *.WBT)</source>
+        <translation>Файлы сцен Webots (*.wbt *.WBT)</translation>
+    </message>
+    <message>
+        <source>The simulation has run!</source>
+        <translation>Симуляция уже выполнялась!</translation>
+    </message>
+    <message>
+        <source>Welcome to Webots!</source>
+        <translation>Добро пожаловать в Webots!</translation>
+    </message>
+    <message>
+        <source>OpenGL version: </source>
+        <translation>Версия OpenGL: </translation>
+    </message>
+    <message>
+        <source>Open the Webots for automobiles book online.</source>
+        <translation>Открыть онлайн-книгу про автомобили в Webots.</translation>
+    </message>
+    <message>
+        <source>Keep informed about the latest Webots news with the Webots newsletter.</source>
+        <translation>Получать новости Webots через почтовую рассылку.</translation>
+    </message>
+    <message>
+        <source>This simulation does not currently use a physics plugin.</source>
+        <translation>Эта симуляция не использует плагин физики.</translation>
+    </message>
+    <message>
+        <source>&amp;Reference manual</source>
+        <translation>&amp;Справочник</translation>
+    </message>
+    <message>
+        <source>&amp;Optional Rendering</source>
+        <translation>&amp;Дополнительные отрисовки</translation>
+    </message>
+    <message>
+        <source>Create a new controller program.</source>
+        <translation>Создать новую программу контроллера.</translation>
+    </message>
+    <message>
+        <source>Internal error</source>
+        <translation>Внутренняя ошибка</translation>
+    </message>
+    <message>
+        <source>Question</source>
+        <translation>Вопрос</translation>
+    </message>
+    <message>
+        <source>Create a new physics plugin.</source>
+        <translation>Создать новый физический плагин.</translation>
+    </message>
+    <message>
+        <source>No virtual reality headset connected.</source>
+        <translation>VR-очки или  шлем не найдены.</translation>
+    </message>
+    <message>
+        <source>&amp;Simulation</source>
+        <translation>&amp;Симуляция</translation>
+    </message>
+    <message>
+        <source>&amp;Preferences...</source>
+        <translation>&amp;Настройки...</translation>
+    </message>
+    <message>
+        <source>How do I move an object?</source>
+        <translation>Как переместить объект?</translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Ctrl+Shift+P&lt;/i&gt; to take a screenshot of the 3D screen.</source>
+        <translation>Нажмите &lt;i&gt;Ctrl+Shift+P&lt;/i&gt;, чтобы сделать снимок 3D-экрана.</translation>
+    </message>
+    <message>
+        <source>Press &lt;i&gt;Ctrl+2&lt;/i&gt; to run the simulation in real time.</source>
+        <translation>Нажмите &lt;i&gt;Ctrl+2&lt;/i&gt;, чтобы запустить симуляцию в реальном времени.</translation>
+    </message>
+    <message>
+        <source>Terminate the Webots application.</source>
+        <translation>Завершить работу приложения Webots.</translation>
+    </message>
+    <message>
+        <source>Could not find the source file of the &apos;%1&apos; controller.</source>
+        <translation>Не найден исходный файл контроллера &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>&amp;Overlays</source>
+        <translation>Накладные &amp;окошки</translation>
+    </message>
+    <message>
+        <source>Start a guided tour demonstrating Webots capabilities.</source>
+        <translation>Начать экскурсию, демонстрирующую возможности Webots.</translation>
+    </message>
+    <message>
+        <source>Cannot open the document: &apos;%1&apos;.</source>
+        <translation>Не удается открыть документ: &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Change View</source>
+        <translation>Изменить Вид</translation>
+    </message>
+    <message>
+        <source>Follow Cyberbotics on &amp;LinkedIn...</source>
+        <translation>Follow Cyberbotics on &amp;LinkedIn...</translation>
+    </message>
+    <message>
+        <source>Press ESC to quit fullscreen mode.</source>
+        <translation>Нажмите ESC, чтобы выйти из полноэкранного режима.</translation>
+    </message>
+    <message>
+        <source>Subscribe to the &amp;Newsletter...</source>
+        <translation>Подписаться на &amp;Рассылку...</translation>
+    </message>
+    <message>
+        <source>Open this simulation&apos;s physics plugin in the text editor.</source>
+        <translation>Открыть исходны код физического плагина в текстовом редакторе.</translation>
+    </message>
+    <message>
+        <source>&amp;Wizards</source>
+        <translation>&amp;Мастера</translation>
+    </message>
+    <message>
+        <source>Save World File</source>
+        <translation>Сохранить мир (файл сцены)</translation>
+    </message>
+    <message>
+        <source>The HTML5 scene has been created:&lt;br&gt;%1&lt;br&gt;&lt;br&gt;Do you want to view it locally now?&lt;br&gt;&lt;br&gt;Note: please refer to the &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/web-scene#remarks-on-the-used-technologies-and-their-limitations&apos;&gt;User Guide&lt;/a&gt; if your browser prevents local files CORS requests.</source>
+        <translation>Сцена HTML5 создана:&lt;br&gt;%1&lt;br&gt;&lt;br&gt;Хотите просмотреть ее сейчас локально?&lt;br&gt;&lt;br&gt;Примечание: см. &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/web-scene#remarks-on-the-used-technologies-and-their-limitations&apos;&gt;Руководство пользователя&lt;/a&gt;, если ваш браузер запрещает CORS-запросы локальных файлов .</translation>
+    </message>
+    <message>
+        <source>Open World File</source>
+        <translation>Открыть Сцену</translation>
+    </message>
+    <message>
+        <source>Join our live community on Discord.</source>
+        <translation>Присоединиться к сообществу в Discord.</translation>
+    </message>
+    <message>
+        <source>Could not find the controller name of the &apos;%1&apos; robot.</source>
+        <translation>Не найти имя контроллера для робота &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Do you want to save this modified world?</source>
+        <translation>Сохранить  измененную сцену?</translation>
+    </message>
+    <message>
+        <source>Show &apos;%2&apos; overlay of robot &apos;%1&apos;</source>
+        <translation>Показать окошко &apos;%2&apos; робота &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <source>Keep informed about the latest Webots news on Twitter.</source>
+        <translation>Получать новости Webots в Twitter.</translation>
+    </message>
+    <message>
+        <source>How do I navigate in 3D?</source>
+        <translation>Как перемещаться в 3D-окне?</translation>
+    </message>
+    <message>
+        <source>How do I &amp;apply a force or a torque to an object?</source>
+        <translation>Как применить &amp;Cилу или вращательный момент к объекту?</translation>
+    </message>
+    <message>
+        <source>Subscribe to the Webots &amp;YouTube channel...</source>
+        <translation>Подписывайтесь на канал Webots в &amp;YouTube...</translation>
+    </message>
+    <message>
+        <source>New P&amp;ROTO...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Create a new PROTO.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unable to save &apos;%1&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>HTML recording canceled, locally stored files will still be available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Uploading on %1...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1</source>
+        <translation type="unfinished">%1. {1?}</translation>
+    </message>
+    <message>
+        <source>Upload failed. Error::%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Webots.cloud</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Upload failed: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>link: %1
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Upload failed: Upload status could not be modified.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;strong&gt;Rotate:&lt;/strong&gt;&lt;br/&gt;To rotate the camera around the x and y axis, you have to set the mouse pointer in the 3D scene, press the left mouse button and drag the mouse:&lt;br/&gt;- if you clicked on an object, the rotation will be centered around the picked point on this object.&lt;br/&gt;- if you clicked outside of any object, the rotation will be centered around the position of the camera.&lt;br/&gt;Dragging the mouse horizontally will rotate the camera around the world up axis. Dragging the mouse vertically will rotate the camera around its horizontal axis.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Translate:&lt;/strong&gt;&lt;br/&gt;To translate the camera in the x and y directions, you have to set the mouse pointer in the 3D scene, press the right mouse button and drag the mouse.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Zoom / Tilt:&lt;/strong&gt;&lt;br/&gt;Set the mouse pointer in the 3D scene, then:
+- if you press both left and right mouse buttons (or the middle button) and drag the mouse vertically, the camera will zoom in or out.&lt;br/&gt;- if you press both left and right mouse buttons (or the middle button) and drag the mouse horizontally, the camera will rotate around the viewing axis (tilt movement).&lt;br/&gt;- if you use the wheel of the mouse, the camera will zoom in or out.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Controller &lt;none&gt; cannot be modified.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot show &lt;none&gt; robot window.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Maximum number of pending robot windows reached.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>You are trying to modify a remote PROTO file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The PROTO file will be copied in the current project folder.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>You should save and reload the world file, so that it refers to this local PROTO file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Do you want to proceed?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Modify remote PROTO model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error creating folder &apos;%1&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Local PROTO file already exists:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Do you want to overwrite it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Overwrite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error during copy of extern PROTO file &apos;%1&apos; to &apos;%2&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PROTO file &apos;%1&apos; copied in the local projects folder. Please save and reload the world to apply the changes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Share...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Share your simulation...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbMatter</name>
+    <message>
+        <source>&apos;name&apos; cannot be empty. Default node name &apos;%1&apos; is automatically set.</source>
+        <translation>&apos;name&apos; не может быть пустым. Автоматически установлено имя узла &quot;%1&quot;.</translation>
+    </message>
+    <message>
+        <source>A child to the Transform placed in &apos;boundingObject&apos; is expected.</source>
+        <translation>Ожидается, что узел Transform, помещенный в &apos;boundingObject&apos;, будет иметь дочерний элемент.</translation>
+    </message>
+    <message>
+        <source>A child in the Group placed in &apos;boundingObject&apos; is missing.</source>
+        <translation>Ожидается, что узел Group, помещенный в &apos;boundingObject&apos;, будет иметь дочерний элемент.</translation>
+    </message>
+    <message>
+        <source>A Transform node inside a &apos;boundingObject&apos; can only contain one Shape or one Geometry node. The child node is ignored.</source>
+        <translation>Узел Transform внутри &apos;boundingObject&apos; может содержать только один узел Shape или один узел Geometry. Дочерний узел игнорируется.</translation>
+    </message>
+    <message>
+        <source>A Transform node inside a &apos;boundingObject&apos; can only contain one child. Remaining children are ignored.</source>
+        <translation>Узел Transform внутри &apos;boundingObject&apos; может содержать только один дочерний элемент. Остальные узлы игнорируются.</translation>
+    </message>
+    <message>
+        <source>The &apos;scale&apos; field components of a Solid must be the same: y and z are reset to x.</source>
+        <translation>Компоненты поля &apos;scale&apos; узла Solid должны быть одинаковыми: y и z сбрасываются на x.</translation>
+    </message>
+</context>
+<context>
+    <name>WbMesh</name>
+    <message>
+        <source>This file doesn&apos;t contain any mesh.</source>
+        <translation>Файл не содержит полигональной сетки.</translation>
+    </message>
+    <message>
+        <source>Cannot create IndexedFaceSet because: &quot;%1&quot;.</source>
+        <translation>Не удалось создать IndexedFaceSet по причине: &quot;%1&quot;.</translation>
+    </message>
+    <message>
+        <source>Invalid data, please verify mesh file (bone weights, normals, ...): %1</source>
+        <translation>Ошибочные данные, проверьте 3D-файл (веса &quot;костей&quot;, нормали и пр.): %1</translation>
+    </message>
+    <message>
+        <source>File &apos;%1&apos; could not be found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mesh file could not be read: &apos;%1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Geometry with the name &quot;%1&quot; doesn&apos;t exist in the mesh.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Geometry with color index &quot;%1&quot; doesn&apos;t exist in the mesh.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbMicrophone</name>
+    <message>
+        <source>&apos;aperture&apos; must be either -1 (infinity) or between 0 and 2*pi.</source>
+        <translation>Поле &apos;aperture&apos; должно быть или -1 (бесконечность) или между 0 и 2*pi.</translation>
+    </message>
+</context>
+<context>
+    <name>WbMotor</name>
+    <message>
+        <source>When using coupled motors, &apos;minPosition&apos; must be consistent across devices. Adjusting &apos;minPosition&apos; from %1 to %2 for motor &apos;%3&apos;.</source>
+        <translation>При использовании сопряженных двигателей, значение &apos;minPosition&apos; должно быть одинаковым для всех устройств. Параметр &quot;minPosition&quot; изменен с %1 на %2 для двигателя &quot;%3&quot;.</translation>
+    </message>
+    <message>
+        <source>When using coupled motors, &apos;maxPosition&apos; must be consistent across devices. Adjusting &apos;maxPosition&apos; from %1 to %2 for motor &apos;%3&apos;.</source>
+        <translation>При использовании сопряженных двигателей, значение &apos;maxPosition&apos; должно быть одинаковым для всех устройств. Параметр &quot;maxPosition&quot; изменен с %1 на %2 для двигателя &quot;%3&quot;.</translation>
+    </message>
+    <message>
+        <source>Feedback is available for motorized joints only</source>
+        <translation>Обратная связь доступна только для &quot;моторизованных&quot; шарниров</translation>
+    </message>
+    <message>
+        <source>The requested velocity %1 exceeds &apos;maxVelocity&apos; = %2.</source>
+        <translation>Запрошенная скорость %1 превышает  &apos;maxVelocity&apos; = %2.</translation>
+    </message>
+    <message>
+        <source>wb_motor_enable_torque_feedback(): cannot be invoked because the parent Solid has no Physics node.</source>
+        <translation>Функцию wb_motor_enable_torque_feedback() нельзя вызывать для шарнира, которого в родительском узле Solid не задана физика.</translation>
+    </message>
+    <message>
+        <source>wb_motor_enable_torque_feedback(): cannot be invoked for a Joint whose end point has no Physics node.</source>
+        <translation>Функцию wb_motor_enable_torque_feedback() нельзя вызывать для шарнира, которого в endPoint не задана физика.</translation>
+    </message>
+    <message>
+        <source>The requested available motor force %1 exceeds &apos;maxForce&apos; = %2</source>
+        <translation>Запрошенное доступное усилие двигателя %1 превышает &apos;maxForce&apos; = %2</translation>
+    </message>
+    <message>
+        <source>wb_motor_enable_force_feedback(): cannot be invoked for a Joint with no end point.</source>
+        <translation>Функцию wb_motor_enable_force_feedback() нельзя вызывать для шарнира без endPoint.</translation>
+    </message>
+    <message>
+        <source>When using coupled motors, velocity limits must be consistent across devices. Adjusted &apos;maxVelocity&apos; from %1 to %2 for motor &apos;%3&apos;.</source>
+        <translation>При использовании сопряженных двигателей ограничения скорости должны быть одинаковыми для всех устройств. Параметр &quot;maxVelocity&quot; изменен с %1 на %2 для двигателя &quot;%3&quot;.</translation>
+    </message>
+    <message>
+        <source>For coupled motors, if one has unlimited position, its siblings must have unlimited position as well. Adjusting &apos;minPosition&apos; and &apos;maxPosition&apos; to 0 for motor &apos;%1&apos;.</source>
+        <translation>Для связанных двигателей, если один из них имеет неограниченное вращение, остальные также должны иметь неограниченное вращение. &apos;minPosition&apos; и &apos;maxPosition&apos; сброшены в  0 для двигателя &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>wb_motor_enable_torque_feedback(): cannot be invoked for a Joint with no end point.</source>
+        <translation>Функцию wb_motor_enable_torque_feedback() нельзя вызывать для шарнира без endPoint.</translation>
+    </message>
+    <message>
+        <source>wb_motor_enable_force_feedback(): cannot be invoked because the parent Solid has no Physics node.</source>
+        <translation>Функцию wb_motor_enable_force_feedback() нельзя вызывать для шарнира, которого в родительском узле Solid не задана физика.</translation>
+    </message>
+    <message>
+        <source>Motor &apos;%1&apos; uses the coupled motor name structure but does not have any siblings.</source>
+        <translation>Двигатель &quot;%1&quot; использует структуру имени связанного двигателя, но нет связанных с ним двигателей.</translation>
+    </message>
+    <message>
+        <source>The requested available motor torque %1 exceeds &apos;maxTorque&apos; = %2</source>
+        <translation>Запрошенный доступный крутящий момент двигателя %1 превышает &apos;maxTorque&apos; = %2</translation>
+    </message>
+    <message>
+        <source>The requested motor force %1 exceeds &apos;maxForce&apos; = %2</source>
+        <translation>Требуемое усилие двигателя %1 превышает &apos;maxForce&apos; = %2</translation>
+    </message>
+    <message>
+        <source>The requested motor torque %1 exceeds &apos;maxTorque&apos; = %2</source>
+        <translation>Запрошенный крутящий момент двигателя %1 превышает &apos;maxTorque&apos; = %2</translation>
+    </message>
+    <message>
+        <source>&apos;controlI&apos; (currently %1) must be non-negative.</source>
+        <translation>&apos;controlI&apos; (сейчас %1) должен быть неотрицательным.</translation>
+    </message>
+    <message>
+        <source>&apos;controlD&apos; (currently %1) must be non-negative.</source>
+        <translation>&apos;controlD&apos; (сейчас %1) должен быть неотрицательным.</translation>
+    </message>
+    <message>
+        <source>The value of &apos;multiplier&apos; cannot be 0. Value reverted to 1.</source>
+        <translation>Значение &apos;multiplier&apos; не может быть равно 0. Значение возвращено к 1.</translation>
+    </message>
+    <message>
+        <source>wb_motor_enable_force_feedback(): cannot be invoked for a Joint whose end point has no Physics node.</source>
+        <translation>Функцию wb_motor_enable_force_feedback() нельзя вызывать для шарнира, которого в endPoint не задана физика.</translation>
+    </message>
+    <message>
+        <source>&apos;controlP&apos; (currently %1) must be positive.</source>
+        <translation>&apos;controlP&apos; (сейчас %1) должен быть положительным.</translation>
+    </message>
+</context>
+<context>
+    <name>WbMultimediaStreamingServer</name>
+    <message>
+        <source>Webots multimedia streamer started: resolution %1x%2 on port %3</source>
+        <translation>Мультимедийный стример Webots запущен: разрешение %1x%2 на порту %3</translation>
+    </message>
+    <message>
+        <source>Streaming server: Client resize: new resolution %1x%2.</source>
+        <translation>Потоковый сервер: изменение размера от клиента: новое разрешение %1x%2.</translation>
+    </message>
+    <message>
+        <source>Streaming server: Resolution changed to %1x%2.</source>
+        <translation>Потоковый сервер: разрешение изменено на %1x%2.</translation>
+    </message>
+    <message>
+        <source>Streaming server: Invalid client resize: only the first connected client can resize the simulation.</source>
+        <translation>Потоковый сервер: Недопустимое изменение размера клиента: только первый подключенный клиент может изменить разрешение.</translation>
+    </message>
+    <message>
+        <source>Streaming server: Ignored new client request of resolution: %1x%2.</source>
+        <translation>Потоковый сервер:  проигнорирован новый запрос клиента на разрешение: %1x%2.</translation>
+    </message>
+    <message>
+        <source>Streaming server received unsupported X3D message: &apos;%1&apos;. You should run Webots with the &apos;--stream=&quot;mode=x3d&quot;&apos; command line option.</source>
+        <translation>Потоковый сервер получил неподдерживаемое сообщение X3D: &quot;%1&quot;. Вы должны запускать Webots с параметром командной строки &apos;--stream=&quot;mode=x3d&quot;&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>WbMuscle</name>
+    <message>
+        <source>&apos;maxRadius&apos; field is deprecated, please use the &apos;volume&apos; field instead.</source>
+        <translation>Поле &apos;maxRadius&apos; устарело, используйте вместо него поле &apos;volume&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>WbNewControllerWizard</name>
+    <message>
+        <source>Controller name:</source>
+        <translation>Имя контроллера:</translation>
+    </message>
+    <message>
+        <source>Language selection</source>
+        <translation>Выберите язык</translation>
+    </message>
+    <message>
+        <source>New controller creation</source>
+        <translation>Создание нового контроллера</translation>
+    </message>
+    <message>
+        <source>Please choose the language for your controller program.</source>
+        <translation>Выберите язык программирования для вашего контроллера.</translation>
+    </message>
+    <message>
+        <source>This wizard will help you creating a new controller.</source>
+        <translation>Контроллер робота - программа, определяющая поведение робота на каждом шаге симуляции. 
+Вам нужно будет выбрать язык программирования и имя для нового контроллера, 
+затем выбрать его из списка контроллеров в поле Robot.controller.</translation>
+    </message>
+    <message>
+        <source>Create a new robot controller.</source>
+        <translation>Создать новый контроллер робота.</translation>
+    </message>
+    <message>
+        <source>Open &apos;%1.%2&apos; in Text Editor.</source>
+        <translation>Открыть &apos;%1.%2&apos; в текстовом редакторе.</translation>
+    </message>
+    <message>
+        <source>Please choose a name for your controller program.</source>
+        <translation>Выберите имя для программы контроллера (оно же имя папки, имя файла, ссылка из поля &apos;controller&apos; робота).</translation>
+    </message>
+    <message>
+        <source>Controller creation failed</source>
+        <translation>Не удалось создать контроллер</translation>
+    </message>
+    <message>
+        <source>Conclusion</source>
+        <translation>Завершение</translation>
+    </message>
+    <message>
+        <source>Name selection</source>
+        <translation>Выберите название</translation>
+    </message>
+    <message>
+        <source>Please choose the Integrated Development Environment (IDE) for your controller program.</source>
+        <translation>Выберите интегрированную среду разработки (IDE), где вы будете писать этот контроллер.</translation>
+    </message>
+    <message>
+        <source>The following directory and files will be created:</source>
+        <translation>Будут созданы следующие папки и файлы:</translation>
+    </message>
+    <message>
+        <source>Open &apos;%1.sln&apos; in Microsoft Visual Studio (the controller need to be set to &lt;&lt;extern&gt;&gt; to be able to launch the controller from Microsoft Visual Studio.</source>
+        <translation>Откройте &apos;%1.sln&apos; in Microsoft Visual Studio (контроллер должен быть установлен как &lt;&lt;extern&gt;&gt;, чтобы запускать его из MS VS).</translation>
+    </message>
+    <message>
+        <source>Microsoft Visual Studio</source>
+        <translation>Microsoft Visual Studio</translation>
+    </message>
+    <message>
+        <source>Some directories or files could not be created.</source>
+        <translation>Не удалось создать некоторые папки или файлы.</translation>
+    </message>
+    <message>
+        <source>IDE selection</source>
+        <translation>Выберите IDE</translation>
+    </message>
+    <message>
+        <source>Webots (gcc / Makefile)</source>
+        <translation>Webots (gcc / Makefile)</translation>
+    </message>
+</context>
+<context>
+    <name>WbNewPhysicsPluginWizard</name>
+    <message>
+        <source>Language selection</source>
+        <translation>Выбор языка программирования</translation>
+    </message>
+    <message>
+        <source>Physics creation failed</source>
+        <translation>Не удалось создать физический плагин</translation>
+    </message>
+    <message>
+        <source>Please choose a name for your physics plugin.</source>
+        <translation>Задайте имя для вашего физического плагина.</translation>
+    </message>
+    <message>
+        <source>Plugin name:</source>
+        <translation>Имя плагина:</translation>
+    </message>
+    <message>
+        <source>New physics plugin creation</source>
+        <translation>Создание нового физического плагина</translation>
+    </message>
+    <message>
+        <source>Create a new physics plugin</source>
+        <translation>Создать новый физический плагин</translation>
+    </message>
+    <message>
+        <source>The following directory and files will be generated.</source>
+        <translation>Будет сгенерированы следующая папка и файлы.</translation>
+    </message>
+    <message>
+        <source>Conclusion</source>
+        <translation>Завершение</translation>
+    </message>
+    <message>
+        <source>Open &apos;%1%2&apos; in Text Editor.</source>
+        <translation>Открыть &apos;%1%2&apos; в текстовом редакторе.</translation>
+    </message>
+    <message>
+        <source>Name selection</source>
+        <translation>Задание имени</translation>
+    </message>
+    <message>
+        <source>This wizard will help you creating a new physics plugin.</source>
+        <translation>Этот мастер поможет вам создать новый физический плагин.</translation>
+    </message>
+    <message>
+        <source>Some directories or files could not be created.</source>
+        <translation>Не удалось создать некоторые папки или файлы.</translation>
+    </message>
+    <message>
+        <source>Please choose the language for your physics plugin.</source>
+        <translation>Пожалуйста, выберите язык для вашего физического плагина.</translation>
+    </message>
+</context>
+<context>
+    <name>WbNewProjectWizard</name>
+    <message>
+        <source>Please choose a name for the new world and select the features you want:</source>
+        <translation>Задайте имя для новой сцены и выберите нужные функции:</translation>
+    </message>
+    <message>
+        <source>New project creation</source>
+        <translation>Создание нового проекта</translation>
+    </message>
+    <message>
+        <source>Choose</source>
+        <translation>Выбрать</translation>
+    </message>
+    <message>
+        <source>Invalid new world name</source>
+        <translation>Неправильное имя новой сцены</translation>
+    </message>
+    <message>
+        <source>Create a Webots project directory</source>
+        <translation>Создать папку проекта Webots</translation>
+    </message>
+    <message>
+        <source>Invalid new project directory</source>
+        <translation>Недопустимая папка нового проекта</translation>
+    </message>
+    <message>
+        <source>It is not allowed to create a new project inside the Webots installation directory.</source>
+        <translation>Не разрешается создавать новый проект в папке установки Webots.</translation>
+    </message>
+    <message>
+        <source>World settings</source>
+        <translation>Настройки сцены</translation>
+    </message>
+    <message>
+        <source>Conclusion</source>
+        <translation>Завершение</translation>
+    </message>
+    <message>
+        <source>Please select another directory.</source>
+        <translation>Выберите другую папку.</translation>
+    </message>
+    <message>
+        <source>Please choose a directory for your new project:</source>
+        <translation>Пожалуйста, выберите папку для вашего нового проекта:</translation>
+    </message>
+    <message>
+        <source>The following directories and files will be created:</source>
+        <translation>Будут созданы следующие папки и файлы:</translation>
+    </message>
+    <message>
+        <source>Directory selection</source>
+        <translation>Выбор папки</translation>
+    </message>
+    <message>
+        <source>This wizard will help you creating a new project.</source>
+        <translation>Этот мастер поможет вам создать новый проект.</translation>
+    </message>
+    <message>
+        <source>Some directories could not be created.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Directories creation failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please specify a world name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbNewProtoWizard</name>
+    <message>
+        <source>Create a new PROTO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open &apos;%1.proto&apos; in Text Editor.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PROTO template not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PROTO creation failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Some directories or files could not be created.</source>
+        <translation type="unfinished">Не удалось создать некоторые папки или файлы.</translation>
+    </message>
+    <message>
+        <source>PROTO &apos;%1&apos; added to your project&apos;s &apos;protos&apos; directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New PROTO creation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This wizard will help you creating a new PROTO.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Name selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please choose a name for your PROTO node.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PROTO name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Describe the functionality of your PROTO here.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tags selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please choose the tags of your PROTO.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Procedural PROTO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>By enabling this option, JavaScript template scripting can be used
+to generate PROTO in a procedural way.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Non-deterministic PROTO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A non-deterministic PROTO is a PROTO where the same fields can potentially
+yield a different result from run to run. This is often the case if random
+number generators with time-based seeds are employed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hidden PROTO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A hidden PROTO will not appear in the list when adding a new node.
+This tag is often used for sub-PROTO, when creating components of
+a larger node.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Base type selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please choose the base type from which the PROTO will inherit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Base nodes</source>
+        <translation type="unfinished">Базовые узлы</translation>
+    </message>
+    <message>
+        <source>PROTO nodes (Extra Projects)</source>
+        <translation type="unfinished">Узлы PROTO (Дополнительные проекты)</translation>
+    </message>
+    <message>
+        <source>Conclusion</source>
+        <translation type="unfinished">Завершение</translation>
+    </message>
+    <message>
+        <source>The following directory and files will be generated.</source>
+        <translation type="unfinished">Будет сгенерированы следующая папка и файлы.</translation>
+    </message>
+</context>
+<context>
+    <name>WbNewVersionDialog</name>
+    <message>
+        <source>Stay informed about the latest developments of Webots by subscribing to the &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/newsletter&apos;&gt;Webots newsletter&lt;/a&gt;.</source>
+        <translation>Будьте в курсе последних разработок Webots, подписавшись на &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/newsletter&apos;&gt;информационный бюллетень Webots&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <source>Allow to send lightweight anonymous technical data to Webots developers.</source>
+        <translation>Разрешить отправлять облегченные анонимные технические данные разработчикам Webots.</translation>
+    </message>
+    <message>
+        <source>Webots newsletter:</source>
+        <translation>Рассылка Webots:</translation>
+    </message>
+    <message>
+        <source>More details about Webots %1 are listed &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/blog/Webots-%2-%3-release&apos;&gt;here&lt;/a&gt;.</source>
+        <translation>Дополнительные сведения о Webots %1 перечислены &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/blog/Webots-%2-%3-release&apos;&gt;здесь&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <source>Welcome to Webots %1</source>
+        <translation>Добро пожаловать в Webots %1</translation>
+    </message>
+    <message>
+        <source>We need your help to continue to improve Webots: more information &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/telemetry&apos;&gt;here&lt;/a&gt;.</source>
+        <translation>Нам нужна ваша помощь, чтобы продолжать совершенствовать Webots: дополнительная информация &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/telemetry&apos;&gt;здесь&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <source>Preview:</source>
+        <translation>Предпросмотр:</translation>
+    </message>
+    <message>
+        <source>Themes:</source>
+        <translation>Тема:</translation>
+    </message>
+    <message>
+        <source>Telemetry:</source>
+        <translation>Телеметрия:</translation>
+    </message>
+    <message>
+        <source>Start Webots with the selected theme.</source>
+        <translation>Запустите Webots с выбранной темой.</translation>
+    </message>
+</context>
+<context>
+    <name>WbNode</name>
+    <message>
+        <source> Skipped node in PROTO parameter &apos;%1&apos;.</source>
+        <translation> Пропущен узел в параметре PROTO &quot;%1&quot;.</translation>
+    </message>
+    <message>
+        <source>Skipped node: </source>
+        <translation>Пропущен узел: </translation>
+    </message>
+    <message>
+        <source> Skipped node: </source>
+        <translation> Пропущен узел: </translation>
+    </message>
+    <message>
+        <source>Wrong order of fields in the instance of PROTO %1: USE nodes might refer to the wrong DEF nodes</source>
+        <translation>Неправильный порядок полей в экземпляре PROTO %1: узлы USE могут ссылаться на неправильные узлы DEF</translation>
+    </message>
+    <message>
+        <source>Could not instantiate &apos;%1&apos; node: this class is not yet implemented in Webots.</source>
+        <translation>Не удалось создать экземпляр узла &quot;%1&quot;: этот класс еще не реализован в Webots.</translation>
+    </message>
+    <message>
+        <source>Parameter %1 not supported in PROTO %2</source>
+        <translation>Параметр %1 не поддерживается в PROTO %2</translation>
+    </message>
+    <message>
+        <source>Duplicated definition of field %1 in the instance of PROTO %2</source>
+        <translation>Дублированное определение поля %1 в экземпляре PROTO %2</translation>
+    </message>
+    <message>
+        <source> Using &apos;Slot&apos; nodes mechanism.</source>
+        <translation> Используем механизм узлов &apos;Slot&apos;.</translation>
+    </message>
+    <message>
+        <source>Field IS reference &apos;%1&apos; has no matching PROTO parameter.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File &apos;%1&apos; is not readable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Malformed EXTERNPROTO URL. The URL should end with &apos;.proto&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Malformed EXTERNPROTO URL. Invalid URL provided: %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbNodeEditor</name>
+    <message>
+        <source>USE count: %1</source>
+        <translation>Число USE: %1</translation>
+    </message>
+    <message>
+        <source>Triangle count: %1</source>
+        <translation>Число треугольников: %1</translation>
+    </message>
+    <message>
+        <source>This DEF string is already referred to by subsequent USE nodes. Applying this change will turn them into copies of the selected node.
+Do you want to continue?</source>
+        <translation>На эту строку DEF уже ссылаются последующие узлы USE. Если вы ее измените, эти узлы USE  будут преобразованы в копии данного узла.
+Продолжить?</translation>
+    </message>
+    <message>
+        <source>This DEF string is already used by subsequent DEF nodes. Applying this change will turn USE nodes of the selected node into copies of subsequent DEF node.
+Do you want to continue?</source>
+        <translation>Эту строку DEF уже используют последующие узлы DEF. Если вы ее измените, узлы USE выделенного узла будут преобразованы в копии последующего узла DEF.
+Продолжить?</translation>
+    </message>
+    <message>
+        <source>This DEF cannot be cleared because some USE nodes depend on it.</source>
+        <translation>Этот DEF нель очистить, на него ссылаются узлы REF.</translation>
+    </message>
+    <message>
+        <source>3D tools:</source>
+        <translation>3D инструменты:</translation>
+    </message>
+    <message>
+        <source>Triangle count: %1 (no shadow)</source>
+        <translation>Число треугольников: %1 (без теней)</translation>
+    </message>
+    <message>
+        <source>show resize handles</source>
+        <translation>показать &quot;ручки&quot; изменения размера</translation>
+    </message>
+    <message>
+        <source>DEF name change</source>
+        <translation>Изменние имени DEF</translation>
+    </message>
+    <message>
+        <source>EXTERNPROTO &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This DEF string is already used by subsequent USE and DEF nodes. Applying this change will modify all the USE nodes referring to previous node with same DEF name and USE nodes referring to the selected node. 
+Do you want to continue?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbNodeOperations</name>
+    <message>
+        <source>Trying to import multiple nodes in the &apos;%1&apos; SFNode field. Only the first node will be inserted</source>
+        <translation>Попытка импортировать несколько узлов в поле &apos;%1&apos; узла SFNode. Будет вставлен только первый узел</translation>
+    </message>
+    <message>
+        <source>In order to import the PROTO &apos;%1&apos;, first it must be declared in the IMPORTABLE EXTERNPROTO list.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbOpenSampleWorldDialog</name>
+    <message>
+        <source>Open Sample World</source>
+        <translation>Открыть сцену из примеров</translation>
+    </message>
+    <message>
+        <source>Find :</source>
+        <translation>Найти:</translation>
+    </message>
+    <message>
+        <source>Filter world names. Only the world names containing the given string are displayed in the tree below. Regular expressions can be used.</source>
+        <translation>Фильтр для имен сцен. Только сцены с именами, содержащими данную строку, отобразятся в дереве ниже. Можно использовать регулярные выражения.</translation>
+    </message>
+</context>
+<context>
+    <name>WbPhysics</name>
+    <message>
+        <source>The first line of &apos;inertiaMatrix&apos; (principal moments of inertia) must have only positive values.</source>
+        <translation>Первая строка &apos;inertiaMatrix&apos; (principal moments of inertia) должна иметь только положительные значения.</translation>
+    </message>
+    <message>
+        <source>The center of mass must also be specified when using a custom inertia matrix.</source>
+        <translation>Центр массы должен также быть задан, если используется своя матрица инерции.</translation>
+    </message>
+    <message>
+        <source>You must also specify the &apos;centerOfMass&apos; when specifying the &apos;inertiaMatrix&apos;</source>
+        <translation>Поле &apos;centerOfMass&apos; должно также быть задано, если вы задаете &apos;inertiaMatrix&apos;</translation>
+    </message>
+    <message>
+        <source>&apos;inertiaMatrix&apos; must have exactly 0 or 2 lines. Extra lines skipped.</source>
+        <translation>В поле &apos;inertiaMatrix&apos; должно быть ровно 0 или 2 строки. Лишние строки пропущены.</translation>
+    </message>
+    <message>
+        <source>&apos;inertiaMatrix&apos; must be positive definite.</source>
+        <translation>&apos;inertiaMatrix&apos; должна быть положительно определенной (positive definite).</translation>
+    </message>
+    <message>
+        <source>Either the &apos;mass&apos; or the &apos;density&apos; must be specified.</source>
+        <translation>Должны быть заданы либо &apos;mass&apos;, либо &apos;density&apos;.</translation>
+    </message>
+    <message>
+        <source>Both &apos;density&apos; and &apos;mass&apos; specified: the &apos;density&apos; will be ignored.</source>
+        <translation>Заданы и &apos;density&apos; и &apos;mass&apos;: плотность будет игнорироваться.</translation>
+    </message>
+    <message>
+        <source>&apos;centerOfmass&apos; must also be specified when using an inertia matrix.</source>
+        <translation>Поле &apos;centerOfmass&apos; должно также быть задано, если используется матрица инерции.</translation>
+    </message>
+    <message>
+        <source>&apos;mass&apos; must be positive when using an inertia matrix.</source>
+        <translation>Поле &apos;mass&apos; должно быть положительным при использовании inertiaMatrix.</translation>
+    </message>
+    <message>
+        <source>You must also set the &apos;mass&apos; to a positive value when specifying the &apos;inertiaMatrix&apos;.</source>
+        <translation>Поле &apos;mass&apos; должно иметь положительное значение, если вы задаете &apos;inertiaMatrix&apos;.</translation>
+    </message>
+    <message>
+        <source>&apos;inertiaMatrix&apos; must have exactly 0 or 2 lines. Second line inserted.</source>
+        <translation>В поле &apos;inertiaMatrix&apos; должно быть ровно 0 или 2 строки. Добавлена вторая строка.</translation>
+    </message>
+    <message>
+        <source>&apos;centerOfMass&apos; must have exactly 0 or 1 line. Extra lines skipped.</source>
+        <translation>В поле &apos;centerOfMass&apos; должно быть ровно 0 или 1 строка. Лишние строки пропущены.</translation>
+    </message>
+</context>
+<context>
+    <name>WbPhysicsPlugin</name>
+    <message>
+        <source>Can&apos;t change directory to: &apos;%1&apos;.</source>
+        <translation>Не удалось сменить папку на: &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Could not find physics_special_init() in &apos;%1&apos; plugin.</source>
+        <translation>Не найдена функция physics_special_init() в плагине &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Can&apos;t find plugin directory: &apos;%1&apos;.</source>
+        <translation>Не найдена папка с плагином: &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -4244,82 +5024,1070 @@ The path to this Webots project contains non 8-bit characters. Webots won&apos;t
     </message>
 </context>
 <context>
-    <name>WbStreamingServer</name>
+    <name>WbPlane</name>
     <message>
-        <source>Streaming server: edit of &apos;%1&apos; controller not allowed.</source>
-        <translation>Потоковый сервер: редактирование контроллера &apos;%1&apos; не разрешено.</translation>
+        <source>All &apos;size&apos; components must be positive for a Plane used in a &apos;boundingObject&apos;.</source>
+        <translation>Все компоненты поля &apos;size&apos; должно быть положительными при использовании Plane в &apos;boundingObject&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>WbPlugin</name>
+    <message>
+        <source>&apos;%1&apos;: file does not exist.</source>
+        <translation>&apos;%1&apos;: файл не существует.</translation>
     </message>
     <message>
-        <source>Streaming server: Unsupported message: %1.</source>
-        <translation>Потоковый сервер: неподдерживаемое сообщение: %1.</translation>
+        <source>Could not close dynamic library: &apos;%1&apos;</source>
+        <translation>Не удалось закрыть динамическую библиотеку: &apos;%1&apos;</translation>
     </message>
     <message>
-        <source>Unsupported URL %1</source>
-        <translation>Неподдерживаемый URL &apos;%1&apos;</translation>
+        <source>&apos;%1&apos;: cannot open DLL.</source>
+        <translation>&apos;%1&apos;: не удалось открыть DLL.</translation>
     </message>
     <message>
-        <source>Streaming server: received robot message for %1: &quot;%2&quot;.</source>
-        <translation>Потоковый сервер: получено сообщение робота для %1: &quot;%2&quot;.</translation>
+        <source>Error while loading plugin: &apos;%1&apos;:</source>
+        <translation>Ошибка при загрузке плагина: &apos;%1&apos;:</translation>
     </message>
     <message>
-        <source>Streaming server: non-existing controller file: %1.</source>
-        <translation>Потоковый сервер: несуществующий файл контроллера: %1.</translation>
+        <source>Plugin &apos;%1&apos; not found. Search in:</source>
+        <translation>Плагин &apos;%1&apos; не найден. Искали здесь:</translation>
     </message>
     <message>
-        <source>Cannot set the server in listen mode: %1</source>
-        <translation>Невозможно перевести сервер в режим прослушивания: %1</translation>
+        <source>You need to implement this function to activate the &apos;%1&apos; plugin.</source>
+        <translation>Реализуйте эту функцию, чтобы плагин &apos;%1&apos; заработал.</translation>
     </message>
     <message>
-        <source>Error when creating the TCP streaming server on port %1: %2</source>
-        <translation>Ошибка при создании потокового TCP-сервера на порту %1: %2</translation>
+        <source>Function %1() missing in &apos;%2&apos;.</source>
+        <translation>Функция %1() отсутствует в &apos;%2&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>WbPointLight</name>
+    <message>
+        <source>&apos;ambientIntensity&apos; and &apos;attenuation&apos; cannot differ from their default values at the same time. &apos;ambientIntensity&apos; was changed to 0.</source>
+        <translation>Поля &apos;ambientIntensity&apos; и &apos;attenuation&apos; не могут оба быть заданы отличными от их значений по умолчанию. Значение &apos;ambientIntensity&apos; изменено в 0.</translation>
     </message>
     <message>
-        <source>Streaming server: non-existing controller folder: %1.</source>
-        <translation>Потоковый сервер: несуществующая папка контроллера: %1.</translation>
+        <source>Maximum number of active point lights (%1) has been reached, newly added lights won&apos;t be rendered.</source>
+        <translation>Слишком много (более %1) активных точечных источников света, вновь добавленные источники игнорируются.</translation>
     </message>
     <message>
-        <source>Streaming server listening on port %1.</source>
-        <translation>Потоковый сервер: слушает порт %1.</translation>
+        <source>A quadratic &apos;attenuation&apos; should be preferred to have a realistic simulation of light. Only the third component of the &apos;attenuation&apos; field should be greater than 0.</source>
+        <translation>Квадратичный тип &apos;attenuation&apos; предпочителен для реалистичной симуляции света. Только 3-й компонент поля &apos;attenuation&apos; должен быть больше 0.</translation>
+    </message>
+</context>
+<context>
+    <name>WbPointSet</name>
+    <message>
+        <source>If a &apos;Color&apos; node is present in the &apos;color&apos; field, it should have the same number of component as the &apos;Coordinate&apos; node in the &apos;coord&apos; field.</source>
+        <translation>Если узел &apos;Color&apos; присутствует в поле &apos;color&apos;, он должен иметь столько же компонентов, сколько и в узле &apos;Coordinate&apos; в поле &apos;coord&apos;.</translation>
     </message>
     <message>
-        <source>Streaming server closed</source>
-        <translation>Потоковый сервер закрыт</translation>
+        <source>A non-empty &apos;Coordinate&apos; node should be present in the &apos;coord&apos; field.</source>
+        <translation>Непустой узел &apos;Coordinate&apos; должен быь задан в поле &apos;coord&apos;.</translation>
     </message>
     <message>
-        <source>Streaming server: cannot write controller file: %1.</source>
-        <translation>Потоковый сервер: невозможно записать файл контроллера: %1.</translation>
+        <source>Only the %1 first points will be drawn.</source>
+        <translation>Только первые %1 точек будут отрисованы.</translation>
+    </message>
+</context>
+<context>
+    <name>WbPositionViewer</name>
+    <message>
+        <source>Relative to %1 (depth level %2)</source>
+        <translation>Относительно %1 (уровень глубины %2)</translation>
     </message>
     <message>
-        <source>Streaming server: world %1 doesn&apos;t exist.</source>
-        <translation>Потоковый сервер: мир %1 не существует.</translation>
+        <source>Select relatively to which solid the position should be measured</source>
+        <translation>Выберите Solid, относительно которого нужно измерять положение</translation>
     </message>
     <message>
-        <source>Unsupported file type %1</source>
-        <translation>Неподдерживаемый тип файла &apos;%1&apos;</translation>
+        <source>Absolute</source>
+        <translation>Абсолютно</translation>
     </message>
     <message>
-        <source>Received request for %1</source>
-        <translation>Получен запрос на %1</translation>
+        <source>Position:</source>
+        <translation>Положение:</translation>
     </message>
     <message>
-        <source>Streaming server: New client [%1] (%2 connected client(s)).</source>
-        <translation>Потоковый сервер: новый клиент [%1] (%2 подключенных клиентов).</translation>
+        <source>Rotation:</source>
+        <translation>Поворот:</translation>
     </message>
     <message>
-        <source>Streaming server: Client disconnected [%1] (remains %2 client(s)).</source>
-        <translation>Потоковый сервер: отключился клиент [%1] (осталось %2 клиентов).</translation>
+        <source>Relative to %1</source>
+        <translation>Относительно %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbPreferences</name>
+    <message>
+        <source>If the error persists, please check your access rights on file:</source>
+        <translation>Если ошибка сохраняется, проверьте свои права доступа к файлу:</translation>
     </message>
     <message>
-        <source>Streaming server: bad controller file name: %1/%2.</source>
-        <translation>Потоковый сервер: неверное имя файла контроллера: %1/%2.</translation>
+        <source>Errors when accessing the preferences file.</source>
+        <translation>Ошибки при доступе к файлу с настройками.</translation>
     </message>
     <message>
-        <source>Error when reloading world: %1.</source>
-        <translation>Ошибка при перезагрузке мира: %1.</translation>
+        <source>
+Preferences file cannot be overwritten.
+Any change to the current settings won&apos;t be restored at next Webots start.
+
+Please check the write permissions on file:
+&quot;%1&quot;</source>
+        <translation>
+Не удалось перезаписать файл настроек.
+Любые изменения в настройках будут потеряны при следующем зауске Webots.
+
+Проверьте свои права доступа к файлу:
+&quot;%1&quot;</translation>
+    </message>
+</context>
+<context>
+    <name>WbPreferencesDialog</name>
+    <message>
+        <source>Low</source>
+        <translation>Низкое</translation>
     </message>
     <message>
-        <source>Streaming server: you are not allowed to open a world in another project directory.</source>
-        <translation>Потоковый сервер: вам не разрешено открывать мир в другом проекте.</translation>
+        <source>High</source>
+        <translation>Высокое</translation>
+    </message>
+    <message>
+        <source>Port:</source>
+        <translation>Порт:</translation>
+    </message>
+    <message>
+        <source>Proxy</source>
+        <translation>Прокси</translation>
+    </message>
+    <message>
+        <source>Type:</source>
+        <translation>Тbп:</translation>
+    </message>
+    <message>
+        <source>Ultra</source>
+        <translation>Ульта-восыкое</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>Отключено</translation>
+    </message>
+    <message>
+        <source>Disable shadows</source>
+        <translation>Отключить тени</translation>
+    </message>
+    <message>
+        <source>Texture Quality:</source>
+        <translation>Качество текстур:</translation>
+    </message>
+    <message>
+        <source>Python command:</source>
+        <translation>Команда Python:</translation>
+    </message>
+    <message>
+        <source>Editor font:</source>
+        <translation>Шрифт редактора:</translation>
+    </message>
+    <message>
+        <source>Check for Webots updates on startup</source>
+        <translation>Проверять обновления Webots при запуске</translation>
+    </message>
+    <message>
+        <source>Update policy:</source>
+        <translation>Политика обновлений:</translation>
+    </message>
+    <message>
+        <source>Ambient Occlusion:</source>
+        <translation>Ambient Occlusion:</translation>
+    </message>
+    <message>
+        <source>Display save warning only for scene tree edit</source>
+        <translation>Спрашивать &quot;Сохранить?&quot; только для изменений в сцене</translation>
+    </message>
+    <message>
+        <source>SOCKS v5</source>
+        <translation>SOCKS v5</translation>
+    </message>
+    <message>
+        <source>Rendering</source>
+        <translation>Отрисовка</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Сеть</translation>
+    </message>
+    <message>
+        <source>built-in python (snap), see &lt;a href=&quot;https://cyberbotics.com/doc/guide/running-extern-robot-controllers&quot;&gt;extern controllers&lt;/a&gt; for alternatives.</source>
+        <translation>встроенный python (snap), подробность здесь: &lt;a href=&quot;https://cyberbotics.com/doc/guide/running-extern-robot-controllers&quot;&gt;внешние контроллеры&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Язык:</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Среднее</translation>
+    </message>
+    <message>
+        <source>OpenGL</source>
+        <translation>OpenGL</translation>
+    </message>
+    <message>
+        <source>Theme:</source>
+        <translation>Тема:</translation>
+    </message>
+    <message>
+        <source>We need your help to continue to improve Webots: more information at:
+https://cyberbotics.com/doc/guide/telemetry</source>
+        <translation>Нам нужна ваша помощь, чтобы продолжать совершенствовать Webots: Детали по адресу:
+https://cyberbotics.com/doc/guide/telemetry</translation>
+    </message>
+    <message>
+        <source>Max Texture Filtering:</source>
+        <translation>Максимальная фильтрация текстур:</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation>Опции:</translation>
+    </message>
+    <message>
+        <source>If this option is enabled, Webots will not display any warning when you quit, reload
+or load a new world after the current world was modified by either changing the viewpoint,
+dragging, rotating, applying a force or applying a torque to an object. It will however
+still display a warning if the world was modified from the scene tree.</source>
+        <translation>Если эта опция включена, Webots не будет отображать никаких предупреждений, когда вы выходите, перезагружаете
+или загружаете новый мир после того, как текущий мир был изменен путем изменения точки обзора,
+перетаскиванием, вращением, приложением силы или приложением крутящего момента к объекту. 
+Webots по-прежнему будет отображать предупреждение, если мир был изменен из дерева сцены.</translation>
+    </message>
+    <message>
+        <source>Set the size of the cache (in MB):</source>
+        <translation>Установите размер кеша (в МБ):</translation>
+    </message>
+    <message>
+        <source>Startup mode:</source>
+        <translation>Режим запуска:</translation>
+    </message>
+    <message>
+        <source>Warnings:</source>
+        <translation>Предупреждения:</translation>
+    </message>
+    <message>
+        <source>If this option is enabled, Webots will check if a new version is available for download
+at every startup. If available, it will inform you about it.</source>
+        <translation>Если эта опция включена, Webots при каждом запуске будет проверять, 
+доступна ли новая версия для загрузки. При наличии, он сообщит вам об этом.</translation>
+    </message>
+    <message>
+        <source>The cache has been cleared.</source>
+        <translation>Кэш очищен.</translation>
+    </message>
+    <message>
+        <source>Send technical data to Webots developers</source>
+        <translation>Отправлять технические данные разработчикам Webots</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Пароль:</translation>
+    </message>
+    <message>
+        <source>Hostname:</source>
+        <translation>Имя хоста:</translation>
+    </message>
+    <message>
+        <source>(recommended)</source>
+        <translation>(рекомендуется)</translation>
+    </message>
+    <message>
+        <source>Username:</source>
+        <translation>Пользователь:</translation>
+    </message>
+    <message>
+        <source>You have changed some settings which require Webots to be restarted. Restart Webots Now?</source>
+        <translation>Вы изменили некоторые настройки, которые требуют перезапуска Webots. Перезапустить Webots сейчас?</translation>
+    </message>
+    <message>
+        <source>Preferences</source>
+        <translation>Настройки</translation>
+    </message>
+    <message>
+        <source>Restart Now?</source>
+        <translation>Перезапустить Webots сейчас?</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Общее</translation>
+    </message>
+    <message>
+        <source>Activate SOCK5 proxying.</source>
+        <translation>Включить проксирование SOCK5 через proxy.</translation>
+    </message>
+    <message>
+        <source>Telemetry (&lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/telemetry&apos;&gt;info&lt;/a&gt;):</source>
+        <translation>Телеметрия (&lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/telemetry&apos;&gt;инфа&lt;/a&gt;):</translation>
+    </message>
+    <message>
+        <source>Disable anti-aliasing</source>
+        <translation>Отключить сглаживание</translation>
+    </message>
+    <message>
+        <source>Extra project path:</source>
+        <translation>Путь к дополнительным проектам:</translation>
+    </message>
+    <message>
+        <source>(restart needed)</source>
+        <translation>(нужен перезапуск)</translation>
+    </message>
+    <message>
+        <source>Physics multi-threading is enabled. This can have a noticeable impact on the simulation speed (negative or positive depending on the simulated world). In case of multi-threading, simulation replicability is not guaranteed. </source>
+        <translation>Включена многопоточность физики. Это может оказать заметное влияние на скорость симуляции (отрицательное или положительное в зависимости от симулируемого мира). В случае многопоточности воспроизводимость симуляции не гарантируется. </translation>
+    </message>
+    <message>
+        <source>The new texture quality will be applied next time the world is loaded.</source>
+        <translation>Новое качество текстур будет применено при следующей загрузке сцены.</translation>
+    </message>
+    <message>
+        <source>Number of threads:</source>
+        <translation>Число потоков:</translation>
+    </message>
+    <message>
+        <source>Extra projects may include PROTOs, controllers, plugins, etc. that you can use in your current project.</source>
+        <translation>Дополнительные проекты могут содержать PROTO, контроллеры, плагины и т. д., которые вы можете использовать в своем текущем проекте.</translation>
+    </message>
+    <message>
+        <source>Amount of cache used: %1 MB.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add IP address(es)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New allowed IP address(es) (&lt;X.X.X.X&gt; or &lt;X.X.X.X&gt;/&lt;netmask&gt;):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Default robot window web browser:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&quot;firefox&quot;, &quot;google-chrome&quot; (default if empty)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>firefox, chrome, or msedge (default if empty)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>firefox, chrome, or safari (default if empty)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Always open in a new window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>MATLAB command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Capture thumbnail on world save or share</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>If this option is enabled, Webots will take and store a 768px by 432px (16:9)
+screenshot of the world in .jpg format when the it is saved, shared or exported.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Thumbnail:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Low (anti-aliasing)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Medium (anti-aliasing)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Web Services</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disk Cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remote Extern Controllers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Simulation upload service:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>At least 512 MB of cache are necessary.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allowed IPv4 addresses:
+(Leave empty for all hosts)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbProjectRelocationDialog</name>
+    <message>
+        <source>Copy</source>
+        <translation>Копировать</translation>
+    </message>
+    <message>
+        <source>Push the [Copy] button to copy the necessary project files.</source>
+        <translation>Нажмите кнопку [Копировать], чтобы скопировать необходимые файлы проекта.</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Copy necessary files from source to target directory?&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Скопировать необходимые файлы из исходной папки в целевую?&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Please select a target directory then push the [Copy] button.</source>
+        <translation>Пожалуйста, выберите целевой каталог, затем нажмите кнопку [Копировать].</translation>
+    </message>
+    <message>
+        <source>Please select another target directory.</source>
+        <translation>Выберите другой целевой каталог.</translation>
+    </message>
+    <message>
+        <source>Make sure that you have write access at this location.</source>
+        <translation>Убедитесь, что у вас есть права на запись в этой папке.</translation>
+    </message>
+    <message>
+        <source>Could not create target directory.</source>
+        <translation>Не удалось создать целевую папку.</translation>
+    </message>
+    <message>
+        <source>Some files or directories could not be copied.</source>
+        <translation>Не удалось скопировать некоторые файлы или каталоги.</translation>
+    </message>
+    <message>
+        <source>Select</source>
+        <translation>Выбрать</translation>
+    </message>
+    <message>
+        <source>You are trying to modify a file located in Webots installation directory:</source>
+        <translation>Вы пытаетесь изменить файл, расположенный в папке установки Webots:</translation>
+    </message>
+    <message>
+        <source>This operation is not permitted.</source>
+        <translation>Эта операция не разрешена.</translation>
+    </message>
+    <message>
+        <source>Source directory: </source>
+        <translation>Исходная папка: </translation>
+    </message>
+    <message>
+        <source>You are trying to modify a file located in the Webots installation directory:</source>
+        <translation>Вы пытаетесь изменить файл, расположенный в папке установки Webots:</translation>
+    </message>
+    <message>
+        <source>Target directory: </source>
+        <translation>Целевая папка: </translation>
+    </message>
+    <message>
+        <source>Push the [Copy] button to copy the project.</source>
+        <translation>Нажмите кнопку [Копировать], чтобы скопировать проект.</translation>
+    </message>
+    <message>
+        <source>Please select the copy options then push the [Copy] button.</source>
+        <translation>Выберите параметры копирования, затем нажмите кнопку [Копировать].</translation>
+    </message>
+    <message>
+        <source>Project relocation failed.</source>
+        <translation>Не удалось переместить проект.</translation>
+    </message>
+    <message>
+        <source>Project relocation</source>
+        <translation>Перемещение проекта</translation>
+    </message>
+    <message>
+        <source>Please select another directory.</source>
+        <translation>Выберите другой каталог.</translation>
+    </message>
+    <message>
+        <source>%1 file(s) copied.</source>
+        <translation>%1 файл(ов) скопировано.</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Copy necessary files from source to current project directory?&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Скопировать необходимые файлы из исходной папки в папку текущего проекта?&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Project successfully relocated.</source>
+        <translation>Проект успешно перемещен.</translation>
+    </message>
+    <message>
+        <source>Target directory is located in the Webots installation directory.</source>
+        <translation>Целевая папка находится в папке установки Webots.</translation>
+    </message>
+    <message>
+        <source>This operation is not permitted: would you like to copy the necessary files to another location?</source>
+        <translation>Эта операция не разрешена: вы хотите скопировать необходимые файлы в другое место?</translation>
+    </message>
+    <message>
+        <source>Target directory is not empty.</source>
+        <translation>Целевая папка не пуста.</translation>
+    </message>
+    <message>
+        <source>Impossible to copy file &apos;%1&apos; to &apos;%2&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Impossible to read file &apos;%1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>You are trying to modify a remote file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbPropeller</name>
+    <message>
+        <source>Adds a Physics node to Solid ancestors to enable thrust and torque effect.</source>
+        <translation>Добавляет узел Physics к предкам Solid, чтобы включить эффект тяги и крутящего момента.</translation>
+    </message>
+    <message>
+        <source>&apos;shaftAxis&apos;cannot be zero. Defaults to %1 %2 %3</source>
+        <translation>&apos;shaftAxis&apos; не может быть нулем. Установлено %1 %2 %3</translation>
+    </message>
+</context>
+<context>
+    <name>WbProtoManager</name>
+    <message>
+        <source>Please adapt your project to R2022b following these instructions: https://github.com/cyberbotics/webots/wiki/How-to-adapt-your-world-or-PROTO-to-Webots-R2022b</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; must be converted because EXTERNPROTO declarations are missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Missing declaration for &apos;%1&apos;, add: &apos;EXTERNPROTO &quot;%2&quot;&apos; to &apos;%3&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Missing declaration for &apos;%1&apos;, unknown node.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The cascaded URL inferring mechanism is supported only for official Webots assets.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Could not search for EXTERNPROTO declarations in &apos;%1&apos; because the file is not readable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot read file &apos;%1&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Expected &apos;proto&apos; element.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Expected &apos;proto-list&apos; element.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The format of &apos;proto-list.xml&apos; is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot select proto list, unknown category &apos;%1&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot list protos, unknown category &apos;%1&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot retrieve proto info list, unknown category &apos;%1&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PROTO &apos;%1&apos; does not belong to category &apos;%2&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot check if &apos;%1&apos; exists because category &apos;%2&apos; is unknown.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot export &apos;%1&apos;, file not locally available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Impossible to export PROTO to &apos;%1&apos; as this location cannot be written to.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Impossible to export PROTO &apos;%1&apos; as the source file cannot be read.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbProtoModel</name>
+    <message>
+        <source>Failed to load due to syntax error(s)</source>
+        <translation>Не удалось загрузить из-за синтаксических ошибок</translation>
+    </message>
+    <message>
+        <source>Ignoring duplicate &apos;%1&apos; PROTO parameter declaration</source>
+        <translation>Игнорируем повторное объявление параметра в PROTO &quot;%1&quot;</translation>
+    </message>
+    <message>
+        <source>Recursive definition of PROTO node &apos;%1&apos; is not supported</source>
+        <translation>Рекурсивное определение узла PROTO &quot;%1&quot; не поддерживается</translation>
+    </message>
+    <message>
+        <source>Derived and base PROTO can use the same parameter name only if it is linked directly, like &apos;%1 IS %1&apos;</source>
+        <translation>Производный и базовый PROTO могут использовать одно и то же имя параметра, только если оно связано напрямую, например &apos;%1 IS %1&apos;</translation>
+    </message>
+    <message>
+        <source>PROTO parameter &apos;%1&apos; has no matching IS field</source>
+        <translation>Параметр PROTO &quot;%1&quot; не имеет соответствующего поля IS</translation>
+    </message>
+    <message>
+        <source>Type mismatch between &apos;%1&apos; PROTO parameter and field &apos;%2&apos;</source>
+        <translation>Несоответствие типов между параметром PROTO &quot;%1&quot; и полем &quot;%2&quot;</translation>
+    </message>
+    <message>
+        <source>Errors when parsing the PROTO parameters</source>
+        <translation>Ошибки при разборе параметров PROTO</translation>
+    </message>
+    <message>
+        <source>PROTO node &apos;%1&apos; cannot have a base node name</source>
+        <translation>Узел PROTO &quot;%1&quot; не может иметь имя базового узла</translation>
+    </message>
+    <message>
+        <source>Template engine error: %1</source>
+        <translation>Ошибка в движке шаблонов: %1</translation>
+    </message>
+    <message>
+        <source>Cannot create the &apos;%1&apos; PROTO</source>
+        <translation>Невозможно создать PROTO &quot;%1&quot;</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; PROTO identifier does not match filename</source>
+        <translation>Идентификатор PROTO &apos;%1&apos; не соответствует имени файла</translation>
+    </message>
+    <message>
+        <source>PROTO has unknown base type</source>
+        <translation>PROTO имеет неизвестный базовый тип</translation>
+    </message>
+    <message>
+        <source>Errors when parsing the base PROTO</source>
+        <translation>Ошибки при разборе базового PROTO</translation>
+    </message>
+    <message>
+        <source>Bracket issue</source>
+        <translation>Проблема со скобками</translation>
+    </message>
+</context>
+<context>
+    <name>WbProtoTreeItem</name>
+    <message>
+        <source>File &apos;%1&apos; is not readable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Malformed EXTERNPROTO URL. The URL should end with &apos;.proto&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Malformed EXTERNPROTO URL. Invalid URL provided: %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PROTO &apos;%1&apos; is ambiguous, multiple references are provided: &apos;%2&apos; and &apos;%3&apos;. The first was used.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Skipped PROTO &apos;%1&apos; as it is not available at: %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error downloading EXTERNPROTO &apos;%1&apos;: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WbRadar</name>
+    <message>
+        <source>&apos;minRange&apos; is greater or equal to &apos;maxRange&apos;. Setting &apos;minRange&apos; to %1.</source>
+        <translation>Значение &apos;minRange&apos; больше или равно &apos;maxRange&apos;. Устанавливаем &apos;minRange&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>&apos;minRange&apos; is greater or equal to &apos;maxRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
+        <translation>Значение &apos;minRange&apos; больше или равно &apos;maxRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>&apos;maxRadialSpeed&apos; is less than or equal to &apos;minRadialSpeed&apos;. Setting &apos;maxRadialSpeed&apos; to %1.</source>
+        <translation>Значение &apos;maxRadialSpeed&apos; меньше или равно &apos;minRadialSpeed&apos;. Устанавливаем &apos;maxRadialSpeed&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>&apos;maxRange&apos; is less or equal to &apos;minRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
+        <translation>Значение &apos;maxRange&apos; меньше или равно &apos;minRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
+    </message>
+</context>
+<context>
+    <name>WbRangeFinder</name>
+    <message>
+        <source>&apos;near&apos; is greater than to &apos;minRange&apos;. Setting &apos;near&apos; to %1.</source>
+        <translation>Значение &apos;near&apos; больше, чем &apos;minRange&apos;. Устанавливаем &apos;near&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>&apos;minRange&apos; is greater or equal to &apos;maxRange&apos;. Setting &apos;minRange&apos; to %1.</source>
+        <translation>Значение &apos;minRange&apos; больше или равно &apos;maxRange&apos;. Устанавливаем &apos;minRange&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>&apos;minRange&apos; is greater or equal to &apos;maxRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
+        <translation>Значение &apos;minRange&apos; больше или равно &apos;maxRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>&apos;maxRange&apos; is less or equal to &apos;minRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
+        <translation>Значение &apos;maxRange&apos; меньше или равно &apos;minRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>&apos;minRange&apos; is less than &apos;near&apos;. Setting &apos;minRange&apos; to %1.</source>
+        <translation>Значение &apos;minRange&apos; меньше, чем &apos;near&apos;. Устанавливаем &apos;minRange&apos; в %1.</translation>
+    </message>
+</context>
+<context>
+    <name>WbReceiver</name>
+    <message>
+        <source>Unknown &apos;type&apos;: &quot;%1&quot;.</source>
+        <translation>Неизвестный &apos;type&apos;: &quot;%1&quot;.</translation>
+    </message>
+    <message>
+        <source>&apos;allowedChannels&apos; does not contain current &apos;channel&apos;. Setting &apos;channel&apos; to %1.</source>
+        <translation>Поле &apos;allowedChannels&apos; не содержит текущий &apos;channel&apos;. Устанавливаем &apos;channel&apos; в %1.</translation>
+    </message>
+    <message>
+        <source>&apos;channel&apos; is not included in &apos;allowedChannels&apos;. Setting &apos;channel&apos; to %1</source>
+        <translation>Поле &apos;channel&apos; не включено в &apos;allowedChannels&apos;. Устанавливаем &apos;channel&apos; в %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbRenderingDevice</name>
+    <message>
+        <source>&apos;windowPosition&apos; is deprecated.</source>
+        <translation>&apos;windowPosition&apos; устарел.</translation>
+    </message>
+    <message>
+        <source>&apos;height&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
+        <translation>Поле &apos;height&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки сцены.</translation>
+    </message>
+    <message>
+        <source>The size of the overlay will be automatically stored after resizing it from the 3D view.</source>
+        <translation>Размер наложения будет автоматически сохранен после изменения его размера в 3D-виде.</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;height&apos;: changed to 1.</source>
+        <translation>Недопустимое значение &apos;height&apos;: изменено на 1.</translation>
+    </message>
+    <message>
+        <source>&apos;pixelSize&apos; is deprecated.</source>
+        <translation>&apos;pixelSize&apos; устарел.</translation>
+    </message>
+    <message>
+        <source>&apos;width&apos; has been modified. This modification will be taken into account after saving and reloading the world.</source>
+        <translation>Поле &apos;width&apos; было изменено. Эта модификация будет учтена после сохранения и перезагрузки сцены.</translation>
+    </message>
+    <message>
+        <source>Invalid &apos;width&apos;: changed to 1.</source>
+        <translation>Недопустимое значение &apos;width&apos;: изменено на 1.</translation>
+    </message>
+    <message>
+        <source>The position of the overlay will be automatically stored after moving it from the 3D view.</source>
+        <translation>Положение наложения будет автоматически сохранено после его перемещения из 3D-вида.</translation>
+    </message>
+</context>
+<context>
+    <name>WbRobot</name>
+    <message>
+        <source>Cannot pin the robot to the static environment, because the robot window has not been shown once</source>
+        <translation>Невозможно закрепить робота в статической среде, так как окно робота не было показано ни разу</translation>
+    </message>
+    <message>
+        <source>Robot.controllerArgs data type changed from SFString to MFString in Webots R2020b. %1</source>
+        <translation>Тип данных Robot.controllerArgs изменен с SFString на MFString в Webots R2020b. %1</translation>
+    </message>
+    <message>
+        <source>At least two devices are sharing the same name (&quot;%1&quot;) while unique names are required.</source>
+        <translation>По крайней мере два устройства используют одно и то же имя (&quot;%1&quot;). Имена устройств должны быть уникальны.</translation>
+    </message>
+    <message>
+        <source>Splitting arguments at space boundaries.</source>
+        <translation>Разделяем аргументов по пробелам.</translation>
+    </message>
+    <message>
+        <source>Unable to split arguments automatically, please update your world file manually.</source>
+        <translation>Не удалось автоматически разделить аргументы. Обновите файл сцены вручную.</translation>
+    </message>
+    <message>
+        <source>This Robot node is scaled: this is discouraged as it could compromise the correct physical behavior.</source>
+        <translation>Этот узел Robot отмасштабирован: этого лучше не делать, так как физическое поведение робота может быть неправильным.</translation>
+    </message>
+    <message>
+        <source>The remote control library has not been found.</source>
+        <translation>Библиотека удаленного управления не найдена.</translation>
+    </message>
+    <message>
+        <source>&apos;wb_robot_battery_sensor_enable&apos; called while the &apos;battery&apos; field is empty.</source>
+        <translation>Функцию wb_robot_battery_sensor_enable() нельзя вызывать, если поле &apos;battery&apos; пусто.</translation>
+    </message>
+    <message>
+        <source>The controller directory has not been found, searched the following locations:</source>
+        <translation>Каталог контроллера не найден, искали в следующих местах:</translation>
+    </message>
+    <message>
+        <source>&apos;remoteControl&apos; cannot be modified after the controller is initialized.</source>
+        <translation>&quot;remoteControl&quot; не может быть изменен после инициализации контроллера.</translation>
+    </message>
+    <message>
+        <source>The &apos;</source>
+        <translation>Библиотека окна робота &apos;</translation>
+    </message>
+    <message>
+        <source>&apos; robot window library has not been found.</source>
+        <translation>&apos; не найдена.</translation>
+    </message>
+    <message>
+        <source>The robot window will not be connected until the controller is initialized or restarted.</source>
+        <translation>Окно робота не будет подключено до тех пор, пока контроллер не будет инициализирован или перезапущен.</translation>
+    </message>
+    <message>
+        <source>The &lt;generic&gt; robot window is not found. Please check your Webots installation.</source>
+        <translation>Окно робота &lt;generic&gt; не найдено. Пожалуйста, проверьте установку Webots.</translation>
+    </message>
+    <message>
+        <source>Battery is empty.</source>
+        <translation>Батарея разряжена.</translation>
+    </message>
+</context>
+<context>
+    <name>WbRobotWindow</name>
+    <message>
+        <source>No HTML robot window is set in the &apos;window&apos; field.</source>
+        <translation>В поле window&apos; не задано HTML-окно робота.</translation>
+    </message>
+    <message>
+        <source>Cannot start %1.</source>
+        <translation>Не удалось запустить &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Unable to open web browser program: %1. %2 Opening robot window in default browser.</source>
+        <translation>Не удалось открыть веб-браузер: %1. %2 окно робота открывается в браузере по умолчанию.</translation>
+    </message>
+</context>
+<context>
+    <name>WbRotationEditor</name>
+    <message>
+        <source>Normalize</source>
+        <translation>Нормализовать</translation>
+    </message>
+</context>
+<context>
+    <name>WbRotationalMotor</name>
+    <message>
+        <source>Feedback is available for motorized joints only</source>
+        <translation>Обратная связь доступна только для &quot;моторизованных&quot; шарниров</translation>
+    </message>
+    <message>
+        <source>Hinge2Joint is invalid: feedback is not available.</source>
+        <translation>Hinge2Joint некорректен: обратная связь недоступна.</translation>
+    </message>
+</context>
+<context>
+    <name>WbSFBool</name>
+    <message>
+        <source>Expected boolean value, found %1</source>
+        <translation>Ожидалось булевское значение, обнаружено %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbSFColor</name>
+    <message>
+        <source>Expected positive color values in range [0.0, 1.0], found [%1 %2 %3]. SFColor field reset to [%4 %5 %6]</source>
+        <translation>Ожидалось значение цвета в диапазоне [0.0, 1.0], обнаружено  [%1 %2 %3]. Значение поля SFColor сброшено в [%4 %5 %6]</translation>
+    </message>
+    <message>
+        <source>Expected floating point value, found %1</source>
+        <translation>Ожидалось число с плавающей точкой, обнаружено %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbSFDouble</name>
+    <message>
+        <source>Expected floating point value, found %1</source>
+        <translation>Ожидалось число с плавающей точкой, обнаружено %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbSFInt</name>
+    <message>
+        <source>Expected integer value, found %1</source>
+        <translation>Ожидалось целочисленное значение, обнаружено %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbSFRotation</name>
+    <message>
+        <source>Expected floating point value, found %1</source>
+        <translation>Ожидалось число с плавающей точкой, обнаружено %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbSFString</name>
+    <message>
+        <source>Expected string value, found %1</source>
+        <translation>Ожидалось строковое значение, обнаружено %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbSFVector2</name>
+    <message>
+        <source>Expected floating point value, found %1</source>
+        <translation>Ожидалось число с плавающей точкой, обнаружено %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbSFVector3</name>
+    <message>
+        <source>Expected floating point value, found %1</source>
+        <translation>Ожидалось число с плавающей точкой, обнаружено %1</translation>
+    </message>
+</context>
+<context>
+    <name>WbSaveWarningDialog</name>
+    <message>
+        <source>Don&apos;t display this dialog again (you can re-enable it from the preferences)</source>
+        <translation>Не отображать больше этот диалог (вы можете снова включить его из Настроек)</translation>
+    </message>
+    <message>
+        <source>The &apos;%1&apos; file is not saved. Do you want to save it before closing?</source>
+        <translation>Файл &apos;%1&apos; не сохранен. Сохранить его перед закрытием?</translation>
+    </message>
+    <message>
+        <source>Save before closing?</source>
+        <translation>Сохранить перед закрытием?</translation>
+    </message>
+    <message>
+        <source>The &apos;%1&apos; file is not saved. Do you want to save it before reloading the world?</source>
+        <translation>Файл &apos;%1&apos; не сохранен. Сохранить его перед перезагрузкой сцены?</translation>
+    </message>
+    <message>
+        <source>Save before reloading the world?</source>
+        <translation>Сохранить перед перезагрузкой сцены?</translation>
+    </message>
+</context>
+<context>
+    <name>WbSceneTree</name>
+    <message>
+        <source>This node is a DEF node, or has a descendant DEF node, on which at least one external USE node depends. Deleting it will make its USE nodes to refer to a previous node having the same DEF keyword if it exists, or will turn its first USE node into a DEF node.
+Do you want to continue?</source>
+        <translation>У этого узла (или внутри него) есть DEF, откоторого зависим хотя бы один внешний узел USE. Его удаление перенаправит эти USE-узлы на предыдущий узел на таким же DEF-именем, если он существует, или конвертирует первый из USE-узлов в DEF-узел. Продолжать?</translation>
+    </message>
+    <message>
+        <source>All files(*.wbo *.WBO *.wrl *.WRL *.urdf *.URDF);;Webots object (*.wbo *.WBO);;VRML (*.wrl *.WRL);;URDF (*.urdf *.URDF)</source>
+        <translation>Все файлы (*.wbo *.WBO *.wrl *.WRL *.urdf *.URDF);;Webots object (*.wbo *.WBO);;VRML (*.wrl *.WRL);;URDF (*.urdf *.URDF)</translation>
+    </message>
+    <message>
+        <source>URDF exportation available only for Robot nodes.</source>
+        <translation>Экспорт в URDF доступен только для узлов типа Robot.</translation>
+    </message>
+    <message>
+        <source>A positive mass is mandatory when using inertiaMatrix. &apos;mass&apos; set to 1.</source>
+        <translation>Положительная масса обязательна при использовании inertiaMatrix. Поле &apos;mass&apos; установлено в 1.</translation>
+    </message>
+    <message>
+        <source>Impossible to write file: &apos;%1&apos;.</source>
+        <translation>Невозможно записать файл: &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Warning: Transforming a %1 into a %2 node will loose some information.</source>
+        <translation>Предупреждение: при трансформации узла %1 в %2 потеряется часть информации.</translation>
+    </message>
+    <message>
+        <source>Export Webots Object</source>
+        <translation>Экспортировать объект Webots</translation>
+    </message>
+    <message>
+        <source>A center of mass is mandatory when using inertiaMatrix. Default center of mass inserted.</source>
+        <translation>Центр масс необходим при использовании inertiaMatrix. Добавлен ЦМ по умолчанию.</translation>
+    </message>
+    <message>
+        <source>Transformation aborted: impossible to create a node of type %1.</source>
+        <translation>Трансформация прервана: невозможно создать узел типа &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Unsupported &apos;%1&apos; extension.</source>
+        <translation>Неподдерживаемое расширение &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>New node creation failed: model name %1.</source>
+        <translation>Создание нового узла не удалось:model name %1.</translation>
+    </message>
+    <message>
+        <source>Do you still want to proceed?</source>
+        <translation>Вы все еще хотите продолжить?</translation>
+    </message>
+    <message>
+        <source>New node creation failed: node with DEF name %1 does not exist.</source>
+        <translation>Создать узел не удалось: не найден узел с DEF-именем &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Node exportation failed.</source>
+        <translation>Экспорт узла не удался.</translation>
+    </message>
+    <message>
+        <source>DEF node deletion</source>
+        <translation>Удаление DEF-узла</translation>
+    </message>
+    <message>
+        <source>This field contains a DEF node on which at least one external USE node depends. Deleting it will turn its first USE node into a DEF node.
+Do you want to continue?</source>
+        <translation>Это поле содержит  DEF-узлы, от которых зависит по крайней мере один внешний USE-узел.  Его удаление преобразует первый из узлов USE в узел DEF.
+Продолжить?</translation>
+    </message>
+</context>
+<context>
+    <name>WbShape</name>
+    <message>
+        <source>Please specify &apos;geometry&apos; field (of Shape placed in &apos;boundingObject&apos;).</source>
+        <translation>Нужно определить поле &apos;geometry&apos; (для узла Shape, помещенного в boundingObject).</translation>
+    </message>
+</context>
+<context>
+    <name>WbShareWindow</name>
+    <message>
+        <source>Share your simulation</source>
+        <translation>Поделитесь своей моделью</translation>
+    </message>
+    <message>
+        <source>Record and
+export animation</source>
+        <translation>Записать и
+экспортировать анимацию</translation>
+    </message>
+    <message>
+        <source>Export scene</source>
+        <translation>Экспортировать сцену</translation>
     </message>
 </context>
 <context>
@@ -4412,115 +6180,256 @@ Do you want to open it now?</source>
     </message>
 </context>
 <context>
-    <name>WbTrack</name>
+    <name>WbSimulationWorld</name>
     <message>
-        <source>Texture animation is enabled only if the TextureTransform node is explicitly defined.</source>
-        <translation>Анимация текстуры включается только в том случае, если узел TextureTransform определен явно.</translation>
+        <source>Loading plugins (if any)</source>
+        <translation>Загружаются плагины (если есть)</translation>
     </message>
     <message>
-        <source>Error during computation of Track animated geometries. Please check the TrackWheel nodes in &apos;children&apos; field.</source>
-        <translation>Ошибка при расчете анимированной геометрии узла Track. Пожалуйста, проверьте узлы TrackWheel в поле &apos;children&apos;.</translation>
+        <source>Downloading assets</source>
+        <translation>Загружаются ресурсы</translation>
     </message>
     <message>
-        <source>Two or more consecutive TrackWheel nodes are located at the same position. Only the first node is used.</source>
-        <translation>Два или более последовательных узла TrackWheel расположены в одной и той же позиции. Используется только первый узел.</translation>
+        <source>Initializing plugins (if any)</source>
+        <translation>Инициализируются плагины (если есть)</translation>
     </message>
     <message>
-        <source>Track field &apos;animatedGeometry&apos; must have a DEF name for exportation. One have been generated.</source>
-        <translation>Поле &quot;animatedGeometry&quot; узла Track должно иметь имя DEF для экспорта. Таковое имя было сгенерировано.</translation>
-    </message>
-    <message>
-        <source>Non-admissible TextureTransform USE node inside Track node.This and ancestor USE nodes turned into DEF nodes: if texture animation enabled, the USE texture transform values will change independently from DEF node ones.</source>
-        <translation>Недопустимый узел USE TextureTransform внутри узла Track. Этот и его предки узлы USE превратились в узлы DEF: если анимация текстуры включена, значения преобразования текстуры USE будут изменяться независимо от значений узла DEF.</translation>
-    </message>
-    <message>
-        <source>Invalid %1 used in &apos;animatedGeometries&apos; field.</source>
-        <translation>Недопустимый %1 используется в поле &apos;animatedGeometries&apos;.</translation>
+        <source>You are using a world from an old version of Webots. The backwards compability algorithm will try to convert it. Refer to the wiki for more information: https://github.com/cyberbotics/webots/wiki/How-to-adapt-your-world-or-PROTO-to-Webots-R2022a</source>
+        <translation>Вы используете мир из старой версии Webots. Алгоритм обратной совместимости попытается преобразовать его. Обратитесь к вики для получения дополнительной информации: https://github.com/cyberbotics/webots/wiki/How-to-adapt-your-world-or-PROTO-to-Webots-R2022a</translation>
     </message>
 </context>
 <context>
-    <name>WbMultimediaStreamingServer</name>
+    <name>WbSingleTaskApplication</name>
     <message>
-        <source>Webots multimedia streamer started: resolution %1x%2 on port %3</source>
-        <translation>Мультимедийный стример Webots запущен: разрешение %1x%2 на порту %3</translation>
+        <source>    Redirect the stderr of the controllers to the terminal.</source>
+        <translation>    Перенаправить вывод ошибок (stderr) контроллеров на терминал.</translation>
     </message>
     <message>
-        <source>Streaming server: Client resize: new resolution %1x%2.</source>
-        <translation>Потоковый сервер: изменение размера от клиента: новое разрешение %1x%2.</translation>
+        <source>OpenGL renderer: %1 (0x%2)</source>
+        <translation>OpenGL renderer: %1 (0x%2)</translation>
     </message>
     <message>
-        <source>Streaming server: Resolution changed to %1x%2.</source>
-        <translation>Потоковый сервер: разрешение изменено на %1x%2.</translation>
+        <source>The %1 PROTO is written to the file.</source>
+        <translation>PROTO %1 записано в файл.</translation>
     </message>
     <message>
-        <source>Streaming server: Invalid client resize: only the first connected client can resize the simulation.</source>
-        <translation>Потоковый сервер: Недопустимое изменение размера клиента: только первый подключенный клиент может изменить разрешение.</translation>
+        <source>    Minimize the Webots window on startup.</source>
+        <translation>    Свернуть окно Webots при запуске.</translation>
     </message>
     <message>
-        <source>Streaming server: Ignored new client request of resolution: %1x%2.</source>
-        <translation>Потоковый сервер:  проигнорирован новый запрос клиента на разрешение: %1x%2.</translation>
+        <source>Webots version: %1</source>
+        <translation>Версия Webots: %1</translation>
     </message>
     <message>
-        <source>Streaming server received unsupported X3D message: &apos;%1&apos;. You should run Webots with the &apos;--stream=&quot;mode=x3d&quot;&apos; command line option.</source>
-        <translation>Потоковый сервер получил неподдерживаемое сообщение X3D: &quot;%1&quot;. Вы должны запускать Webots с параметром командной строки &apos;--stream=&quot;mode=x3d&quot;&apos;.</translation>
+        <source>    Prevent Webots from creating blocking pop-up windows.</source>
+        <translation>    Не разрешать Webots открывать блокирующие pop-up окошки.</translation>
+    </message>
+    <message>
+        <source>Parsing the %1 PROTO...</source>
+        <translation>Читаем PROTO %1...</translation>
+    </message>
+    <message>
+        <source>    Display this help message and exit.</source>
+        <translation>    Вывести это сообщение и выйти.</translation>
+    </message>
+    <message>
+        <source>    &lt;file&gt; argument. The optional &lt;steps&gt; argument is an integer value that</source>
+        <translation>    параметром &lt;file&gt;. Необязательный параметр &lt;steps&gt; - это целое число, которое</translation>
+    </message>
+    <message>
+        <source>OpenGL vendor: %1</source>
+        <translation>Производитель OpenGL: %1</translation>
+    </message>
+    <message>
+        <source>    Choose the startup mode, overriding application preferences. The &lt;mode&gt;</source>
+        <translation>    Выбрать стартовый режим, перекрывая заданное в настройках. Параметр &lt;mode&gt;</translation>
+    </message>
+    <message>
+        <source>  field %1 [%2] = %3</source>
+        <translation>  поле %1 [%2] = %3</translation>
+    </message>
+    <message>
+        <source>    Measure the performance of Webots and log it in the file specified in the</source>
+        <translation>    Измерить производительость Webots и записывать ее в файл заданный</translation>
+    </message>
+    <message>
+        <source>Usage: webots [options] [worldfile]</source>
+        <translation>Вызов: webots [опции] [файл-сцены]</translation>
+    </message>
+    <message>
+        <source>Please report any bug to https://cyberbotics.com/bug</source>
+        <translation>Пожалуйста, сообщайте о ошибках в Webots сюда: https://cyberbotics.com/bug</translation>
+    </message>
+    <message>
+        <source>    Display version information and exit.</source>
+        <translation>    Вывести информацию о версии и выйти.</translation>
+    </message>
+    <message>
+        <source>OpenGL version: %1</source>
+        <translation>Версия OpenGL: %1</translation>
+    </message>
+    <message>
+        <source>    system information is prepended into the log file.</source>
+        <translation>    то в начало log-файла записывается системная информация.</translation>
+    </message>
+    <message>
+        <source>    Display information about the system and exit.</source>
+        <translation>    Вывести информацию о системе и выйти.</translation>
+    </message>
+    <message>
+        <source>    argument must be either pause, realtime or fast.</source>
+        <translation>    может быть одним из: pause, realtime or fast.</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation>Опции:</translation>
+    </message>
+    <message>
+        <source>    specifies how many steps are logged. If the --sysinfo option is used, the</source>
+        <translation>    задает, сколько шагов записывается. Если использована опция --sysinfo,</translation>
+    </message>
+    <message>
+        <source>    Disable rendering in the main 3D view.</source>
+        <translation>    Запретить отрисовку сцены в главном 3D-окне.</translation>
+    </message>
+    <message>
+        <source>OpenGL renderer: %1</source>
+        <translation>OpenGL renderer: %1</translation>
+    </message>
+    <message>
+        <source>Cannot open the file!
+</source>
+        <translation>Не удалось открыть файл!
+</translation>
+    </message>
+    <message>
+        <source>    Start Webots in fullscreen.</source>
+        <translation>    Запустить Webots на полном экране.</translation>
+    </message>
+    <message>
+        <source>System: %1</source>
+        <translation>Система: %1</translation>
+    </message>
+    <message>
+        <source>    Convert a PROTO file to a URDF, WBO, or WRL file.</source>
+        <translation>    Конвертировать файл PROTO в файл URDF, WBO, или WRL.</translation>
+    </message>
+    <message>
+        <source>Number of cores: %1</source>
+        <translation>Число ядер: %1</translation>
+    </message>
+    <message>
+        <source>    Redirect the stdout of the controllers to the terminal.</source>
+        <translation>    Перенаправить вывод (stdout) контроллеров на терминал.</translation>
+    </message>
+    <message>
+        <source>Processor: %1</source>
+        <translation>Процессор: %1</translation>
+    </message>
+    <message>
+        <source>OpenGL vendor: %1 (0x%2)</source>
+        <translation>OpenGL производитель: %1 (0x%2)</translation>
+    </message>
+    <message>
+        <source>File &apos;%1&apos; is not locally available, the conversion cannot take place.</source>
+        <translation>Файл &quot;%1&quot; недоступен локально, преобразование невозможно.</translation>
+    </message>
+    <message>
+        <source>A parameter is not properly formatted!
+</source>
+        <translation>Параметр имеет неправильный формат!
+</translation>
+    </message>
+    <message>
+        <source>Warning: Exporting a Joint node with a SolidReference endpoint (%1) to URDF is not supported.</source>
+        <translation>Предупреждение. Экспорт узла Joint с endpoint=SolidReference (%1) в URDF не поддерживается.</translation>
+    </message>
+    <message>
+        <source>    Change the TCP port used by Webots (default value is 1234).</source>
+        <translation>    Измените TCP-порт, используемый Webots (значение по умолчанию - 1234).</translation>
+    </message>
+    <message>
+        <source>    Start the Webots streaming server. The &lt;mode&gt; argument should be either</source>
+        <translation>    Запустите потоковый сервер Webots. Аргумент &lt;mode&gt; должен быть либо</translation>
+    </message>
+    <message>
+        <source>    x3d (default) or mjpeg.</source>
+        <translation>    x3d (default) либо mjpeg.</translation>
+    </message>
+    <message>
+        <source>    Print on stdout the URL of extern controllers that should be started.</source>
+        <translation>    Вывести на stdout URL внешних контроллеров, которые необходимо запустить.</translation>
+    </message>
+    <message>
+        <source>    Print a dot (.) on stdout every second or &lt;time&gt; milliseconds if specified.</source>
+        <translation>    Выводить точку (.) на stdout каждую секунду или &lt;time&gt; миллисекунд, если указано.</translation>
+    </message>
+    <message>
+        <source>OpenAL device: %1</source>
+        <translation>Устройство OpenAL: %1</translation>
     </message>
 </context>
 <context>
-    <name>WbHingeJointParameters</name>
+    <name>WbSkin</name>
     <message>
-        <source>&apos;Hinge2JointParameters&apos; is deprecated, please use &apos;HingeJointParameters&apos; instead.</source>
-        <translation>Узел &apos;Hinge2JointParameters&apos; устарел, используйте вместо него &apos;HingeJointParameters&apos;.</translation>
+        <source>%1 cannot be executed because no valid skeleton is available.</source>
+        <translation>%1 не может быть выполнен, так как нет годного скелета.</translation>
     </message>
     <message>
-        <source>&apos;stopCFM&apos; must be greater than zero or -1. Reverting to -1 (use global CFM).</source>
-        <translation>Поле &apos;stopCFM&apos; должно быть неотрицательным либо -1. Возвращаем к -1 (глобальный CFM).</translation>
+        <source>Bone named &apos;%1&apos; could not be found in skeleton file.</source>
+        <translation>Кость с именем &apos;%1&apos; не может быть найдена в файле скелета.</translation>
     </message>
     <message>
-        <source>&apos;stopERP&apos; must be greater or equal to zero or -1. Reverting to -1 (use global ERP).</source>
-        <translation>Поле &apos;stopERP&apos; должно быть неотрицательным либо -1. Возвращаем к -1 (глобальный ERP).</translation>
+        <source>No material named &apos;%1&apos; could be found in mesh file.</source>
+        <translation>В файле сетки не найден материал с именем &quot;%1&quot;.</translation>
     </message>
     <message>
-        <source>&apos;axis&apos; must be non zero.</source>
-        <translation>Поле &apos;axis&apos; должно быть ненулевым.</translation>
+        <source>Duplicated Appearance with name &apos;%1&apos; in &apos;appearance&apos; field. Only the first instance will be used.</source>
+        <translation>Дублируется Appearance с именем &apos;%1&apos; в поле &apos;appearance&apos;. Будет использоваться только первый экземпляр.</translation>
     </message>
     <message>
-        <source>&apos;SuspensionAxis&apos; must be non zero.</source>
-        <translation>Поле &apos;SuspensionAxis&apos; должно быть ненулевым.</translation>
+        <source>Unable to read mesh file &apos;%1&apos;: %2</source>
+        <translation>Невозможно прочитать 3D-файл &quot;%1&quot;: %2</translation>
+    </message>
+    <message>
+        <source>Undefined Appearance with name &apos;%1&apos;.</source>
+        <translation>Не определен узел Appearance с именем &apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <source>Skin animation control using %1 is disabled if a Webots skeleton is used.
+</source>
+        <translation>Управление анимацией скина с использованием %1 отключено, если используется скелет Webots.
+</translation>
+    </message>
+    <message>
+        <source>Invalid item %1 in &apos;bones&apos; field: duplicated reference to Solid with name &apos;%2&apos;.</source>
+        <translation>Недопустимый элемент %1 в поле &apos;bones&apos;: повторяющаяся ссылка на Solid с именем &apos;%2&apos;.</translation>
+    </message>
+    <message>
+        <source>Number of valid bones defined in &apos;bones&apos; field does not match with skeleton file. Expected: %1, was: %2.</source>
+        <translation>Количество костей, указанное в поле &apos;bones&apos;, не совпадает с файлом скелета. Ожидается: %1, было: %2.</translation>
+    </message>
+    <message>
+        <source>Invalid modelUrl &apos;%1&apos;. Supported formats are: &apos;%2&apos;.</source>
+        <translation>Недопустимый modelUrl &quot;%1&quot;. Поддерживаемые форматы: &quot;%2&quot;.</translation>
     </message>
 </context>
 <context>
-    <name>WbControlledWorld</name>
+    <name>WbSliderJoint</name>
     <message>
-        <source>Cannot listen the local server (server name = &quot;%1&quot;): %2</source>
-        <translation>Не удалось &quot;слушать&quot; локальный сервер (имя сервера = &quot;%1&quot;): %2</translation>
+        <source>SliderJoint &apos;maxStop&apos; must be greater or equal to LinearMotor &apos;maxPosition&apos;.</source>
+        <translation>Поле &apos;maxStop&apos; в SliderJoint не должно быть меньше поля &apos;maxPosition&apos; узла LinearMotor.</translation>
     </message>
     <message>
-        <source>Failed to attach extern robot controller: no available &quot;&lt;extern&gt;&quot; robot controller named &quot;%1&quot; found.</source>
-        <translation>Не удалось присоединить внешний контроллер робота: не нашлось доступного &quot;&lt;extern&gt;&quot;-контроллера с именем &quot;%1&quot;.</translation>
+        <source>SliderJoint &apos;minStop&apos; must be less or equal to LinearMotor &apos;minPosition&apos;.</source>
+        <translation>Поле &apos;minStop&apos; в SliderJoint не должно быть больше поля &apos;minPosition&apos; узла LinearMotor.</translation>
     </message>
+</context>
+<context>
+    <name>WbSlot</name>
     <message>
-        <source>Closing extern controller connection for robot &quot;%1&quot;.</source>
-        <translation>Закрывается подключение к внешнему контроллеру для робота &quot;%1&quot;.</translation>
-    </message>
-    <message>
-        <source>Starting extern controller for robot &quot;%1&quot;.</source>
-        <translation>Запускается внешний контроллер для робота &quot;%1&quot;.</translation>
-    </message>
-    <message>
-        <source>Terminating extern controller for robot &quot;%1&quot;.</source>
-        <translation>Завершается внешний контроллер для робота&quot;%1&quot;.</translation>
-    </message>
-    <message>
-        <source>Failed to attach extern robot controller: no available &quot;&lt;extern&gt;&quot; robot controller found.</source>
-        <translation>Не удалось присоединить внешний контроллер робота: не налось доступных &quot;&lt;extern&gt;&quot;-контроллеров.</translation>
-    </message>
-    <message>
-        <source>Cannot cleanup the local server (server name = &quot;%1&quot;).</source>
-        <translation>Не удалось очистить локальный сервер (имя сервера = &quot;%1&quot;).</translation>
-    </message>
-    <message>
-        <source>Terminating controller &quot;%1&quot;.</source>
-        <translation>Завершается контроллер &quot;%1&quot;.</translation>
+        <source>Invalid &apos;type&apos; changed to &apos;%1&apos;: %2</source>
+        <translation>Недопустимый &apos;type&apos; изменен на &apos;%1&apos;: %2</translation>
     </message>
 </context>
 <context>
@@ -4611,225 +6520,261 @@ Please save the current world to get rid of this message.</source>
     </message>
 </context>
 <context>
-    <name>WbCamera</name>
+    <name>WbSolidMerger</name>
     <message>
-        <source>&apos;near&apos; is greater than &apos;far&apos;. Setting &apos;near&apos; to %1.</source>
-        <translation>Значение &apos;near&apos; превышает значение &apos;far&apos;. Устанавливаем &apos;near&apos; в %1.</translation>
-    </message>
-    <message>
-        <source>
-Size on the image: %1 %2</source>
-        <translation>
-Размер на изображении: %1 %2</translation>
-    </message>
-    <message>
-        <source>wb_camera_set_focal_distance(%1) out of focus range [%2, %3].</source>
-        <translation>wb_camera_set_focal_distance(%1) вне фокусного диапазона [%2, %3].</translation>
-    </message>
-    <message>
-        <source>wb_camera_set_focal_distance() cannot be applied to this camera: missing &apos;focus&apos;.</source>
-        <translation>wb_camera_set_focal_distance() не применило к этой камере: не задан &apos;focus&apos;.</translation>
-    </message>
-    <message>
-        <source>&apos;far&apos; is less than &apos;near&apos;. Setting &apos;far&apos; to %1.</source>
-        <translation>Значение &apos;far&apos; меньше, чем &apos;near&apos;. Устанавливаем &apos;far&apos; в %1.</translation>
-    </message>
-    <message>
-        <source>wb_camera_set_fov(%1) out of zoom range [%2, %3].</source>
-        <translation>wb_camera_set_fov(%1) выходит из диапазона зума [%2, %3].</translation>
-    </message>
-    <message>
-        <source>wb_camera_set_fov() cannot be applied to this camera: missing &apos;zoom&apos;.</source>
-        <translation>wb_camera_set_fov() не применило к этой камере: не задан &apos;zoom&apos;.</translation>
-    </message>
-    <message>
-        <source>
-Relative orientation: %1 %2 %3 %4</source>
-        <translation>
-Относительная ориентация: %1 %2 %3 %4</translation>
-    </message>
-    <message>
-        <source>Lens flare cannot be applied to spherical cameras.</source>
-        <translation>Блик объектива не применяется к сферическим камерам.</translation>
-    </message>
-    <message>
-        <source>
-Color %1: %2 %3 %4</source>
-        <translation>
-Цвет %1: %2 %3 %4</translation>
-    </message>
-    <message>
-        <source>
-Relative position: %1 %2 %3</source>
-        <translation>
-Относительная позиция: %1 %2 %3</translation>
-    </message>
-    <message>
-        <source>
-Position on the image: %1 %2</source>
-        <translation>
-Позиция на изображении: %1 %2</translation>
-    </message>
-    <message>
-        <source>
-Size: %1 %2</source>
-        <translation>
-Размер: %1 %2</translation>
-    </message>
-    <message>
-        <source>
-Id: %1</source>
-        <translation>
-Id: %1</translation>
+        <source>A Plane defined in &apos;boundingObject&apos; cannot be used with a Physics node.</source>
+        <translation>Плоскость, определенная в &apos;boundingObject&apos; не может быть использована с узлом Physics.</translation>
     </message>
 </context>
 <context>
-    <name>WbViewpoint</name>
+    <name>WbSolidReference</name>
     <message>
-        <source>&apos;near&apos; is greater than &apos;far&apos;. Setting &apos;near&apos; to %1.</source>
-        <translation>Значение &apos;near&apos; больше, чем &apos;far&apos;. Устанавливаем &apos;near&apos; = %1.</translation>
-    </message>
-    <message>
-        <source>&apos;far&apos; is less than &apos;near&apos;. Setting &apos;far&apos; to %1.</source>
-        <translation>Значение &apos;far&apos; меньше, чем &apos;near&apos;. Устанавливаем &apos;far&apos; = %1.</translation>
-    </message>
-    <message>
-        <source>&apos;follow&apos; field is filled with an invalid Solid name.</source>
-        <translation>В поле &apos;follow&apos; указано имя, не соответствующее никакому узлу Solid.</translation>
+        <source>SolidReference has an invalid &apos;%1&apos; name or refers to its closest upper solid, which is prohibited.</source>
+        <translation>SolidReference имеет недопустимое имя &quot;%1&quot; или ссылается на ближайшее верхнее твердое тело, что запрещено.</translation>
     </message>
 </context>
 <context>
-    <name>WbImportWizard</name>
+    <name>WbSpeaker</name>
     <message>
-        <source>Please choose how do you want to import the model:</source>
-        <translation>Пожалуйста, выберите, как вы хотите импортировать модель:</translation>
+        <source>Impossible to play &apos;%1&apos;. Make sure the file format is supported (8 or 16 bits, mono or stereo wave).
+</source>
+        <translation>Невозможно воспроизвести &quot;%1&quot;. Убедитесь, что формат файла поддерживается (WAV, 8 или 16 бит, моно или стерео).
+</translation>
     </message>
     <message>
-        <source>3D model importation</source>
-        <translation>Импорт 3D-модели</translation>
+        <source>Cannot change directory to: &apos;%1&apos;</source>
+        <translation>Не удалось сменить папку на: &apos;%1&apos;</translation>
     </message>
     <message>
-        <source>Please choose a 3D file to import:</source>
-        <translation>Выберите 3D-файл для импорта:</translation>
-    </message>
-    <message>
-        <source>The &apos;%1&apos; file will now be imported at the end of the scene tree.</source>
-        <translation>Теперь файл &apos;%1&apos; будет импортирован в конец дерева сцена.</translation>
-    </message>
-    <message>
-        <source>Importation Settings</source>
-        <translation>Настройки импорта</translation>
-    </message>
-    <message>
-        <source>Use meshes for bounding objects.</source>
-        <translation>Использовать сетки для boundingObjects.</translation>
-    </message>
-    <message>
-        <source>3D Files (*.3ds *.3DS *.bvh *.BVH *.blend *.BLEND *.dae *.DAE *.fbx *.FBX *.stl *.STL *.wrl *.WRL *.obj *.OBJ *.x3d *.X3D);;3D Studio mesh (*.3ds *.3DS);;Biovision Hierarchy (*.bvh *.BVH);;Blender (*.blend *.BLEND);;Collada (*.dae *.DAE);;Filmbox (*.fbx *.FBX);;STL (*.stl *.STL);;VRML (*.wrl *.WRL);;Wavefront (*.obj *.OBJ);;X3D (*.x3d *.X3D)</source>
-        <translation>3D Files (*.3ds *.3DS *.bvh *.BVH *.blend *.BLEND *.dae *.DAE *.fbx *.FBX *.stl *.STL *.wrl *.WRL *.obj *.OBJ *.x3d *.X3D);;3D Studio mesh (*.3ds *.3DS);;Biovision Hierarchy (*.bvh *.BVH);;Blender (*.blend *.BLEND);;Collada (*.dae *.DAE);;Filmbox (*.fbx *.FBX);;STL (*.stl *.STL);;VRML (*.wrl *.WRL);;Wavefront (*.obj *.OBJ);;X3D (*.x3d *.X3D)</translation>
-    </message>
-    <message>
-        <source>File Selection</source>
-        <translation>Выбор файла</translation>
-    </message>
-    <message>
-        <source>Import appearances (if available).</source>
-        <translation>Импортировать appearances (если есть).</translation>
-    </message>
-    <message>
-        <source>Choose</source>
-        <translation>Выбрать</translation>
-    </message>
-    <message>
-        <source>Import texture coordinates (if available).</source>
-        <translation>Импортировать координаты текстуры (если есть).</translation>
-    </message>
-    <message>
-        <source>Summary</source>
-        <translation>Резюме</translation>
-    </message>
-    <message>
-        <source>This wizard will help you importing a 3D model in Webots.
-
-The following file formats are supported:
-	- 3D Studio mesh (*.3ds)
-	- Biovision Hierarchy (*.bvh)
-	- Blender (*.blend)
-	- Collada (*.dae)
-	- Filmbox (*.fbx)
-	- STL (*.stl)
-	- VRML (*.wrl)
-	- Wavefront (*.obj)
-	- X3D (*.x3d)</source>
-        <translation>Этот мастер поможет вам импортировать 3D-модель в Webots.
-
-Поддерживаются следующие форматы файлов:
-	- 3D Studio mesh (*.3ds)
-	- Biovision Hierarchy (*.bvh)
-	- Blender (*.blend)
-	- Collada (*.dae)
-	- Filmbox (*.fbx)
-	- STL (*.stl)
-	- VRML (*.wrl)
-	- Wavefront (*.obj)
-	- X3D (*.x3d)</translation>
-    </message>
-    <message>
-        <source>Import nodes as Solids.</source>
-        <translation>Импортировать узлы как Solids.</translation>
-    </message>
-    <message>
-        <source>Import a 3D model in the scene.</source>
-        <translation>Импортировать 3D-модель в сцену.</translation>
-    </message>
-    <message>
-        <source>Import normals (if available).</source>
-        <translation>Импортировать нормали (если есть).</translation>
-    </message>
-    <message>
-        <source>Choose a File</source>
-        <translation>Выберите файл</translation>
+        <source>Sound file &apos;%1&apos; not found. The sound file should be defined relatively to the controller, or absolutely.
+</source>
+        <translation>Звуковой файл &quot;%1&quot; не найден. Звуковой файл должен быть определен относительно папки контроллера или абсолютным путем.</translation>
     </message>
 </context>
 <context>
-    <name>WbBallJoint</name>
+    <name>WbSphere</name>
     <message>
-        <source>The lower limit of the motor associated to the second axis shouldn&apos;t be smaller than -pi/2.</source>
-        <translation>Нижний ограничитель для мотора на второй оси не должен быть меньше -pi/2.</translation>
+        <source>&apos;radius&apos; must be positive when used in &apos;boundingObject&apos;.</source>
+        <translation>Значение &apos;radius&apos; должно быть положительным при использовании в &apos;boundingObject&apos;.</translation>
     </message>
     <message>
-        <source>Axes are aligned: using x and z axes instead.</source>
-        <translation>Оси выравнены: используйте вместо них оси &apos;x&apos; и &apos;z&apos;.</translation>
-    </message>
-    <message>
-        <source>Exporting &apos;BallJoint&apos; nodes to URDF is currently not supported</source>
-        <translation>Экспорт узлов &apos;BallJoint&apos; в URDF пока не поддерживается</translation>
-    </message>
-    <message>
-        <source>The upper limit of the motor associated to the second axis shouldn&apos;t be greater than pi/2.</source>
-        <translation>Верхний ограничитель для мотора на второй оси не должен быть больше pi/2.</translation>
+        <source>A Sphere is used in a Bounding object using an asymmetric friction. Sphere does not support asymmetric friction</source>
+        <translation>Узел Sphere использован в boundingObject с асимметричным трением. &quot;Sphere&quot; такое не поддерживает</translation>
     </message>
 </context>
 <context>
-    <name>WbContactProperties</name>
+    <name>WbSpotLight</name>
     <message>
-        <source>&apos;coulombFriction&apos; must have between one and four elements</source>
-        <translation>&apos;coulombFriction&apos; должно иметь от одного до 4-х элементов</translation>
+        <source>Invalid &apos;beamWidth&apos; changed to %1. The value should be less than or equal to &apos;cutOffAngle&apos;.</source>
+        <translation>Неверное значение поля &apos;beamWidth&apos; изменено на %1 . Значение должно быть меньше или равнo &apos;cutOffAngle&apos;.</translation>
     </message>
     <message>
-        <source>If not set to -1 (infinity), &apos;coulombFriction&apos; must be non-negative. Field value reset to 1</source>
-        <translation>Значение &apos;coulombFriction&apos; должно быть или -1 (бесконечность), или же неотрицательным числом. Значение установлено в 1</translation>
+        <source>&apos;ambientIntensity&apos; and &apos;attenuation&apos; cannot differ from their default values at the same time. &apos;ambientIntensity&apos; was changed to 0.</source>
+        <translation>Поля &apos;ambientIntensity&apos; и &apos;attenuation&apos; не могут оба быть заданы отличными от их значений по умолчанию. Значение &apos;ambientIntensity&apos; изменено в 0.</translation>
     </message>
     <message>
-        <source>&apos;forceDependentSlip&apos; must have between one and four elements</source>
-        <translation>&apos;forceDependentSlip&apos; должно иметь от одного до 4-х элементов</translation>
+        <source>A quadratic &apos;attenuation&apos; should be preferred to have a realistic simulation of light. Only the third component of the &apos;attenuation&apos; field should be greater than 0.</source>
+        <translation>Квадратичный тип &apos;attenuation&apos; предпочителен для реалистичной симуляции света. Только 3-й компонент поля &apos;attenuation&apos; должен быть больше 0.</translation>
+    </message>
+    <message>
+        <source>Maximum number of active spotlights (%1) has been reached, newly added lights won&apos;t be rendered.</source>
+        <translation>Слишком много (более %1) активных &quot;прожекторов&quot;, вновь добавленные источники игнорируются.</translation>
     </message>
 </context>
 <context>
-    <name>WbMicrophone</name>
+    <name>WbSupervisorUtilities</name>
     <message>
-        <source>&apos;aperture&apos; must be either -1 (infinity) or between 0 and 2*pi.</source>
-        <translation>Поле &apos;aperture&apos; должно быть или -1 (бесконечность) или между 0 и 2*pi.</translation>
+        <source>wb_supervisor_node_get_orientation() can exclusively be used with Transform (or derived).</source>
+        <translation>Функция wb_supervisor_node_get_orientation() может использоваться исключительно с узлом Transform (или производным).</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_get_position() can exclusively be used with Transform (or derived).</source>
+        <translation>Функция wb_supervisor_node_get_position() может использоваться исключительно с узлом Transform (или производным).</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_virtual_reality_headset_get_position() called but no virtual reality headset is currently in use.</source>
+        <translation>Вызвана функция wb_supervisor_virtual_reality_headset_get_position() , но VR-гарнитура сейчас не используется.</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_get_number_of_contact_points() and wb_supervisor_node_get_contact_point() can exclusively be used with a Solid</source>
+        <translation>Функции wb_supervisor_node_get_number_of_contact_points() и wb_supervisor_node_get_contact_point() могут использоваться исключительно с узлом Solid</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_get_center_of_mass() can exclusively be used with Solid</source>
+        <translation>Функция wb_supervisor_node_get_center_of_mass() может использоваться исключительно с узлом Solid</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_add_force() can exclusively be used with a Solid</source>
+        <translation>Функция wb_supervisor_node_add_force() может использоваться исключительно с узлом Solid</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_add_force() can&apos;t be used with a kinematic Solid</source>
+        <translation>Функция wb_supervisor_node_add_force() не может использоваться с &quot;кинематическим&quot; узлом Solid (без физики)</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_field_remove_mf() called with the &apos;index&apos; argument referring to a Viewpoint or WorldInfo node.</source>
+        <translation>Функция wb_supervisor_field_remove_mf() вызвана с аргументом &apos;index&apos;, относящимся к узлу Viewpoint или WorldInfo.</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_get_static_balance() can exclusively be used with a top Solid</source>
+        <translation>Функция wb_supervisor_node_get_static_balance() может использоваться исключительно с узлом Solid верхнего уровня</translation>
+    </message>
+    <message>
+        <source>%1: node not found.</source>
+        <translation>%1: узел не найден.</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_set_joint_position() called with a &apos;position&apos; argument %1 outside hard limits of the joint. Applied position is %2.</source>
+        <translation>Функция wb_supervisor_node_set_joint_position() вызвана с аргументом position %1 за пределами жестких ограничений шарнира. Примененная позиция: %2.</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_restart_controller() can exclusively be used with a Robot</source>
+        <translation>Функция wb_supervisor_node_restart_controller() может использоваться исключительно с узлом Robot</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_set_label() called with an invalid &apos;%1&apos; font, &apos;Arial&apos; used instead.</source>
+        <translation>Вызван wb_supervisor_set_label() с недопустимым шрифтом &quot;%1&quot;, вместо него взят &quot;Arial&quot;.</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_set_velocity() can exclusively be used with a Solid</source>
+        <translation>Функция wb_supervisor_node_set_velocity() может использоваться исключительно с Solid</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_get_velocity() can exclusively be used with a Solid</source>
+        <translation>Функция wb_supervisor_node_get_velocity() может использоваться исключительно с узлом Solid</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_add_torque() can&apos;t be used with a kinematic Solid</source>
+        <translation>Функция wb_supervisor_node_add_torque() не может использоваться с &quot;кинематическим&quot; узлом Solid (без физики)</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_add_force_with_offset() can&apos;t be used with a kinematic Solid</source>
+        <translation>Функция wb_supervisor_node_add_force_with_offset() не может использоваться с &quot;кинематическим&quot; узлом Solid (без физики)</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_set_label() is out of range. The supported range is [0, %1].</source>
+        <translation>wb_supervisor_set_label() находится вне допустимого диапазона. Поддерживаемый диапазон: [0, %1].</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_get_pose() can exclusively be used with Transform (or derived).</source>
+        <translation>Функция wb_supervisor_node_get_pose() может использоваться исключительно с узлом Transform (или производным).</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_virtual_reality_headset_get_orientation() called but no virtual reality headset is currently in use.</source>
+        <translation>Вызвана функция wb_supervisor_virtual_reality_headset_get_orientation() , но VR-гарнитура сейчас не используется.</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_add_force_with_offset() can exclusively be used with a Solid</source>
+        <translation>Функция wb_supervisor_node_add_force_with_offset() может использоваться исключительно с узлом Solid</translation>
+    </message>
+    <message>
+        <source>wb_supervisor_node_add_torque() can exclusively be used with a Solid</source>
+        <translation>Функция wb_supervisor_node_add_torque() может использоваться исключительно с узлом Solid</translation>
+    </message>
+    <message>
+        <source>Node &apos;%1&apos; is internal to a PROTO and therefore cannot be deleted from a Supervisor.</source>
+        <translation>Узел &quot;%1&quot; находится внутри PROTO и поэтому Supervisor не может его удалить.</translation>
+    </message>
+</context>
+<context>
+    <name>WbTcpServer</name>
+    <message>
+        <source>Streaming server closed</source>
+        <translation type="unfinished">Потоковый сервер закрыт</translation>
+    </message>
+    <message>
+        <source>Could not listen to %1 on port %2. %3. Giving up.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Could not listen to %1 on port %2. %3. Using port %4 instead. This could be caused by another running instance of Webots. You should use the &apos;--port&apos; option to start several instances of Webots.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Streaming server listening on port %1.</source>
+        <translation>Потоковый сервер: слушает порт %1.</translation>
+    </message>
+    <message>
+        <source>Cannot set the server in listen mode: %1</source>
+        <translation>Невозможно перевести сервер в режим прослушивания: %1</translation>
+    </message>
+    <message>
+        <source>No host specified in HTTP header.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unsupported file type &apos;/%2&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Streaming server: New client [%1] (%2 connected client(s)).</source>
+        <translation>Потоковый сервер: новый клиент [%1] (%2 подключенных клиентов).</translation>
+    </message>
+    <message>
+        <source>Streaming server: received robot message for %1: &quot;%2&quot;.</source>
+        <translation>Потоковый сервер: получено сообщение робота для %1: &quot;%2&quot;.</translation>
+    </message>
+    <message>
+        <source>Streaming server: world %1 doesn&apos;t exist.</source>
+        <translation>Потоковый сервер: мир %1 не существует.</translation>
+    </message>
+    <message>
+        <source>Streaming server: you are not allowed to open a world in another project directory.</source>
+        <translation>Потоковый сервер: вам не разрешено открывать мир в другом проекте.</translation>
+    </message>
+    <message>
+        <source>Streaming server: Unsupported message: %1.</source>
+        <translation>Потоковый сервер: неподдерживаемое сообщение: %1.</translation>
+    </message>
+    <message>
+        <source>Streaming server: Client disconnected [%1] (remains %2 client(s)).</source>
+        <translation>Потоковый сервер: отключился клиент [%1] (осталось %2 клиентов).</translation>
+    </message>
+    <message>
+        <source>Error when reloading world: %1.</source>
+        <translation>Ошибка при перезагрузке мира: %1.</translation>
+    </message>
+</context>
+<context>
+    <name>WbTemplateEngine</name>
+    <message>
+        <source>Expected JavaScript closing token &apos;%1&apos; is missing.</source>
+        <translation>JavaScript: отсутствует ожидаемый закрывающий токен &quot;%1&quot;.</translation>
+    </message>
+    <message>
+        <source>failed to import JavaScript template: %1</source>
+        <translation>не удалось импортировать шаблон JavaScript: %1</translation>
+    </message>
+    <message>
+        <source>failed to execute JavaScript template: %1</source>
+        <translation>не удалось выполнить шаблон JavaScript: %1</translation>
+    </message>
+    <message>
+        <source>Installation error: Lua resources are not found</source>
+        <translation>Ошибка установки: ресурсы Lua не найдены</translation>
+    </message>
+    <message>
+        <source>luaL_dostring error : %1</source>
+        <translation>Ошибка luaL_dostring: %1</translation>
+    </message>
+    <message>
+        <source>Cannot change directory to: &apos;%1&apos;</source>
+        <translation>Не удалось сменить папку на: &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <source>Couldn&apos;t write jsTemplateFilled to disk.</source>
+        <translation>Не удалось записать jsTemplateFilled на диск.</translation>
+    </message>
+</context>
+<context>
+    <name>WbTemplateManager</name>
+    <message>
+        <source>Template regeneration failed. Unsupported node type.</source>
+        <translation>Ошибка регенерации шаблона. Неподдерживаемый тип узла.</translation>
+    </message>
+    <message>
+        <source>Template regeneration failed. The node cannot be generated.</source>
+        <translation>Ошибка регенерации шаблона. Узел не может быть создан.</translation>
     </message>
 </context>
 <context>
@@ -4854,358 +6799,141 @@ The following file formats are supported:
         <source>Revert to saved file? Changes will be lost.</source>
         <translation>Вернуться к сохраненному файлу? Изменения будут потеряны.</translation>
     </message>
-</context>
-<context>
-    <name>WbEmitter</name>
     <message>
-        <source>Unknown &apos;type&apos;: &quot;%1&quot;.</source>
-        <translation>Неизвестный &apos;type&apos;: &quot;%1&quot;.</translation>
-    </message>
-    <message>
-        <source>&apos;allowedChannels&apos; does not contain current &apos;channel&apos;. Setting &apos;channel&apos; to %1.</source>
-        <translation>Поле &apos;allowedChannels&apos; не содержит текущий &apos;channel&apos;. Устанавливаем &apos;channel&apos; в %1.</translation>
-    </message>
-    <message>
-        <source>&apos;channel&apos; is not included in &apos;allowedChannels&apos;. Setting &apos;channel&apos; to %1</source>
-        <translation>Поле &apos;channel&apos; не включено в &apos;allowedChannels&apos;. Устанавливаем &apos;channel&apos; в %1</translation>
-    </message>
-    <message>
-        <source>&apos;range&apos; must be less than or equal to &apos;maxRange&apos;.</source>
-        <translation>Значение &apos;range&apos; должно быть меньше или равно значения &apos;maxRange&apos;.</translation>
+        <source>Unable to save &apos;%1&apos;.</source>
+        <translation>Не удается сохранить &quot;%1&quot;.</translation>
     </message>
 </context>
 <context>
-    <name>WbReceiver</name>
+    <name>WbTextEditor</name>
     <message>
-        <source>Unknown &apos;type&apos;: &quot;%1&quot;.</source>
-        <translation>Неизвестный &apos;type&apos;: &quot;%1&quot;.</translation>
+        <source>Text Editor</source>
+        <translation>Текстовый редактор</translation>
     </message>
     <message>
-        <source>&apos;allowedChannels&apos; does not contain current &apos;channel&apos;. Setting &apos;channel&apos; to %1.</source>
-        <translation>Поле &apos;allowedChannels&apos; не содержит текущий &apos;channel&apos;. Устанавливаем &apos;channel&apos; в %1.</translation>
+        <source>Save as...</source>
+        <translation>Сохранить как...</translation>
     </message>
     <message>
-        <source>&apos;channel&apos; is not included in &apos;allowedChannels&apos;. Setting &apos;channel&apos; to %1</source>
-        <translation>Поле &apos;channel&apos; не включено в &apos;allowedChannels&apos;. Устанавливаем &apos;channel&apos; в %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbHinge2Joint</name>
-    <message>
-        <source>HingeJoint &apos;minStop&apos; must be less or equal to RotationalMotor &apos;minPosition&apos;.</source>
-        <translation>Поле &apos;minStop&apos; в HingeJoint не должно быть больше поля &apos;minPosition&apos; узла RotationalMotor.</translation>
+        <source>Open File...</source>
+        <translation>Открыть файл...</translation>
     </message>
     <message>
-        <source>Hinge axes are aligned: using x and z axes instead.</source>
-        <translation>Оси выравнены: используйте вместо них оси &apos;x&apos; и &apos;z&apos;.</translation>
+        <source>All Files (*)</source>
+        <translation>Все файлы (*)</translation>
     </message>
     <message>
-        <source>HingeJoint &apos;maxStop&apos; must be greater or equal to RotationalMotor &apos;maxPosition&apos;.</source>
-        <translation>Поле &apos;maxStop&apos; в HingeJoint не должно быть меньше поля &apos;maxPosition&apos; узла RotationalMotor.</translation>
+        <source>The file &apos;%1&apos; is not saved.
+Do you want to save it before closing?</source>
+        <translation>Файл &quot;%1&quot; не сохранен.
+Вы хотите сохранить его перед закрытием?</translation>
     </message>
     <message>
-        <source>Hinge2Joint nodes can only connect Solid nodes that have a Physics node.</source>
-        <translation>Узлы Hinge2Joint могут соединять только узлы Solid, для которых задана Physics.</translation>
+        <source>Question</source>
+        <translation>Вопрос</translation>
     </message>
     <message>
-        <source>Exporting &apos;Hinge2Joint&apos; nodes to URDF is currently not supported</source>
-        <translation>Экспорт узлов &apos;Hinge2Joint&apos; в формат URDF пока не поддерживается</translation>
-    </message>
-</context>
-<context>
-    <name>WbBackground</name>
-    <message>
-        <source>Incomplete background cubemap</source>
-        <translation>Не полностью заданы все текстуры куба</translation>
+        <source>Print Document</source>
+        <translation>Распечатать документ</translation>
     </message>
     <message>
-        <source>Alpha channel mismatch with %1Url.</source>
-        <translation>Alpha-канал не сопадает с %1Url.</translation>
+        <source>Read-only remote file</source>
+        <translation>Удаленный файл только для чтения</translation>
     </message>
     <message>
-        <source>The %1Url &apos;%2&apos; is not a square image (its width doesn&apos;t equal its height).</source>
-        <translation>Картинка %1Url &apos;%2&apos; не является квадратной (ширина и высота должны совпадать).</translation>
-    </message>
-    <message>
-        <source>Cannot open texture file: &apos;%1&apos;</source>
-        <translation>Не удалось открыть файл текстуры: &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>Cannot retrieve &apos;%1&apos;: %2</source>
-        <translation>Не удалось получить &apos;%1&apos;: %2</translation>
-    </message>
-    <message>
-        <source>Texture dimension mismatch between %1Url and %2Url.</source>
-        <translation>Не совпадают пиксельные размеры текстур %1Url и %2Url.</translation>
-    </message>
-    <message>
-        <source>Incomplete irradiance cubemap</source>
-        <translation>Не полностью заданы все карты освещенности куба (Irradiance cubemap)</translation>
-    </message>
-    <message>
-        <source>Cannot open HDR texture file: &apos;%1&apos;</source>
-        <translation>Не удалось открыть HDR-файл с текстурой: &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>Cannot download %1IrradianceUrl: %2</source>
-        <translation>Не удается скачать %1IrradianceUrl: %2</translation>
-    </message>
-    <message>
-        <source>Texture not found: &apos;%1&apos;</source>
-        <translation>Текстура не найдена: &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>Only one Background node is allowed. The current node won&apos;t be taken into account.</source>
-        <translation>В сцене может быть только один узел Background. Данный узел будет проигнорирован.</translation>
-    </message>
-    <message>
-        <source>Cannot load texture &apos;%1&apos;: %2.</source>
-        <translation>Не удалось загрузить текстуру &apos;%1&apos;: %2.</translation>
-    </message>
-    <message>
-        <source>%1IrradianceUrl not found: &apos;%2&apos;</source>
-        <translation>%1IrradianceUrl не найдено: &apos;%2&apos;</translation>
+        <source>Unable to save &apos;%1&apos;.</source>
+        <translation>Не удается сохранить &quot;%1&quot;.</translation>
     </message>
 </context>
 <context>
-    <name>WbGuiApplication</name>
+    <name>WbTouchSensor</name>
     <message>
-        <source>webots: stream mode can only be x3d or mjpeg</source>
-        <translation>webots: режимами стрима могут быть только x3d или mjpeg</translation>
+        <source>&quot;force&quot; and &quot;force-3d&quot; &apos;type&apos; requires &apos;physics&apos; to be functional.</source>
+        <translation>Типы &quot;force&quot; и &quot;force-3d&quot; требуют, чтобы &quot;физика&quot; была настроена.</translation>
     </message>
     <message>
-        <source>webots: invalid &apos;mode&apos; option: &apos;%1&apos; in --stream</source>
-        <translation>webots: неверная опция &apos;mode&apos;: &apos;%1&apos; в --stream</translation>
-    </message>
-    <message>
-        <source>Starting up...</source>
-        <translation>Запускаемся...</translation>
-    </message>
-    <message>
-        <source>webots: stream port has to be integer</source>
-        <translation>webots: номер порта для стрима должен быть целым числом</translation>
-    </message>
-    <message>
-        <source>webots: invalid option: &apos;%1&apos;</source>
-        <translation>webots: неверная опция: &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>webots: invalid option : &apos;--log-performance&apos;: log file path is missing.</source>
-        <translation>webots: неверно задана опция &apos;--log-performance&apos;: не указан путь к лог-файлу.</translation>
-    </message>
-    <message>
-        <source>webots: unknown option: &apos;%1&apos; in --stream</source>
-        <translation>webots: неизвестная опция: &apos;%1&apos; в &apos;--stream&apos;</translation>
-    </message>
-    <message>
-        <source>webots: too many arguments.</source>
-        <translation>webots: слишком много параметров.</translation>
-    </message>
-    <message>
-        <source>webots: invalid &apos;port&apos; option: &apos;%1&apos; in --stream</source>
-        <translation>webots: неверная опция &apos;port&apos;: &apos;%1&apos; в &apos;--stream&apos;</translation>
-    </message>
-    <message>
-        <source>Could not open file: &apos;%1&apos;.</source>
-        <translation>Не могу открыть файл: &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Copyright © 1998 - %1 Cyberbotics Ltd.</source>
-        <translation>Copyright © 1998 - %1 Cyberbotics Ltd.</translation>
-    </message>
-    <message>
-        <source>Loading world...</source>
-        <translation>Загружается сцена...</translation>
-    </message>
-    <message>
-        <source>The &apos;--mode=stop&apos; option is deprecated. Please use &apos;--mode=pause&apos; instead.</source>
-        <translation>Опция &apos;--mode=stop&apos; устарела. Используйте вместо нее &apos;--mode=pause&apos;.</translation>
-    </message>
-    <message>
-        <source>Try &apos;webots --help&apos; for more information.</source>
-        <translation>Попробуйте &apos;webots --help&apos; для дополнительной информации.</translation>
+        <source>Unknown &apos;type&apos;: &quot;%1&quot;. Set to &quot;bumper&quot;</source>
+        <translation>Неизвестный &quot;тип&quot;: &quot;%1&quot;. Присвоен тип &quot;bumper&quot;</translation>
     </message>
 </context>
 <context>
-    <name>WbImmersionProperties</name>
+    <name>WbTrack</name>
     <message>
-        <source>&apos;tx&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;tx&apos; должно быть больше или равно нулю.</translation>
+        <source>Texture animation is enabled only if the TextureTransform node is explicitly defined.</source>
+        <translation>Анимация текстуры включается только в том случае, если узел TextureTransform определен явно.</translation>
     </message>
     <message>
-        <source>&apos;ty&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;ty&apos; должно быть больше или равно нулю.</translation>
+        <source>Error during computation of Track animated geometries. Please check the TrackWheel nodes in &apos;children&apos; field.</source>
+        <translation>Ошибка при расчете анимированной геометрии узла Track. Пожалуйста, проверьте узлы TrackWheel в поле &apos;children&apos;.</translation>
     </message>
     <message>
-        <source>&apos;tz&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;tz&apos; должно быть больше или равно нулю.</translation>
+        <source>Two or more consecutive TrackWheel nodes are located at the same position. Only the first node is used.</source>
+        <translation>Два или более последовательных узла TrackWheel расположены в одной и той же позиции. Используется только первый узел.</translation>
     </message>
     <message>
-        <source>&apos;cx&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;cx&apos; должно быть больше или равно нулю.</translation>
+        <source>Non-admissible TextureTransform USE node inside Track node.This and ancestor USE nodes turned into DEF nodes: if texture animation enabled, the USE texture transform values will change independently from DEF node ones.</source>
+        <translation>Недопустимый узел USE TextureTransform внутри узла Track. Этот и его предки узлы USE превратились в узлы DEF: если анимация текстуры включена, значения преобразования текстуры USE будут изменяться независимо от значений узла DEF.</translation>
     </message>
     <message>
-        <source>&apos;cy&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;cy&apos; должно быть больше или равно нулю.</translation>
-    </message>
-    <message>
-        <source>&apos;cz&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;cz&apos; должно быть больше или равно нулю.</translation>
-    </message>
-    <message>
-        <source>&apos;viscousResistanceTorqueCoefficient&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;viscousResistanceTorqueCoefficient&apos; должно быть больше или равно нулю.</translation>
-    </message>
-    <message>
-        <source>&apos;viscousResistanceForceCoefficient&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;viscousResistanceForceCoefficient&apos; должно быть больше или равно нулю.</translation>
+        <source>Invalid %1 used in &apos;animatedGeometries&apos; field.</source>
+        <translation>Недопустимый %1 используется в поле &apos;animatedGeometries&apos;.</translation>
     </message>
 </context>
 <context>
-    <name>WbNewVersionDialog</name>
+    <name>WbTransform</name>
     <message>
-        <source>Stay informed about the latest developments of Webots by subscribing to the &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/newsletter&apos;&gt;Webots newsletter&lt;/a&gt;.</source>
-        <translation>Будьте в курсе последних разработок Webots, подписавшись на &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/newsletter&apos;&gt;информационный бюллетень Webots&lt;/a&gt;.</translation>
+        <source>The first child of a Transform placed in &apos;boundingObject&apos; must be a Geometry or a Shape filled with a Geometry.</source>
+        <translation>Если в &apos;boundingObject&apos; помещен узел Transform, то его первым дочерним узлом должен быть узел Geometry или узел Shape, c заполненным полем Geometry.</translation>
     </message>
     <message>
-        <source>Allow to send lightweight anonymous technical data to Webots developers.</source>
-        <translation>Разрешить отправлять облегченные анонимные технические данные разработчикам Webots.</translation>
+        <source>A Transform placed in &apos;boundingObject&apos; needs a Geometry or Shape as its first child to be valid.</source>
+        <translation>Узел Transform, в &apos;boundingObject&apos;, должен иметь первым узлом в Children или Geometry или Shape.</translation>
     </message>
     <message>
-        <source>Webots newsletter:</source>
-        <translation>Рассылка Webots:</translation>
-    </message>
-    <message>
-        <source>More details about Webots %1 are listed &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/blog/Webots-%2-%3-release&apos;&gt;here&lt;/a&gt;.</source>
-        <translation>Дополнительные сведения о Webots %1 перечислены &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/blog/Webots-%2-%3-release&apos;&gt;здесь&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <source>Welcome to Webots %1</source>
-        <translation>Добро пожаловать в Webots %1</translation>
-    </message>
-    <message>
-        <source>We need your help to continue to improve Webots: more information &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/telemetry&apos;&gt;here&lt;/a&gt;.</source>
-        <translation>Нам нужна ваша помощь, чтобы продолжать совершенствовать Webots: дополнительная информация &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/guide/telemetry&apos;&gt;здесь&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <source>Preview:</source>
-        <translation>Предпросмотр:</translation>
-    </message>
-    <message>
-        <source>Themes:</source>
-        <translation>Тема:</translation>
-    </message>
-    <message>
-        <source>Telemetry:</source>
-        <translation>Телеметрия:</translation>
-    </message>
-    <message>
-        <source>Start Webots with the selected theme.</source>
-        <translation>Запустите Webots с выбранной темой.</translation>
+        <source>A Transform placed inside a &apos;boundingObject&apos; can only contain one child. Remaining children are ignored.</source>
+        <translation>Узел Transform, в &apos;boundingObject&apos;, может содержать в Children только один дочерний узел. Остальные &quot;дети&quot; игнорируются.</translation>
     </message>
 </context>
 <context>
-    <name>WbSaveWarningDialog</name>
+    <name>WbTriangleMeshGeometry</name>
     <message>
-        <source>Don&apos;t display this dialog again (you can re-enable it from the preferences)</source>
-        <translation>Не отображать больше этот диалог (вы можете снова включить его из Настроек)</translation>
+        <source>A %1 is used in a Bounding object using an asymmetric friction. %1 does not support asymmetric friction</source>
+        <translation>Узел %1 использован в boundingObject с асимметричным трением. &quot;%1&quot; такое не поддерживает</translation>
     </message>
     <message>
-        <source>The &apos;%1&apos; file is not saved. Do you want to save it before closing?</source>
-        <translation>Файл &apos;%1&apos; не сохранен. Сохранить его перед закрытием?</translation>
+        <source>Cannot create %1 because: &quot;%2&quot;.</source>
+        <translation>Не удалось создать %1 по причине: &quot;%2&quot;.</translation>
     </message>
     <message>
-        <source>Save before closing?</source>
-        <translation>Сохранить перед закрытием?</translation>
-    </message>
-    <message>
-        <source>The &apos;%1&apos; file is not saved. Do you want to save it before reloading the world?</source>
-        <translation>Файл &apos;%1&apos; не сохранен. Сохранить его перед перезагрузкой сцены?</translation>
-    </message>
-    <message>
-        <source>Save before reloading the world?</source>
-        <translation>Сохранить перед перезагрузкой сцены?</translation>
+        <source>Too many triangles (%1) in mesh: unable to cast shadows, please reduce the number of triangles below %2 or set Shape.castShadows to FALSE to disable this warning.</source>
+        <translation>Слишком много (%1) треугольников в сетке: невозможно отбрасывать тени, уменьшите количество треугольников ниже %2 или установите для Shape.castShadows значение FALSE, чтобы отключить это предупреждение.</translation>
     </message>
 </context>
 <context>
-    <name>WbSimulationWorld</name>
+    <name>WbUpdatedDialog</name>
     <message>
-        <source>Finalizing nodes</source>
-        <translation>Финализируются узлы сцены</translation>
+        <source>Welcome to Webots R2022b</source>
+        <translation>Добро пожаловать в Webots R2022b</translation>
     </message>
     <message>
-        <source>Loading plugins (if any)</source>
-        <translation>Загружаются плагины (если есть)</translation>
+        <source>&lt;b&gt;Thank you for using Webots R2022b.&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Благодарим вас за использование Webots R2022b.&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Downloading assets</source>
-        <translation>Загружаются ресурсы</translation>
+        <source>Important Note for Users of Versions Lower than R2022a</source>
+        <translation>Важное примечание для пользователей версий ниже R2022a</translation>
     </message>
     <message>
-        <source>Initializing plugins (if any)</source>
-        <translation>Инициализируются плагины (если есть)</translation>
-    </message>
-</context>
-<context>
-    <name>WbPhysics</name>
-    <message>
-        <source>The first line of &apos;inertiaMatrix&apos; (principal moments of inertia) must have only positive values.</source>
-        <translation>Первая строка &apos;inertiaMatrix&apos; (principal moments of inertia) должна иметь только положительные значения.</translation>
+        <source>&lt;p style=&quot;line-height:1.2&quot;&gt;All Webots worlds are now in the ENU axis system and all Webots devices, geometries, and PROTOs are in the FLU axis system. &lt;br /&gt; &lt;br /&gt; If your previous world or PROTO files include devices, geometries, or Webots PROTOs, then Webots will try to preserve the old behavior by rotating them. However, you may have to rotate some objects, fix bounding objects or adjust your controller by yourself. &lt;br /&gt;Refer to the &lt; a style = &apos;color: #5DADE2;&apos; href=&apos;https://github.com/cyberbotics/webots/wiki/How-to-adapt-your-world-or-PROTO-to-Webots-R2022a&apos;&gt;wiki&lt;/a&gt; for more information. &lt;/p&gt;</source>
+        <translation>&lt;p style=&quot;line-height:1.2&quot;&gt;Все миры Webots теперь находятся в системе осей ENU, а все устройства Webots, геометрия и PROTO — в системе осей FLU. &lt;br /&gt; &lt;br /&gt; Если ваши предыдущие файлы мира или PROTO включают устройства, геометрию или PROTO Webots, то Webots попытается сохранить старое поведение, повернув их. Однако вам, возможно, придется повернуть некоторые объекты, исправить ограничивающие объекты или настроить контроллер самостоятельно. &lt;br /&gt;См. &lt; a style = &apos;color: #5DADE2;&apos; href=&apos;https://github.com/cyberbotics/webots/wiki/How-to-adapt-your-world-or-PROTO-to-Webots-R2022a&apos;&gt;wiki&lt;/a&gt; для получения дополнительной информации. &lt;/p&gt;</translation>
     </message>
     <message>
-        <source>The center of mass must also be specified when using a custom inertia matrix.</source>
-        <translation>Центр массы должен также быть задан, если используется своя матрица инерции.</translation>
+        <source>Find out the new features, enhancements and bug fixes of Webots R2022b in the &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/reference/changelog-r2022&apos;&gt;changelog&lt;/a&gt;.</source>
+        <translation>Узнайте о новых функциях, улучшениях и исправлениях ошибок Webots R2022b в &lt;a style=&apos;color: #5DADE2;&apos; href=&apos;https://cyberbotics.com/doc/reference/changelog-r2022&apos;&gt;журнал изменений&lt;/a&gt;.</translation>
     </message>
     <message>
-        <source>You must also specify the &apos;centerOfMass&apos; when specifying the &apos;inertiaMatrix&apos;</source>
-        <translation>Поле &apos;centerOfMass&apos; должно также быть задано, если вы задаете &apos;inertiaMatrix&apos;</translation>
-    </message>
-    <message>
-        <source>&apos;inertiaMatrix&apos; must have exactly 0 or 2 lines. Extra lines skipped.</source>
-        <translation>В поле &apos;inertiaMatrix&apos; должно быть ровно 0 или 2 строки. Лишние строки пропущены.</translation>
-    </message>
-    <message>
-        <source>&apos;inertiaMatrix&apos; must be positive definite.</source>
-        <translation>&apos;inertiaMatrix&apos; должна быть положительно определенной (positive definite).</translation>
-    </message>
-    <message>
-        <source>Either the &apos;mass&apos; or the &apos;density&apos; must be specified.</source>
-        <translation>Должны быть заданы либо &apos;mass&apos;, либо &apos;density&apos;.</translation>
-    </message>
-    <message>
-        <source>Both &apos;density&apos; and &apos;mass&apos; specified: the &apos;density&apos; will be ignored.</source>
-        <translation>Заданы и &apos;density&apos; и &apos;mass&apos;: плотность будет игнорироваться.</translation>
-    </message>
-    <message>
-        <source>&apos;centerOfmass&apos; must also be specified when using an inertia matrix.</source>
-        <translation>Поле &apos;centerOfmass&apos; должно также быть задано, если используется матрица инерции.</translation>
-    </message>
-    <message>
-        <source>&apos;mass&apos; must be positive when using an inertia matrix.</source>
-        <translation>Поле &apos;mass&apos; должно быть положительным при использовании inertiaMatrix.</translation>
-    </message>
-    <message>
-        <source>You must also set the &apos;mass&apos; to a positive value when specifying the &apos;inertiaMatrix&apos;.</source>
-        <translation>Поле &apos;mass&apos; должно иметь положительное значение, если вы задаете &apos;inertiaMatrix&apos;.</translation>
-    </message>
-    <message>
-        <source>&apos;inertiaMatrix&apos; must have exactly 0 or 2 lines. Second line inserted.</source>
-        <translation>В поле &apos;inertiaMatrix&apos; должно быть ровно 0 или 2 строки. Добавлена вторая строка.</translation>
-    </message>
-    <message>
-        <source>&apos;centerOfMass&apos; must have exactly 0 or 1 line. Extra lines skipped.</source>
-        <translation>В поле &apos;centerOfMass&apos; должно быть ровно 0 или 1 строка. Лишние строки пропущены.</translation>
-    </message>
-</context>
-<context>
-    <name>WbWrenCamera</name>
-    <message>
-        <source>Cannot load %1: %2</source>
-        <translation>Не удается загрузить %1: %2</translation>
-    </message>
-    <message>
-        <source>Noise mask can only be applied to RGB non-spherical cameras</source>
-        <translation>Маска шума может быть применена только к несферическим камерам RGB</translation>
+        <source>Close</source>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
@@ -5244,472 +6972,111 @@ The following file formats are supported:
     </message>
 </context>
 <context>
-    <name>ConsoleEdit</name>
+    <name>WbVideoRecorder</name>
     <message>
-        <source>Display controller(s) stderr.</source>
-        <translation>Показать stderr контроллера.</translation>
+        <source>The movie has been created:
+%1
+
+Do you want to play it back?
+</source>
+        <translation>Видео записано:
+%1
+
+Хотите просмотреть его?
+</translation>
     </message>
     <message>
-        <source>Display controller(s) stdout.</source>
-        <translation>Показать stdout контроллера.</translation>
+        <source>Videos (*%1)</source>
+        <translation>Видеоролики ((%1)</translation>
     </message>
     <message>
-        <source>&amp;Level</source>
-        <translation>&amp;Уровень</translation>
+        <source>Impossible to delete temporary file: &apos;%1&apos;</source>
+        <translation>Невозможно удалить временный файл: &apos;%1&apos;</translation>
     </message>
     <message>
-        <source>Display all the messages from the controller(s).</source>
-        <translation>Показать все сообщения от контроллера.</translation>
+        <source>Video encoding stage 1... </source>
+        <translation>Кодируем видео стадия 1... </translation>
     </message>
     <message>
-        <source>Clear Console</source>
-        <translation>Очистить консоль</translation>
+        <source>Video encoding stage 2... </source>
+        <translation>Кодируем видео стадия 2... </translation>
     </message>
     <message>
-        <source>Display all the Webots logs.</source>
-        <translation>Показать все логи от WeBots.</translation>
+        <source>Creating video...</source>
+        <translation>Создается видео...</translation>
     </message>
     <message>
-        <source>Rename Console</source>
-        <translation>Переименовать консоль</translation>
+        <source>Impossible to write file: &apos;%1&apos;.</source>
+        <translation>Невозможно записать файл: &apos;%1&apos;.</translation>
     </message>
     <message>
-        <source>Output from the compilation.</source>
-        <translation>Вывод компиляции.</translation>
+        <source>Make Movie</source>
+        <translation>Создать видео</translation>
     </message>
     <message>
-        <source>Displays Webots warnings.</source>
-        <translation>Показать предупреждения от WeBots.</translation>
+        <source>Save Video</source>
+        <translation>Сохранить видео</translation>
     </message>
     <message>
-        <source>Display all the logs.</source>
-        <translation>Показать все логи.</translation>
+        <source>Video generation failed.</source>
+        <translation>Генерация видео не удалась.</translation>
     </message>
     <message>
-        <source>Display error messages from ODE.</source>
-        <translation>Показывать ошибки от ODE.</translation>
+        <source>please wait</source>
+        <translation>пожалуйста, подождите</translation>
     </message>
     <message>
-        <source>Display output from the controller of the &apos;%1&apos; controller.</source>
-        <translation>Показать сообщения от контроллера &apos;%1&apos;.</translation>
+        <source>Video creation canceled.</source>
+        <translation>Создание видео отменено.</translation>
     </message>
     <message>
-        <source>Displays Webots errors and controller(s) stderr.</source>
-        <translation>Показать ошибки WeBots и stderr контроллера.</translation>
+        <source>Open containg folder and YouTube upload page.</source>
+        <translation>Откройте папку с видосиком и страницу выгрузки на Youtube.</translation>
     </message>
     <message>
-        <source>Displays Webots info.</source>
-        <translation>Показать информацию WeBots.</translation>
+        <source>Video creation finished.</source>
+        <translation>Запись видео завершена.</translation>
     </message>
     <message>
-        <source>&amp;Filter</source>
-        <translation>&amp;Фильтр</translation>
+        <source>Recording at %1 FPS, %2 bit/s.</source>
+        <translation>Запись с частотой кадров %1 FPS, %2 бит/с.</translation>
     </message>
     <message>
-        <source>Display controller(s) stdout and stderr.</source>
-        <translation>Показать stdout и stderr контроллера.</translation>
+        <source>Video generation failed due to an encoding problem
+</source>
+        <translation>Создать видео не удалось из-за проблем с кодировщиком
+</translation>
     </message>
     <message>
-        <source>Display parsing error when editing or loading a world.</source>
-        <translation>Показывать ошибки парсера при загрузке мира.</translation>
+        <source>Video recording starts when you run a simulation...</source>
+        <translation>Запись видео начнется при запуске симуляции...</translation>
     </message>
     <message>
-        <source>Display all the messages from Webots.</source>
-        <translation>Показать все сообщения от WeBots.</translation>
-    </message>
-    <message>
-        <source>Display Javascript log from the robot-windows.</source>
-        <translation>Показать лог JS из &quot;окна робота&quot;.</translation>
-    </message>
-    <message>
-        <source>Display all the other logs.</source>
-        <translation>Показать остальные логи.</translation>
-    </message>
-    <message>
-        <source>Display messages from the physics plugins.</source>
-        <translation>Показывать сообщения &quot;физических&quot; плагинов.</translation>
+        <source>Temporary directory &apos;%1&apos; does not exist.</source>
+        <translation>Временная папка &apos;%1&apos; не существует.</translation>
     </message>
 </context>
 <context>
-    <name>WbAboutBox</name>
+    <name>WbVideoRecorderDialog</name>
     <message>
-        <source>About Webots</source>
-        <translation>О программе Webots</translation>
+        <source>Resolution:</source>
+        <translation>Разрешение:</translation>
     </message>
-</context>
-<context>
-    <name>WbCone</name>
     <message>
-        <source>A Cone is used in a Bounding object using an asymmetric friction. Cone does not support asymmetric friction</source>
-        <translation>Конус использован в boundingObject с асимметричным трением. Конус такое не поддерживает</translation>
+        <source>Video acceleration:</source>
+        <translation>Видео ускорение:</translation>
     </message>
-</context>
-<context>
-    <name>WbX3dStreamingServer</name>
     <message>
-        <source>Cannot sent the entire world</source>
-        <translation>Не могу отправить весь &quot;мир&quot;</translation>
+        <source>Choose video parameters</source>
+        <translation>Выберите параметры видео</translation>
     </message>
     <message>
-        <source>Streaming server received unsupported MJPEG message: &apos;%1&apos;. You should run Webots with the &apos;--stream=&quot;mode=mjpeg&quot;&apos; command line option.</source>
-        <translation>Потоковый сервер получил неподдерживаемое сообщение MJPEG: «%1». Вы должны запускать Webots с опцией командной строки &apos;--stream=&quot;mode=mjpeg&quot;&apos;.</translation>
+        <source>Video caption:</source>
+        <translation>Заголовок видео:</translation>
     </message>
     <message>
-        <source>Streaming server: Client set mode to X3D.</source>
-        <translation>Потоковый сервер: клиент установил режим X3D.</translation>
-    </message>
-    <message>
-        <source>Error when initializing the animation recorder: %1</source>
-        <translation>Ошибка при инициализации средства записи анимации: %1</translation>
-    </message>
-    <message>
-        <source>Error when reloading world: %1.</source>
-        <translation>Ошибка при перезагрузке мира: %1.</translation>
-    </message>
-    <message>
-        <source>Streaming server: Cannot send world date to client [%1] because: %2.</source>
-        <translation>Потоковый сервер: невозможно отправить мировую дату клиенту [%1], потому что: %2.</translation>
-    </message>
-</context>
-<context>
-    <name>WbSFInt</name>
-    <message>
-        <source>Expected integer value, found %1</source>
-        <translation>Ожидалось целочисленное значение, обнаружено %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbWorld</name>
-    <message>
-        <source>Cannot copy &apos;x3d_playback.html&apos; to &apos;%1&apos;</source>
-        <translation>Не удается скопировать &quot;x3d_playback.html&quot; в &quot;%1&quot;</translation>
-    </message>
-    <message>
-        <source>Creating nodes</source>
-        <translation>Создаю узлы</translation>
-    </message>
-    <message>
-        <source>Cannot export html: &apos;%1&apos;</source>
-        <translation>Не удается экспортировать HTML: ​​&apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>Cannot export the x3d file to &apos;%1&apos;</source>
-        <translation>Не удается экспортировать файл x3d в ​​&apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos;: added missing %2 node.</source>
-        <translation>&apos;%1&apos;: добавлен отсутствующий узел %2.</translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos;: %2 node should be preferably included at position %3 instead of position %4.</source>
-        <translation>&apos;%1&apos;: желательно включить узел %2 в позицию %3 вместо позиции %4.</translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos;: found duplicate %2 node.</source>
-        <translation>&apos;%1&apos;: найден дубликат узла %2.</translation>
-    </message>
-    <message>
-        <source>Parsing nodes</source>
-        <translation>Разбираю узлы</translation>
-    </message>
-</context>
-<context>
-    <name>WbWorldInfo</name>
-    <message>
-        <source>&apos;gpsCoordinateSystem&apos; must either be &apos;local&apos; or &apos;WGS84&apos;. Reset to default value &apos;local&apos;.</source>
-        <translation>Поле &apos;gpsCoordinateSystem&apos; должно быть либо &apos;local&apos; , либо &apos;WGS84&apos;. Сброшено в  &apos;local&apos;.</translation>
-    </message>
-    <message>
-        <source>The &apos;northDirection&apos; field is deprecated, according to the &apos;coordinateSystem&apos; field, the north is aligned along the x-axis.</source>
-        <translation>Поле &apos;northDirection&apos; устарело, согласно полю &apos;coordinateSystem&apos;, север выравнивается по оси x.</translation>
-    </message>
-    <message>
-        <source>fast2d plugin are not supported anymore, if you don&apos;t want to simulate dynamic, you can use the built-in kinematic mode of Webots.</source>
-        <translation>Плагин fast2d больше не поддерживается, если вы не хотите имитировать динамику, используйте встроенный кинематический режим Webots.</translation>
-    </message>
-    <message>
-        <source>Please save and revert the world so that the change of coordinate system is taken into account when reloading procedural PROTO nodes.</source>
-        <translation>Cохраните и восстановите сцену, чтобы изменение системы координат учитывалось при перезагрузке процедурных узлов PROTO.</translation>
-    </message>
-    <message>
-        <source>The &apos;northDirection&apos; field is deprecated, please use the &apos;coordinateSystem&apos; field instead.</source>
-        <translation>Поле &apos;northDirection&apos; устарело, используйте вместо него поле &apos;coordinateSystem&apos;.</translation>
-    </message>
-    <message>
-        <source>A limit of &apos;%1&apos; threads is set in the preferences.</source>
-        <translation>В настройках установлено ограничение в &apos;%1&apos; потоков.</translation>
-    </message>
-    <message>
-        <source>Physics multi-threading is enabled. This can have a noticeable impact on the simulation speed (negative or positive depending on the simulated world). In case of multi-threading, simulation replicability is not guaranteed. </source>
-        <translation>Включена многопоточность физики. Это может оказать заметное влияние на скорость симуляции (отрицательное или положительное в зависимости от симулируемого мира). В случае многопоточности воспроизводимость симуляции не гарантируется. </translation>
-    </message>
-</context>
-<context>
-    <name>WbRotationalMotor</name>
-    <message>
-        <source>Feedback is available for motorized joints only</source>
-        <translation>Обратная связь доступна только для &quot;моторизованных&quot; шарниров</translation>
-    </message>
-    <message>
-        <source>Hinge2Joint is invalid: feedback is not available.</source>
-        <translation>Hinge2Joint некорректен: обратная связь недоступна.</translation>
-    </message>
-</context>
-<context>
-    <name>WbNodeEditor</name>
-    <message>
-        <source>USE count: %1</source>
-        <translation>Число USE: %1</translation>
-    </message>
-    <message>
-        <source>Triangle count: %1</source>
-        <translation>Число треугольников: %1</translation>
-    </message>
-    <message>
-        <source>This DEF string is already referred to by subsequent USE nodes. Applying this change will turn them into copies of the selected node.
-Do you want to continue?</source>
-        <translation>На эту строку DEF уже ссылаются последующие узлы USE. Если вы ее измените, эти узлы USE  будут преобразованы в копии данного узла.
-Продолжить?</translation>
-    </message>
-    <message>
-        <source>This DEF string is already used by subsequent DEF nodes. Applying this change will turn USE nodes of the selected node into copies of subsequent DEF node.
-Do you want to continue?</source>
-        <translation>Эту строку DEF уже используют последующие узлы DEF. Если вы ее измените, узлы USE выделенного узла будут преобразованы в копии последующего узла DEF.
-Продолжить?</translation>
-    </message>
-    <message>
-        <source>This DEF cannot be cleared because some USE nodes depend on it.</source>
-        <translation>Этот DEF нель очистить, на него ссылаются узлы REF.</translation>
-    </message>
-    <message>
-        <source>3D tools:</source>
-        <translation>3D инструменты:</translation>
-    </message>
-    <message>
-        <source>Triangle count: %1 (no shadow)</source>
-        <translation>Число треугольников: %1 (без теней)</translation>
-    </message>
-    <message>
-        <source>This DEF string is already used by subsequent USE and DEF nodes. Applying this change will modify all the USE nodes referring to previous node with same DEF name and USE nodes referring to the selected node.
-Do you want to continue?</source>
-        <translation>Эту строку DEF уже используют последующие узлы USE и DEF. Если вы ее измените, это повлияет на все узлы USE, ссылающиеся на предыдущий узел с таким же именем DEF и на узлы USE, ссылающиеся на выделенный узел.
-Продолжить?</translation>
-    </message>
-    <message>
-        <source>show resize handles</source>
-        <translation>показать &quot;ручки&quot; изменения размера</translation>
-    </message>
-    <message>
-        <source>DEF name change</source>
-        <translation>Изменние имени DEF</translation>
-    </message>
-</context>
-<context>
-    <name>WbWrenWindow</name>
-    <message>
-        <source>Webots requires OpenGL %1 while only OpenGL %2 can be initialized.
-Please check your GPU abilities and install the latest graphics drivers.
-Please do also check that your graphics hardware meets the requirements specified in the User Guide.</source>
-        <translation>Webots требует OpenGL %1, в то время как можно инициализировать только OpenGL %2.
-Пожалуйста, проверьте возможности своего графического процессора и установите последние версии графических драйверов.
-Также убедитесь, что ваше графическое оборудование соответствует требованиям, указанным в Руководстве пользователя.</translation>
-    </message>
-    <message>
-        <source>Webots could not initialize the rendering system.
-Please check your GPU abilities and install the latest graphics drivers.
-Please do also check that your graphics hardware meets the requirements specified in the User Guide.</source>
-        <translation>Webots не смог инициализировать систему рендеринга.
-Пожалуйста, проверьте возможности своего графического процессора и установите последние версии графических драйверов.
-Также убедитесь, что ваше графическое оборудование соответствует требованиям, указанным в Руководстве пользователя.</translation>
-    </message>
-</context>
-<context>
-    <name>WbMatter</name>
-    <message>
-        <source>&apos;name&apos; cannot be empty. Default node name &apos;%1&apos; is automatically set.</source>
-        <translation>&apos;name&apos; не может быть пустым. Автоматически установлено имя узла &quot;%1&quot;.</translation>
-    </message>
-    <message>
-        <source>A child to the Transform placed in &apos;boundingObject&apos; is expected.</source>
-        <translation>Ожидается, что узел Transform, помещенный в &apos;boundingObject&apos;, будет иметь дочерний элемент.</translation>
-    </message>
-    <message>
-        <source>A child in the Group placed in &apos;boundingObject&apos; is missing.</source>
-        <translation>Ожидается, что узел Group, помещенный в &apos;boundingObject&apos;, будет иметь дочерний элемент.</translation>
-    </message>
-    <message>
-        <source>A Transform node inside a &apos;boundingObject&apos; can only contain one Shape or one Geometry node. The child node is ignored.</source>
-        <translation>Узел Transform внутри &apos;boundingObject&apos; может содержать только один узел Shape или один узел Geometry. Дочерний узел игнорируется.</translation>
-    </message>
-    <message>
-        <source>A Transform node inside a &apos;boundingObject&apos; can only contain one child. Remaining children are ignored.</source>
-        <translation>Узел Transform внутри &apos;boundingObject&apos; может содержать только один дочерний элемент. Остальные узлы игнорируются.</translation>
-    </message>
-    <message>
-        <source>The &apos;scale&apos; field components of a Solid must be the same: y and z are reset to x.</source>
-        <translation>Компоненты поля &apos;scale&apos; узла Solid должны быть одинаковыми: y и z сбрасываются на x.</translation>
-    </message>
-</context>
-<context>
-    <name>WbNode</name>
-    <message>
-        <source> Skipped node in PROTO parameter &apos;%1&apos;.</source>
-        <translation> Пропущен узел в параметре PROTO &quot;%1&quot;.</translation>
-    </message>
-    <message>
-        <source>Skipped node: </source>
-        <translation>Пропущен узел: </translation>
-    </message>
-    <message>
-        <source> Skipped node: </source>
-        <translation> Пропущен узел: </translation>
-    </message>
-    <message>
-        <source>Wrong order of fields in the instance of PROTO %1: USE nodes might refer to the wrong DEF nodes</source>
-        <translation>Неправильный порядок полей в экземпляре PROTO %1: узлы USE могут ссылаться на неправильные узлы DEF</translation>
-    </message>
-    <message>
-        <source>Could not instantiate &apos;%1&apos; node: this class is not yet implemented in Webots.</source>
-        <translation>Не удалось создать экземпляр узла &quot;%1&quot;: этот класс еще не реализован в Webots.</translation>
-    </message>
-    <message>
-        <source>Parameter %1 not supported in PROTO %2</source>
-        <translation>Параметр %1 не поддерживается в PROTO %2</translation>
-    </message>
-    <message>
-        <source>Duplicated definition of field %1 in the instance of PROTO %2</source>
-        <translation>Дублированное определение поля %1 в экземпляре PROTO %2</translation>
-    </message>
-    <message>
-        <source> Using &apos;Slot&apos; nodes mechanism.</source>
-        <translation> Используем механизм узлов &apos;Slot&apos;.</translation>
-    </message>
-</context>
-<context>
-    <name>WbPlugin</name>
-    <message>
-        <source>&apos;%1&apos;: file does not exist.</source>
-        <translation>&apos;%1&apos;: файл не существует.</translation>
-    </message>
-    <message>
-        <source>Could not close dynamic library: &apos;%1&apos;</source>
-        <translation>Не удалось закрыть динамическую библиотеку: &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos;: cannot open DLL.</source>
-        <translation>&apos;%1&apos;: не удалось открыть DLL.</translation>
-    </message>
-    <message>
-        <source>Error while loading plugin: &apos;%1&apos;:</source>
-        <translation>Ошибка при загрузке плагина: &apos;%1&apos;:</translation>
-    </message>
-    <message>
-        <source>Plugin &apos;%1&apos; not found. Search in:</source>
-        <translation>Плагин &apos;%1&apos; не найден. Искали здесь:</translation>
-    </message>
-    <message>
-        <source>You need to implement this function to activate the &apos;%1&apos; plugin.</source>
-        <translation>Реализуйте эту функцию, чтобы плагин &apos;%1&apos; заработал.</translation>
-    </message>
-    <message>
-        <source>Function %1() missing in &apos;%2&apos;.</source>
-        <translation>Функция %1() отсутствует в &apos;%2&apos;.</translation>
-    </message>
-</context>
-<context>
-    <name>WbSpotLight</name>
-    <message>
-        <source>Invalid &apos;beamWidth&apos; changed to %1. The value should be less than or equal to &apos;cutOffAngle&apos;.</source>
-        <translation>Неверное значение поля &apos;beamWidth&apos; изменено на %1 . Значение должно быть меньше или равнo &apos;cutOffAngle&apos;.</translation>
-    </message>
-    <message>
-        <source>&apos;ambientIntensity&apos; and &apos;attenuation&apos; cannot differ from their default values at the same time. &apos;ambientIntensity&apos; was changed to 0.</source>
-        <translation>Поля &apos;ambientIntensity&apos; и &apos;attenuation&apos; не могут оба быть заданы отличными от их значений по умолчанию. Значение &apos;ambientIntensity&apos; изменено в 0.</translation>
-    </message>
-    <message>
-        <source>A quadratic &apos;attenuation&apos; should be preferred to have a realistic simulation of light. Only the third component of the &apos;attenuation&apos; field should be greater than 0.</source>
-        <translation>Квадратичный тип &apos;attenuation&apos; предпочителен для реалистичной симуляции света. Только 3-й компонент поля &apos;attenuation&apos; должен быть больше 0.</translation>
-    </message>
-    <message>
-        <source>Maximum number of active spotlights (%1) has been reached, newly added lights won&apos;t be rendered.</source>
-        <translation>Слишком много (более %1) активных &quot;прожекторов&quot;, вновь добавленные источники игнорируются.</translation>
-    </message>
-</context>
-<context>
-    <name>WbOpenSampleWorldDialog</name>
-    <message>
-        <source>Open Sample World</source>
-        <translation>Открыть сцену из примеров</translation>
-    </message>
-    <message>
-        <source>Find :</source>
-        <translation>Найти:</translation>
-    </message>
-    <message>
-        <source>Filter world names. Only the world names containing the given string are displayed in the tree below. Regular expressions can be used.</source>
-        <translation>Фильтр для имен сцен. Только сцены с именами, содержащими данную строку, отобразятся в дереве ниже. Можно использовать регулярные выражения.</translation>
-    </message>
-</context>
-<context>
-    <name>WbRobot</name>
-    <message>
-        <source>Cannot pin the robot to the static environment, because the robot window has not been shown once</source>
-        <translation>Невозможно закрепить робота в статической среде, так как окно робота не было показано ни разу</translation>
-    </message>
-    <message>
-        <source>The generic robot window is not found. Please check your Webots installation.</source>
-        <translation>Общее окно робота не найдено. Пожалуйста, проверьте установку Webots.</translation>
-    </message>
-    <message>
-        <source>Robot.controllerArgs data type changed from SFString to MFString in Webots R2020b. %1</source>
-        <translation>Тип данных Robot.controllerArgs изменен с SFString на MFString в Webots R2020b. %1</translation>
-    </message>
-    <message>
-        <source>The robot window library has not been found.</source>
-        <translation>Библиотека для &quot;окон робота&quot; не найдена.</translation>
-    </message>
-    <message>
-        <source>At least two devices are sharing the same name (&quot;%1&quot;) while unique names are required.</source>
-        <translation>По крайней мере два устройства используют одно и то же имя (&quot;%1&quot;). Имена устройств должны быть уникальны.</translation>
-    </message>
-    <message>
-        <source>Splitting arguments at space boundaries.</source>
-        <translation>Разделяем аргументов по пробелам.</translation>
-    </message>
-    <message>
-        <source>Unable to split arguments automatically, please update your world file manually.</source>
-        <translation>Не удалось автоматически разделить аргументы. Обновите файл сцены вручную.</translation>
-    </message>
-    <message>
-        <source>This Robot node is scaled: this is discouraged as it could compromise the correct physical behavior.</source>
-        <translation>Этот узел Robot отмасштабирован: этого лучше не делать, так как физическое поведение робота может быть неправильным.</translation>
-    </message>
-    <message>
-        <source>The remote control library has not been found.</source>
-        <translation>Библиотека удаленного управления не найдена.</translation>
-    </message>
-    <message>
-        <source>The robot &apos;window&apos; cannot be modified after the controller is initialized.</source>
-        <translation>&quot;Окно робота&quot; нельзя изменить после инициализации контроллера.</translation>
-    </message>
-    <message>
-        <source>&apos;wb_robot_battery_sensor_enable&apos; called while the &apos;battery&apos; field is empty.</source>
-        <translation>Функцию wb_robot_battery_sensor_enable() нельзя вызывать, если поле &apos;battery&apos; пусто.</translation>
-    </message>
-    <message>
-        <source>The controller directory has not been found, searched the following locations:</source>
-        <translation>Каталог контроллера не найден, искали в следующих местах:</translation>
-    </message>
-    <message>
-        <source>&apos;remoteControl&apos; cannot be modified after the controller is initialized.</source>
-        <translation>&quot;remoteControl&quot; не может быть изменен после инициализации контроллера.</translation>
-    </message>
-</context>
-<context>
-    <name>WbGeometry</name>
-    <message>
-        <source>This type of geometry node cannot be placed in &apos;boundingObject&apos;.</source>
-        <translation>Этот тип геометрического узла не может быть помещен в &apos;boundingObject&apos;.</translation>
+        <source>Quality:</source>
+        <translation>Качество:</translation>
     </message>
 </context>
 <context>
@@ -5792,259 +7159,18 @@ Please do also check that your graphics hardware meets the requirements specifie
     </message>
 </context>
 <context>
-    <name>WbRadar</name>
+    <name>WbViewpoint</name>
     <message>
-        <source>&apos;minRange&apos; is greater or equal to &apos;maxRange&apos;. Setting &apos;minRange&apos; to %1.</source>
-        <translation>Значение &apos;minRange&apos; больше или равно &apos;maxRange&apos;. Устанавливаем &apos;minRange&apos; в %1.</translation>
+        <source>&apos;near&apos; is greater than &apos;far&apos;. Setting &apos;near&apos; to %1.</source>
+        <translation>Значение &apos;near&apos; больше, чем &apos;far&apos;. Устанавливаем &apos;near&apos; = %1.</translation>
     </message>
     <message>
-        <source>&apos;minRange&apos; is greater or equal to &apos;maxRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
-        <translation>Значение &apos;minRange&apos; больше или равно &apos;maxRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
+        <source>&apos;far&apos; is less than &apos;near&apos;. Setting &apos;far&apos; to %1.</source>
+        <translation>Значение &apos;far&apos; меньше, чем &apos;near&apos;. Устанавливаем &apos;far&apos; = %1.</translation>
     </message>
     <message>
-        <source>&apos;maxRadialSpeed&apos; is less than or equal to &apos;minRadialSpeed&apos;. Setting &apos;maxRadialSpeed&apos; to %1.</source>
-        <translation>Значение &apos;maxRadialSpeed&apos; меньше или равно &apos;minRadialSpeed&apos;. Устанавливаем &apos;maxRadialSpeed&apos; в %1.</translation>
-    </message>
-    <message>
-        <source>&apos;maxRange&apos; is less or equal to &apos;minRange&apos;. Setting &apos;maxRange&apos; to %1.</source>
-        <translation>Значение &apos;maxRange&apos; меньше или равно &apos;minRange&apos;. Устанавливаем &apos;maxRange&apos; в %1.</translation>
-    </message>
-</context>
-<context>
-    <name>WbDisplay</name>
-    <message>
-        <source>Invalid &apos;%1&apos; font.</source>
-        <translation>Некорректный шрифт: &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Error while generating character &apos;%1&apos;.</source>
-        <translation>Ошибка при генерации символа &apos;%1&apos;.</translation>
-    </message>
-</context>
-<context>
-    <name>WbSpeaker</name>
-    <message>
-        <source>Impossible to play &apos;%1&apos;. Make sure the file format is supported (8 or 16 bits, mono or stereo wave).
-</source>
-        <translation>Невозможно воспроизвести &quot;%1&quot;. Убедитесь, что формат файла поддерживается (WAV, 8 или 16 бит, моно или стерео).
-</translation>
-    </message>
-    <message>
-        <source>Sound file &apos;%1&apos; not found. The sound file should be defined relatively to the controller, the PROTO or absolutely.
-</source>
-        <translation>Звуковой файл &quot;%1&quot; не найден. Путь к звуковому файлу должен быть задан относительно контроллера, PROTO или абсолютным путем.
-</translation>
-    </message>
-    <message>
-        <source>Cannot change directory to: &apos;%1&apos;</source>
-        <translation>Не удалось сменить папку на: &apos;%1&apos;</translation>
-    </message>
-</context>
-<context>
-    <name>WbDockTitleBar</name>
-    <message>
-        <source>Minimize the panel.</source>
-        <translation>Свернуть панель.</translation>
-    </message>
-    <message>
-        <source>Maximize the panel.</source>
-        <translation>Развернуть панель.</translation>
-    </message>
-    <message>
-        <source>Close the panel.</source>
-        <translation>Закрыть панель.</translation>
-    </message>
-    <message>
-        <source>Undock the panel.</source>
-        <translation>Отцепить (undock) панель.</translation>
-    </message>
-</context>
-<context>
-    <name>WbPointLight</name>
-    <message>
-        <source>&apos;ambientIntensity&apos; and &apos;attenuation&apos; cannot differ from their default values at the same time. &apos;ambientIntensity&apos; was changed to 0.</source>
-        <translation>Поля &apos;ambientIntensity&apos; и &apos;attenuation&apos; не могут оба быть заданы отличными от их значений по умолчанию. Значение &apos;ambientIntensity&apos; изменено в 0.</translation>
-    </message>
-    <message>
-        <source>Maximum number of active point lights (%1) has been reached, newly added lights won&apos;t be rendered.</source>
-        <translation>Слишком много (более %1) активных точечных источников света, вновь добавленные источники игнорируются.</translation>
-    </message>
-    <message>
-        <source>A quadratic &apos;attenuation&apos; should be preferred to have a realistic simulation of light. Only the third component of the &apos;attenuation&apos; field should be greater than 0.</source>
-        <translation>Квадратичный тип &apos;attenuation&apos; предпочителен для реалистичной симуляции света. Только 3-й компонент поля &apos;attenuation&apos; должен быть больше 0.</translation>
-    </message>
-</context>
-<context>
-    <name>WbTemplateEngine</name>
-    <message>
-        <source>Expected JavaScript closing token &apos;%1&apos; is missing.</source>
-        <translation>JavaScript: отсутствует ожидаемый закрывающий токен &quot;%1&quot;.</translation>
-    </message>
-    <message>
-        <source>failed to import JavaScript template: %1</source>
-        <translation>не удалось импортировать шаблон JavaScript: %1</translation>
-    </message>
-    <message>
-        <source>failed to execute JavaScript template: %1</source>
-        <translation>не удалось выполнить шаблон JavaScript: %1</translation>
-    </message>
-    <message>
-        <source>Installation error: Lua resources are not found</source>
-        <translation>Ошибка установки: ресурсы Lua не найдены</translation>
-    </message>
-    <message>
-        <source>luaL_dostring error : %1</source>
-        <translation>Ошибка luaL_dostring: %1</translation>
-    </message>
-    <message>
-        <source>Cannot change directory to: &apos;%1&apos;</source>
-        <translation>Не удалось сменить папку на: &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <source>Couldn&apos;t write jsTemplateFilled to disk.</source>
-        <translation>Не удалось записать jsTemplateFilled на диск.</translation>
-    </message>
-</context>
-<context>
-    <name>WbIndexedLineSet</name>
-    <message>
-        <source>A IndexedLineSet is used in a Bounding object using an asymmetric friction. IndexedLineSet does not support asymmetric friction</source>
-        <translation>Узел IndexedLineSet использован в boundingObject с асимметричным трением. &quot;IndexedLineSet&quot; такое не поддерживает</translation>
-    </message>
-    <message>
-        <source>A &apos;Coordinate&apos; node should be present in the &apos;coord&apos; field with at least two items.</source>
-        <translation>Узел  &apos;Coordinate&apos; должен присутствовать в поле &apos;coord&apos; как минимум с двумя элементами.</translation>
-    </message>
-    <message>
-        <source>The &apos;coordIndex&apos; field should have at least two items.</source>
-        <translation>Поле &apos;coordIndex&apos; должно содержать как минимум два элемента.</translation>
-    </message>
-    <message>
-        <source>The following indices are out of the range of coordinates specified in the &apos;IndexedLineSet.coord&apos; field: %1</source>
-        <translation>Следующие индексы находятся вне диапазона координат, указанных в поле IndexedLineSet.coord: %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbNodeOperations</name>
-    <message>
-        <source>Trying to import multiple nodes in the &apos;%1&apos; SFNode field. Only the first node will be inserted</source>
-        <translation>Попытка импортировать несколько узлов в поле &apos;%1&apos; узла SFNode. Будет вставлен только первый узел</translation>
-    </message>
-    <message>
-        <source>Invalid data, please verify mesh file (bone weights, normals, ...): %1</source>
-        <translation>Ошибочные данные, проверьте 3D-файл (веса &quot;костей&quot;, нормали и пр.): %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbSFColor</name>
-    <message>
-        <source>Expected positive color values in range [0.0, 1.0], found [%1 %2 %3]. SFColor field reset to [%4 %5 %6]</source>
-        <translation>Ожидалось значение цвета в диапазоне [0.0, 1.0], обнаружено  [%1 %2 %3]. Значение поля SFColor сброшено в [%4 %5 %6]</translation>
-    </message>
-    <message>
-        <source>Expected floating point value, found %1</source>
-        <translation>Ожидалось число с плавающей точкой, обнаружено %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbSlot</name>
-    <message>
-        <source>Invalid &apos;type&apos; changed to &apos;%1&apos;: %2</source>
-        <translation>Недопустимый &apos;type&apos; изменен на &apos;%1&apos;: %2</translation>
-    </message>
-</context>
-<context>
-    <name>WbVideoRecorderDialog</name>
-    <message>
-        <source>Resolution:</source>
-        <translation>Разрешение:</translation>
-    </message>
-    <message>
-        <source>Video acceleration:</source>
-        <translation>Видео ускорение:</translation>
-    </message>
-    <message>
-        <source>Choose video parameters</source>
-        <translation>Выберите параметры видео</translation>
-    </message>
-    <message>
-        <source>Video caption:</source>
-        <translation>Заголовок видео:</translation>
-    </message>
-    <message>
-        <source>Quality:</source>
-        <translation>Качество:</translation>
-    </message>
-</context>
-<context>
-    <name>WbNewProjectWizard</name>
-    <message>
-        <source>Please choose a name for the new world and select the features you want:</source>
-        <translation>Задайте имя для новой сцены и выберите нужные функции:</translation>
-    </message>
-    <message>
-        <source>New project creation</source>
-        <translation>Создание нового проекта</translation>
-    </message>
-    <message>
-        <source>Choose</source>
-        <translation>Выбрать</translation>
-    </message>
-    <message>
-        <source>Invalid new world name</source>
-        <translation>Неправильное имя новой сцены</translation>
-    </message>
-    <message>
-        <source>Please sepecify a world name.</source>
-        <translation>Задайте имя сцены.</translation>
-    </message>
-    <message>
-        <source>Create a Webots project directory</source>
-        <translation>Создать папку проекта Webots</translation>
-    </message>
-    <message>
-        <source>Invalid new project directory</source>
-        <translation>Недопустимая папка нового проекта</translation>
-    </message>
-    <message>
-        <source>It is not allowed to create a new project inside the Webots installation directory.</source>
-        <translation>Не разрешается создавать новый проект в папке установки Webots.</translation>
-    </message>
-    <message>
-        <source>World settings</source>
-        <translation>Настройки сцены</translation>
-    </message>
-    <message>
-        <source>Conclusion</source>
-        <translation>Завершение</translation>
-    </message>
-    <message>
-        <source>Please select another directory.</source>
-        <translation>Выберите другую папку.</translation>
-    </message>
-    <message>
-        <source>Please choose a directory for your new project:</source>
-        <translation>Пожалуйста, выберите папку для вашего нового проекта:</translation>
-    </message>
-    <message>
-        <source>File creation failed</source>
-        <translation>Не удалось создать файл</translation>
-    </message>
-    <message>
-        <source>The following directories and files will be created:</source>
-        <translation>Будут созданы следующие папки и файлы:</translation>
-    </message>
-    <message>
-        <source>Directory selection</source>
-        <translation>Выбор папки</translation>
-    </message>
-    <message>
-        <source>Some directories or files could not be created.</source>
-        <translation>Не удалось создать некоторые папки или файлы.</translation>
-    </message>
-    <message>
-        <source>This wizard will help you creating a new project.</source>
-        <translation>Этот мастер поможет вам создать новый проект.</translation>
+        <source>&apos;follow&apos; field is filled with an invalid Solid name.</source>
+        <translation>В поле &apos;follow&apos; указано имя, не соответствующее никакому узлу Solid.</translation>
     </message>
 </context>
 <context>
@@ -6067,557 +7193,26 @@ Please do also check that your graphics hardware meets the requirements specifie
     </message>
 </context>
 <context>
-    <name>WbField</name>
+    <name>WbWebotsUpdateDialog</name>
     <message>
-        <source>Duplicate field value.</source>
-        <translation>Дублируется имя поля.</translation>
+        <source>Check for updates...</source>
+        <translation>Проверить обновления...</translation>
     </message>
     <message>
-        <source>Invalid &apos;%1&apos; removed from &apos;%2&apos; field. The values should be in the list: {%3}.</source>
-        <translation>Неверное значение %2 удалено из поля %1. Значение должно быть в списке {%3}.</translation>
+        <source>Your version of Webots (%1) is up-to-date.</source>
+        <translation>Ваша версия Webots (%1) обновлена.</translation>
     </message>
     <message>
-        <source>Invalid &apos;%1&apos; changed to %2. The value should be in the list: {%3}.</source>
-        <translation>Неверное значение %2 поля %1. Значение должно быть в списке {%3}.</translation>
+        <source>Check for updates</source>
+        <translation>Проверить обновления</translation>
     </message>
-</context>
-<context>
-    <name>WbDamping</name>
     <message>
-        <source>&apos;linear&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;linear&apos; должно быть больше или равно нулю.</translation>
+        <source>Don&apos;t display this dialog again (you can re-enable it from the preferences)</source>
+        <translation>Больше не отображать это диалоговое окно (вы можете снова включить его в настройках)</translation>
     </message>
     <message>
-        <source>&apos;angular&apos; must be less than or equal to one.</source>
-        <translation>Значение &apos;angular&apos; должно быть меньше или равно 1.</translation>
-    </message>
-    <message>
-        <source>&apos;angular&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;angular&apos; должно быть больше или равно нулю.</translation>
-    </message>
-    <message>
-        <source>&apos;linear&apos; must be less than or equal to one.</source>
-        <translation>Значение &apos;linear&apos; должно быть меньше или равно 1.</translation>
-    </message>
-</context>
-<context>
-    <name>WbLens</name>
-    <message>
-        <source>Invalid &apos;center.y&apos; changed to 1. The value should be in the range [0;1].</source>
-        <translation>Неверное значение &apos;center.y&apos; заменено на 1. Значение должно быть в диапазоне [0;1].</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;center.x&apos; changed to 1. The value should be in the range [0;1].</source>
-        <translation>Неверное значение &apos;center.x&apos; заменено на 1. Значение должно быть в диапазоне [0;1].</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;center.y&apos; changed to 0. The value should be in the range [0;1].</source>
-        <translation>Неверное значение &apos;center.y&apos; заменено на 0. Значение должно быть в диапазоне [0;1].</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;center.x&apos; changed to 0. The value should be in the range [0;1].</source>
-        <translation>Неверное значение &apos;center.x&apos; заменено на 0. Значение должно быть в диапазоне [0;1].</translation>
-    </message>
-</context>
-<context>
-    <name>WbSliderJoint</name>
-    <message>
-        <source>SliderJoint &apos;maxStop&apos; must be greater or equal to LinearMotor &apos;maxPosition&apos;.</source>
-        <translation>Поле &apos;maxStop&apos; в SliderJoint не должно быть меньше поля &apos;maxPosition&apos; узла LinearMotor.</translation>
-    </message>
-    <message>
-        <source>SliderJoint &apos;minStop&apos; must be less or equal to LinearMotor &apos;minPosition&apos;.</source>
-        <translation>Поле &apos;minStop&apos; в SliderJoint не должно быть больше поля &apos;minPosition&apos; узла LinearMotor.</translation>
-    </message>
-</context>
-<context>
-    <name>WbSolidMerger</name>
-    <message>
-        <source>A Plane defined in &apos;boundingObject&apos; cannot be used with a Physics node.</source>
-        <translation>Плоскость, определенная в &apos;boundingObject&apos; не может быть использована с узлом Physics.</translation>
-    </message>
-</context>
-<context>
-    <name>WbPointSet</name>
-    <message>
-        <source>If a &apos;Color&apos; node is present in the &apos;color&apos; field, it should have the same number of component as the &apos;Coordinate&apos; node in the &apos;coord&apos; field.</source>
-        <translation>Если узел &apos;Color&apos; присутствует в поле &apos;color&apos;, он должен иметь столько же компонентов, сколько и в узле &apos;Coordinate&apos; в поле &apos;coord&apos;.</translation>
-    </message>
-    <message>
-        <source>A non-empty &apos;Coordinate&apos; node should be present in the &apos;coord&apos; field.</source>
-        <translation>Непустой узел &apos;Coordinate&apos; должен быь задан в поле &apos;coord&apos;.</translation>
-    </message>
-    <message>
-        <source>Only the %1 first points will be drawn.</source>
-        <translation>Только первые %1 точек будут отрисованы.</translation>
-    </message>
-</context>
-<context>
-    <name>WbFieldChecker</name>
-    <message>
-        <source>Invalid &apos;%1&apos; changed to %2. The value should be in range [%3, %4].</source>
-        <translation>Неверное значение %2 поля %1. Значение должно быть в диапазоне [%3, %4].</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;%1&apos; changed to %2. The value should be in range ]%3, %4[.</source>
-        <translation>Неверное значение %2 поля %1. Значение должно быть в диапазоне ]%3, %4[.</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;%1&apos; changed to %2. The value should be either %3 or non-negative.</source>
-        <translation>Неверное значение %2 поля %1. Значение должно быть %3 или неотрицательным.</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;%1&apos; changed to %2. The value should be %3 or greater.</source>
-        <translation>Неверное значение %2 поля %1. Значение должно быть %3 или больше.</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;%1&apos; changed to %2. The value should be positive.</source>
-        <translation>Неверное значение %2 поля %1. Значение должно быть  положительным.</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;%1&apos; changed to %2. The value should be either %3 or positive.</source>
-        <translation>Неверное значение %2 поля %1. Значение должно быть %3 или положительным.</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;%1&apos; changed to %2. The value should be %3 or less.</source>
-        <translation>Неверное значение %2 поля %1. Значение должно быть %3 или меньше.</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;%1&apos; changed to %2. The value should be in either %3 or in range [%4, %5].</source>
-        <translation>Неверное значение %2 поля %1. Значение должно быть %3 или в диапазоне [%4, %5].</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;%1&apos; changed to %2. The value should be non-negative.</source>
-        <translation>Неверное значение %2 поля %1. Значение должно быть неотрицательным.</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;%1&apos; changed to %2.</source>
-        <translation>Неверное значение %2 поля %1.</translation>
-    </message>
-    <message>
-        <source>Invalid item %1 of &apos;%2&apos; changed to %3.</source>
-        <translation>Неверный элемент значения %2 поля %1 изменен на %3.</translation>
-    </message>
-</context>
-<context>
-    <name>WbTextEditor</name>
-    <message>
-        <source>Text Editor</source>
-        <translation>Текстовый редактор</translation>
-    </message>
-    <message>
-        <source>Save as...</source>
-        <translation>Сохранить как...</translation>
-    </message>
-    <message>
-        <source>Open File...</source>
-        <translation>Открыть файл...</translation>
-    </message>
-    <message>
-        <source>All Files (*)</source>
-        <translation>Все файлы (*)</translation>
-    </message>
-    <message>
-        <source>The file &apos;%1&apos; is not saved.
-Do you want to save it before closing?</source>
-        <translation>Файл &quot;%1&quot; не сохранен.
-Вы хотите сохранить его перед закрытием?</translation>
-    </message>
-    <message>
-        <source>Question</source>
-        <translation>Вопрос</translation>
-    </message>
-    <message>
-        <source>Print Document</source>
-        <translation>Распечатать документ</translation>
-    </message>
-</context>
-<context>
-    <name>WbPropeller</name>
-    <message>
-        <source>Adds a Physics node to Solid ancestors to enable thrust and torque effect.</source>
-        <translation>Добавляет узел Physics к предкам Solid, чтобы включить эффект тяги и крутящего момента.</translation>
-    </message>
-    <message>
-        <source>&apos;shaftAxis&apos;cannot be zero. Defaults to %1 %2 %3</source>
-        <translation>&apos;shaftAxis&apos; не может быть нулем. Установлено %1 %2 %3</translation>
-    </message>
-</context>
-<context>
-    <name>WbApplication</name>
-    <message>
-        <source>Could not create a symbolic link of dynamic library: &apos;%1&apos;.</source>
-        <translation>Не могу открыть ссылку на динамическую библиотеку: &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Reading world file </source>
-        <translation>Читаем файл сцены </translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos;: Failed to load due to invalid token(s).</source>
-        <translation>&apos;%1&apos;: Файл не загрузился из-за ошибочной лексемы.</translation>
-    </message>
-    <message>
-        <source>&apos;%1&apos;: Failed to load due to syntax error(s).</source>
-        <translation>&apos;%1&apos;: Файл не загрузился из-за синтаксических ошибок.</translation>
-    </message>
-    <message>
-        <source>Could not open file: &apos;%1&apos;. The world file extension must be &apos;.wbt&apos;.</source>
-        <translation>Не могу открыть файл: &apos;%1&apos;. Файл сцены должен иметь расширение &apos;.wbt&apos;.</translation>
-    </message>
-    <message>
-        <source>Could not open file: &apos;%1&apos;.</source>
-        <translation>Не могу открыть файл: &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Parsing world</source>
-        <translation>Анализируем сцену</translation>
-    </message>
-</context>
-<context>
-    <name>WbAbstractCamera</name>
-    <message>
-        <source>Invalid &apos;fieldOfView&apos; changed to 0.7854. The field of view is limited to pi if the &apos;spherical&apos; field is FALSE.</source>
-        <translation>Некорректное значение &apos;fieldOfView&apos; заменено на 0.7854. Поле зрения ограничено &apos;pi&apos;, если поле &apos;spherical&apos; = FALSE.</translation>
-    </message>
-    <message>
-        <source>Cannot allocate shared memory. The shared memory is required for the cameras. The shared memory of your OS is probably full. Please check your shared memory setup.</source>
-        <translation>Не удалось выделить общей памяти, необхоимой для работы камер. Вероятно, в вашей ОС не хватает общей памяти - проверяйте настройки системы.</translation>
-    </message>
-</context>
-<context>
-    <name>WbSFDouble</name>
-    <message>
-        <source>Expected floating point value, found %1</source>
-        <translation>Ожидалось число с плавающей точкой, обнаружено %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbSFRotation</name>
-    <message>
-        <source>Expected floating point value, found %1</source>
-        <translation>Ожидалось число с плавающей точкой, обнаружено %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbSFVector2</name>
-    <message>
-        <source>Expected floating point value, found %1</source>
-        <translation>Ожидалось число с плавающей точкой, обнаружено %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbSFVector3</name>
-    <message>
-        <source>Expected floating point value, found %1</source>
-        <translation>Ожидалось число с плавающей точкой, обнаружено %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbTouchSensor</name>
-    <message>
-        <source>&quot;force&quot; and &quot;force-3d&quot; &apos;type&apos; requires &apos;physics&apos; to be functional.</source>
-        <translation>Типы &quot;force&quot; и &quot;force-3d&quot; требуют, чтобы &quot;физика&quot; была настроена.</translation>
-    </message>
-    <message>
-        <source>Unknown &apos;type&apos;: &quot;%1&quot;. Set to &quot;bumper&quot;</source>
-        <translation>Неизвестный &quot;тип&quot;: &quot;%1&quot;. Присвоен тип &quot;bumper&quot;</translation>
-    </message>
-</context>
-<context>
-    <name>WbRobotWindow</name>
-    <message>
-        <source>No dockable HTML robot window is set in the &apos;window&apos; field.</source>
-        <translation>В поле &apos;window&apos; не задано закрепляемое HTML-окно робота.</translation>
-    </message>
-    <message>
-        <source>Unable to load %1.</source>
-        <translation>Не удалось загрузить %1.</translation>
-    </message>
-</context>
-<context>
-    <name>WbFog</name>
-    <message>
-        <source>Only one Fog node is allowed. Only the first Fog node will be taken into account.</source>
-        <translation>Разрешен только один узел &apos;Fog&apos;. Только первый такой узел будет отработан, остальные игнорируются.</translation>
-    </message>
-    <message>
-        <source>Unknown &apos;fogType&apos;: &quot;%1&quot;. Set to &quot;LINEAR&quot;</source>
-        <translation>Неизвестное значение &apos;fogType&apos;: &quot;%1&quot;. Установлено в &quot;LINEAR&quot;</translation>
-    </message>
-</context>
-<context>
-    <name>WbFluid</name>
-    <message>
-        <source>&apos;viscosity&apos; must be greater than or equal to zero. Reset to default value 0.001 kg/(ms)</source>
-        <translation>Значение &apos;viscosity&apos; должно быть неотрицательным. Сброшено в значение по умолчанию 0.001 kg/(ms)</translation>
-    </message>
-    <message>
-        <source>&apos;density&apos; must be greater than or equal to zero. Reset to default value 1000 kg/m^3</source>
-        <translation>Значение &apos;density&apos; должно быть неотрицательным. Сброшено в значение по умолчанию 1000 кг/м^3</translation>
-    </message>
-</context>
-<context>
-    <name>WbJoystickInterface</name>
-    <message>
-        <source>Joystick not accessible.</source>
-        <translation>Джойстик недоступен.</translation>
-    </message>
-    <message>
-        <source>No free joystick found.</source>
-        <translation>Свободный джойстик не найден.</translation>
-    </message>
-</context>
-<context>
-    <name>WbFocus</name>
-    <message>
-        <source>Invalid &apos;minFocalDistance&apos; changed to %1. The value should be smaller or equal to &apos;maxFocalDistance&apos;.</source>
-        <translation>Неверное значение %1 поля &apos;minFocalDistance&apos;. Значение должно быть меньше или равнo &apos;maxFocalDistance&apos;.</translation>
-    </message>
-    <message>
-        <source>Invalid &apos;maxFocalDistance&apos; changed to %1. The value should be bigger or equal to &apos;minFocalDistance&apos;.</source>
-        <translation>Неверное значение %1 поля &apos;maxFocalDistance&apos;. Значение должно быть больше или равнo &apos;minFocalDistance&apos;.</translation>
-    </message>
-</context>
-<context>
-    <name>WbJointParameters</name>
-    <message>
-        <source>&apos;maxStop&apos; must be greater than or equal to &apos;position&apos;.</source>
-        <translation>Значение &apos;maxStop&apos; должно быть больше или равно значению поля &apos;position&apos;.</translation>
-    </message>
-    <message>
-        <source>&apos;staticFriction&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;staticFriction&apos; должно быть больше или равно нулю.</translation>
-    </message>
-    <message>
-        <source>&apos;dampingConstant&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;dampingConstant&apos; должно быть больше или равно нулю.</translation>
-    </message>
-    <message>
-        <source>&apos;springConstant&apos; must be greater than or equal to zero.</source>
-        <translation>Значение &apos;springConstant&apos; должно быть больше или равно нулю.</translation>
-    </message>
-    <message>
-        <source>&apos;minStop&apos; must be less than or equal to &apos;position&apos;.</source>
-        <translation>Значение &apos;minStop&apos; должно быть меньше или равно значению поля &apos;position&apos;.</translation>
-    </message>
-    <message>
-        <source>&apos;axis&apos; must be non zero.</source>
-        <translation>Значение &apos;axis&apos; должно быть ненулевым.</translation>
-    </message>
-</context>
-<context>
-    <name>WbConsole</name>
-    <message>
-        <source>Console Name</source>
-        <translation>Имя Консоли</translation>
-    </message>
-    <message>
-        <source>New name:</source>
-        <translation>Новое имя:</translation>
-    </message>
-    <message>
-        <source>Console</source>
-        <translation>Консоль</translation>
-    </message>
-</context>
-<context>
-    <name>WbMesh</name>
-    <message>
-        <source>This file doesn&apos;t contain any mesh.</source>
-        <translation>Файл не содержит полигональной сетки.</translation>
-    </message>
-    <message>
-        <source>Cannot create IndexedFaceSet because: &quot;%1&quot;.</source>
-        <translation>Не удалось создать IndexedFaceSet по причине: &quot;%1&quot;.</translation>
-    </message>
-    <message>
-        <source>Invalid data, please verify mesh file (bone weights, normals, ...): %1</source>
-        <translation>Ошибочные данные, проверьте 3D-файл (веса &quot;костей&quot;, нормали и пр.): %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbPhysicsPlugin</name>
-    <message>
-        <source>Can&apos;t change directory to: &apos;%1&apos;.</source>
-        <translation>Не удалось сменить папку на: &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Could not find physics_special_init() in &apos;%1&apos; plugin.</source>
-        <translation>Не найдена функция physics_special_init() в плагине &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <source>Can&apos;t find plugin directory: &apos;%1&apos;.</source>
-        <translation>Не найдена папка с плагином: &apos;%1&apos;.</translation>
-    </message>
-</context>
-<context>
-    <name>WbDownloader</name>
-    <message>
-        <source>Downloading assets</source>
-        <translation>Скачиваем ресурсы</translation>
-    </message>
-    <message>
-        <source>Cannot download %1: %2</source>
-        <translation>Не удается скачать %1: %2</translation>
-    </message>
-</context>
-<context>
-    <name>WbLinearMotor</name>
-    <message>
-        <source>Force feedback is not available for a LinearMotor node inside a Track node.</source>
-        <translation>Силовая обратная связь недоступна для узла LinearMotor внутри узла Track.</translation>
-    </message>
-    <message>
-        <source>Force feedback is available for motorized joints only</source>
-        <translation>Обратная связь доступна только для &quot;моторизованных&quot; шарниров</translation>
-    </message>
-</context>
-<context>
-    <name>WbPositionViewer</name>
-    <message>
-        <source>Relative to %1 (depth level %2)</source>
-        <translation>Относительно %1 (уровень глубины %2)</translation>
-    </message>
-    <message>
-        <source>Select relatively to which solid the position should be measured</source>
-        <translation>Выберите Solid, относительно которого нужно измерять положение</translation>
-    </message>
-    <message>
-        <source>Absolute</source>
-        <translation>Абсолютно</translation>
-    </message>
-    <message>
-        <source>Position:</source>
-        <translation>Положение:</translation>
-    </message>
-    <message>
-        <source>Rotation:</source>
-        <translation>Поворот:</translation>
-    </message>
-    <message>
-        <source>Relative to %1</source>
-        <translation>Относительно %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbSFBool</name>
-    <message>
-        <source>Expected boolean value, found %1</source>
-        <translation>Ожидалось булевское значение, обнаружено %1</translation>
-    </message>
-</context>
-<context>
-    <name>WbDistanceSensor</name>
-    <message>
-        <source>&apos;type&apos; &quot;laser&quot; must have one single ray.</source>
-        <translation>Датчик с типом &quot;laser&quot; должен иметь ровно один луч.</translation>
-    </message>
-</context>
-<context>
-    <name>WbCapsule</name>
-    <message>
-        <source>A Capsule is used in a Bounding object using an asymmetric friction. Capsule does not support asymmetric friction</source>
-        <translation>Узел Capsule использован в boundingObject с асимметричным трением. &quot;Капсула&quot; такое не поддерживает</translation>
-    </message>
-    <message>
-        <source>&apos;radius&apos; must be positive when used in a &apos;boundingObject&apos;.</source>
-        <translation>Значение &apos;radius&apos; должно быть положительным при использовании в &apos;boundingObject&apos;.</translation>
-    </message>
-    <message>
-        <source>&apos;subdivision&apos; value has no effect to physical &apos;boundingObject&apos; geometry. A minimum value of %2 is used for the representation.</source>
-        <translation>Значение &apos;subdivision&apos; не влияет на расчет &apos;boundingObject&apos;. Для отображения используется минимальное значение %2.</translation>
-    </message>
-    <message>
-        <source>&apos;height&apos; must be positive when used in a &apos;boundingObject&apos;.</source>
-        <translation>Значение &apos;height&apos; должно быть положительным при использовании в &apos;boundingObject&apos;.</translation>
-    </message>
-</context>
-<context>
-    <name>WbLed</name>
-    <message>
-        <source>No PBRAppearance, Material and no Light found. The first child of a LED should be either a Shape, a Light or a Group containing Shape and Light nodes.</source>
-        <translation>Узлы PBRAppearance, Material и Light не найдены. Первый дочерний элемент узла LED должен быть Shape, Light, либо Group, содержащей Shape и/или Light.</translation>
-    </message>
-    <message>
-        <source>Too many colors defined for a gradual LED.</source>
-        <translation>Слишком много цветов определено для LED с плавной регулировкой.</translation>
-    </message>
-</context>
-<context>
-    <name>WbTemplateManager</name>
-    <message>
-        <source>Template regeneration failed. Unsupported node type.</source>
-        <translation>Ошибка регенерации шаблона. Неподдерживаемый тип узла.</translation>
-    </message>
-    <message>
-        <source>Template regeneration failed. The node cannot be generated.</source>
-        <translation>Ошибка регенерации шаблона. Узел не может быть создан.</translation>
-    </message>
-</context>
-<context>
-    <name>WbBasicJoint</name>
-    <message>
-        <source>Joint node defined in PROTO field is used multiple times. Webots doesn&apos;t fully support this because the multiple node instances cannot be identical.</source>
-        <translation>Узел Joint, определенный в поле PROTO, использован несколько раз. Webots не вполне это поддерживает, поскольку несколько экземпляров могут не быть идентичными.</translation>
-    </message>
-</context>
-<context>
-    <name>WbTransform</name>
-    <message>
-        <source>The first child of a Transform placed in &apos;boundingObject&apos; must be a Geometry or a Shape filled with a Geometry.</source>
-        <translation>Если в &apos;boundingObject&apos; помещен узел Transform, то его первым дочерним узлом должен быть узел Geometry или узел Shape, c заполненным полем Geometry.</translation>
-    </message>
-    <message>
-        <source>A Transform placed in &apos;boundingObject&apos; needs a Geometry or Shape as its first child to be valid.</source>
-        <translation>Узел Transform, в &apos;boundingObject&apos;, должен иметь первым узлом в Children или Geometry или Shape.</translation>
-    </message>
-    <message>
-        <source>A Transform placed inside a &apos;boundingObject&apos; can only contain one child. Remaining children are ignored.</source>
-        <translation>Узел Transform, в &apos;boundingObject&apos;, может содержать в Children только один дочерний узел. Остальные &quot;дети&quot; игнорируются.</translation>
-    </message>
-</context>
-<context>
-    <name>WbRotationEditor</name>
-    <message>
-        <source>Normalize</source>
-        <translation>Нормализовать</translation>
-    </message>
-</context>
-<context>
-    <name>WbPreferences</name>
-    <message>
-        <source>If the error persists, please check your access rights on file:</source>
-        <translation>Если ошибка сохраняется, проверьте свои права доступа к файлу:</translation>
-    </message>
-    <message>
-        <source>Errors when accessing the preferences file.</source>
-        <translation>Ошибки при доступе к файлу с настройками.</translation>
-    </message>
-    <message>
-        <source>
-Preferences file cannot be overwritten.
-Any change to the current settings won&apos;t be restored at next Webots start.
-
-Please check the write permissions on file:
-&quot;%1&quot;</source>
-        <translation>
-Не удалось перезаписать файл настроек.
-Любые изменения в настройках будут потеряны при следующем зауске Webots.
-
-Проверьте свои права доступа к файлу:
-&quot;%1&quot;</translation>
-    </message>
-</context>
-<context>
-    <name>WbSphere</name>
-    <message>
-        <source>&apos;radius&apos; must be positive when used in &apos;boundingObject&apos;.</source>
-        <translation>Значение &apos;radius&apos; должно быть положительным при использовании в &apos;boundingObject&apos;.</translation>
-    </message>
-    <message>
-        <source>A Sphere is used in a Bounding object using an asymmetric friction. Sphere does not support asymmetric friction</source>
-        <translation>Узел Sphere использован в boundingObject с асимметричным трением. &quot;Sphere&quot; такое не поддерживает</translation>
+        <source>&lt;b&gt;A new version of Webots is available.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Webots %1 is available for download (you are currently using Webots %2).&lt;br/&gt;Download the new version: &lt;a href=&quot;https://cyberbotics.com/download&quot;&gt;https://cyberbotics.com/download&lt;/a&gt;&lt;br/&gt;Check the changelog: &lt;a href=&quot;https://cyberbotics.com/doc/reference/changelog&quot;&gt;https://cyberbotics.com/doc/reference/changelog&lt;/a&gt;</source>
+        <translation>&lt;b&gt;Доступна новая версия Webots.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Webots %1 доступна для скачивания (в настоящее время вы используете Webots %2).&lt;br/&gt;Загрузите новую версию: &lt; a href=&quot;https://cyberbotics.com/download&quot;&gt;https://cyberbotics.com/download&lt;/a&gt;&lt;br/&gt;Проверьте журнал изменений: &lt;a href=&quot;https://cyberbotics.com/doc /reference/changelog&quot;&gt;https://cyberbotics.com/doc/reference/changelog&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -6632,118 +7227,145 @@ Please check the write permissions on file:
     </message>
 </context>
 <context>
-    <name>WbShape</name>
+    <name>WbWorld</name>
     <message>
-        <source>Please specify &apos;geometry&apos; field (of Shape placed in &apos;boundingObject&apos;).</source>
-        <translation>Нужно определить поле &apos;geometry&apos; (для узла Shape, помещенного в boundingObject).</translation>
+        <source>Cannot copy &apos;x3d_playback.html&apos; to &apos;%1&apos;</source>
+        <translation>Не удается скопировать &quot;x3d_playback.html&quot; в &quot;%1&quot;</translation>
+    </message>
+    <message>
+        <source>Creating nodes</source>
+        <translation>Создаю узлы</translation>
+    </message>
+    <message>
+        <source>Cannot export html: &apos;%1&apos;</source>
+        <translation>Не удается экспортировать HTML: ​​&apos;%1&apos;</translation>
+    </message>
+    <message>
+        <source>Cannot export the x3d file to &apos;%1&apos;</source>
+        <translation>Не удается экспортировать файл x3d в ​​&apos;%1&apos;</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos;: added missing %2 node.</source>
+        <translation>&apos;%1&apos;: добавлен отсутствующий узел %2.</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos;: %2 node should be preferably included at position %3 instead of position %4.</source>
+        <translation>&apos;%1&apos;: желательно включить узел %2 в позицию %3 вместо позиции %4.</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos;: found duplicate %2 node.</source>
+        <translation>&apos;%1&apos;: найден дубликат узла %2.</translation>
+    </message>
+    <message>
+        <source>Parsing nodes</source>
+        <translation>Разбираю узлы</translation>
+    </message>
+    <message>
+        <source>Cannot copy the &apos;x3d_playback.css&apos; file to &apos;%1&apos;</source>
+        <translation>Не удается скопировать файл &quot;x3d_playback.css&quot; в &quot;%1&quot;</translation>
     </message>
 </context>
 <context>
-    <name>WbCharger</name>
+    <name>WbWorldInfo</name>
     <message>
-        <source>No Material and no Light found. The first child of a Charger should be either a Shape, a Light or a Group containing Shape and Light nodes.</source>
-        <translation>Не найден материал или источник света. Первым в Charger.children должен быть Shape, Light или Group, их содержащая.</translation>
+        <source>&apos;gpsCoordinateSystem&apos; must either be &apos;local&apos; or &apos;WGS84&apos;. Reset to default value &apos;local&apos;.</source>
+        <translation>Поле &apos;gpsCoordinateSystem&apos; должно быть либо &apos;local&apos; , либо &apos;WGS84&apos;. Сброшено в  &apos;local&apos;.</translation>
+    </message>
+    <message>
+        <source>The &apos;northDirection&apos; field is deprecated, according to the &apos;coordinateSystem&apos; field, the north is aligned along the x-axis.</source>
+        <translation>Поле &apos;northDirection&apos; устарело, согласно полю &apos;coordinateSystem&apos;, север выравнивается по оси x.</translation>
+    </message>
+    <message>
+        <source>fast2d plugin are not supported anymore, if you don&apos;t want to simulate dynamic, you can use the built-in kinematic mode of Webots.</source>
+        <translation>Плагин fast2d больше не поддерживается, если вы не хотите имитировать динамику, используйте встроенный кинематический режим Webots.</translation>
+    </message>
+    <message>
+        <source>Please save and revert the world so that the change of coordinate system is taken into account when reloading procedural PROTO nodes.</source>
+        <translation>Cохраните и восстановите сцену, чтобы изменение системы координат учитывалось при перезагрузке процедурных узлов PROTO.</translation>
+    </message>
+    <message>
+        <source>The &apos;northDirection&apos; field is deprecated, please use the &apos;coordinateSystem&apos; field instead.</source>
+        <translation>Поле &apos;northDirection&apos; устарело, используйте вместо него поле &apos;coordinateSystem&apos;.</translation>
+    </message>
+    <message>
+        <source>A limit of &apos;%1&apos; threads is set in the preferences.</source>
+        <translation>В настройках установлено ограничение в &apos;%1&apos; потоков.</translation>
+    </message>
+    <message>
+        <source>Physics multi-threading is enabled. This can have a noticeable impact on the simulation speed (negative or positive depending on the simulated world). In case of multi-threading, simulation replicability is not guaranteed. </source>
+        <translation>Включена многопоточность физики. Это может оказать заметное влияние на скорость симуляции (отрицательное или положительное в зависимости от симулируемого мира). В случае многопоточности воспроизводимость симуляции не гарантируется. </translation>
     </message>
 </context>
 <context>
-    <name>WbPlane</name>
+    <name>WbWrenCamera</name>
     <message>
-        <source>All &apos;size&apos; components must be positive for a Plane used in a &apos;boundingObject&apos;.</source>
-        <translation>Все компоненты поля &apos;size&apos; должно быть положительными при использовании Plane в &apos;boundingObject&apos;.</translation>
+        <source>Noise mask can only be applied to RGB non-spherical cameras</source>
+        <translation>Маска шума может быть применена только к несферическим камерам RGB</translation>
+    </message>
+    <message>
+        <source>Cannot open noise mask file: &apos;%1&apos;</source>
+        <translation>Не удается открыть файл маски шума: &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <source>Cannot load &apos;%1&apos;: %2</source>
+        <translation>Не удалось загрузить &apos;%1&apos;: %2</translation>
     </message>
 </context>
 <context>
-    <name>WbCylinder</name>
+    <name>WbWrenWindow</name>
     <message>
-        <source>&apos;radius&apos; must be positive when used in a &apos;boundingObject&apos;.</source>
-        <translation>Значение &apos;radius&apos; должно быть положительным при использовании в &apos;boundingObject&apos;.</translation>
+        <source>Webots requires OpenGL %1 while only OpenGL %2 can be initialized.
+Please check your GPU abilities and install the latest graphics drivers.
+Please do also check that your graphics hardware meets the requirements specified in the User Guide.</source>
+        <translation>Webots требует OpenGL %1, в то время как можно инициализировать только OpenGL %2.
+Пожалуйста, проверьте возможности своего графического процессора и установите последние версии графических драйверов.
+Также убедитесь, что ваше графическое оборудование соответствует требованиям, указанным в Руководстве пользователя.</translation>
     </message>
     <message>
-        <source>&apos;subdivision&apos; value has no effect to physical &apos;boundingObject&apos; geometry. A minimum value of %2 is used for the representation.</source>
-        <translation>Значение &apos;subdivision&apos; не влияет на расчет &apos;boundingObject&apos;. Для отображения используется минимальное значение %2.</translation>
-    </message>
-    <message>
-        <source>&apos;height&apos; must be positive when used in a &apos;boundingObject&apos;.</source>
-        <translation>Значение &apos;height&apos; должно быть положительным при использовании в &apos;boundingObject&apos;.</translation>
-    </message>
-</context>
-<context>
-    <name>WbBox</name>
-    <message>
-        <source>&apos;size&apos; must be positive: construction of the Box in &apos;boundingObject&apos; failed.</source>
-        <translation>Значения &apos;size&apos; должно быть положительными: не удалось создать Box в &apos;boundingObject&apos;.</translation>
-    </message>
-    <message>
-        <source>All &apos;size&apos; components must be positive for a Box used in a &apos;boundingObject&apos;.</source>
-        <translation>Все компоненты поля &apos;size&apos; должно быть положительными при использовании Box в &apos;boundingObject&apos;.</translation>
+        <source>Webots could not initialize the rendering system.
+Please check your GPU abilities and install the latest graphics drivers.
+Please do also check that your graphics hardware meets the requirements specified in the User Guide.</source>
+        <translation>Webots не смог инициализировать систему рендеринга.
+Пожалуйста, проверьте возможности своего графического процессора и установите последние версии графических драйверов.
+Также убедитесь, что ваше графическое оборудование соответствует требованиям, указанным в Руководстве пользователя.</translation>
     </message>
 </context>
 <context>
-    <name>WbIndexedFaceSet</name>
+    <name>WbX3dStreamingServer</name>
     <message>
-        <source>Cannot create IndexedFaceSet because: &quot;%1&quot;.</source>
-        <translation>Невозможно создать IndexedFaceSet, потому что: &quot;%1&quot;.</translation>
+        <source>Streaming server received unsupported MJPEG message: &apos;%1&apos;. You should run Webots with the &apos;--stream=&quot;mode=mjpeg&quot;&apos; command line option.</source>
+        <translation>Потоковый сервер получил неподдерживаемое сообщение MJPEG: «%1». Вы должны запускать Webots с опцией командной строки &apos;--stream=&quot;mode=mjpeg&quot;&apos;.</translation>
     </message>
     <message>
-        <source>Normal values can&apos;t be null.</source>
-        <translation>Значения нормалей не могут быть нулевыми.</translation>
-    </message>
-</context>
-<context>
-    <name>WbDirectionalLight</name>
-    <message>
-        <source>Maximum number of directional lights (%1) has been reached, newly added lights won&apos;t be rendered.</source>
-        <translation>Слишком много направленных источников света (максимально %1), лишние источники игнорируются.</translation>
-    </message>
-</context>
-<context>
-    <name>WbImageTexture</name>
-    <message>
-        <source>Cannot save texture with reduced quality to temporary file &apos;%1&apos;.</source>
-        <translation>Не удалось сохранить текстуру с уменьшенным качеством во временный файл &apos;%1&apos;.</translation>
+        <source>Streaming server: Client set mode to X3D.</source>
+        <translation>Потоковый сервер: клиент установил режим X3D.</translation>
     </message>
     <message>
-        <source>Cannot load texture &apos;%1&apos;: %2.</source>
-        <translation>Не удалось загрузить текстуру &apos;%1&apos;: %2.</translation>
+        <source>Error when initializing the animation recorder: %1</source>
+        <translation>Ошибка при инициализации средства записи анимации: %1</translation>
     </message>
     <message>
-        <source>Texture image size of &apos;%1&apos; is not a power of two: rescaling it from %2x%3 to %4x%5.</source>
-        <translation>Пиксельный размер текстуры &apos;%1&apos; не степень двойки: масштабируем с %2x%3 до %4x%5.</translation>
+        <source>Error when reloading world: %1.</source>
+        <translation>Ошибка при перезагрузке мира: %1.</translation>
+    </message>
+    <message>
+        <source>Streaming server: Cannot send world date to client [%1] because: %2.</source>
+        <translation>Потоковый сервер: невозможно отправить мировую дату клиенту [%1], потому что: %2.</translation>
+    </message>
+    <message>
+        <source>Cannot send the entire world</source>
+        <translation>Не могу отправить весь мир</translation>
     </message>
 </context>
 <context>
-    <name>WbSFString</name>
+    <name>WbZoom</name>
     <message>
-        <source>Expected string value, found %1</source>
-        <translation>Ожидалось строковое значение, обнаружено %1</translation>
+        <source>Invalid &apos;maxFieldOfView&apos; changed to %1. The value should be bigger or equal to &apos;minFieldOfView&apos;.</source>
+        <translation>Недопустимый &apos;maxFieldOfView&apos; изменен на %1. Значение должно быть меньше или равно &apos;minFieldOfView&apos;.</translation>
     </message>
-</context>
-<context>
-    <name>WbAccelerometer</name>
     <message>
-        <source>Parent of Accelerometer node has no physics: measurements may be wrong.</source>
-        <translation>В родительский узле &quot;акселерометра&quot; не включена физика: измерения могут быть неправильными.</translation>
-    </message>
-</context>
-<context>
-    <name>WbMFColor</name>
-    <message>
-        <source>Expected positive color values in range [0.0, 1.0], found [%1 %2 %3]. MFColor field item %4 reset to [%5 %6 %7]</source>
-        <translation>Ожидались положительные значения цвета в диапазоне [0.0, 1.0], найдено [%1 %2 %3]. Элемент поля MFColor %4 сброшен на [%5 %6 %7]</translation>
-    </message>
-</context>
-<context>
-    <name>WbGyro</name>
-    <message>
-        <source>this node or its parents requires a &apos;physics&apos; field to be functional.</source>
-        <translation>Этот узел или его родительские узлы требуют для работы настроенного поля &apos;physics&apos;.</translation>
-    </message>
-</context>
-<context>
-    <name>WbMuscle</name>
-    <message>
-        <source>&apos;maxRadius&apos; field is deprecated, please use the &apos;volume&apos; field instead.</source>
-        <translation>Поле &apos;maxRadius&apos; устарело, используйте вместо него поле &apos;volume&apos;.</translation>
+        <source>Invalid &apos;minFieldOfView&apos; changed to %1. The value should be smaller or equal to &apos;maxFieldOfView&apos;.</source>
+        <translation>Недопустимый &apos;minFieldOfView&apos; изменен на %1. Значение должно быть меньше или равно &apos;maxFieldOfView&apos;.</translation>
     </message>
 </context>
 </TS>
