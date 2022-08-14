@@ -68,6 +68,7 @@ extern void wb_range_finder_init(WbDevice *);
 extern void wb_receiver_init(WbDevice *);
 extern void wb_skin_init(WbDevice *);
 extern void wb_speaker_init(WbDevice *);
+extern void wb_thruster_init(WbDevice *);
 
 void wb_device_init(WbDevice *d) {
   d->toggle_remote = NULL;
@@ -135,6 +136,9 @@ void wb_device_init(WbDevice *d) {
       break;
     case WB_NODE_TOUCH_SENSOR:
       wb_touch_sensor_init(d);
+      break;
+    case WB_NODE_THRUSTER:
+      wb_thruster_init(d);
       break;
     case WB_NODE_RADAR:
       wb_radar_init(d);

@@ -107,6 +107,8 @@
 #include "WbWorldInfo.hpp"
 #include "WbZoom.hpp"
 
+#include "WbThruster.hpp"
+
 #include <QtCore/QStringList>
 
 // this creates and destructs the global instance
@@ -280,6 +282,8 @@ WbNode *WbConcreteNodeFactory::createNode(const QString &modelName, WbTokenizer 
     return new WbTrackWheel(tokenizer);
   if (modelName == "Transform")
     return new WbTransform(tokenizer);
+  if (modelName == "Truster")
+    return new WbTruster(tokenizer);
   if (modelName == "Viewpoint")
     return new WbViewpoint(tokenizer);
   if (modelName == "WorldInfo")
@@ -483,6 +487,8 @@ WbNode *WbConcreteNodeFactory::createCopy(const WbNode &original) {
     return new WbTrackWheel(original);
   if (modelName == "Transform")
     return new WbTransform(original);
+  if (modelName == "Truster")
+    return new WbTruster(tokenizer);
   if (modelName == "Viewpoint")
     return new WbViewpoint(original);
   if (modelName == "WorldInfo")

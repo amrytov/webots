@@ -71,3 +71,4 @@ Thumbs.db
 
 # world thumbnail files
 .*.jpg
+.unnamed.wbproj

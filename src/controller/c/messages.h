@@ -281,6 +281,19 @@
 #define C_TOUCH_SENSOR_DATA 40
 #define C_TOUCH_SENSOR_DATA_3D 41
 
+// Thruster device
+// ctr->sim
+#define C_THRUSTER_SET_MAX_THRUST 1     
+#define C_THRUSTER_SET_THROTTLE 2   // ctr->sim
+#define C_THRUSTER_SET_FUEL 4       // ctr->sim
+#define C_THRUSTER_START_BURN 8       // ctr->sim
+#define C_THRUSTER_ENABLE_MASS_CALC 16  // ctr->sim
+
+// sim->ctr
+#define C_THRUSTER_GET_MASS 1     
+
+
+
 // Speaker device
 // ctr -> sim
 #define C_SPEAKER_PLAY_SOUND 1

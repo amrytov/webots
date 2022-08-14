@@ -1,0 +1,38 @@
+# The Thruster node is used to model a rocket engine in a spececraft.
+# It's inherited from a SolidDevice,  
+# It can use one or more "fuel tanks", which must be Solids with physics defined.
+
+Thruster {
+   #fields that inherit from the Solid node:
+  vrmlField SFVec3f    translation         0 0 0
+  vrmlField SFRotation rotation            0 0 1 0
+  vrmlField SFVec3f    scale               1 1 1
+  vrmlField MFNode     children            []          # shape and solids fixed to that solid
+  field     SFString   name                "thruster"  # used by wb_robot_get_device()
+  field     SFString   model               ""          # generic name of the solid (eg: "chair")
+  field     SFString   description         ""          # a short (1 line) of description of the solid
+  field     SFString   contactMaterial     "default"   # see ContactProperties node
+  field     MFNode     immersionProperties []          # see ImmersionProperties node
+  field     SFNode     boundingObject      NULL        # for collision detection (if NULL, use children)
+  field     SFNode     physics             NULL        # optional Physics node
+  field     SFBool     locked              FALSE       # to avoid moving objects with the mouse
+  field     SFFloat    translationStep     0.01        # step size used by translation manipulator
+  field     SFFloat    rotationStep        0.261799387 # step size used by rotation manipulator
+  field     SFFloat    radarCrossSection   0.0         # radar cross section of this solid
+  field     MFColor    recognitionColors   []          # colors returned for this Solid by Cameras with a Recognition node
+
+  # Thruster fields
+  field SFFloat maxThrust          10.0     # max thrust in Newtons
+  field SFFloat throttle           1.0    # minimum possible thrust is throttle*maxThrust.  1.0 means it's either ON of OFF (no throttling)
+  field SFFloat ISP                250    # Specific impulse of the engine, only used when the
+  field SFFloat fuelDensity        800    # Fuel density (default as in RP1)
+  field MFNode  fuelTanks          NULL   # Refers to a fuel tank(s) node that feeds
+  field SFBool  seqFeed            TRUE   # If there are several tanks, empty them one-by-one, otherwise change masses proportionally
+
+  field SFNode  flameShape         NULL   # It's a Shape kinematic Solid containing both helix's representation and boundingObject for high angular speeds
+  field SFString sound             "webots://projects/default/worlds/sounds/rcs_cold_gas.wav" # wave file of the motor sound
+
+  # hidden fields
+  hiddenField SFVec3f linearVelocity  0 0 0   # (m/s) Solid's initial linear velocity
+  hiddenField SFVec3f angularVelocity 0 0 0   # (rad/s) Solid's initial angular velocity
+}
