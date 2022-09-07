@@ -1,12 +1,12 @@
 This fork of Webots is being developed as the platform for K12-level STEM school competitions, specifically space-related ones, even more specifically - https://junior.ntcontest.ru/ . Here is what's going to be added/changed (listed more or less in the order of priorities):
 
-- Full translation to Russian  (done, needs checking / minor adjustments)
+- Full translation to Russian  (mostly done, but need to keep up with additions in cyberbotics/webots)
 
 - Adding thrusters, as PROTOs (based on the Propeller) or a new device type
 
-- Some form of integration with Stepik.org learning platform
+- Adding a fuel system (something KSP-style): thrusters spend fuel, changing rocket mass, stop when no fuel left
 
-- Adding a fuel system (something KSP-style)
+- Some form of integration with Stepik.org learning platform (based on "robot windows": get a random token from Stepik, measure results in the simulation, producing a score, as the answer encrypt score using the token, let the student copy the answer to Stepik) 
 
 - Adding gravitating bodies (Solids as gravity sources)
 
