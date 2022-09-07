@@ -1,8 +1,16 @@
-This fork of Webots is being developed as the platform for K12-level STEM school competitions, specifically space-related ones, even more specifically - https://junior.ntcontest.ru/ . Here is what's going to be added/changed (listed more or less in the order of priorities):
+This fork of Webots is being developed as the platform for K12-level STEM school competitions, specifically space-related ones, even more specifically - https://junior.ntcontest.ru/ .  
+
+Note that this is currently my private project, uploaded to github mostly to sync between my several computers, so please don't expect to find here something finished and tested, it's not.  The only useful thing in this repo at the moment is the translation file!
+
+Here is what's going to be added/changed (listed more or less in the order of priorities):
 
 - Full translation to Russian  (mostly done, but need to keep up with additions in cyberbotics/webots)
 
+** code in progress, not ready, won't even compile yet. 
+
 - Adding thrusters, as PROTOs (based on the Propeller) or a new device type
+
+** not started yet **
 
 - Adding a fuel system (something KSP-style): thrusters spend fuel, changing rocket mass, stop when no fuel left
 
